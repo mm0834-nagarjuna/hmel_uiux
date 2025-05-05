@@ -49,6 +49,7 @@
     </VBox>
 
     <SplitContainer
+<<<<<<< HEAD
         id="SplitContDemo"
         initialDetail="apprisal.view.BCF"
         initialMaster="detailDetail"
@@ -141,3 +142,43 @@
         </detailPages>
     </SplitContainer>
 </mvc:View>
+=======
+		id="SplitContDemo"
+		initialDetail="apprisal.view.BCF"
+		initialMaster="detailDetail">
+		<masterPages>	
+		<Page
+				id="detailDetail"
+				navButtonPress=".onPressDetailBack">
+				<customHeader>
+				<OverflowToolbar>
+					<Button icon="sap-icon://menu2" type="Transparent" press="onSideNavigationExpand" />
+					</OverflowToolbar>
+				</customHeader>
+    <tnt:SideNavigation id="sideNavigation" selectedKey="project1.view.COF" expanded="true" class="mvnSideNavigation"
+			itemSelect="onSideNavigationItemSelect" >
+			<tnt:NavigationList>
+					<tnt:NavigationListItem text="Goals" icon="sap-icon://target-group" selectable="false" >
+						<tnt:NavigationListItem text="Common Organizational" key="apprisal.view.COF"/>
+						<tnt:NavigationListItem text="Individual" key="Individual"/>
+					</tnt:NavigationListItem>
+				<tnt:NavigationListItem text="Behavioral Competency Framework" icon="sap-icon://work-history" selectable="true" key="apprisal.view.BCF"/>
+				<tnt:NavigationListItem text="Individual Development Plan" icon="sap-icon://trend-up" selectable="true" key="Individual Development Plan"/>
+				<tnt:NavigationListItem text="Appraiser/Reviewer/HOD Scorecard" icon="sap-icon://manager" selectable="true" key="Appraiser/Reviewer/HOD Scorecard"/>
+				<tnt:NavigationListItem text="Summary" icon="sap-icon://manager-insight" selectable="false">
+						<tnt:NavigationListItem text="Overall Remarks" key="Overall Remarks"/>
+						<tnt:NavigationListItem text="Overall Score" key="Overall Score"/>
+						<tnt:NavigationListItem text="Accomplishments" key="Accomplishments"/>
+					</tnt:NavigationListItem>
+
+			</tnt:NavigationList>
+		</tnt:SideNavigation>
+		</Page>
+		</masterPages>	
+		<detailPages>
+			<mvc:XMLView viewName="apprisal.view.COF" id="apprisal.view.COF"/>
+			<mvc:XMLView viewName="apprisal.view.BCF" id="apprisal.view.BCF"/>
+	</detailPages>
+	</SplitContainer>
+</mvc:View>
+>>>>>>> 2ee938e763ac6bf4a6d25a7f9c6f1d8af9614336

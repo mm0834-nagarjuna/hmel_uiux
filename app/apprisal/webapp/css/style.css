@@ -1,1 +1,9 @@
 /* Enter your custom styles here */
+
+.mvnSideNavigation.sapTntSideNavigation{
+    width : 20rem
+}
+
+.mvnSplitContainer .sapMSplitContainerMaster{
+    width : 4.1rem
+}
