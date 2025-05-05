@@ -87,7 +87,7 @@
                             />
                             <tnt:NavigationListItem
                                 text="Individual"
-                                key="Individual"
+                                key="apprisal.view.IG"
                             />
                         </tnt:NavigationListItem>
                         <tnt:NavigationListItem
