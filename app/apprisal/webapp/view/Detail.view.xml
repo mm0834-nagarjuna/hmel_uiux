@@ -1,0 +1,9 @@
+<mvc:View
+    controllerName="apprisal.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    height="100%"
+>
+<Page title="Detail Page" ></Page>
+</mvc:View>

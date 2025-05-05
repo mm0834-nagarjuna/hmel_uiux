@@ -1,0 +1,102 @@
+<mvc:View
+    controllerName="apprisal.controller.List"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    height="100%"
+>  
+
+
+<tnt:ToolHeader
+        id="shellLikeToolHeader"
+        class = "sapUiSmallPadding"
+    >
+        <Title
+            text="PMS"
+            wrapping="false"
+        >
+            <layoutData>
+                <OverflowToolbarLayoutData priority="Disappear" />
+            </layoutData>
+        </Title>
+        <ToolbarSpacer />
+        <SearchField
+            width="20rem"
+            id="searchField"
+        >
+            <layoutData>
+                <OverflowToolbarLayoutData
+                    priority="Low"
+                    group="1"
+                />
+            </layoutData>
+        </SearchField>
+        <ToolbarSpacer id="spacer">
+            <layoutData>
+                <OverflowToolbarLayoutData
+                    priority="Low"
+                    group="1"
+                />
+            </layoutData>
+        </ToolbarSpacer>
+
+       
+        <tnt:ToolHeaderUtilitySeparator />
+        <ToolbarSpacer width="1.125rem" />
+        <Avatar
+            src="test-resources/sap/tnt/images/Woman_avatar_01.png"
+            displaySize="XS"
+            press=".onAvatarPressed"
+            tooltip="Profile"
+        >
+            <layoutData>
+                <OverflowToolbarLayoutData priority="NeverOverflow" />
+            </layoutData>
+        </Avatar>
+    </tnt:ToolHeader>
+
+            
+                <Table
+                    id="idApprisalTable"
+                    class="sapUiSmallMarginTop"
+                    inset="false"
+                    items="{
+                        path: '/appraisal',
+                        sorter: {
+                            path: 'appraisalName'
+                        }
+                    }"
+                >
+                    <columns>
+                        <Column >
+                            <Text text="Apprisal Name" />
+                        </Column>
+                        <Column >
+                            <Text text="Appraiser Name" />
+                        </Column>
+                        <Column >
+                            <Text text="Appraisee Name" />
+                        </Column>
+                        <Column >
+                            <Text text="Status" />
+                        </Column>
+                        <Column >
+                            <Text text="Sub Status" />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem vAlign="Middle" type="Navigation" press=".onListItemPress">
+                            <cells>
+                                <ObjectIdentifier title="{appraisalName}" />
+                                <Text text="{appraiserName}" />
+                                <Text text="{appraiseeName}" />
+                                <Text text="{apStatusName}" />
+                                <Text text="{apStatusSubName}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+
+
+</mvc:View>
