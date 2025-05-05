@@ -12,7 +12,7 @@
     <VBox>
         <Toolbar class="sapUiContentPadding">
             <Title
-                text="BSM 2025-26"
+                text="{apprisalData>appraisalName}"
                 level="H3"
             />
             <ToolbarSpacer />
