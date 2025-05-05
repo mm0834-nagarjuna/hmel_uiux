@@ -32,4 +32,13 @@ entity AppraisalDocuments {
   changeUser             : String(20);
   templateId             : String(20);
   partRoleId             : String(20);
+  ksp_value              : String;
+  ksp_visible            : Boolean;
+  ksp_edit               : Boolean;
+  kpi_value              : String;
+  kpi_visible            : Boolean;
+  kpi_edit               : Boolean;
+  target_value           : String;
+  target_visible         : Boolean;
+  target_edit            : Boolean;
 }

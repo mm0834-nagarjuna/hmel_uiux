@@ -8,6 +8,21 @@ sap.ui.define([
         onInit() {
             this.oRouter = this.getOwnerComponent().getRouter();
             this.oRouter.getRoute("apprisalDetail").attachPatternMatched(this._onAppIDMatched, this);
+            var numberDropDown = {
+                numbers: [
+                    { key: "1", text: "1" },
+                    { key: "2", text: "2" },
+                    { key: "3", text: "3" },
+                    { key: "4", text: "4" },
+                    { key: "5", text: "5" },
+                    { key: "6", text: "6" },
+                    { key: "7", text: "7" },
+                    { key: "8", text: "8" },
+                    { key: "9", text: "9" }
+                ]
+            };
+            var oModel = new sap.ui.model.json.JSONModel(numberDropDown);
+            this.getView().setModel(oModel);
         },
         onSideNavigationExpand(){
             const oSideNavigation = this.byId("sideNavigation"),
@@ -27,6 +42,10 @@ sap.ui.define([
 
         },
         onSideNavigationItemSelect(oEvent){
+            // const oItem = oEvent.getParameter("item"),
+			// 	sText = oItem.getText();
+			// // MessageToast.show(`Item selected: ${sText}`);
+            // console.log(sText)
             
             this.byId("SplitContDemo").toDetail(this.byId( oEvent.getParameter("item").getKey()))
             // this._initalSelectedKey = ;

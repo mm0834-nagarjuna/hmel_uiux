@@ -1,73 +1,206 @@
-<mvc:View 
+<mvc:View
+    controllerName="apprisal.controller.Detail"
+	xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:uxap="sap.uxap"
     xmlns="sap.m"
     xmlns:tnt="sap.tnt"
     xmlns:blockcolor="project1.SharedBlocks"
     xmlns:l="sap.ui.layout"
-    height="100%">
-	<uxap:ObjectPageLayout upperCaseAnchorBar="false" showFooter="true">
-	<uxap:layoutData>
-		<FlexItemData growFactor="1" />
-	</uxap:layoutData>	
-		<uxap:sections>
-
-		<uxap:ObjectPageSection>
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false" title="Common Organizational">
-						<OverflowToolbar>
-							<ToolbarSpacer/>
-							<Button text="Predefined Section" type="Transparent" press="onItemSelect" />
-							<Button text="New Section" type="Transparent" press="onItemSelect" />
-						</OverflowToolbar>
-						<!-- <uxap:actions>
+    height="100%"
+>
+    <uxap:ObjectPageLayout
+        upperCaseAnchorBar="false"
+        showFooter="true"
+    >
+        <uxap:layoutData>
+            <FlexItemData growFactor="1" />
+        </uxap:layoutData>
+        <uxap:sections>
+            <uxap:ObjectPageSection>
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        titleUppercase="false"
+                        title="Common Organizational"
+                    >
+                        <OverflowToolbar>
+                            <ToolbarSpacer />
+                            <Button
+                                text="Predefined Section"
+                                type="Transparent"
+                                press="onItemSelect"
+                            />
+                            <Button
+                                text="New Section"
+                                type="Transparent"
+                                press="onItemSelect"
+                            />
+                        </OverflowToolbar>
+                        <!-- <uxap:actions>
 							<Button icon="sap-icon://synchronize"/>
 							<Button icon="sap-icon://expand"/>
 						</uxap:actions> -->
-					</uxap:ObjectPageSubSection>
-					
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
 
-			<uxap:ObjectPageSection titleUppercase="false" title="1.1">
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false">
-						<VBox>
-							<HBox>
-								<Label text="Weigtage" labelFor="COF_11_WEIGTAGE" />
-								<Input id="COF_11_WEIGTAGE"/>
-							</HBox>
-							<Label text="Label A" labelFor="COF_11_KSP" />
-							<TextArea id="COF_11_KSP" width="100%" growing="true" />
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="1.1"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
+                            <HBox justifyContent="End" alignItems="Center" >
+                                <Label
+                                    text="Weightage(%):"
+                                    labelFor="COF_11_WEIGTAGE"
+                                />
+                                <ComboBox items="{/numbers}" value="5">
+                                    <core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <Label
+                                text="Key Strategic Priority - Key Results Area"
+								class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>ksp_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>ksp_edit}"
+                            />
+                            <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>kpi_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>kpi_edit}"
 
-			<uxap:ObjectPageSection>
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false" title="1.2">
-						<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
+                            />
+                            <Label text="Target" class="sapUiSmallMarginTop"/>
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>target_edit}"
 
-			<uxap:ObjectPageSection titleUppercase="false" title="1.3">
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false">
-						<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
+                            />
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="1.2"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
+                            <HBox justifyContent="End" alignItems="Center" >
+                                <Label
+                                    text="Weightage(%):"
+                                    labelFor="COF_11_WEIGTAGE"
+                                />
+                                <ComboBox items="{/numbers}" value="5">
+                                    <core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <Label
+                                text="Key Strategic Priority - Key Results Area"
+								class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>ksp_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>ksp_edit}"
+                            />
+                            <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>kpi_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>kpi_edit}"
 
+                            />
+                            <Label text="Target" class="sapUiSmallMarginTop"/>
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>target_edit}"
 
-		</uxap:sections>
-		<uxap:footer>
-				<OverflowToolbar>
-					<Button text="Predefined Section" type="Transparent" press="onItemSelect" />
-					<Button text="New Section" type="Transparent" press="onItemSelect" />
-				</OverflowToolbar>
-		</uxap:footer>
+                            />
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="1.3"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
+                            <HBox justifyContent="End" alignItems="Center" >
+                                <Label
+                                    text="Weightage(%):"
+                                    labelFor="COF_11_WEIGTAGE"
+                                />
+                                <ComboBox items="{/numbers}" value="5">
+                                    <core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <Label
+                                text="Key Strategic Priority - Key Results Area"
+								class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>ksp_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>ksp_edit}"
+                            />
+                            <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>kpi_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>kpi_edit}"
 
-	</uxap:ObjectPageLayout>
+                            />
+                            <Label text="Target" class="sapUiSmallMarginTop"/>
+                            <TextArea
+                                width="100%"
+                                value="{apprisalData>target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>target_edit}"
+
+                            />
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
 </mvc:View>
