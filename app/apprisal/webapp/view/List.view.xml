@@ -62,7 +62,7 @@
                     class="sapUiSmallMarginTop"
                     inset="false"
                     items="{
-                        path: '/appraisal',
+                        path: 'apprisalData>/appraisal',
                         sorter: {
                             path: 'appraisalName'
                         }
@@ -88,11 +88,11 @@
                     <items>
                         <ColumnListItem vAlign="Middle" type="Navigation" press=".onListItemPress">
                             <cells>
-                                <ObjectIdentifier title="{appraisalName}" />
-                                <Text text="{appraiserName}" />
-                                <Text text="{appraiseeName}" />
-                                <Text text="{apStatusName}" />
-                                <Text text="{apStatusSubName}" />
+                                <ObjectIdentifier title="{apprisalData>appraisalName}" />
+                                <Text text="{apprisalData>appraiserName}" />
+                                <Text text="{apprisalData>appraiseeName}" />
+                                <Text text="{apprisalData>apStatusName}" />
+                                <Text text="{apprisalData>apStatusSubName}" />
                             </cells>
                         </ColumnListItem>
                     </items>

@@ -8,12 +8,13 @@ sap.ui.define([
         },
         onListItemPress: function (oEvent) {
               var oListItem = oEvent.getSource();
-              var oBindingContext = oListItem.getBindingContext();
+              var oBindingContext = oListItem.getBindingContext("apprisalData");
               console.log(oBindingContext)
               var sAppId = oBindingContext.getProperty("appraisalId");
+              var sAppIndex = oBindingContext.getProperty("index");
               console.log(sAppId)
               this.getOwnerComponent().getRouter().navTo("apprisalDetail", {
-                appId:sAppId
+                index:sAppIndex, appId:sAppId
             });
              
         }
