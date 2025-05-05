@@ -41,14 +41,14 @@
     <tnt:SideNavigation id="sideNavigation" selectedKey="project1.view.COF" expanded="true" class="mvnSideNavigation"
 			itemSelect="onSideNavigationItemSelect" >
 			<tnt:NavigationList>
-					<tnt:NavigationListItem text="Goals" icon="sap-icon://mileage" selectable="false" >
+					<tnt:NavigationListItem text="Goals" icon="sap-icon://target-group" selectable="false" >
 						<tnt:NavigationListItem text="Common Organizational" key="apprisal.view.COF"/>
 						<tnt:NavigationListItem text="Individual" key="Individual"/>
 					</tnt:NavigationListItem>
-				<tnt:NavigationListItem text="Behavioral Competency Framework" icon="sap-icon://map-2" selectable="true" key="project1.view.BCF"/>
-				<tnt:NavigationListItem text="Individual Development Plan" icon="sap-icon://map-2" selectable="true" key="Individual Development Plan"/>
-				<tnt:NavigationListItem text="Appraiser/Reviewer/HOD Scorecard" icon="sap-icon://map-2" selectable="true" key="Appraiser/Reviewer/HOD Scorecard"/>
-				<tnt:NavigationListItem text="Summary" icon="sap-icon://activity-items" selectable="false">
+				<tnt:NavigationListItem text="Behavioral Competency Framework" icon="sap-icon://work-history" selectable="true" key="apprisal.view.BCF"/>
+				<tnt:NavigationListItem text="Individual Development Plan" icon="sap-icon://trend-up" selectable="true" key="Individual Development Plan"/>
+				<tnt:NavigationListItem text="Appraiser/Reviewer/HOD Scorecard" icon="sap-icon://manager" selectable="true" key="Appraiser/Reviewer/HOD Scorecard"/>
+				<tnt:NavigationListItem text="Summary" icon="sap-icon://manager-insight" selectable="false">
 						<tnt:NavigationListItem text="Overall Remarks" key="Overall Remarks"/>
 						<tnt:NavigationListItem text="Overall Score" key="Overall Score"/>
 						<tnt:NavigationListItem text="Accomplishments" key="Accomplishments"/>
