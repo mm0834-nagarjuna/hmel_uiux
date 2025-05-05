@@ -136,6 +136,10 @@
                 id="apprisal.view.COF"
             />
             <mvc:XMLView
+                viewName="apprisal.view.IG"
+                id="apprisal.view.IG"
+            />
+            <mvc:XMLView
                 viewName="apprisal.view.BCF"
                 id="apprisal.view.BCF"
             />
