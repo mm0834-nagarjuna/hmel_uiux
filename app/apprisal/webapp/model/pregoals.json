@@ -13,31 +13,42 @@
       "Weightage":"5%"
     }
   ],
-  "ig_goals": [
+  "indv_goals": [
     {
-      "ig_ksp_value": "Improve Technical Skills",
-      "ig_kpi_value": "Number of Certifications Completed",
-      "ig_target_value": "3 Certifications"
+      "KRA": "Complete advanced SAP training",
+      "KPI": "Training completion and certification",
+      "Target": "Certified by Q3",
+      "Weightage": "12%"
     },
     {
-      "ig_ksp_value": "Enhance Client Communication",
-      "ig_kpi_value": "Client Feedback Score",
-      "ig_target_value": "≥ 4.5/5"
+      "KRA": "Reduce manual data entry errors",
+      "KPI": "Error rate in submitted reports",
+      "Target": "Less than 2% error rate",
+      "Weightage": "8%"
     },
     {
-      "ig_ksp_value": "Contribute to Knowledge Base",
-      "ig_kpi_value": "Number of Articles Published",
-      "ig_target_value": "At least 5 Articles"
+      "KRA": "Lead monthly knowledge sharing sessions",
+      "KPI": "Number of sessions conducted",
+      "Target": "At least 6 sessions annually",
+      "Weightage": "10%"
     },
     {
-      "ig_ksp_value": "Mentor Juniors",
-      "ig_kpi_value": "Number of Mentees & Sessions",
-      "ig_target_value": "2 Mentees, 10 Sessions"
+      "KRA": "Implement automated dashboard for reporting",
+      "KPI": "Timeliness and accuracy of reports",
+      "Target": "Live dashboard by end of Q2",
+      "Weightage": "15%"
     },
     {
-      "ig_ksp_value": "Optimize Personal Productivity",
-      "ig_kpi_value": "Task Completion Rate",
-      "ig_target_value": "≥ 95% Monthly"
+      "KRA": "Mentor junior team members",
+      "KPI": "Number of mentorship hours logged",
+      "Target": "20+ hours of mentorship",
+      "Weightage": "7%"
+    },
+    {
+      "KRA": "Contribute to department whitepaper",
+      "KPI": "Completion and quality of contribution",
+      "Target": "Submit draft by Q3",
+      "Weightage": "6%"
     }
   ],
   "bce":[
@@ -150,11 +161,6 @@
     "Other_Dev_Area":[
       {
         "Appraisee": "Requested training on advanced Excel skills for data analysis",
-        "Status": "",
-        "Appraiser": ""
-      },
-      {
-        "Appraisee": "Requested participation in a leadership development workshop",
         "Status": "",
         "Appraiser": ""
       }
