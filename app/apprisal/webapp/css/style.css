@@ -7,3 +7,7 @@
 .mvnSplitContainer .sapMSplitContainerMaster{
     width : 4.1rem
 }
+
+.mvnTableSelectDialog .sapMSF{
+    display : none;
+}

@@ -6,6 +6,7 @@
 		title="Predefined - Key Performance Area"
 		confirm=".onClickCancel"
 		cancel=".onClickCancel"
+		class="mvnTableSelectDialog"
 		items="{
 			path : 'PreDefineGoal>/ig_goals'
 		}">
