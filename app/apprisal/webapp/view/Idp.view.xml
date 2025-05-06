@@ -1,0 +1,236 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="apprisal.controller.Idp"
+	xmlns:uxap="sap.uxap"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+    height="90%">
+	<uxap:ObjectPageLayout  upperCaseAnchorBar="false" >
+		<uxap:layoutData>
+			<FlexItemData growFactor="1" />
+		</uxap:layoutData>
+		<uxap:sections>
+			<uxap:ObjectPageSection title="Individual Development Plan" titleUppercase="false">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="Individual Development Plan" titleUppercase="false" showTitle="false">
+							<OverflowToolbar>
+								<Title text="Individual Development Plan"/>
+								<ToolbarSpacer />
+								<Button
+									text="Guideline"
+									type="Emphasized"
+									press="onClickPredefined"
+								/>
+							</OverflowToolbar>
+					</uxap:ObjectPageSubSection>
+					
+					
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<uxap:ObjectPageSection titleUppercase="false" title="Score" showTitle="false">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="Training" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<OverflowToolbar>
+								<Title text="Training"/>
+							</OverflowToolbar>
+							<Table id="bceIdenified"
+								items="{
+									path : 'PreDefineGoal>/IDP/trainings_attended'
+								}">
+								<columns>
+									<Column width="10rem">
+										<header>
+											<Text text="S.No" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Training Name" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Description" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="No of Days" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Text text="{PreDefineGoal>S.N.}" />
+											<Text text="{PreDefineGoal>Training Name}" />
+											<Text text="{PreDefineGoal>Description}" />
+											<Text text="{PreDefineGoal>No. of days}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<uxap:ObjectPageSection showTitle="false">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="Behavioral Competency" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<OverflowToolbar>
+								<Title text="Behavioral Competency Development Area Identified"/>
+							</OverflowToolbar>
+							<Table 
+								items="{
+									path : 'PreDefineGoal>/IDP/Comps_Identified'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="S.No" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Competencies Target" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Success Factor" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Review 1 Achievements" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Review 2 Achievements" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Annual Achievements" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Text text="{PreDefineGoal>S.No}" />
+											<Text text="{PreDefineGoal>CMP_Target}" />
+											<TextArea value="{PreDefineGoal>Success Measure}" width="100%" growing="true"></TextArea>
+											<Text text="{PreDefineGoal>R1_Achievements}" />
+											<Text text="{PreDefineGoal>R1_Achievements}" />
+											<Text text="{PreDefineGoal>R1_Achievements}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<uxap:ObjectPageSection titleUppercase="false" showTitle="false">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="Functional/Other" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<OverflowToolbar>
+								<Title text="Functional/Any Other Development Area"/>
+							</OverflowToolbar>
+							<Table
+								items="{
+									path : 'PreDefineGoal>/IDP/Other_Dev_Area'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="Appraisee" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Respond" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Appraiser" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<TextArea value="{PreDefineGoal>Appraisee}" width="100%" growing="true"></TextArea>
+											<Input editable="false" />
+											<Input editable="false" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<uxap:ObjectPageSection titleUppercase="false" showTitle="false">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="Functional/Techincal" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<OverflowToolbar>
+								<Title text="Functional/Techincal Development Area"/>
+							</OverflowToolbar>
+							<Table
+								items="{
+									path : 'PreDefineGoal>/IDP/Tech_Dev_Area'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="Appraisee" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Respond" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Appraiser" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Input
+												showValueHelp="true"
+												value="{PreDefineGoal>Appraisee}"
+												suggestionItems="{PreDefineGoal>/IDP/Tech_Dev_Area}">
+												<suggestionItems>
+													<core:Item text="{PreDefineGoal>Appraisee}" />
+												</suggestionItems>
+											</Input>
+											<Input editable="false" />
+											<Input editable="false" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+		</uxap:sections>
+	</uxap:ObjectPageLayout>
+</mvc:View>

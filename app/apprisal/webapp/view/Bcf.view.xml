@@ -1,15 +1,15 @@
-<mvc:View 
-    xmlns:mvc="sap.ui.core.mvc"
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
 	controllerName="apprisal.controller.Bcf"
-    xmlns:uxap="sap.uxap"
-    xmlns="sap.m"
-    xmlns:tnt="sap.tnt"
-    xmlns:l="sap.ui.layout"
+	xmlns:uxap="sap.uxap"
+	xmlns="sap.m"
+	xmlns:tnt="sap.tnt"
+	xmlns:l="sap.ui.layout"
     height="90%">
 	<uxap:ObjectPageLayout  upperCaseAnchorBar="false" >
-	<uxap:layoutData>
-						<FlexItemData growFactor="1" />
-					</uxap:layoutData>	
+		<uxap:layoutData>
+			<FlexItemData growFactor="1" />
+		</uxap:layoutData>
 		<uxap:sections>
 			<uxap:ObjectPageSection titleUppercase="false" title="Behavioral Competency Framework " showTitle="false">
 				<uxap:subSections>
@@ -31,7 +31,6 @@
 									templateShareable: false,
 									groupHeaderFactory: '.getGroupHeader'
 								}">
-
 								<columns>
 									<Column width="10rem">
 										<header>
@@ -51,26 +50,18 @@
 								</columns>
 								<items>
 									<ColumnListItem vAlign="Top">
-									<cells>
-										<CheckBox />
-										<Text text="{PreDefineGoal>INDICATORS}" />
-										<Text text="{PreDefineGoal>COMP_DEF}" />
-									</cells>
-								</ColumnListItem>
+										<cells>
+											<CheckBox />
+											<Text text="{PreDefineGoal>INDICATORS}" />
+											<Text text="{PreDefineGoal>COMP_DEF}" />
+										</cells>
+									</ColumnListItem>
 								</items>
 							</Table>
 						</VBox>
 					</uxap:ObjectPageSubSection>
-	
 				</uxap:subSections>
 			</uxap:ObjectPageSection>
-
-
-			
-
-
 		</uxap:sections>
-
 	</uxap:ObjectPageLayout>
-
 </mvc:View>

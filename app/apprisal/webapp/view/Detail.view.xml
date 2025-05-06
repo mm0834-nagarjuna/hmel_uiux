@@ -57,7 +57,7 @@
     <SplitContainer
 
         id="SplitContDemo"
-        initialDetail="apprisal.view.BCF"
+        initialDetail="apprisal.view.Idp"
         initialMaster="detailDetail"
     >
         <masterPages>
@@ -77,7 +77,7 @@
                 </customHeader>
                 <tnt:SideNavigation
                     id="sideNavigation"
-                    selectedKey="project1.view.COF"
+                    selectedKey="apprisal.view.Idp"
                     expanded="true"
                     class="mvnSideNavigation"
                     itemSelect="onSideNavigationItemSelect"
@@ -107,7 +107,7 @@
                             text="Individual Development Plan"
                             icon="sap-icon://map-2"
                             selectable="true"
-                            key="Individual Development Plan"
+                            key="apprisal.view.Idp"
                         />
                         <tnt:NavigationListItem
                             text="Appraiser/Reviewer/HOD Scorecard"
@@ -145,6 +145,10 @@
             </Page>
         </masterPages>
         <detailPages>
+        <mvc:XMLView
+                viewName="apprisal.view.Idp"
+                id="apprisal.view.Idp"
+            />
             <mvc:XMLView
                 viewName="apprisal.view.Cof"
                 id="apprisal.view.Cof"
@@ -157,6 +161,7 @@
                 viewName="apprisal.view.Bcf"
                 id="apprisal.view.Bcf"
             />
+            
         </detailPages>
     </SplitContainer>
     <OverflowToolbar>
