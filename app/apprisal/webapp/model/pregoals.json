@@ -1,64 +1,41 @@
 {
   "cof_goals" : [
     {
-      
+      "KRA": "Execution of Cultural Transformation initiatives",
+      "KPI": "3Bs Initiative - Number of individual actions reflecting desired behaviors - Passionate innovation, Boldly Efficient and Proactive Collaboration",
+      "Target": "3Bs Initiative - any 1 of the 3Bs in the four monthly review (minimum two behaviours shall be evidenced over the year, out of which minimum one behaviour of Passionate Innovation)"
+    },
+    {
+      "KRA": "Safety Target (mandatory for Bathinda/Pipeline locations)",
+      "KPI": "KPI to be as per KRA which is performed or controlled by employee to achieve Safety targets",
+      "Target": "Safety Target (Please coordinate with Health & Safety Team for target relevant to your department)"
     }
   ],
   "ig_goals": [
     {
       "ig_ksp_value": "Improve Technical Skills",
-      "ig_ksp_visible": true,
-      "ig_ksp_edit": true,
       "ig_kpi_value": "Number of Certifications Completed",
-      "ig_kpi_visible": true,
-      "ig_kpi_edit": true,
-      "ig_target_value": "3 Certifications",
-      "ig_target_visible": true,
-      "ig_target_edit": true
+      "ig_target_value": "3 Certifications"
     },
     {
       "ig_ksp_value": "Enhance Client Communication",
-      "ig_ksp_visible": true,
-      "ig_ksp_edit": false,
       "ig_kpi_value": "Client Feedback Score",
-      "ig_kpi_visible": true,
-      "ig_kpi_edit": false,
-      "ig_target_value": "≥ 4.5/5",
-      "ig_target_visible": true,
-      "ig_target_edit": false
+      "ig_target_value": "≥ 4.5/5"
     },
     {
       "ig_ksp_value": "Contribute to Knowledge Base",
-      "ig_ksp_visible": true,
-      "ig_ksp_edit": true,
       "ig_kpi_value": "Number of Articles Published",
-      "ig_kpi_visible": true,
-      "ig_kpi_edit": true,
-      "ig_target_value": "At least 5 Articles",
-      "ig_target_visible": true,
-      "ig_target_edit": true
+      "ig_target_value": "At least 5 Articles"
     },
     {
       "ig_ksp_value": "Mentor Juniors",
-      "ig_ksp_visible": true,
-      "ig_ksp_edit": false,
       "ig_kpi_value": "Number of Mentees & Sessions",
-      "ig_kpi_visible": true,
-      "ig_kpi_edit": true,
-      "ig_target_value": "2 Mentees, 10 Sessions",
-      "ig_target_visible": true,
-      "ig_target_edit": true
+      "ig_target_value": "2 Mentees, 10 Sessions"
     },
     {
       "ig_ksp_value": "Optimize Personal Productivity",
-      "ig_ksp_visible": true,
-      "ig_ksp_edit": true,
       "ig_kpi_value": "Task Completion Rate",
-      "ig_kpi_visible": true,
-      "ig_kpi_edit": false,
-      "ig_target_value": "≥ 95% Monthly",
-      "ig_target_visible": true,
-      "ig_target_edit": false
+      "ig_target_value": "≥ 95% Monthly"
     }
   ]
 }
