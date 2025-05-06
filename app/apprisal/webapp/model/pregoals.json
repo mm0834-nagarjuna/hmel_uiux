@@ -44,19 +44,70 @@
     {
       "COMP_DESC": "Adapts to Uncertainty",
       "INDICATORS": "Finds opportunities inherent even in uncertain situations and guides the organization to capitalize on them.",
-      "COMP_DEF": "OPERATING EFFECTIVELY, EVEN WHEN THINGS ARE NOT CERTAIN OR THE WAY FORWARD IS NOT CLEAR."
+      "COMP_DEF": "OPERATING EFFECTIVELY, EVEN WHEN THINGS ARE NOT CERTAIN OR THE WAY FORWARD IS NOT CLEAR.",
+      "Identified": ""
     },
     {
       "COMP_DESC": "Collaborates",
       "INDICATORS": "Builds a culture of collaboration and teamwork among multiple stakeholders and leads conflict resolution constructively.",
-      "COMP_DEF": "BUILDING PARTNERSHIPS AND WORKING COLLABORATIVELY WITH OTHERS TO MEET SHARED OBJECTIVES."
+      "COMP_DEF": "BUILDING PARTNERSHIPS AND WORKING COLLABORATIVELY WITH OTHERS TO MEET SHARED OBJECTIVES.",
+      "Identified": ""
     },
     {
       "COMP_DESC": "Develops Self and Effective Teams",
       "INDICATORS": "Builds a leadership team that drives the goals and success of HMEL in a way to strengthen collaborative working",
-      "COMP_DEF": "DEVELOPING SELF AND BUILDING CAPABLE TEAMS THAT APPLY THEIR SKILLS AND PERSPECTIVES TO ACHIEVE COMMON GOALS."
+      "COMP_DEF": "DEVELOPING SELF AND BUILDING CAPABLE TEAMS THAT APPLY THEIR SKILLS AND PERSPECTIVES TO ACHIEVE COMMON GOALS.",
+      "Identified": ""
+    },
+    {
+      "COMP_DESC": "Develops Strategy",
+      "INDICATORS": "Develops and integrates HMEL strategies and explores future possibilities to achieve and sustain competitive advantage.",
+      "COMP_DEF": "SEEING AHEAD TO FUTURE POSSIBILITIES AND TRANSLATING THEM INTO BREAKTHROUGH STRATEGIES.",
+      "Identified": ""
+    },
+    {
+      "COMP_DESC": "Develops Talent",
+      "INDICATORS": "Creates a culture that emphasizes ongoing learning and development and reinforces its value to the organization.",
+      "COMP_DEF": "DEVELOPING PEOPLE TO MEET BOTH THEIR CAREER GOALS AND THE ORGANIZATION’S GOALS.",
+      "Identified": ""
+    },
+    {
+      "COMP_DESC": "Digital Mindset",
+      "INDICATORS": "Anticipates and ensures the impact of emerging technologies and positions organization both structurally and culturally to best",
+      "COMP_DEF": "UNDERSTANDS THE POWER OF TECHNOLOGY TO DEMOCRATIZE, SCALE AND SPEED UP EVERY FORM OF INTERACTION AND ACTION.",
+      "Identified": ""
+    },
+    {
+      "COMP_DESC": "Focus on Innovation",
+      "INDICATORS": "Builds a culture across levels that challenges the organization to generate possibilities and implement breakthrough ideas and s",
+      "COMP_DEF": "CREATING NEW AND BETTER WAYS FOR THE ORGANIZATION TO BE SUCCESSFUL.",
+      "Identified": ""
+    },
+    {
+      "COMP_DESC": "Focus on Results",
+      "INDICATORS": "Sets smart goals, be accountable for performance",
+      "COMP_DEF": "CONSISTENTLY ACHIEVING RESULTS, EVEN UNDER CHALLENGING CIRCUMSTANCES AND OBSTACLES.",
+      "Identified": ""
+    },
+    {
+      "COMP_DESC": "Openness to Feedback",
+      "INDICATORS": "Gathers feedback from different sources to get an accurate picture of own effectiveness and make necessary improvements.",
+      "COMP_DEF": "USING FEEDBACK AND REFLECTION TO GAIN PRODUCTIVE INSIGHT INTO PERSONAL STRENGTHS AND WEAKNESSES AND DEVELOP NEW SKILLS.",
+      "Identified": ""
+    },
+    {
+      "COMP_DESC": "Optimizes Work",
+      "INDICATORS": "Builds a culture within HMEL that promotes continuous improvement and quality outcomes by identifying and securing organizationa",
+      "COMP_DEF": "KNOWING THE MOST EFFECTIVE AND EFFICIENT PROCESSES TO GET THINGS DONE, WITH A FOCUS ON CONTINUOUS IMPROVEMENT.",
+      "Identified": ""
+    },
+    {
+      "COMP_DESC": "Plans and Aligns",
+      "INDICATORS": "sets and conveys clear objectives and provides resources to achieve long term organisational goals.",
+      "COMP_DEF": "PLANNING AND PRIORITIZING WORK TO MEET COMMITMENTS ALIGNED WITH ORGANIZATIONAL GOALS.",
+      "Identified": ""
     }
-  ],
+  ],  
   "IDP": {
     "trainings_attended": [
       {
