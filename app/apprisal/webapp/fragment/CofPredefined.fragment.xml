@@ -8,14 +8,14 @@
 		cancel=".onClickCancel"
 		class="mvnTableSelectDialog"
 		items="{
-			path : 'PreDefineGoal>/ig_goals'
+			path : 'PreDefineGoal>/cof_goals'
 		}">
 		<ColumnListItem vAlign="Middle">
 			<cells>
-				<Text text="{PreDefineGoal>ig_ksp_value}" />
-				<Text text="{SupplierName}" />
-				<Text text="{SupplierName}" />
-				<Text text="{SupplierName}" />
+				<Text text="{PreDefineGoal>KRA}" />
+				<Text text="{PreDefineGoal>KPI}" />
+				<Text text="{PreDefineGoal>Target}" />
+				<Text text="{PreDefineGoal>KRA}" />
 			</cells>
 		</ColumnListItem>
 		<columns>
