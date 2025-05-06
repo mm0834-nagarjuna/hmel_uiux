@@ -128,6 +128,24 @@
         "Description": "Hands-on training on Excel functions, pivot tables, and data visualization techniques.",
         "No. of days": 1
       }
-    ]
+    ],
+    "Comps_Identified":[
+      {
+        "S.No.": 1,
+        "CMP_Target": "Adapts to Uncertainity",
+        "Success Measure": "",
+        "R1_Achievements": "",
+        "R2_Achievements": "",
+        "Annual_Achievements": ""
+      },
+      {
+        "S.No.": 2,
+        "CMP_Target": "Develops Talent",
+        "Success Measure": "",
+        "R1_Achievements": "",
+        "R2_Achievements": "",
+        "Annual_Achievements": ""
+      }
+    ]    
   }
 }
