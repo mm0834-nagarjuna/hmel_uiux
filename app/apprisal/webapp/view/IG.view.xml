@@ -1,11 +1,10 @@
 <mvc:View
-    controllerName="apprisal.controller.Detail"
+    controllerName="apprisal.controller.Ig"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:uxap="sap.uxap"
     xmlns="sap.m"
     xmlns:tnt="sap.tnt"
-    xmlns:blockcolor="project1.SharedBlocks"
     xmlns:l="sap.ui.layout"
     height="100%"
 >
@@ -28,14 +27,8 @@
                             <Button
                                 text="Previous Year Section"
                                 type="Transparent"
-                                press="onPreviousYearIG3"
+                                press="onClickPreviousYear"
                             >
-                                <customData>
-                                    <core:CustomData
-                                        key="multi"
-                                        value="true"
-                                    />
-                                </customData>
                             </Button>
                             <Button
                                 text="New Section"
