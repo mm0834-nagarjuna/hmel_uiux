@@ -158,6 +158,18 @@
         "Status": "",
         "Appraiser": ""
       }
+    ],
+    "Tech_Dev_Area":[
+      {
+        "Appraisee": "IADC Hazardous Area Electerical Training",
+        "Status": "",
+        "Appraiser": ""
+      },
+      {
+        "Appraisee": "Keep your equipment reliable by Corrosion Control-OM-TT-009",
+        "Status": "",
+        "Appraiser": ""
+      }
     ]
   }
 }
