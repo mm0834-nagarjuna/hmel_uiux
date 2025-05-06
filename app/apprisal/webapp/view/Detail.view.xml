@@ -86,7 +86,7 @@
                         >
                             <tnt:NavigationListItem
                                 text="Common Organizational"
-                                key="apprisal.view.COF"
+                                key="apprisal.view.Cof"
                             />
                             <tnt:NavigationListItem
                                 text="Individual"
@@ -135,8 +135,8 @@
         </masterPages>
         <detailPages>
             <mvc:XMLView
-                viewName="apprisal.view.COF"
-                id="apprisal.view.COF"
+                viewName="apprisal.view.Cof"
+                id="apprisal.view.Cof"
             />
             <mvc:XMLView
                 viewName="apprisal.view.IG"

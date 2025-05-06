@@ -1,0 +1,43 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<TableSelectDialog
+		noDataText="No Predefined - Key Performance Area"
+		title="Predefined - Key Performance Area"
+		confirm=".onClickCancel"
+		cancel=".onClickCancel"
+		items="{
+			path : 'PreDefineGoal>/ig_goals'
+		}">
+		<ColumnListItem vAlign="Middle">
+			<cells>
+				<Text text="{PreDefineGoal>ig_ksp_value}" />
+				<Text text="{SupplierName}" />
+				<Text text="{SupplierName}" />
+				<Text text="{SupplierName}" />
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column>
+				<header>
+					<Text text="Key Strategic Priority - Key Results Area" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="Key Performance Index" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="Target" />
+				</header>
+			</Column>
+			<Column width="10rem">
+				<header>
+					<Text text="Weightage(%)" />
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>
