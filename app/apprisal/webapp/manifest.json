@@ -23,7 +23,12 @@
           "annotations": [],
           "odataVersion": "4.0"
         }
-      }
+        
+      },
+      "PreDefineGoal":{
+          "uri": "model/pregoals.json",
+          "type": "JSON"
+        }
     }
   },
   "sap.ui": {
@@ -70,6 +75,14 @@
           "autoExpandSelect": true,
           "earlyRequests": true
         }
+      },
+      "PreDefineGoals": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "PreDefineGoal"
+      },
+      "CustomData":{
+        "type": "sap.ui.model.json.JSONModel"
+
       }
     },
     "resources": {
@@ -100,7 +113,7 @@
           ]
         },
         {
-          "name": "apprisalDetail",  
+          "name": "apprisalDetail",
           "pattern": "index={index}&appID={appId}",
           "target": [
             "TargetApprisalDetail"
@@ -115,7 +128,6 @@
         "TargetApprisalDetail": {
           "id": "Detail",
           "name": "Detail"
-
         }
       }
     },

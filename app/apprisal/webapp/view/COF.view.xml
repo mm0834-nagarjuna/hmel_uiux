@@ -28,7 +28,7 @@
                             <Button
                                 text="Predefined Section"
                                 type="Transparent"
-                                press="onItemSelect"
+                                press="onPreviousYearIG3"
                             />
                             <Button
                                 text="New Section"

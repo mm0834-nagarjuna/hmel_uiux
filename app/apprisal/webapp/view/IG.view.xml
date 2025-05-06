@@ -28,7 +28,7 @@
                             <Button
                                 text="Previous Year Section"
                                 type="Transparent"
-                                press="onPreviousYearIG"
+                                press="onPreviousYearIG3"
                             >
                                 <customData>
                                     <core:CustomData
