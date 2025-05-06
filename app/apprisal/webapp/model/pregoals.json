@@ -39,5 +39,23 @@
       "ig_kpi_value": "Task Completion Rate",
       "ig_target_value": "≥ 95% Monthly"
     }
+  ],
+  "bce":[
+    {
+      "COMP_DESC": "Adapts to Uncertainty",
+      "INDICATORS": "Finds opportunities inherent even in uncertain situations and guides the organization to capitalize on them.",
+      "COMP_DEF": "OPERATING EFFECTIVELY, EVEN WHEN THINGS ARE NOT CERTAIN OR THE WAY FORWARD IS NOT CLEAR."
+    },
+    {
+      "COMP_DESC": "Collaborates",
+      "INDICATORS": "Builds a culture of collaboration and teamwork among multiple stakeholders and leads conflict resolution constructively.",
+      "COMP_DEF": "BUILDING PARTNERSHIPS AND WORKING COLLABORATIVELY WITH OTHERS TO MEET SHARED OBJECTIVES."
+    },
+    {
+      "COMP_DESC": "Develops Self and Effective Teams",
+      "INDICATORS": "Builds a leadership team that drives the goals and success of HMEL in a way to strengthen collaborative working",
+      "COMP_DEF": "DEVELOPING SELF AND BUILDING CAPABLE TEAMS THAT APPLY THEIR SKILLS AND PERSPECTIVES TO ACHIEVE COMMON GOALS."
+    }
   ]
+  
 }
