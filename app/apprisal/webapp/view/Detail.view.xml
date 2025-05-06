@@ -113,7 +113,7 @@
                             text="Appraiser/Reviewer/HOD Scorecard"
                             icon="sap-icon://map-2"
                             selectable="true"
-                            key="Appraiser/Reviewer/HOD Scorecard"
+                            key="apprisal.view.Scorecard"
                         />
                         <tnt:NavigationListItem
                             text="Summary"
@@ -145,7 +145,10 @@
             </Page>
         </masterPages>
         <detailPages>
-        
+            <mvc:XMLView
+                viewName="apprisal.view.Scorecard"
+                id="apprisal.view.Scorecard"
+            />
             <mvc:XMLView
                 viewName="apprisal.view.Cof"
                 id="apprisal.view.Cof"

@@ -1,0 +1,295 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:uxap="sap.uxap"
+	xmlns="sap.m"
+    height="100%">
+	<uxap:ObjectPageLayout  upperCaseAnchorBar="false" useIconTabBar="true">
+		<uxap:layoutData>
+			<FlexItemData growFactor="1" />
+		</uxap:layoutData>
+		<uxap:sections>
+			<uxap:ObjectPageSection titleUppercase="false" title="Appraiser">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="Appraiser" titleUppercase="false" showTitle="false">
+						<OverflowToolbar>
+								<Title text="Scorecard of Kushagra Verma 100682"/>
+						</OverflowToolbar>
+					</uxap:ObjectPageSubSection>
+					<uxap:ObjectPageSubSection title="Common Organizational Goals" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<Title text="Common Organizational Goals"/>
+							<Table 
+								items="{
+									path : 'PreDefineGoal>/Scorecard/Appraiser/Common_Organization_Goals'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="Key Strategic Priority - Key Results Area" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Key Performance Index" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Target" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Weightage" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Text text="{PreDefineGoal>Key_Results_Area}" />
+											<Text text="{PreDefineGoal>Key_Performance_Index}" />
+											<Text text="{PreDefineGoal>Target}" />
+											<Text text="{PreDefineGoal>No. of days}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+					<uxap:ObjectPageSubSection title="Individual Goals" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<Title text="Individual Goals"/>
+							<Table 
+								items="{
+									path : 'PreDefineGoal>/Scorecard/Appraiser/Common_Organization_Goals'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="Key Strategic Priority - Key Results Area" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Key Performance Index" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Target" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Weightage" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Text text="{PreDefineGoal>Key_Results_Area}" />
+											<Text text="{PreDefineGoal>Key_Performance_Index}" />
+											<Text text="{PreDefineGoal>Target}" />
+											<Text text="{PreDefineGoal>No. of days}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<uxap:ObjectPageSection titleUppercase="false" title="Reviewer">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="Reviewer" titleUppercase="false" showTitle="false">
+						<OverflowToolbar>
+								<Title text="Scorecard of Kushagra Verma 100682"/>
+						</OverflowToolbar>
+					</uxap:ObjectPageSubSection>
+					<uxap:ObjectPageSubSection title="Common Organizational Goals" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<Title text="Common Organizational Goals"/>
+							<Table 
+								items="{
+									path : 'PreDefineGoal>/Scorecard/Reviewer/Common_Organization_Goals'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="Key Strategic Priority - Key Results Area" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Key Performance Index" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Target" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Weightage" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Text text="{PreDefineGoal>Key_Results_Area}" />
+											<Text text="{PreDefineGoal>Key_Performance_Index}" />
+											<Text text="{PreDefineGoal>Target}" />
+											<Text text="{PreDefineGoal>No. of days}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+					<uxap:ObjectPageSubSection title="Individual Goals" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<Title text="Individual Goals"/>
+							<Table 
+								items="{
+									path : 'PreDefineGoal>/Scorecard/Appraiser/Common_Organization_Goals'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="Key Strategic Priority - Key Results Area" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Key Performance Index" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Target" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Weightage" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Text text="{PreDefineGoal>Key_Results_Area}" />
+											<Text text="{PreDefineGoal>Key_Performance_Index}" />
+											<Text text="{PreDefineGoal>Target}" />
+											<Text text="{PreDefineGoal>No. of days}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+			<uxap:ObjectPageSection titleUppercase="false" title="HOD">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection title="HOD" titleUppercase="false" showTitle="false">
+						<OverflowToolbar>
+								<Title text="Scorecard of Kushagra Verma 100682"/>
+						</OverflowToolbar>
+					</uxap:ObjectPageSubSection>
+					<uxap:ObjectPageSubSection title="Common Organizational Goals" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<Title text="Common Organizational Goals"/>
+							<Table 
+								items="{
+									path : 'PreDefineGoal>/Scorecard/HOD/Common_Organization_Goals'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="Key Strategic Priority - Key Results Area" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Key Performance Index" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Target" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Weightage" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Text text="{PreDefineGoal>Key_Results_Area}" />
+											<Text text="{PreDefineGoal>Key_Performance_Index}" />
+											<Text text="{PreDefineGoal>Target}" />
+											<Text text="{PreDefineGoal>No. of days}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+					<uxap:ObjectPageSubSection title="Individual Goals" titleUppercase="false" showTitle="false">
+						<VBox  class="sapUiLargeMarginBottom">
+							<Title text="Individual Goals"/>
+							<Table 
+								items="{
+									path : 'PreDefineGoal>/Scorecard/Appraiser/Common_Organization_Goals'
+								}">
+								<columns>
+									<Column>
+										<header>
+											<Text text="Key Strategic Priority - Key Results Area" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Key Performance Index" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Target" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Weightage" />
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem vAlign="Top">
+										<cells>
+											<Text text="{PreDefineGoal>Key_Results_Area}" />
+											<Text text="{PreDefineGoal>Key_Performance_Index}" />
+											<Text text="{PreDefineGoal>Target}" />
+											<Text text="{PreDefineGoal>No. of days}" />
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+			
+		</uxap:sections>
+	</uxap:ObjectPageLayout>
+</mvc:View>
