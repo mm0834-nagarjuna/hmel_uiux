@@ -146,6 +146,18 @@
         "R2_Achievements": "",
         "Annual_Achievements": ""
       }
-    ]    
+    ],
+    "Other_Dev_Area":[
+      {
+        "Appraisee": "Requested training on advanced Excel skills for data analysis",
+        "Status": "",
+        "Appraiser": ""
+      },
+      {
+        "Appraisee": "Requested participation in a leadership development workshop",
+        "Status": "",
+        "Appraiser": ""
+      }
+    ]
   }
 }
