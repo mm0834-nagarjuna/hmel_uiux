@@ -178,30 +178,34 @@
       }
     ]
   },
-  "Scorecard":{
+  "Scorecard": {
     "Appraiser": {
       "Common_Organization_Goals": [
         {
           "Key_Results_Area": "Ensure compliance with new safety standards",
           "Key_Performance_Index": "Number of safety audits passed",
-          "Target": "100% audit pass rate"
+          "Target": "100% audit pass rate",
+          "Weightage": "10%"
         },
         {
           "Key_Results_Area": "Improve interdepartmental collaboration",
           "Key_Performance_Index": "Number of joint department initiatives",
-          "Target": "Initiate 3 cross-functional projects"
+          "Target": "Initiate 3 cross-functional projects",
+          "Weightage": "8%"
         }
       ],
       "Individual_Goals": [
         {
           "Key_Results_Area": "Complete advanced SAP training",
           "Key_Performance_Index": "Training completion and certification",
-          "Target": "Certified by Q3"
+          "Target": "Certified by Q3",
+          "Weightage": "12%"
         },
         {
           "Key_Results_Area": "Reduce manual data entry errors",
           "Key_Performance_Index": "Error rate in submitted reports",
-          "Target": "Less than 2% error rate"
+          "Target": "Less than 2% error rate",
+          "Weightage": "9%"
         }
       ]
     },
@@ -210,24 +214,28 @@
         {
           "Key_Results_Area": "Optimize resource utilization",
           "Key_Performance_Index": "Resource utilization efficiency",
-          "Target": "Improve by 15% from last year"
+          "Target": "Improve by 15% from last year",
+          "Weightage": "11%"
         },
         {
           "Key_Results_Area": "Enhance employee engagement",
           "Key_Performance_Index": "Employee engagement survey score",
-          "Target": "Achieve 85% positive response rate"
+          "Target": "Achieve 85% positive response rate",
+          "Weightage": "7%"
         }
       ],
       "Individual_Goals": [
         {
           "Key_Results_Area": "Lead monthly knowledge sharing sessions",
           "Key_Performance_Index": "Number of sessions conducted",
-          "Target": "At least 6 sessions annually"
+          "Target": "At least 6 sessions annually",
+          "Weightage": "10%"
         },
         {
           "Key_Results_Area": "Implement automated dashboard for reporting",
           "Key_Performance_Index": "Timeliness and accuracy of reports",
-          "Target": "Live dashboard by end of Q2"
+          "Target": "Live dashboard by end of Q2",
+          "Weightage": "14%"
         }
       ]
     },
@@ -236,26 +244,30 @@
         {
           "Key_Results_Area": "Strengthen data security practices",
           "Key_Performance_Index": "Number of incidents reported",
-          "Target": "Zero security breaches"
+          "Target": "Zero security breaches",
+          "Weightage": "13%"
         },
         {
           "Key_Results_Area": "Increase sustainability practices",
           "Key_Performance_Index": "Reduction in paper usage",
-          "Target": "Reduce paper usage by 25%"
+          "Target": "Reduce paper usage by 25%",
+          "Weightage": "9%"
         }
       ],
       "Individual_Goals": [
         {
           "Key_Results_Area": "Mentor junior team members",
           "Key_Performance_Index": "Number of mentorship hours logged",
-          "Target": "20+ hours of mentorship"
+          "Target": "20+ hours of mentorship",
+          "Weightage": "8%"
         },
         {
           "Key_Results_Area": "Contribute to department whitepaper",
           "Key_Performance_Index": "Completion and quality of contribution",
-          "Target": "Submit draft by Q3"
+          "Target": "Submit draft by Q3",
+          "Weightage": "6%"
         }
       ]
     }
-  }  
+  }
 }
