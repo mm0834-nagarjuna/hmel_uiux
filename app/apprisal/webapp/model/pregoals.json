@@ -56,6 +56,27 @@
       "INDICATORS": "Builds a leadership team that drives the goals and success of HMEL in a way to strengthen collaborative working",
       "COMP_DEF": "DEVELOPING SELF AND BUILDING CAPABLE TEAMS THAT APPLY THEIR SKILLS AND PERSPECTIVES TO ACHIEVE COMMON GOALS."
     }
-  ]
-  
+  ],
+  "IDP": {
+    "trainings_attended": [
+      {
+        "S.N.": 1,
+        "Training Name": "Effective Communication Skills",
+        "Description": "A training focused on improving verbal and non-verbal communication within teams.",
+        "No. of days": 2
+      },
+      {
+        "S.N.": 2,
+        "Training Name": "Agile Project Management",
+        "Description": "Workshop on Agile methodologies including Scrum and Kanban frameworks.",
+        "No. of days": 3
+      },
+      {
+        "S.N.": 3,
+        "Training Name": "Advanced Excel for Analysts",
+        "Description": "Hands-on training on Excel functions, pivot tables, and data visualization techniques.",
+        "No. of days": 1
+      }
+    ]
+  }
 }
