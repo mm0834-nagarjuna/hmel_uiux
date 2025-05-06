@@ -73,5 +73,45 @@ sap.ui.define([
             }
             return apStatusName || apStatusSubName || ""; 
         },
+
+//Opens Dialog for previous year IG
+        onPreviousYearIG: function () {
+            var aItems = [
+                { key: "KRA", text: "Key Result Area" },
+                { key: "KPA", text: "Key Performance Area" },
+                { key: "Target", text: "Target" }
+            ];
+        
+            var oModel = new sap.ui.model.json.JSONModel({ items: aItems });
+            var oDialog = new sap.m.SelectDialog({
+                title: "Select an Item",
+                items: {
+                    path: "/items",
+                    template: new sap.m.StandardListItem({
+                        title: "{text}"
+                    })
+                },
+                search: function (oEvent) {
+                    var sValue = oEvent.getParameter("value");
+                    var oFilter = new sap.ui.model.Filter("text", sap.ui.model.FilterOperator.Contains, sValue);
+                    oDialog.getBinding("items").filter([oFilter]);
+                },
+                confirm: function (oEvent) {
+                    var oSelectedItem = oEvent.getParameter("selectedItem");
+                    if (oSelectedItem) {
+                        sap.ui.getCore().byId("selectedItemInput").setValue(oSelectedItem.getTitle());
+                    }
+                },
+                cancel: function () {
+                    oDialog.destroy(); // Clean up
+                }
+            });
+        
+            oDialog.setModel(oModel);
+            oDialog.open();
+        }
+        
+
+
     });
 });

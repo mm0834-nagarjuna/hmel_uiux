@@ -1,6 +1,6 @@
 <mvc:View
     controllerName="apprisal.controller.Detail"
-	xmlns:core="sap.ui.core"
+    xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:uxap="sap.uxap"
     xmlns="sap.m"
@@ -26,10 +26,17 @@
                         <OverflowToolbar>
                             <ToolbarSpacer />
                             <Button
-                                text="Predefined Section"
+                                text="Previous Year Section"
                                 type="Transparent"
-                                press="onItemSelect"
-                            />
+                                press="onPreviousYearIG"
+                            >
+                                <customData>
+                                    <core:CustomData
+                                        key="multi"
+                                        value="true"
+                                    />
+                                </customData>
+                            </Button>
                             <Button
                                 text="New Section"
                                 type="Transparent"
@@ -51,12 +58,18 @@
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
-                            <HBox justifyContent="End" alignItems="Center" >
+                            <HBox
+                                justifyContent="End"
+                                alignItems="Center"
+                            >
                                 <Label
                                     text="Weightage(%):"
                                     labelFor="COF_11_WEIGTAGE"
                                 />
-                                <ComboBox items="{/numbers}" value="5">
+                                <ComboBox
+                                    items="{/numbers}"
+                                    value="5"
+                                >
                                     <core:Item
                                         key="{key}"
                                         text="{text}"
@@ -65,32 +78,36 @@
                             </HBox>
                             <Label
                                 text="Key Strategic Priority - Key Results Area"
-								class="sapUiSmallMarginTop"
+                                class="sapUiSmallMarginTop"
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ksp_value}"
+                                value="{apprisalData>ig_ksp_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>ksp_edit}"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_ksp_edit}"
                             />
-                            <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
+                            <Label
+                                text="Key Performance Index"
+                                class="sapUiSmallMarginTop"
+                            />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>kpi_value}"
+                                value="{apprisalData>ig_kpi_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>kpi_edit}"
-
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_kpi_edit}"
                             />
-                            <Label text="Target" class="sapUiSmallMarginTop"/>
+                            <Label
+                                text="Target"
+                                class="sapUiSmallMarginTop"
+                            />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>target_value}"
+                                value="{apprisalData>ig_target_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>target_edit}"
-
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
                             />
                         </VBox>
                     </uxap:ObjectPageSubSection>
@@ -103,12 +120,18 @@
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
-                            <HBox justifyContent="End" alignItems="Center" >
+                            <HBox
+                                justifyContent="End"
+                                alignItems="Center"
+                            >
                                 <Label
                                     text="Weightage(%):"
                                     labelFor="COF_11_WEIGTAGE"
                                 />
-                                <ComboBox items="{/numbers}" value="5">
+                                <ComboBox
+                                    items="{/numbers}"
+                                    value="5"
+                                >
                                     <core:Item
                                         key="{key}"
                                         text="{text}"
@@ -117,32 +140,36 @@
                             </HBox>
                             <Label
                                 text="Key Strategic Priority - Key Results Area"
-								class="sapUiSmallMarginTop"
+                                class="sapUiSmallMarginTop"
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ksp_value}"
+                                value="{apprisalData>ig_ksp_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>ksp_edit}"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_ksp_edit}"
                             />
-                            <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
+                            <Label
+                                text="Key Performance Index"
+                                class="sapUiSmallMarginTop"
+                            />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>kpi_value}"
+                                value="{apprisalData>ig_kpi_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>kpi_edit}"
-
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_kpi_edit}"
                             />
-                            <Label text="Target" class="sapUiSmallMarginTop"/>
+                            <Label
+                                text="Target"
+                                class="sapUiSmallMarginTop"
+                            />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>target_value}"
+                                value="{apprisalData>ig_target_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>target_edit}"
-
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
                             />
                         </VBox>
                     </uxap:ObjectPageSubSection>
@@ -155,12 +182,18 @@
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
-                            <HBox justifyContent="End" alignItems="Center" >
+                            <HBox
+                                justifyContent="End"
+                                alignItems="Center"
+                            >
                                 <Label
                                     text="Weightage(%):"
                                     labelFor="COF_11_WEIGTAGE"
                                 />
-                                <ComboBox items="{/numbers}" value="5">
+                                <ComboBox
+                                    items="{/numbers}"
+                                    value="5"
+                                >
                                     <core:Item
                                         key="{key}"
                                         text="{text}"
@@ -169,38 +202,41 @@
                             </HBox>
                             <Label
                                 text="Key Strategic Priority - Key Results Area"
-								class="sapUiSmallMarginTop"
+                                class="sapUiSmallMarginTop"
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ksp_value}"
+                                value="{apprisalData>ig_ksp_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>ksp_edit}"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_ksp_edit}"
                             />
-                            <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
+                            <Label
+                                text="Key Performance Index"
+                                class="sapUiSmallMarginTop"
+                            />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>kpi_value}"
+                                value="{apprisalData>ig_kpi_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>kpi_edit}"
-
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_kpi_edit}"
                             />
-                            <Label text="Target" class="sapUiSmallMarginTop"/>
+                            <Label
+                                text="Target"
+                                class="sapUiSmallMarginTop"
+                            />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>target_value}"
+                                value="{apprisalData>ig_target_value}"
                                 growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>target_edit}"
-
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
                             />
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
-
         </uxap:sections>
     </uxap:ObjectPageLayout>
 </mvc:View>

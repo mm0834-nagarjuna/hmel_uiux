@@ -1,0 +1,1 @@
+ig_ksp_value,ig_ksp_visible,ig_ksp_edit,ig_kpi_value,ig_kpi_visible,ig_kpi_edit,ig_target_value,ig_target_visible,ig_target_edit

@@ -69,27 +69,27 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ksp_value}"
+                                value="{apprisalData>co_ksp_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>ksp_edit}"
+								editable="{apprisalData>co_ksp_edit}"
                             />
                             <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>kpi_value}"
+                                value="{apprisalData>co_kpi_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>kpi_edit}"
+								editable="{apprisalData>co_kpi_edit}"
 
                             />
                             <Label text="Target" class="sapUiSmallMarginTop"/>
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>target_value}"
+                                value="{apprisalData>co_target_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>target_edit}"
+								editable="{apprisalData>co_target_edit}"
 
                             />
                         </VBox>
@@ -121,27 +121,27 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ksp_value}"
+                                value="{apprisalData>co_ksp_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>ksp_edit}"
+								editable="{apprisalData>co_ksp_edit}"
                             />
                             <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>kpi_value}"
+                                value="{apprisalData>co_kpi_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>kpi_edit}"
+								editable="{apprisalData>co_kpi_edit}"
 
                             />
                             <Label text="Target" class="sapUiSmallMarginTop"/>
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>target_value}"
+                                value="{apprisalData>co_target_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>target_edit}"
+								editable="{apprisalData>co_target_edit}"
 
                             />
                         </VBox>
@@ -173,27 +173,27 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ksp_value}"
+                                value="{apprisalData>co_ksp_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>ksp_edit}"
+								editable="{apprisalData>co_ksp_edit}"
                             />
                             <Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>kpi_value}"
+                                value="{apprisalData>co_kpi_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>kpi_edit}"
+								editable="{apprisalData>co_kpi_edit}"
 
                             />
                             <Label text="Target" class="sapUiSmallMarginTop"/>
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>target_value}"
+                                value="{apprisalData>co_target_value}"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>target_edit}"
+								editable="{apprisalData>co_target_edit}"
 
                             />
                         </VBox>
