@@ -49,6 +49,9 @@
                 state="Warning"
             />
         </HBox>
+
+       
+
     </VBox>
 
     <SplitContainer
@@ -61,6 +64,7 @@
             <Page
                 id="detailDetail"
                 navButtonPress=".onPressDetailBack"
+                
             >
                 <customHeader>
                     <OverflowToolbar>
@@ -97,7 +101,7 @@
                             text="Behavioral Competency Framework"
                             icon="sap-icon://map-2"
                             selectable="true"
-                            key="project1.view.BCF"
+                            key="apprisal.view.Bcf"
                         />
                         <tnt:NavigationListItem
                             text="Individual Development Plan"
@@ -131,6 +135,13 @@
                         </tnt:NavigationListItem>
                     </tnt:NavigationList>
                 </tnt:SideNavigation>
+                <footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Accept"/>
+				<Button type="Reject" text="Reject"/>
+			</OverflowToolbar>
+		</footer>
             </Page>
         </masterPages>
         <detailPages>
@@ -143,11 +154,16 @@
                 id="apprisal.view.IG"
             />
             <mvc:XMLView
-                viewName="apprisal.view.BCF"
-                id="apprisal.view.BCF"
+                viewName="apprisal.view.Bcf"
+                id="apprisal.view.Bcf"
             />
         </detailPages>
     </SplitContainer>
+    <OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Accept"/>
+				<Button type="Reject" text="Reject"/>
+			</OverflowToolbar>
 </mvc:View>
 
 

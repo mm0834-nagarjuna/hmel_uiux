@@ -10,12 +10,12 @@
 		items="{
 			path : 'PreDefineGoal>/cof_goals'
 		}">
-		<ColumnListItem vAlign="Middle">
+		<ColumnListItem vAlign="Top">
 			<cells>
 				<Text text="{PreDefineGoal>KRA}" />
 				<Text text="{PreDefineGoal>KPI}" />
 				<Text text="{PreDefineGoal>Target}" />
-				<Text text="{PreDefineGoal>KRA}" />
+				<Text text="{PreDefineGoal>Weightage}" />
 			</cells>
 		</ColumnListItem>
 		<columns>

@@ -7,7 +7,7 @@
     xmlns:tnt="sap.tnt"
     xmlns:blockcolor="project1.SharedBlocks"
     xmlns:l="sap.ui.layout"
-    height="100%"
+    height="90%"
 >
     <uxap:ObjectPageLayout
         upperCaseAnchorBar="false"
@@ -221,5 +221,18 @@
             </uxap:ObjectPageSection>
 
         </uxap:sections>
+        <uxap:footer>
+            <Toolbar>
+                 <MessageStrip
+				text="Error with link"
+				type="Error">
+				<link>
+					<Link text="Open SAP Homepage"
+						target="_blank"
+						href="http://www.sap.com" />
+				</link>
+			</MessageStrip>
+            </Toolbar>
+        </uxap:footer>
     </uxap:ObjectPageLayout>
 </mvc:View>
