@@ -23,7 +23,7 @@
                         titleUppercase="false"
                         showTitle="false"
                         >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Section Scores" />
                             </OverflowToolbar>
@@ -92,7 +92,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="360 Degree Score Report" />
                             </OverflowToolbar>
@@ -139,7 +139,7 @@
                         titleUppercase="false"
                         showTitle="false"
                         >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Overall Score" />
                             </OverflowToolbar>

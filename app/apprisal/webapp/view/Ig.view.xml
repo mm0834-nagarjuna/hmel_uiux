@@ -1,244 +1,524 @@
 <mvc:View
     controllerName="apprisal.controller.Ig"
-	xmlns:core="sap.ui.core"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:uxap="sap.uxap"
-	xmlns="sap.m"
-	xmlns:tnt="sap.tnt"
-	xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:uxap="sap.uxap"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    xmlns:l="sap.ui.layout"
     height="90%"
 >
-	<uxap:ObjectPageLayout
+    <uxap:ObjectPageLayout
         upperCaseAnchorBar="false"
         showFooter="true"
     >
-		<uxap:layoutData>
-			<FlexItemData growFactor="1" />
-		</uxap:layoutData>
-		<uxap:sections>
-			<uxap:ObjectPageSection>
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection
+        <uxap:layoutData>
+            <FlexItemData growFactor="1" />
+        </uxap:layoutData>
+        <uxap:sections>
+            <uxap:ObjectPageSection>
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="Individual Goal"
                     >
-						<OverflowToolbar class="mvnObjectPageLayoutTitleOverflowToolbar">
-							<ToolbarSpacer />
-							<Button
+                        <OverflowToolbar
+                            class="mvnObjectPageLayoutTitleOverflowToolbar"
+                        >
+                            <ToolbarSpacer />
+                            <Button
                                 text="Previous Year"
                                 type="Ghost"
                                 press="onClickPreviousYear"
-                            ></Button>
-							<Button
+                            />
+                            <Button
                                 text="New"
                                 type="Ghost"
                                 press="onItemSelect"
                             />
-                            <MenuButton text="Upload/Download" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen">
+                            <MenuButton
+                                text="Upload/Download"
+                                buttonMode="Split"
+                                defaultAction="onDefaultAction"
+                                beforeMenuOpen="onBeforeMenuOpen"
+                            >
                                 <menu>
                                     <Menu itemSelected="onMenuAction">
-                                        <MenuItem text="Upload" icon="sap-icon://upload" />
-                                        <MenuItem text="Download Template" icon="sap-icon://download" />
+                                        <MenuItem
+                                            text="Upload"
+                                            icon="sap-icon://upload"
+                                        />
+                                        <MenuItem
+                                            text="Download Template"
+                                            icon="sap-icon://download"
+                                        />
                                     </Menu>
                                 </menu>
                             </MenuButton>
-						</OverflowToolbar>
-						<!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection
+                        </OverflowToolbar>
+                        <!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection
                 titleUppercase="false"
                 title="1"
                 showTitle="false"
-            >
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false">
-						<VBox>
+             >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
                             <OverflowToolbar>
-								<Title text="1 Key Performance Area"/>
-								<ToolbarSpacer />
-							</OverflowToolbar>
-							<HBox alignItems="Center" class="sapUiSmallMarginTop">
-								<Label
-                                    text="Weightage(%):"
-                                    labelFor="COF_11_WEIGTAGE"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="5"
+                                <Title text="1 Key Performance Area" />
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+                            <HBox
+                                alignItems="End"
+                                justifyContent="End"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <HBox >
+                                    <Input value="4" class="sapUiSmallMarginEnd" />
+                                    <Button icon="sap-icon://hint" type="Transparent"/>
+                                </HBox>
+                                <HBox
+                                    class="sapUiSmallMarginBegin"
+                                    alignItems="Center"
                                 >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
+                                    <Label
+                                        text="Weightage(%):"
+                                        labelFor="COF_11_WEIGTAGE"
                                     />
-								</ComboBox>
-							</HBox>
-							<Label
+                                    <ComboBox
+                                        items="{/numbers}"
+                                        value="5"
+                                    >
+                                        <core:Item
+                                            key="{key}"
+                                            text="{text}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
+                            </HBox>
+                            <Label
                                 text="Key Strategic Priority - Key Results Area"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_ksp_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_ksp_edit}"
                             />
-							<Label
+                            <Label
                                 text="Key Performance Index"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_kpi_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_kpi_edit}"
                             />
-							<Label
+                            <Label
                                 text="Target"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_target_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_target_edit}"
                             />
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection
+                            <Label
+                                text="First Four Monthly Achievement:Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="First Four Monthly Achievement:Appraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="First Four Monthly Feedback:Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="First Four Monthly Feedback:Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Second Four Monthly AchievementAppraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Second Four Monthly AchievementAppraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Second Four Monthly Feedback:Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Second Four Monthly Feedback:Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Annual Achievement-Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Annual Achievement-Appraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Annual Feedback-Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Annual Feedback-Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Score- Self Appraisal:"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <Input value="4" />
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection
                 titleUppercase="false"
                 title="2"
                 showTitle="false"
-            >
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false">
-						<VBox>
+             >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
                             <OverflowToolbar>
-								<Title text="2 Key Performance Area"/>
-								<ToolbarSpacer />
-							</OverflowToolbar>
-							<HBox alignItems="Center" class="sapUiSmallMarginTop">
-								<Label
-                                    text="Weightage(%):"
-                                    labelFor="COF_11_WEIGTAGE"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="5"
+                                <Title text="2 Key Performance Area" />
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+                            <HBox
+                                alignItems="End"
+                                justifyContent="End"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <HBox >
+                                    <Input value="4" class="sapUiSmallMarginEnd" />
+                                    <Button icon="sap-icon://hint" type="Transparent"/>
+                                </HBox>
+                                <HBox
+                                    class="sapUiSmallMarginBegin"
+                                    alignItems="Center"
                                 >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
+                                    <Label
+                                        text="Weightage(%):"
+                                        labelFor="COF_11_WEIGTAGE"
                                     />
-								</ComboBox>
-							</HBox>
-							<Label
+                                    <ComboBox
+                                        items="{/numbers}"
+                                        value="5"
+                                    >
+                                        <core:Item
+                                            key="{key}"
+                                            text="{text}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
+                            </HBox>
+                            <Label
                                 text="Key Strategic Priority - Key Results Area"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_ksp_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_ksp_edit}"
                             />
-							<Label
+                            <Label
                                 text="Key Performance Index"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_kpi_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_kpi_edit}"
                             />
-							<Label
+                            <Label
                                 text="Target"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_target_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_target_edit}"
                             />
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection
+                            <Label
+                                text="First Four Monthly Achievement:Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="First Four Monthly Achievement:Appraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="First Four Monthly Feedback:Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="First Four Monthly Feedback:Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Second Four Monthly AchievementAppraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Second Four Monthly AchievementAppraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Second Four Monthly Feedback:Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Second Four Monthly Feedback:Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Annual Achievement-Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Annual Achievement-Appraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Annual Feedback-Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Annual Feedback-Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Score- Self Appraisal:"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <Input value="4" />
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection
                 titleUppercase="false"
                 title="3"
                 showTitle="false"
-            >
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false">
-						<VBox>
+             >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
                             <OverflowToolbar>
-								<Title text="3 Key Performance Area"/>
-								<ToolbarSpacer />
-							</OverflowToolbar>
-							<HBox alignItems="Center" class="sapUiSmallMarginTop">
-								<Label
-                                    text="Weightage(%):"
-                                    labelFor="COF_11_WEIGTAGE"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="5"
+                                <Title text="3 Key Performance Area" />
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+                            <HBox
+                                alignItems="Center"
+                                justifyContent="End"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <HBox >
+                                    <Input value="4" class="sapUiSmallMarginEnd" />
+                                    <Button icon="sap-icon://hint" type="Transparent"/>
+                                </HBox>
+                                <HBox
+                                    class="sapUiSmallMarginBegin"
+                                    alignItems="Center"
                                 >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
+                                    <Label
+                                        text="Weightage(%):"
+                                        labelFor="COF_11_WEIGTAGE"
                                     />
-								</ComboBox>
-							</HBox>
-							<Label
+                                    <ComboBox
+                                        items="{/numbers}"
+                                        value="5"
+                                    >
+                                        <core:Item
+                                            key="{key}"
+                                            text="{text}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
+                            </HBox>
+                            <Label
                                 text="Key Strategic Priority - Key Results Area"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_ksp_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_ksp_edit}"
                             />
-							<Label
+                            <Label
                                 text="Key Performance Index"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_kpi_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_kpi_edit}"
                             />
-							<Label
+                            <Label
                                 text="Target"
                                 class="sapUiSmallMarginTop"
                             />
-							<TextArea
+                            <TextArea
                                 width="100%"
                                 value="{apprisalData>ig_target_value}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>ig_target_edit}"
                             />
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-		</uxap:sections>
-	</uxap:ObjectPageLayout>
+                            <Label
+                                text="First Four Monthly Achievement:Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="First Four Monthly Achievement:Appraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="First Four Monthly Feedback:Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="First Four Monthly Feedback:Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Second Four Monthly AchievementAppraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Second Four Monthly AchievementAppraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Second Four Monthly Feedback:Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Second Four Monthly Feedback:Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Annual Achievement-Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Annual Achievement-Appraisee"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <Label
+                                text="Annual Feedback-Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="Annual Feedback-Appraiser"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_target_edit}"
+                            />
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Score- Self Appraisal:"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <Input value="4" />
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
 </mvc:View>
