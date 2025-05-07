@@ -114,17 +114,22 @@
                             selectable="false"
                         >
 							<tnt:NavigationListItem
+                                text="Accomplishments"
+                                key="apprisal.view.Accomp"
+                            />
+							<tnt:NavigationListItem
                                 text="Overall Remarks"
                                 key="Overall Remarks"
+                            />
+							<tnt:NavigationListItem
+                                text="Acknowledgement"
+                                key="Acknowledgement"
                             />
 							<tnt:NavigationListItem
                                 text="Overall Score"
                                 key="Overall Score"
                             />
-							<tnt:NavigationListItem
-                                text="Accomplishments"
-                                key="Accomplishments"
-                            /></tnt:NavigationListItem>
+                        </tnt:NavigationListItem>
 					</tnt:NavigationList>
 				</tnt:SideNavigation>
 			</Page>
@@ -149,6 +154,10 @@
 			<mvc:XMLView
                 viewName="apprisal.view.Scorecard"
                 id="apprisal.view.Scorecard"
+            />
+			<mvc:XMLView
+                viewName="apprisal.view.Accomp"
+                id="apprisal.view.Accomp"
             />
 		</detailPages>
 	</SplitContainer>

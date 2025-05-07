@@ -1,0 +1,101 @@
+<mvc:View
+    controllerName="apprisal.controller.Ig"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:uxap="sap.uxap"
+	xmlns="sap.m"
+	xmlns:tnt="sap.tnt"
+	xmlns:l="sap.ui.layout"
+    height="90%"
+>
+	<uxap:ObjectPageLayout
+        upperCaseAnchorBar="false"
+        showFooter="true"
+    >
+		<uxap:layoutData>
+			<FlexItemData growFactor="1" />
+		</uxap:layoutData>
+		<uxap:sections>
+			<uxap:ObjectPageSection>
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection
+                        titleUppercase="false"
+                        title="Accomplishments"
+                    >
+						<OverflowToolbar class="mvnObjectPageLayoutTitleOverflowToolbar">
+							<ToolbarSpacer />
+                            <Button
+                                text="New"
+                                type="Ghost"
+                                press="onItemSelect"
+                            />
+                            <MenuButton text="Upload/Download" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen">
+                                <menu>
+                                    <Menu itemSelected="onMenuAction">
+                                        <MenuItem text="Upload" icon="sap-icon://upload" />
+                                        <MenuItem text="Download Template" icon="sap-icon://download" />
+                                    </Menu>
+                                </menu>
+                            </MenuButton>
+						</OverflowToolbar>
+						<!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+			<uxap:ObjectPageSection
+                titleUppercase="false"
+                title="1"
+                showTitle="false"
+            >
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection titleUppercase="false">
+						<VBox>
+                            <OverflowToolbar>
+								<Title text="1. Accomplishment"/>
+								<ToolbarSpacer />
+							</OverflowToolbar>
+							<Label
+                                text="Annual Achievement - Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+							<TextArea
+                                width="100%"
+                                value="{apprisalData>accomp1}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_ksp_edit}"
+                            />
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+			<uxap:ObjectPageSection
+                titleUppercase="false"
+                title="2"
+                showTitle="false"
+            >
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection titleUppercase="false">
+						<VBox>
+                            <OverflowToolbar>
+								<Title text="2. Accomplishment"/>
+								<ToolbarSpacer />
+							</OverflowToolbar>
+							<Label
+                                text="Annual Achievement - Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+							<TextArea
+                                width="100%"
+                                value="{apprisalData>accomp2}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>ig_ksp_edit}"
+                            />
+						</VBox>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+		</uxap:sections>
+	</uxap:ObjectPageLayout>
+</mvc:View>
