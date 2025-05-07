@@ -119,7 +119,7 @@
                             />
 							<tnt:NavigationListItem
                                 text="Overall Remarks"
-                                key="Overall Remarks"
+                                key="apprisal.view.OverallRemarks"
                             />
 							<tnt:NavigationListItem
                                 text="Acknowledgement"
@@ -158,6 +158,10 @@
 			<mvc:XMLView
                 viewName="apprisal.view.Accomp"
                 id="apprisal.view.Accomp"
+            />
+            <mvc:XMLView
+                viewName="apprisal.view.OverallRemarks"
+                id="apprisal.view.OverallRemarks"
             />
 			<mvc:XMLView
                 viewName="apprisal.view.Ack"

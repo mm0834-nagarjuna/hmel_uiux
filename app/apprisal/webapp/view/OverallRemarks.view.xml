@@ -1,0 +1,264 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="apprisal.controller.OveralScore"
+    xmlns:uxap="sap.uxap"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    height="90%"
+>
+    <uxap:ObjectPageLayout upperCaseAnchorBar="false">
+        <uxap:layoutData>
+            <FlexItemData growFactor="1" />
+        </uxap:layoutData>
+        <uxap:sections>
+            <uxap:ObjectPageSection>
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="First Four Monthly Remarks"
+                        titleUppercase="false"
+                        showTitle="false"
+                    >
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="First Four Monthly Remarks" />
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+
+                            <Label
+                                text="First Four Monthly Achievement:Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Appraisee_Achievement}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                            />
+                            <Label
+                                text="First Four Monthly Feedback:Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Appraiser_Feedback}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                            />
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Time Spent in overall PMS (Targets, Behavioural Competency, Individual Development Plan, Accomplishments) Discussion"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    items="{PreDefineGoal>/Overal_Remarks/0/Timeliness}"
+                                    selectedKey="35"
+                                >
+                                    <core:Item
+                                        key="{PreDefineGoal>key}"
+                                        text="{PreDefineGoal>text}"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Overall Performance Feedback Appraiser"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <Select
+                                    width="200px"
+                                    selectedKey="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Performance_First_Review}"
+                                    editable="false"
+                                >
+                                    <items>
+                                        <core:Item
+                                            key="Needs Improvement"
+                                            text="Needs Improvement"
+                                        />
+                                        <core:Item
+                                            key="Acceptable Performance"
+                                            text="Acceptable Performance"
+                                        />
+                                    </items>
+                                </Select>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Second Four Monthly Remarks"
+                showTitle="false"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Second Four Monthly Remarks"
+                        titleUppercase="false"
+                        showTitle="true"
+                    >
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="Second Four Monthly Remarks" />
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+
+                            <Label
+                                text="Second Four Monthly Achievement:Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraisee_Achievement}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                            />
+                            <Label
+                                text="Second Four Monthly Feedback:Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraiser_Feedback}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                            />
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Time Spent in overall PMS (Targets, Behavioural Competency, Individual Development Plan, Accomplishments) Discussion"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    items="{PreDefineGoal>/Overal_Remarks/0/Timeliness}"
+                                    selectedKey="35"
+                                >
+                                    <core:Item
+                                        key="{PreDefineGoal>key}"
+                                        text="{PreDefineGoal>text}"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Overall Performance Feedback Appraiser"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <Select
+                                    width="200px"
+                                    selectedKey="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Performance_Second_Review}"
+                                    editable="true"
+                                >
+                                    <items>
+                                        <core:Item
+                                            key="Needs Improvement"
+                                            text="Needs Improvement"
+                                        />
+                                        <core:Item
+                                            key="Acceptable Performance"
+                                            text="Acceptable Performance"
+                                        />
+                                    </items>
+                                </Select>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Annual Remarks"
+                showTitle="false"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Annual Overall Remarks"
+                        titleUppercase="false"
+                        showTitle="true"
+                    >
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="Annual Overall Remarks" />
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+
+                            <Label
+                                text=" Annual Achievement-Appraisee"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraisee_Achievement}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                            />
+                            <Label
+                                text="Annual Feedback-Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraiser_Feedback}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                            />
+                            <Label
+                                text="Annual Feedback- Reviewer"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                width="100%"
+                                value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraiser_Feedback}"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                            />
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Time Spent in overall PMS (Targets, Behavioural Competency, Individual Development Plan, Accomplishments) Discussion"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    items="{PreDefineGoal>/Overal_Remarks/0/Timeliness}"
+                                    selectedKey="35"
+                                >
+                                    <core:Item
+                                        key="{PreDefineGoal>key}"
+                                        text="{PreDefineGoal>text}"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Reviewer Score"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <Input
+                                    value="{PreDefineGoal>/Overal_Remarks/0/Annual_Remarks/0/Reviewer_Score}"
+                                />
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
+</mvc:View>

@@ -22,7 +22,7 @@ sap.ui.define([
                     { key: "9", text: "9" }
                 ]
             };
-            var oModel = new sap.ui.model.json.JSONModel(numberDropDown);
+            let oModel = new sap.ui.model.json.JSONModel(numberDropDown);
             this.getView().setModel(oModel);
         },
         onSideNavigationExpand(){

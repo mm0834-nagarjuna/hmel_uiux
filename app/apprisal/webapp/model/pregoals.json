@@ -329,5 +329,44 @@
       "Stage": "Annual Confirmation By Appraisee",
       "Status": "No"
     }
+  ],
+
+  "Overal_Remarks": [
+    {
+    "Timeliness": [
+      { "key": "15", "text": "15" },
+      { "key": "25", "text": "25" },
+      { "key": "35", "text": "35" },
+      { "key": "45", "text": "45" },
+      { "key": "55", "text": "55" },
+      { "key": "65", "text": "65" },
+      { "key": "75", "text": "75" },
+      { "key": "85", "text": "85" },
+      { "key": "95", "text": "95" }
+      ],
+      "First_Four_Monthly_Remarks":[
+      {
+        "Appraisee_Achievement" : "First Four Monthly Achievement:Appraisee",
+        "Appraiser_Feedback" : "First Four Monthly Feedback:Appraiser",
+        "Performance_First_Review" : "Acceptable Performance"
+      }
+    ],
+    "Second_Four_Monthly_Remarks":[
+      {
+        "Appraisee_Achievement" : "Second Four Monthly Achievement:Appraisee",
+        "Appraiser_Feedback" : "Second Four Monthly Feedback:Appraiser",
+        "Performance_Second_Review" : "Acceptable Performance"
+      }
+    ],
+    "Annual_Remarks":[
+      {
+        "Appraisee_Achievement" : "Annual Achievement:Appraisee",
+        "Appraiser_Feedback" : "Annual Feedback:Appraiser",
+        "Reviewer_Feedback" : "Annual Feedback:Reviewer",
+        "Reviewer_Score" : 4.3
+      }
+    ]
+    }
+    
   ]
 }

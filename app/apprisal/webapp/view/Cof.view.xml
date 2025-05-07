@@ -12,7 +12,7 @@
 	<uxap:ObjectPageLayout
         upperCaseAnchorBar="false"
         showFooter="true"
-    >
+     >
 		<uxap:layoutData>
 			<FlexItemData growFactor="1" />
 		</uxap:layoutData>
