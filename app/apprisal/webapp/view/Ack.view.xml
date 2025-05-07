@@ -35,10 +35,9 @@
                                             <Title text="{PreDefineGoal>Sno} . {PreDefineGoal>Stage}" />
                                             <ToolbarSpacer />
                                         </OverflowToolbar>
-                                        <HBox>
+                                        <HBox alignItems="Center">
                                             <Label
                                                 text="Are you satisfied with the discussion ?"
-                                                class="sapUiSmallMarginTop"
                                             />
                                             <MenuButton
                                                 text="{PreDefineGoal>Status}"
