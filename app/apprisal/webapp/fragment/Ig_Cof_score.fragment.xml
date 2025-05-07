@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        title="Value Description"
+        id="idScoreInfoDialog"
+        draggable="true"
+        resizable="true"
+        contentWidth="400px"
+        contentHeight="auto"
+        class="sapUiResponsivePadding">
+        
+        <Table
+            id="idProductsTable"
+            inset="false"
+            items="{
+                path: 'PreDefineGoal>/Ig_Cof_score'
+            }">
+            <columns>
+                <Column>
+                    <Text text="Evaluation" />
+                </Column>
+                <Column>
+                    <Text text="Value Description" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem
+                    vAlign="Middle"
+                    type="Inactive">
+                    <cells>
+                        <ObjectIdentifier title="{PreDefineGoal>Evaluation}" />
+                        <ObjectIdentifier title="{PreDefineGoal>Value_Description}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        <endButton>
+            <Button text="Close" press=".onClickCancel" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
