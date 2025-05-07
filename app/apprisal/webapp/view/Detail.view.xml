@@ -127,7 +127,7 @@
                             />
 							<tnt:NavigationListItem
                                 text="Overall Score"
-                                key="Overall Score"
+                                key="apprisal.view.OveralScore"
                             />
                         </tnt:NavigationListItem>
 					</tnt:NavigationList>
@@ -158,6 +158,10 @@
 			<mvc:XMLView
                 viewName="apprisal.view.Accomp"
                 id="apprisal.view.Accomp"
+            />
+            <mvc:XMLView
+                viewName="apprisal.view.OveralScore"
+                id="apprisal.view.OveralScore"
             />
 		</detailPages>
 	</SplitContainer>

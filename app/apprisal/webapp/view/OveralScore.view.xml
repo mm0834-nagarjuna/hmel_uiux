@@ -1,0 +1,195 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="apprisal.controller.OveralScore"
+    xmlns:uxap="sap.uxap"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    height="90%"
+>
+    <uxap:ObjectPageLayout upperCaseAnchorBar="false">
+        <uxap:layoutData>
+            <FlexItemData growFactor="1" />
+        </uxap:layoutData>
+        <uxap:sections>
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Score"
+                showTitle="false"
+                >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Section Scores"
+                        titleUppercase="false"
+                        showTitle="false"
+                        >
+                        <VBox class="sapUiLargeMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="Section Scores" />
+                            </OverflowToolbar>
+                            <Table
+                                id="sectionSecore"
+                                items="{
+									path : 'PreDefineGoal>/OverallScore/Section_Score'
+								}"
+                            >
+                                <columns>
+                                    <Column width="10rem">
+                                        <header>
+                                            <Text text="Sections" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraisee" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiser" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Reviewer" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>
+                                            <Text
+                                                text="{PreDefineGoal>Section}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Appraisee}"
+                                                editable="false"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Appraiser}"
+                                                editable="false"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Reviewer}"
+                                                editable="false"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Score"
+                showTitle="false"
+                >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="360 Degree Score Report"
+                        titleUppercase="false"
+                        showTitle="false"
+                    >
+                        <VBox class="sapUiLargeMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="360 Degree Score Report" />
+                            </OverflowToolbar>
+                            <Table id="360DegreeScore">
+                                <columns>
+                                    <Column width="10rem">
+                                        <header>
+                                            <Text text="Score" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Report Link" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem>
+                                        <cells>
+                                            <Text
+                                                text="{PreDefineGoal>/OverallScore/360_Degree_Score_Report/Score}"
+                                            />
+                                            <Link
+                                                text="{PreDefineGoal>/OverallScore/360_Degree_Score_Report/Report_Link}"
+                                                href="{PreDefineGoal>/OverallScore/360_Degree_Score_Report/Report_Link}"
+                                                target="_blank"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+             <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Score"
+                showTitle="false"
+                >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Section Scores"
+                        titleUppercase="false"
+                        showTitle="false"
+                        >
+                        <VBox class="sapUiLargeMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="Overall Score" />
+                            </OverflowToolbar>
+                            <Table
+                                id="overallSecore"
+                                items="{
+									path : 'PreDefineGoal>/OverallScore'
+								}"
+                            >
+                                <columns>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraisee" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiser" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Reviewer" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>
+                                            <Input
+                                                value="{PreDefineGoal>/OverallScore/Final_Score/Appraisee}"
+                                                editable="false"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>/OverallScore/Final_Score/Appraiser}"
+                                                editable="false"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>/OverallScore/Final_Score/Reviewer}"
+                                                editable="false"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
+</mvc:View>

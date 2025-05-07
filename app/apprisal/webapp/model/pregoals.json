@@ -273,25 +273,31 @@
   "OverallScore":{
     "Section_Score":[
       {
-        "Section": "KRA",
+        "Section": "Common Organizational / Functional Goal",
         "Appraisee": 5,
         "Appraiser": 3,
         "Reviewer": 4
       },
       {
-        "Section": "IDP",
+          "Section": "Individual Goal",
+          "Appraisee": 5,
+          "Appraiser": 3.5,
+          "Reviewer": 4
+      },
+      {
+        "Section": "Individual Development Plan",
         "Appraisee": 4,
         "Appraiser": 4,
         "Reviewer": 3.5
       },
       {
-        "Section": "BCF",
+        "Section": "Behavioral Competency",
         "Appraisee": 5,
         "Appraiser": 3.5,
         "Reviewer": 4.5
       }
     ],
-    "360 Degree Score & Report": {
+    "360_Degree_Score_Report": {
       "Score": 3,
       "Report_Link": "https://example.com/reports/EMP001-360-feedback"
     },
