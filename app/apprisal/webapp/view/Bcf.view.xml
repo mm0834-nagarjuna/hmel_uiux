@@ -53,6 +53,16 @@
 											<Text text="Definition" />
 										</header>
 									</Column>
+									<Column>
+										<header>
+											<Text text="Appraisee Score" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Appraiser Score" />
+										</header>
+									</Column>
 								</columns>
 								<items>
 									<ColumnListItem vAlign="Top">
@@ -61,6 +71,8 @@
 											<Text text="{PreDefineGoal>COMP_DESC}" />
 											<Text text="{PreDefineGoal>INDICATORS}" />
 											<Text text="{PreDefineGoal>COMP_DEF}" />
+											<Input value="{PreDefineGoal>Appraisee_Score}" type="Number" placeholder="Appraisee Score" />
+											<Input value="{PreDefineGoal>Appraisee_Score}" type="Number" placeholder="Appraisee Score" />
 										</cells>
 									</ColumnListItem>
 								</items>

@@ -117,7 +117,7 @@
 							<Label text="First Four Monthly Achievement : Appraisee" class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_target_value}"
+                                value="First Four Monthly Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
 								editable="{apprisalData>co_target_edit}"
@@ -125,7 +125,7 @@
 							<Label text="First Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_target_value}"
+                                value="First Four Monthly Achievement : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
 								editable="{apprisalData>co_target_edit}"
@@ -133,7 +133,7 @@
 							<Label text="Second Four Monthly Achievement : Appraisee" class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_target_value}"
+                                value="Second Four Monthly Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
 								editable="{apprisalData>co_target_edit}"
@@ -141,7 +141,7 @@
 							<Label text="Second Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_target_value}"
+                                value="Second Four Monthly Achievement : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
 								editable="{apprisalData>co_target_edit}"
@@ -149,7 +149,7 @@
 							<Label text="Annual Achievement : Appraisee" class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_target_value}"
+                                value="Annual Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
 								editable="{apprisalData>co_target_edit}"
@@ -157,13 +157,13 @@
 							<Label text="Annual Feedback : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_target_value}"
+                                value="Annual Feedback : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
 								editable="{apprisalData>co_target_edit}"
                             />
 							<HBox alignItems="Center">
-							<Label text="Score - Self Appraisal : Appraiser " />
+							<Label text="Score - Self Appraisal : Appraisee " />
 							<ComboBox items="{/numbers}" value="3">
 									<core:Item
                                         key="{key}"
@@ -181,6 +181,8 @@
                 titleUppercase="false"
                 title="2"
                 showTitle="false"
+				class="sapUiSmallMarginBottom"
+
             >
 				<uxap:subSections>
 					<uxap:ObjectPageSubSection titleUppercase="false">
@@ -190,6 +192,14 @@
 								<ToolbarSpacer />
 							</OverflowToolbar>
 							<HBox alignItems="Center" class="sapUiSmallMarginTop">
+							<Label text="Appraiser Score :" class="sapUiSmallMarginEnd"/>
+							<ComboBox items="{/numbers}" value="4">
+									<core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+								</ComboBox>
+								<Button icon="sap-icon://information" type="Transparent" press="onClickScoreInfo" ariaLabelledBy="actionButtonLabel" class="sapUiSmallMarginEnd"/>
 								<Label
                                     text="Weightage(%)"
                                     labelFor="COF_11_WEIGTAGE"
@@ -231,64 +241,68 @@
 								editable="{apprisalData>co_target_edit}"
 
                             />
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection
-                titleUppercase="false"
-                title="3"
-                showTitle="false"
-            >
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false">
-						<VBox>
-							<OverflowToolbar>
-								<Title text="3 Key Performance Area"/>
-								<ToolbarSpacer />
-							</OverflowToolbar>
-							<HBox alignItems="Center" class="sapUiSmallMarginTop">
-								<Label
-                                    text="Weightage(%)"
-                                    labelFor="COF_11_WEIGTAGE"
-                                    class="sapUiSmallMarginEnd"
-                                />
-								<ComboBox items="{/numbers}" value="5">
+
+<!--From here need to add values  -->
+
+							<Label text="First Four Monthly Achievement : Appraisee" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="First Four Monthly Achievement : Appraisee"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<Label text="First Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="First Four Monthly Achievement : Appraiser"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<Label text="Second Four Monthly Achievement : Appraisee" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="Second Four Monthly Achievement : Appraisee"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<Label text="Second Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="Second Four Monthly Achievement : Appraiser"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+							/>
+							<Label text="Annual Achievement : Appraisee" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="Annual Achievement : Appraisee"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<Label text="Annual Feedback : Appraiser" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="Annual Feedback : Appraiser"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<HBox alignItems="Center">
+							<Label text="Score - Self Appraisal : Appraisee " />
+							<ComboBox items="{/numbers}" value="3">
 									<core:Item
                                         key="{key}"
                                         text="{text}"
                                     />
 								</ComboBox>
+								<Button icon="sap-icon://information" type="Transparent" press="onClickScoreInfo" ariaLabelledBy="actionButtonLabel"/>
 							</HBox>
-							<Label
-                                text="Key Strategic Priority - Key Results Area"
-								class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="{apprisalData>co_ksp_value}"
-                                growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_ksp_edit}"
-                            />
-							<Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
-							<TextArea
-                                width="100%"
-                                value="{apprisalData>co_kpi_value}"
-                                growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_kpi_edit}"
 
-                            />
-							<Label text="Target" class="sapUiSmallMarginTop"/>
-							<TextArea
-                                width="100%"
-                                value="{apprisalData>co_target_value}"
-                                growing="true"
-								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
-
-                            />
 						</VBox>
 					</uxap:ObjectPageSubSection>
 				</uxap:subSections>

@@ -38,7 +38,7 @@
         </Table>
 
         <endButton>
-            <Button text="Close" press=".onClickCancel" />
+            <Button text="Close" press=".onClickCancelScoreInfo" />
         </endButton>
     </Dialog>
 </core:FragmentDefinition>

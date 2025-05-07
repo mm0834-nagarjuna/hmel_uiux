@@ -34,6 +34,9 @@ sap.ui.define([
                 oDialog.open();
             }.bind(this));
         },
+
+        // ----Function for calling Score Infor Dialog--------
+
         onClickScoreInfo: function (oEvent) {
             var oButton = oEvent.getSource(),
             oView = this.getView();
@@ -54,15 +57,12 @@ sap.ui.define([
                 oDialog.open();
             }.bind(this));
         },
-        onClickCancel: function () {
+        onClickCancelScoreInfo: function () {
             var oView = this.getView();
             var oDialog = oView.byId("idScoreInfoDialog");
             if (oDialog) {
                 oDialog.close();
             }
         }
-
-
-
     });
 });
