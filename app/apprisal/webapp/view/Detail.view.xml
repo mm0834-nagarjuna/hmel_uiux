@@ -1,179 +1,157 @@
 <mvc:View
     controllerName="apprisal.controller.Detail"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:core="sap.ui.core"
-    xmlns:uxap="sap.uxap"
-    xmlns="sap.m"
-    xmlns:tnt="sap.tnt"
-    xmlns:blockcolor="project1.SharedBlocks"
-    xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:uxap="sap.uxap"
+	xmlns="sap.m"
+	xmlns:tnt="sap.tnt"
+	xmlns:blockcolor="project1.SharedBlocks"
+	xmlns:l="sap.ui.layout"
     height="100%"
  >
-    <VBox>
-    
-    <!-- <Text text="{CustomData>/key}"/> -->
-
-        <Toolbar class="sapUiContentPadding">
-            <Title
+	<VBox>
+		<!-- <Text text="{CustomData>/key}"/> -->
+		<Toolbar class="sapUiContentPadding">
+			<Title
                 text="{apprisalData>appraisalName}"
                 level="H3"
             />
-            <ToolbarSpacer />
-            <Button text="Save" />
-            <Button text="Print" />
-        </Toolbar>
-        <HBox
+			<ToolbarSpacer />
+			<Button text="Save" />
+			<Button text="Print" />
+		</Toolbar>
+		<HBox
             backgroundDesign="Solid"
             columnGap="1rem"
             class="sapUiContentPadding"
         >
-            <ObjectStatus
+			<ObjectStatus
                 title="Employee ID"
                 text="{apprisalData>appraiseeId}"
             />
-            <ObjectStatus
+			<ObjectStatus
                 title="Employee Name"
                 text="{apprisalData>appraiseeName}"
             />
-            <ObjectStatus
+			<ObjectStatus
                 title="Department"
                 text="PI DFA GD Programs and Product"
             />
-            <ObjectStatus
+			<ObjectStatus
                 title="Email"
                 text="email@address.com"
             />
-            <ObjectStatus
+			<ObjectStatus
                 title="Status"
                 text="{parts: [{path: 'apprisalData>apStatusName'}, {path: 'apprisalData>apStatusSubName'}], formatter: '.formatStatusText'}"
                 state="Warning"
             />
-        </HBox>
-
-       
-
-    </VBox>
-
-    <SplitContainer
+		</HBox>
+	</VBox>
+	<SplitContainer
 
         id="SplitContDemo"
         initialDetail="apprisal.view.Idp"
         initialMaster="detailDetail"
     >
-        <masterPages>
-            <Page
+		<masterPages>
+			<Page
                 id="detailDetail"
                 navButtonPress=".onPressDetailBack"
                 
             >
-                <customHeader>
-                    <OverflowToolbar>
-                        <Button
+				<customHeader>
+					<OverflowToolbar>
+						<Button
                             icon="sap-icon://menu2"
                             type="Transparent"
                             press="onSideNavigationExpand"
                         />
-                    </OverflowToolbar>
-                </customHeader>
-                <tnt:SideNavigation
+					</OverflowToolbar>
+				</customHeader>
+				<tnt:SideNavigation
                     id="sideNavigation"
                     selectedKey="apprisal.view.Cof"
                     expanded="true"
                     class="mvnSideNavigation"
                     itemSelect="onSideNavigationItemSelect"
                 >
-                    <tnt:NavigationList>
-                        <tnt:NavigationListItem
+					<tnt:NavigationList>
+						<tnt:NavigationListItem
                             text="Goals"
                             icon="sap-icon://mileage"
                             selectable="false"
                         >
-                            <tnt:NavigationListItem
+							<tnt:NavigationListItem
                                 text="Common Organizational"
                                 key="apprisal.view.Cof"
                             />
-                            <tnt:NavigationListItem
+							<tnt:NavigationListItem
                                 text="Individual"
-                                key="apprisal.view.IG"
-                            />
-                        </tnt:NavigationListItem>
-                        <tnt:NavigationListItem
+                                key="apprisal.view.Ig"
+                            /></tnt:NavigationListItem>
+						<tnt:NavigationListItem
                             text="Behavioral Competency Framework"
                             icon="sap-icon://map-2"
                             selectable="true"
                             key="apprisal.view.Bcf"
                         />
-                        <tnt:NavigationListItem
+						<tnt:NavigationListItem
                             text="Individual Development Plan"
                             icon="sap-icon://map-2"
                             selectable="true"
                             key="apprisal.view.Idp"
                         />
-                        <tnt:NavigationListItem
+						<tnt:NavigationListItem
                             text="Appraiser/Reviewer/HOD Scorecard"
                             icon="sap-icon://map-2"
                             selectable="true"
                             key="apprisal.view.Scorecard"
                         />
-                        <tnt:NavigationListItem
+						<tnt:NavigationListItem
                             text="Summary"
                             icon="sap-icon://activity-items"
                             selectable="false"
                         >
-                            <tnt:NavigationListItem
+							<tnt:NavigationListItem
                                 text="Overall Remarks"
                                 key="Overall Remarks"
                             />
-                            <tnt:NavigationListItem
+							<tnt:NavigationListItem
                                 text="Overall Score"
                                 key="Overall Score"
                             />
-                            <tnt:NavigationListItem
+							<tnt:NavigationListItem
                                 text="Accomplishments"
                                 key="Accomplishments"
-                            />
-                        </tnt:NavigationListItem>
-                    </tnt:NavigationList>
-                </tnt:SideNavigation>
-                <footer>
-			<OverflowToolbar>
-				<ToolbarSpacer/>
-				<Button type="Accept" text="Accept"/>
-				<Button type="Reject" text="Reject"/>
-			</OverflowToolbar>
-		</footer>
-            </Page>
-        </masterPages>
-        <detailPages>
-            <mvc:XMLView
-                viewName="apprisal.view.Scorecard"
-                id="apprisal.view.Scorecard"
-            />
-            <mvc:XMLView
+                            /></tnt:NavigationListItem>
+					</tnt:NavigationList>
+				</tnt:SideNavigation>
+			</Page>
+		</masterPages>
+		<detailPages>
+			<mvc:XMLView
                 viewName="apprisal.view.Cof"
                 id="apprisal.view.Cof"
             />
-            <mvc:XMLView
-                viewName="apprisal.view.IG"
-                id="apprisal.view.IG"
+			<mvc:XMLView
+                viewName="apprisal.view.Ig"
+                id="apprisal.view.Ig"
             />
-            <mvc:XMLView
+			<mvc:XMLView
                 viewName="apprisal.view.Bcf"
                 id="apprisal.view.Bcf"
             />
-
-            <mvc:XMLView
+			<mvc:XMLView
                 viewName="apprisal.view.Idp"
                 id="apprisal.view.Idp"
             />
-            
-        </detailPages>
-    </SplitContainer>
-    <OverflowToolbar>
-				<ToolbarSpacer/>
-				<Button type="Accept" text="Accept"/>
-				<Button type="Reject" text="Reject"/>
-			</OverflowToolbar>
+			<mvc:XMLView
+                viewName="apprisal.view.Scorecard"
+                id="apprisal.view.Scorecard"
+            />
+		</detailPages>
+	</SplitContainer>
 </mvc:View>
 
 

@@ -11,3 +11,7 @@
 .mvnTableSelectDialog .sapMSF{
     display : none;
 }
+
+.mvnObjectPageLayoutTitleOverflowToolbar.sapMTB.sapMTBStandard {
+    border-bottom:0;
+}
