@@ -79,7 +79,7 @@
 					<tnt:NavigationList>
 						<tnt:NavigationListItem
                             text="Goals"
-                            icon="sap-icon://mileage"
+                            icon="sap-icon://target-group"
                             selectable="false"
                         >
 							<tnt:NavigationListItem
@@ -92,19 +92,19 @@
                             /></tnt:NavigationListItem>
 						<tnt:NavigationListItem
                             text="Behavioral Competency Framework"
-                            icon="sap-icon://map-2"
+                            icon="sap-icon://kpi-managing-my-area"
                             selectable="true"
                             key="apprisal.view.Bcf"
                         />
 						<tnt:NavigationListItem
                             text="Individual Development Plan"
-                            icon="sap-icon://map-2"
+                            icon="sap-icon://learning-assistant"
                             selectable="true"
                             key="apprisal.view.Idp"
                         />
 						<tnt:NavigationListItem
                             text="Appraiser/Reviewer/HOD Scorecard"
-                            icon="sap-icon://map-2"
+                            icon="sap-icon://collaborate"
                             selectable="true"
                             key="apprisal.view.Scorecard"
                         />
