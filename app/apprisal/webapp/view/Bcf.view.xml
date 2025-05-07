@@ -71,8 +71,8 @@
 											<Text text="{PreDefineGoal>COMP_DESC}" />
 											<Text text="{PreDefineGoal>INDICATORS}" />
 											<Text text="{PreDefineGoal>COMP_DEF}" />
-											<Input value="{PreDefineGoal>Appraisee_Score}" type="Number" placeholder="Appraisee Score" />
-											<Input value="{PreDefineGoal>Appraisee_Score}" type="Number" placeholder="Appraisee Score" />
+											<Input value="{PreDefineGoal>Appraisee_Score}" type="Number" placeholder="Appraisee Score" editable="{PreDefineGoal>Appe_scr_editable}"/>
+											<Input value="{PreDefineGoal>Appraisee_Score}" type="Number" placeholder="Appraisee Score" editable="{PreDefineGoal>Appr_scr_editable}" />
 										</cells>
 									</ColumnListItem>
 								</items>
