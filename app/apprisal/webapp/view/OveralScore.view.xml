@@ -34,7 +34,7 @@
 								}"
                             >
                                 <columns>
-                                    <Column width="10rem">
+                                    <Column width="20rem">
                                         <header>
                                             <Text text="Sections" />
                                         </header>
