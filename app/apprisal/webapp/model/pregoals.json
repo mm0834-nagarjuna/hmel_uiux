@@ -198,7 +198,40 @@
         "Status": "",
         "Appraiser": ""
       }
-    ]
+    ],
+    "Four_Monthly_Review": {
+      "First_Four_Monthly_Review" : 
+        {
+          "Review_Type": "First Four Monthly Review",
+          "Remarks_Appraisee": "Remarks Appraisee",
+          "Remarks_Appraiser": "Remarks Appraiser"
+        },
+        "Second_Four_Monthly_Review" : 
+        {
+          "Review_Type": "Second Four Monthly Review",
+          "Remarks_Appraisee": "Remarks Appraisee",
+          "Remarks_Appraiser": "Remarks Appraiser"
+        }
+      
+    },
+    "Annual_Review": {
+      "Annual_Remarks": 
+      {
+        
+          "Review_Type": "Annual Review",
+          "Remarks_Appraisee": "Remarks Appraisee",
+          "Remarks_Appraiser": "Remarks Appraiser",
+          "Remarks_Reviewer": "Remarks Reviewer"
+    
+      }
+    },
+    "Annual_Score": {
+      "Scores" : {
+        "Score_Appraiser" : 4.46,
+        "Overal_Score" : 4.18,
+        "Score_Reviewer" : 4.18
+      }
+    }
   },
   "Scorecard": {
     "Appraiser": {

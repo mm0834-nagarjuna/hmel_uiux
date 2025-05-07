@@ -79,7 +79,7 @@
                             >
                                 <HBox >
                                     <Input value="4" class="sapUiSmallMarginEnd" />
-                                    <Button icon="sap-icon://hint" type="Transparent"/>
+                                    <Button icon="sap-icon://hint" type="Transparent" press="onClickIGScoreInfo"/>
                                 </HBox>
                                 <HBox
                                     class="sapUiSmallMarginBegin"
@@ -232,7 +232,7 @@
                             >
                                 <HBox >
                                     <Input value="4" class="sapUiSmallMarginEnd" />
-                                    <Button icon="sap-icon://hint" type="Transparent"/>
+                                    <Button icon="sap-icon://hint" type="Transparent" press="onClickIGScoreInfo"/>
                                 </HBox>
                                 <HBox
                                     class="sapUiSmallMarginBegin"
@@ -385,7 +385,7 @@
                             >
                                 <HBox >
                                     <Input value="4" class="sapUiSmallMarginEnd" />
-                                    <Button icon="sap-icon://hint" type="Transparent"/>
+                                    <Button icon="sap-icon://hint" type="Transparent" press="onClickIGScoreInfo"/>
                                 </HBox>
                                 <HBox
                                     class="sapUiSmallMarginBegin"
