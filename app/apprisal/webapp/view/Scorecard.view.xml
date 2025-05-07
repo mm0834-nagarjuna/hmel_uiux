@@ -47,7 +47,7 @@
 								<items>
 									<ColumnListItem vAlign="Top">
 										<cells>
-											<Text text="{PreDefineGoal>Key_Results_Area}" />
+											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
 											<Text text="{PreDefineGoal>Key_Performance_Index}" />
 											<Text text="{PreDefineGoal>Target}" />
 											<Text text="{PreDefineGoal>No. of days}" />

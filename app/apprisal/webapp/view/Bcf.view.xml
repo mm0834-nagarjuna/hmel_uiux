@@ -17,6 +17,7 @@
 						<VBox  class="sapUiLargeMarginBottom">
 							<OverflowToolbar>
 								<Title text="Behavioral Competency Framework"/>
+								<Text text="(Select minimum 1 or maximum 2 Competencies)"/>
 								<ToolbarSpacer />
 								<Button
 									text="Guideline"
@@ -27,14 +28,19 @@
 							<Table id="BcfTable"
 								items="{
 									path : 'PreDefineGoal>/bce',
-									sorter: { path: 'COMP_DESC' , group: '.getGroup'},
-									templateShareable: false,
-									groupHeaderFactory: '.getGroupHeader'
+									
+									templateShareable: false
+									
 								}">
 								<columns>
+									<Column width="4rem">
+										<header>
+											<Text text="Select" />
+										</header>
+									</Column>
 									<Column width="10rem">
 										<header>
-											<Text text="Identified as development needed" />
+											<Text text="Competency" />
 										</header>
 									</Column>
 									<Column>
@@ -52,6 +58,7 @@
 									<ColumnListItem vAlign="Top">
 										<cells>
 											<CheckBox />
+											<Text text="{PreDefineGoal>COMP_DESC}" />
 											<Text text="{PreDefineGoal>INDICATORS}" />
 											<Text text="{PreDefineGoal>COMP_DEF}" />
 										</cells>
