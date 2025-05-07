@@ -103,6 +103,57 @@
 								editable="{apprisalData>co_target_edit}"
 
                             />
+
+<!--From here need to add values  -->
+
+							<Label text="First Four Monthly Achievement : Appraisee" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="{apprisalData>co_target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<Label text="First Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="{apprisalData>co_target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<Label text="Second Four Monthly Achievement : Appraisee" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="{apprisalData>co_target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<Label text="Second Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="{apprisalData>co_target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+							/>
+							<Label text="Annual Achievement : Appraisee" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="{apprisalData>co_target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
+							<Label text="Annual Feedback : Appraiser" class="sapUiSmallMarginTop"/>
+							<TextArea
+                                width="100%"
+                                value="{apprisalData>co_target_value}"
+                                growing="true"
+								class="sapUiSmallMarginBottom"
+								editable="{apprisalData>co_target_edit}"
+                            />
 						</VBox>
 					</uxap:ObjectPageSubSection>
 				</uxap:subSections>
