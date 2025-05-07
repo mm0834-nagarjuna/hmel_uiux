@@ -269,5 +269,37 @@
         }
       ]
     }
+  },
+  "OverallScore":{
+    "Section_Score":[
+      {
+        "Section": "KRA",
+        "Appraisee": 5,
+        "Appraiser": 3,
+        "Reviewer": 4
+      },
+      {
+        "Section": "IDP",
+        "Appraisee": 4,
+        "Appraiser": 4,
+        "Reviewer": 3.5
+      },
+      {
+        "Section": "BCF",
+        "Appraisee": 5,
+        "Appraiser": 3.5,
+        "Reviewer": 4.5
+      }
+    ],
+    "360 Degree Score & Report": {
+      "Score": 3,
+      "Report_Link": "https://example.com/reports/EMP001-360-feedback"
+    },
+    "Final_Score": {
+    "Appraisee": 4.5,
+    "Appraiser": 3.5,
+    "Reviewer": 4
+  }
+    
   }
 }
