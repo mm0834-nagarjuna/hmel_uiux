@@ -123,7 +123,7 @@
                             />
 							<tnt:NavigationListItem
                                 text="Acknowledgement"
-                                key="Acknowledgement"
+                                key="apprisal.view.Ack"
                             />
 							<tnt:NavigationListItem
                                 text="Overall Score"
@@ -158,6 +158,10 @@
 			<mvc:XMLView
                 viewName="apprisal.view.Accomp"
                 id="apprisal.view.Accomp"
+            />
+			<mvc:XMLView
+                viewName="apprisal.view.Ack"
+                id="apprisal.view.Ack"
             />
             <mvc:XMLView
                 viewName="apprisal.view.OveralScore"

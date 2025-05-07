@@ -145,9 +145,7 @@
                             </OverflowToolbar>
                             <Table
                                 id="overallSecore"
-                                items="{
-									path : 'PreDefineGoal>/OverallScore'
-								}"
+                                
                             >
                                 <columns>
                                     <Column>
