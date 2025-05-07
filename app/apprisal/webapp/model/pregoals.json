@@ -368,5 +368,28 @@
     ]
     }
     
+  ],
+  "Ig_Cof_score":[
+    {
+      "Evaluation": 1,
+      "Value_Description": "Below 60% of the target achieved"
+    },
+    {
+      "Evaluation": 2,
+      "Value_Description": ">60% - 85%"
+    },
+    {
+      "Evaluation": 3,
+      "Value_Description": ">85% - 100%"
+    },
+    {
+      "Evaluation": 4,
+      "Value_Description": ">100% - 110% of the target achieved"
+    },
+    {
+      "Evaluation": 5,
+      "Value_Description": ">110% of the target achieved + Value addition"
+    }
   ]
+  
 }

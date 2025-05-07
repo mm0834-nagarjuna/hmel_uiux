@@ -10,9 +10,9 @@ sap.ui.define([
            
         },
         
-        onClickCancel: function(){
+        // onClickCancel: function(){
 
-        },
+        // },
 
         onClickPredefined: function (oEvent) {
             var oButton = oEvent.getSource(),
@@ -33,7 +33,36 @@ sap.ui.define([
                 oDialog.setMultiSelect(true);
                 oDialog.open();
             }.bind(this));
+        },
+        onClickScoreInfo: function (oEvent) {
+            var oButton = oEvent.getSource(),
+            oView = this.getView();
+
+            if (!this._pDialog) {
+                this._pDialog = Fragment.load({
+                    id: oView.getId(),
+                    name: "apprisal.fragment.Ig_Cof_score",
+                    controller: this
+                }).then(function(oDialog){
+                    oView.addDependent(oDialog);
+                    return oDialog;
+                });
+            }
+
+            this._pDialog.then(function(oDialog){
+                // oDialog.setMultiSelect(true);
+                oDialog.open();
+            }.bind(this));
+        },
+        onClickCancel: function () {
+            var oView = this.getView();
+            var oDialog = oView.byId("idScoreInfoDialog");
+            if (oDialog) {
+                oDialog.close();
+            }
         }
+
+
 
     });
 });

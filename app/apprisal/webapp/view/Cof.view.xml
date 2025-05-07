@@ -62,14 +62,14 @@
 								<ToolbarSpacer />
 							</OverflowToolbar>
 							<HBox alignItems="Center" class="sapUiSmallMarginTop">
-							<Label text="Score - Self Appraisal : Appraiser " />
+							<Label text="Appraiser Score :" class="sapUiSmallMarginEnd"/>
 							<ComboBox items="{/numbers}" value="3">
 									<core:Item
                                         key="{key}"
                                         text="{text}"
                                     />
 								</ComboBox>
-								<Button icon="sap-icon://information" type="Transparent" press="onClickScoreInfo" ariaLabelledBy="actionButtonLabel"/>
+								<Button icon="sap-icon://information" type="Transparent" press="onClickScoreInfo" ariaLabelledBy="actionButtonLabel" class="sapUiSmallMarginEnd"/>
 								<Label
                                     text="Weightage(%)"
                                     labelFor="COF_11_WEIGTAGE"
