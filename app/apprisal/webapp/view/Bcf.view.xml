@@ -1,86 +1,340 @@
 <mvc:View
-	xmlns:mvc="sap.ui.core.mvc"
-	controllerName="apprisal.controller.Bcf"
-	xmlns:uxap="sap.uxap"
-	xmlns="sap.m"
-	xmlns:tnt="sap.tnt"
-	xmlns:l="sap.ui.layout"
-    height="90%">
-	<uxap:ObjectPageLayout  upperCaseAnchorBar="false" >
-		<uxap:layoutData>
-			<FlexItemData growFactor="1" />
-		</uxap:layoutData>
-		<uxap:sections>
-			<uxap:ObjectPageSection titleUppercase="false" title="Behavioral Competency Framework " showTitle="false">
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection title="Behavioral Competency Framework" titleUppercase="false" showTitle="false">
-						<VBox  class="sapUiLargeMarginBottom">
-							<OverflowToolbar>
-								<Title text="Behavioral Competency Framework"/>
-								<Text text="(Select minimum 1 or maximum 2 Competencies)"/>
-								<ToolbarSpacer />
-								<Button
-									text="Guideline"
-									type="Emphasized"
-									press="onClickPredefined"
-								/>
-							</OverflowToolbar>
-							<Table id="BcfTable"
-								items="{
-									path : 'PreDefineGoal>/bce',
-									
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="apprisal.controller.Bcf"
+    xmlns:uxap="sap.uxap"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    xmlns:l="sap.ui.layout"
+    height="90%"
+>
+    <uxap:ObjectPageLayout upperCaseAnchorBar="false">
+        <uxap:layoutData>
+            <FlexItemData growFactor="1" />
+        </uxap:layoutData>
+        <uxap:sections>
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Behavioral Competency Framework1 "
+                showTitle="false"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Competencies"
+                        titleUppercase="false"
+                        showTitle="false"
+                    >
+                        <VBox class="sapUiLargeMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="Competencies" />
+                                <Text
+                                    text="(Select minimum 1 or maximum 2 Competencies)"
+                                />
+                                <ToolbarSpacer />
+                                <Button
+                                    text="Guideline"
+                                    type="Emphasized"
+                                    press="onClickPredefined"
+                                />
+                            </OverflowToolbar>
+                            <!-- Competencies Table -->
+                            <Table
+                                id="BcfTable"
+                                items="{
+									path : 'PreDefineGoal>/BCE/Competencies',	
 									templateShareable: false
 									
-								}">
-								<columns>
-									<Column width="4rem">
-										<header>
-											<Text text="Select" />
-										</header>
-									</Column>
-									<Column width="10rem">
-										<header>
-											<Text text="Competency" />
-										</header>
-									</Column>
-									<Column>
-										<header>
-											<Text text="Indicator" />
-										</header>
-									</Column>
-									<Column>
-										<header>
-											<Text text="Definition" />
-										</header>
-									</Column>
-									<Column>
-										<header>
-											<Text text="Appraisee Score" />
-										</header>
-									</Column>
-									<Column>
-										<header>
-											<Text text="Appraiser Score" />
-										</header>
-									</Column>
-								</columns>
-								<items>
-									<ColumnListItem vAlign="Top">
-										<cells>
-											<CheckBox />
-											<Text text="{PreDefineGoal>COMP_DESC}" />
-											<Text text="{PreDefineGoal>INDICATORS}" />
-											<Text text="{PreDefineGoal>COMP_DEF}" />
-											<Input value="{PreDefineGoal>Appraisee_Score}" type="Number" placeholder="Appraisee Score" editable="{PreDefineGoal>Appe_scr_editable}"/>
-											<Input value="{PreDefineGoal>Appraisee_Score}" type="Number" placeholder="Appraisee Score" editable="{PreDefineGoal>Appr_scr_editable}" />
-										</cells>
-									</ColumnListItem>
-								</items>
-							</Table>
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-		</uxap:sections>
-	</uxap:ObjectPageLayout>
+								}"
+                            >
+                                <columns>
+                                    <Column width="4rem">
+                                        <header>
+                                            <Text text="Select" />
+                                        </header>
+                                    </Column>
+                                    <Column width="10rem">
+                                        <header>
+                                            <Text text="Competency" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Indicator" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Definition" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraisee Score" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiser Score" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>
+                                            <CheckBox />
+                                            <Text
+                                                text="{PreDefineGoal>COMP_DESC}"
+                                            />
+                                            <Text
+                                                text="{PreDefineGoal>INDICATORS}"
+                                            />
+                                            <Text
+                                                text="{PreDefineGoal>COMP_DEF}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Appraisee_Score}"
+                                                type="Number"
+                                                placeholder="Appraisee Score"
+                                                editable="{PreDefineGoal>Appe_scr_editable}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Appraisee_Score}"
+                                                type="Number"
+                                                placeholder="Appraisee Score"
+                                                editable="{PreDefineGoal>Appr_scr_editable}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <!-- Firs Four Monthly Review -->
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Behavioral Competency Framework "
+                showTitle="false"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="First Four Monthly Review"
+                        titleUppercase="false"
+                        showTitle="false"
+                    >
+                        <VBox class="sapUiSmallMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="First Four Monthly Review" />
+                            </OverflowToolbar>
+                            <HBox columnGap="2rem">
+                                <VBox>
+                                    <Label
+                                        text="BCF Remarks-Appraisee"
+                                        class="sapUiSmallMarginTop"
+                                    />
+                                    <TextArea
+                                        width="100%"
+                                        value="{apprisalData>co_ksp_value}"
+                                        growing="true"
+                                        class="sapUiSmallMarginBottom"
+                                        editable="true"
+                                    />
+                                </VBox>
+                                <VBox>
+                                    <Label
+                                        text="BCF Remarks-Appraiser"
+                                        class="sapUiSmallMarginTop"
+                                    />
+                                    <TextArea
+                                        width="100%"
+                                        value="{apprisalData>co_ksp_value}"
+                                        growing="true"
+                                        class="sapUiSmallMarginBottom"
+                                        editable="true"
+                                    />
+                                </VBox>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <!-- Second Four Monthly Review -->
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Behavioral Competency Framework "
+                showTitle="false"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Second Four Monthly Review"
+                        titleUppercase="false"
+                        showTitle="false"
+                    >
+                        <VBox class="sapUiLargeMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="Second Four Monthly Review" />
+                            </OverflowToolbar>
+                            <HBox columnGap="2rem">
+                                <VBox>
+                                    <Label
+                                        text="BCF Remarks-Appraisee"
+                                        class="sapUiSmallMarginTop"
+                                    />
+                                    <TextArea
+                                        width="100%"
+                                        value="{apprisalData>co_ksp_value}"
+                                        growing="true"
+                                        class="sapUiSmallMarginBottom"
+                                        editable="true"
+                                    />
+                                </VBox>
+                                <VBox>
+                                    <Label
+                                        text="BCF Remarks-Appraiser"
+                                        class="sapUiSmallMarginTop"
+                                    />
+                                    <TextArea
+                                        width="100%"
+                                        value="{apprisalData>co_ksp_value}"
+                                        growing="true"
+                                        class="sapUiSmallMarginBottom"
+                                        editable="true"
+                                    />
+                                </VBox>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <!-- Annual Review    -->
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Behavioral Competency Framework "
+                showTitle="false"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Annual Review"
+                        titleUppercase="false"
+                        showTitle="false"
+                    >
+                        <VBox class="sapUiLargeMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="Annual Review" />
+                            </OverflowToolbar>
+                            <HBox columnGap="2rem">
+                                <VBox>
+                                    <Label
+                                        text="BCF Remarks-Appraisee"
+                                        class="sapUiSmallMarginTop"
+                                    />
+                                    <TextArea
+                                        width="100%"
+                                        value="{apprisalData>co_ksp_value}"
+                                        growing="true"
+                                        class="sapUiSmallMarginBottom"
+                                        editable="true"
+                                    />
+                                </VBox>
+                                <VBox>
+                                    <Label
+                                        text="BCF Remarks-Appraiser"
+                                        class="sapUiSmallMarginTop"
+                                    />
+                                    <TextArea
+                                        width="100%"
+                                        value="{apprisalData>co_ksp_value}"
+                                        growing="true"
+                                        class="sapUiSmallMarginBottom"
+                                        editable="true"
+                                    />
+                                </VBox>
+                                <VBox>
+                                    <Label
+                                        text="BCF Remarks-Reviewer"
+                                        class="sapUiSmallMarginTop"
+                                    />
+                                    <TextArea
+                                        width="100%"
+                                        value="{apprisalData>co_ksp_value}"
+                                        growing="true"
+                                        class="sapUiSmallMarginBottom"
+                                        editable="true"
+                                    />
+                                </VBox>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <!--Average Annual Score  -->
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Behavioral Competency Framework "
+                showTitle="false"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Average Annual Score"
+                        titleUppercase="false"
+                        showTitle="false"
+                    >
+                        <VBox class="sapUiLargeMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="Average Annual Score" />
+								<Button icon="sap-icon://information" type="Transparent" press="onClickScoreInfo" ariaLabelledBy="actionButtonLabel" />
+
+                            </OverflowToolbar>
+                            <HBox columnGap="2rem">
+                                <HBox
+                                    alignItems="Center"
+                                    columnGap="0.5rem"
+                                >
+                                    <Label text="Score- Appraiser" />
+                                    <Input
+                                        value="{PreDefineGoal>Appraisee_Score}"
+                                        type="Number"
+                                        placeholder="Appraisee Score"
+                                        editable="{PreDefineGoal>Appe_scr_editable}"
+                                    />
+                                </HBox>
+                                <HBox
+                                    alignItems="Center"
+                                    columnGap="0.5rem"
+                                >
+                                    <Label text="Overall Score" />
+                                    <Input
+                                        value="{PreDefineGoal>Appraisee_Score}"
+                                        type="Number"
+                                        placeholder="Appraisee Score"
+                                        editable="{PreDefineGoal>Appe_scr_editable}"
+                                    />
+                                </HBox>
+                                <HBox
+                                    alignItems="Center"
+                                    columnGap="0.5rem"
+                                >
+                                    <Label text="Score- Reviewer" />
+                                    <Input
+                                        value="{PreDefineGoal>Appraisee_Score}"
+                                        type="Number"
+                                        placeholder="Appraisee Score"
+                                        editable="{PreDefineGoal>Appe_scr_editable}"
+                                    />
+                                </HBox>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
 </mvc:View>
