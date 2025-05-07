@@ -300,7 +300,7 @@
                                 >
                                     <Label text="Score- Appraiser" />
                                     <Input
-                                        value="{PreDefineGoal>Appraisee_Score}"
+                                        value="5"
                                         type="Number"
                                         placeholder="Appraisee Score"
                                         editable="{PreDefineGoal>Appe_scr_editable}"
@@ -312,7 +312,7 @@
                                 >
                                     <Label text="Overall Score" />
                                     <Input
-                                        value="{PreDefineGoal>Appraisee_Score}"
+                                        value="3"
                                         type="Number"
                                         placeholder="Appraisee Score"
                                         editable="{PreDefineGoal>Appe_scr_editable}"
@@ -324,7 +324,7 @@
                                 >
                                     <Label text="Score- Reviewer" />
                                     <Input
-                                        value="{PreDefineGoal>Appraisee_Score}"
+                                        value="5"
                                         type="Number"
                                         placeholder="Appraisee Score"
                                         editable="{PreDefineGoal>Appe_scr_editable}"
