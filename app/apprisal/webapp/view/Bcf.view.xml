@@ -23,7 +23,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox>
+                        <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Competencies" />
                                 <Text
@@ -66,12 +66,12 @@
                                             <Text text="Definition" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column visible="{apprisalData>bcfANR}">
                                         <header>
                                             <Text text="Appraisee Score" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column visible="{apprisalData>bcfANR}">
                                         <header>
                                             <Text text="Appraiser Score" />
                                         </header>
@@ -90,12 +90,12 @@
                                             <Text
                                                 text="{PreDefineGoal>COMP_DEF}"
                                             />
-                                            <HBox>
+                                            <HBox visible="{apprisalData>bcfANR}">
                                                 <Input
                                                     value="{PreDefineGoal>Appraisee_Score}"
                                                     type="Number"
                                                     placeholder="Appraisee Score"
-                                                    editable="{PreDefineGoal>Appe_scr_editable}"
+                                                    editable="{apprisalData>bcfANRAEEdit}"
                                                     width="90%"
                                                 />
                                                 <Button
@@ -109,7 +109,8 @@
                                                 value="{PreDefineGoal>Appraisee_Score}"
                                                 type="Number"
                                                 placeholder="Appraisee Score"
-                                                editable="{PreDefineGoal>Appr_scr_editable}"
+                                                visible="{apprisalData>bcfANR}"
+                                                editable="{apprisalData>bcfANRAREdit}"
                                             />
                                         </cells>
                                     </ColumnListItem>

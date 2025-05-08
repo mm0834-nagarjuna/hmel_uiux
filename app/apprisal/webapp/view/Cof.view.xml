@@ -271,7 +271,7 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
-                        <VBox class="sapUiLargMarginBottom">
+                        <VBox>
                             <OverflowToolbar>
                                 <Title text="2 Key Performance Area" />
                                 <ToolbarSpacer />
