@@ -161,91 +161,91 @@
                             <Label
                                 text="First Four Monthly Achievement : Appraisee"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>ffmaAE}"
+								visible="{apprisalData>cofgffmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Achievement : Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ffmaAEEdit}"
-								visible="{apprisalData>ffmaAE}"
+                                editable="{apprisalData>cofgffmaAEEdit}"
+								visible="{apprisalData>cofgffmaAE}"
                             />
                             <Label
                                 text="First Four Monthly Achievement : Appraiser"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>ffmaAR}"
+								visible="{apprisalData>cofgffmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Achievement : Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>ffmaAR}"
+								visible="{apprisalData>cofgffmaAR}"
                                 editable="{apprisalData>ffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly Achievement : Appraisee"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>sfmaAE}"
+								visible="{apprisalData>cofgsfmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly Achievement : Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>sfmaAE}"
-                                editable="{apprisalData>sfmaAEEdit}"
+								visible="{apprisalData>cofgsfmaAE}"
+                                editable="{apprisalData>cofgsfmaAEEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Achievement : Appraiser"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>sfmaAR}"
+								visible="{apprisalData>cofgsfmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly Achievement : Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>sfmaAR}"
-                                editable="{apprisalData>sfmaAREdit}"
+								visible="{apprisalData>cofgsfmaAR}"
+                                editable="{apprisalData>cofgsfmaAREdit}"
                             />
                             <Label
                                 text="Annual Achievement : Appraisee"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>aaAEE}"
+								visible="{apprisalData>cofgaaAEE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Achievement : Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>aaAEE}"
-                                editable="{apprisalData>aaAEEdit}"
+								visible="{apprisalData>cofgaaAEE}"
+                                editable="{apprisalData>cofgaaAEEdit}"
                             />
                             <Label
                                 text="Annual Feedback : Appraiser"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>afAER}"
+								visible="{apprisalData>cofgafAER}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Feedback : Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>afAER}"
-                                editable="{apprisalData>afAERdit}"
+								visible="{apprisalData>cofgafAER}"
+                                editable="{apprisalData>cofgafAERdit}"
                             />
                             <HBox alignItems="Center">
                                 <Label
                                     text="Score : Appraisee "
-									visible="{apprisalData>aaAEE}"
+									visible="{apprisalData>cofgaaAEE}"
                                 />
                                 <ComboBox
                                     items="{/numbers}"
                                     value="3"
-									visible="{apprisalData>aaAEE}"
-									editable="{apprisalData>aaAEEdit}"
+									visible="{apprisalData>cofgaaAEE}"
+									editable="{apprisalData>cofgaaAEEdit}"
                                 >
                                     <core:Item
                                         key="{key}"
@@ -257,7 +257,7 @@
                                     type="Transparent"
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
-									visible="{apprisalData>aaAEE}"
+									visible="{apprisalData>cofgaaAEE}"
                                 />
                             </HBox>
                         </VBox>
@@ -271,9 +271,9 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox>
                             <OverflowToolbar>
-                                <Title text="2 Key Performance Area" />
+                                <Title text="1 Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
                             <HBox
@@ -361,91 +361,91 @@
                             <Label
                                 text="First Four Monthly Achievement : Appraisee"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>ffmaAE}"
+								visible="{apprisalData>cofgffmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Achievement : Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ffmaAEEdit}"
-								visible="{apprisalData>ffmaAE}"
+                                editable="{apprisalData>cofgffmaAEEdit}"
+								visible="{apprisalData>cofgffmaAE}"
                             />
                             <Label
                                 text="First Four Monthly Achievement : Appraiser"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>ffmaAR}"
+								visible="{apprisalData>cofgffmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Achievement : Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>ffmaAR}"
+								visible="{apprisalData>cofgffmaAR}"
                                 editable="{apprisalData>ffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly Achievement : Appraisee"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>sfmaAE}"
+								visible="{apprisalData>cofgsfmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly Achievement : Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>sfmaAE}"
-                                editable="{apprisalData>sfmaAEEdit}"
+								visible="{apprisalData>cofgsfmaAE}"
+                                editable="{apprisalData>cofgsfmaAEEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Achievement : Appraiser"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>sfmaAR}"
+								visible="{apprisalData>cofgsfmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly Achievement : Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>sfmaAR}"
-                                editable="{apprisalData>sfmaAREdit}"
+								visible="{apprisalData>cofgsfmaAR}"
+                                editable="{apprisalData>cofgsfmaAREdit}"
                             />
                             <Label
                                 text="Annual Achievement : Appraisee"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>aaAEE}"
+								visible="{apprisalData>cofgaaAEE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Achievement : Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>aaAEE}"
-                                editable="{apprisalData>aaAEEdit}"
+								visible="{apprisalData>cofgaaAEE}"
+                                editable="{apprisalData>cofgaaAEEdit}"
                             />
                             <Label
                                 text="Annual Feedback : Appraiser"
                                 class="sapUiSmallMarginTop"
-								visible="{apprisalData>afAER}"
+								visible="{apprisalData>cofgafAER}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Feedback : Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-								visible="{apprisalData>afAER}"
-                                editable="{apprisalData>afAERdit}"
+								visible="{apprisalData>cofgafAER}"
+                                editable="{apprisalData>cofgafAERdit}"
                             />
                             <HBox alignItems="Center">
                                 <Label
                                     text="Score : Appraisee "
-									visible="{apprisalData>aaAEE}"
+									visible="{apprisalData>cofgaaAEE}"
                                 />
                                 <ComboBox
                                     items="{/numbers}"
                                     value="3"
-									visible="{apprisalData>aaAEE}"
-									editable="{apprisalData>aaAEEdit}"
+									visible="{apprisalData>cofgaaAEE}"
+									editable="{apprisalData>cofgaaAEEdit}"
                                 >
                                     <core:Item
                                         key="{key}"
@@ -457,13 +457,14 @@
                                     type="Transparent"
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
-									visible="{apprisalData>aaAEE}"
+									visible="{apprisalData>cofgaaAEE}"
                                 />
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
+            
             
         </uxap:sections>
     </uxap:ObjectPageLayout>
