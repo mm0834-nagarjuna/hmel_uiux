@@ -1,70 +1,169 @@
 namespace my.appraisal;
+
 entity AppraisalDocuments {
-    key index: Integer;
-    key appraisalId: String;
-    appraisalName: String;
-    appraisalTypeText: String;
-    appraiserId: String;
-    appraiserType: String;
-    appraiserTypeText: String;
-    appraiserName: String;
-    appraiseeId: String;
-    appraiseeType: String;
-    appraiseeTypeText: String;
-    appraiseeName: String;
-    apStatusName: String;
-    apStatusSubName: String;
-    submit: Boolean;
-    referBackToEmployee: Boolean;
-    onlySaveOption: Boolean;
-    targetRevisionRequired: Boolean;
-    allowTargetRevision: Boolean;
-    doNotAllowTargetRevision: Boolean;
-    referBackToAppraiser: Boolean;
-    coFg: Boolean;
-    iG: Boolean;
-    bcf: Boolean;
-    idp: Boolean;
-    summary: Boolean;
-    accomp: Boolean;
-    overalRemarks: Boolean;
-    acknowledgementVisible: Boolean;
-    overallScore: Boolean;
+  key index: Integer;
 
-    coFgKSP: Boolean;
-    coFgKSPEdit: Boolean;
-    coFgKPI: Boolean;
-    coFgKPIEdit: Boolean;
-    coFgTarget: Boolean;
-    coFgTargetEdit: Boolean;
-    coFgWeightage: Boolean;
-    coFgWeightageEdit: Boolean;
-    coFgARScore: Boolean;
-    coFgARScoreEdit: Boolean;
+  appraisalId: String;
+  appraisalName: String;
+  appraisalTypeText: String;
 
-    ffmaAE: Boolean;
-    ffmaAEEdit: Boolean;
-    ffmaAR: Boolean;
-    ffmaAREdit: Boolean;
+  appraiserId: String;
+  appraiserType: String;
+  appraiserTypeText: String;
+  appraiserName: String;
 
-    sfmaAE: Boolean;
-    sfmaAEEdit: Boolean;
-    sfmaAR: Boolean;
-    sfmaAREdit: Boolean;
+  appraiseeId: String;
+  appraiseeType: String;
+  appraiseeTypeText: String;
+  appraiseeName: String;
 
-    aaAEE: Boolean;
-    aaAEEdit: Boolean;
-    afAER: Boolean;
-    afAERdit: Boolean;
+  apStatusName: String;
+  apStatusSubName: String;
 
-    selfAEScore: Boolean;
+  submit: Boolean;
+  referBackToEmployee: Boolean;
+  onlySaveOption: Boolean;
+  targetRevisionRequired: Boolean;
+  allowTargetRevision: Boolean;
+  doNotAllowTargetRevision: Boolean;
+  referBackToAppraiser: Boolean;
 
-    igKPI: Boolean;
-    igKPIEdit: Boolean;
-    igTarget: Boolean;
-    igTargetEdit: Boolean;
-    igWeightage: Boolean;
-    igWeightageEdit: Boolean;
-    igARScore: Boolean;
-    igARScoreEdit: Boolean;
+  coFg: Boolean;
+  iG: Boolean;
+  bcf: Boolean;
+  idp: Boolean;
+  summary: Boolean;
+  accomp: Boolean;
+
+  overalRemarks: Boolean;
+  acknowledgement: Boolean;
+  overallScore: Boolean;
+
+  coFgKSP: Boolean;
+  coFgKSPEdit: Boolean;
+  coFgKPI: Boolean;
+  coFgKPIEdit: Boolean;
+  coFgTarget: Boolean;
+  coFgTargetEdit: Boolean;
+  coFgWeightage: Boolean;
+  coFgWeightageEdit: Boolean;
+  coFgARScore: Boolean;
+  coFgARScoreEdit: Boolean;
+
+  cofgffmaAE: Boolean;
+  cofgffmaAEEdit: Boolean;
+  cofgffmaAR: Boolean;
+  cofgffmaAREdit: Boolean;
+  cofgsfmaAE: Boolean;
+  cofgsfmaAEEdit: Boolean;
+  cofgsfmaAR: Boolean;
+  cofgsfmaAREdit: Boolean;
+  cofgaaAEE: Boolean;
+  cofgaaAEEdit: Boolean;
+  cofgafAER: Boolean;
+  cofgafAERdit: Boolean;
+  cofgselfAEScore: Boolean;
+
+  igKSP: Boolean;
+  igKSPEdit: Boolean;
+  igKPI: Boolean;
+  igKPIEdit: Boolean;
+  igTarget: Boolean;
+  igTargetEdit: Boolean;
+  igWeightage: Boolean;
+  igWeightageEdit: Boolean;
+  igARScore: Boolean;
+  igARScoreEdit: Boolean;
+
+  igffmaAE: Boolean;
+  igffmaAEEdit: Boolean;
+  igffmaAR: Boolean;
+  igsfmaAE: Boolean;
+  igsfmaAEEdit: Boolean;
+  igsfmaAR: Boolean;
+  igsfmaAREdit: Boolean;
+  igaaAEE: Boolean;
+  igaaAEEdit: Boolean;
+  igafAER: Boolean;
+  igafAERdit: Boolean;
+  igselfAEScore: Boolean;
+
+  bcfTabEdit: Boolean;
+  bcfFFMR: Boolean;
+  bcfFFRAEEdit: Boolean;
+  bcfFFRAREdit: Boolean;
+  bcfSFMR: Boolean;
+  bcfSFRAEEdit: Boolean;
+  bcfSFRAREdit: Boolean;
+  bcfANR: Boolean;
+  bcfANRAEEdit: Boolean;
+  bcfANRAREdit: Boolean;
+  bcfANRREREdit: Boolean;
+  bcfANSC: Boolean;
+  bcfANSCAREdit: Boolean;
+
+  idpBCD: Boolean;
+  idpBCDAEEditSM: Boolean;
+  idpBCDR1AREdit: Boolean;
+  idpBCDR2AREdit: Boolean;
+  idpBCDANAREdit: Boolean;
+
+  idpFAODA: Boolean;
+  idpFAODAAEEdit: Boolean;
+  idpFAODAAREdit: Boolean;
+
+  idpFTDA: Boolean;
+  idpFTDAAEEdit: Boolean;
+  idpFTDAAREdit: Boolean;
+
+  idpFMRS: Boolean;
+  idpFFMRSREAEEdit: Boolean;
+  idpSFMRSREAEEdit: Boolean;
+  idpFFMRSREAREdit: Boolean;
+  idpSFMRSREAREdit: Boolean;
+
+  idpANRS: Boolean;
+  idpANRSAEEdit: Boolean;
+  idpANRSAREdit: Boolean;
+  idpANRSREEdit: Boolean;
+
+  idpAASCR: Boolean;
+  idpAASCRAREdit: Boolean;
+  idpAASCRREdit: Boolean;
+
+  accompEdit: Boolean;
+
+  oRFFMR: Boolean;
+  oRFFMRAEEdit: Boolean;
+  oRFFMRAREdit: Boolean;
+
+  oRSFMR: Boolean;
+  oRSFMRAEEdit: Boolean;
+  oRSFMRAREdit: Boolean;
+
+  oRANR: Boolean;
+  oRANRRAEEdit: Boolean;
+  oRANRRAREdit: Boolean;
+  oRANRRREEdit: Boolean;
+
+  ackTSC: Boolean;
+  ackTSCEdit: Boolean;
+  ackFFMC: Boolean;
+  ackFFMCEdit: Boolean;
+  ackSFMC: Boolean;
+  ackSFMCEdit: Boolean;
+  ackANC: Boolean;
+  ackANCEdit: Boolean;
+
+  oScrSEScr: Boolean;
+  oScrSEScrAEEdit: Boolean;
+  oScrSEScrAREdit: Boolean;
+  oScrSEScrREEdit: Boolean;
+
+  oScr360: Boolean;
+
+  oScores: Boolean;
+  oScoresAEEdit: Boolean;
+  oScoresAREdit: Boolean;
+  oScoresREEdit: Boolean;
 }
