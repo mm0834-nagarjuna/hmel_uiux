@@ -174,7 +174,7 @@
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 visible="{apprisalData>ffmaAR}"
-                                editable="{apprisalData>ffmaAREdit}"
+                                editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
@@ -357,7 +357,7 @@
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 visible="{apprisalData>ffmaAR}"
-                                editable="{apprisalData>ffmaAREdit}"
+                                editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
@@ -540,7 +540,7 @@
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 visible="{apprisalData>ffmaAR}"
-                                editable="{apprisalData>ffmaAREdit}"
+                                editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
