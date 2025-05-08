@@ -17,7 +17,7 @@
             <FlexItemData growFactor="1" />
         </uxap:layoutData>
         <uxap:sections>
-            <uxap:ObjectPageSection>
+            <uxap:ObjectPageSection visible="{apprisalData>coFgKSPEdit}">
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         titleUppercase="false"
@@ -31,20 +31,17 @@
                                 text="Predefined"
                                 type="Ghost"
                                 press="onClickPredefined"
-                                visible="{apprisalData>coFgKSPEdit}"
                             />
                             <Button
                                 text="New"
                                 type="Ghost"
                                 press="onItemSelect"
-                                visible="{apprisalData>coFgKSPEdit}"
                             />
                             <MenuButton
                                 text="Upload/Download"
                                 buttonMode="Split"
                                 defaultAction="onDefaultAction"
                                 beforeMenuOpen="onBeforeMenuOpen"
-                                visible="{apprisalData>coFgKSPEdit}"
                             >
                                 <menu>
                                     <Menu itemSelected="onMenuAction">

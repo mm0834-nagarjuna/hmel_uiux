@@ -16,7 +16,7 @@
             <FlexItemData growFactor="1" />
         </uxap:layoutData>
         <uxap:sections>
-            <uxap:ObjectPageSection>
+            <uxap:ObjectPageSection visible="{apprisalData>igKPIEdit}">
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         titleUppercase="false"
@@ -30,20 +30,17 @@
                                 text="Previous Year"
                                 type="Ghost"
                                 press="onClickPreviousYear"
-                                visible="{apprisalData>igKPIEdit}"
                             />
                             <Button
                                 text="New"
                                 type="Ghost"
                                 press="onItemSelect"
-                                visible="{apprisalData>igKPIEdit}"
                             />
                             <MenuButton
                                 text="Upload/Download"
                                 buttonMode="Split"
                                 defaultAction="onDefaultAction"
                                 beforeMenuOpen="onBeforeMenuOpen"
-                                visible="{apprisalData>igKPIEdit}"
                             >
                                 <menu>
                                     <Menu itemSelected="onMenuAction">

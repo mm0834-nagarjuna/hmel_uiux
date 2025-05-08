@@ -108,7 +108,7 @@
                                             <Input
                                                 value="{PreDefineGoal>Appraisee_Score}"
                                                 type="Number"
-                                                placeholder="Appraisee Score"
+                                                placeholder="Appraiser Score"
                                                 visible="{apprisalData>bcfANR}"
                                                 editable="{apprisalData>bcfANRAREdit}"
                                             />
