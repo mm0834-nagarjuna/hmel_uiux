@@ -35,6 +35,10 @@ sap.ui.define([
             }.bind(this));
         },
 
+        onClickNew: function(oEvent){
+            
+        },
+
         // ----Function for calling Score Infor Dialog--------
 
         onClickScoreInfo: function (oEvent) {

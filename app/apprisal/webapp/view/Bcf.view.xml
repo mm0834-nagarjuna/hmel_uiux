@@ -33,7 +33,7 @@
                                 <Button
                                     text="Guideline"
                                     type="Emphasized"
-                                    press="onClickPredefined"
+                                    press="onClickGuideline"
                                 />
                             </OverflowToolbar>
                             <!-- Competencies Table -->
