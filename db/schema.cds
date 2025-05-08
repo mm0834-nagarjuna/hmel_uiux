@@ -1,25 +1,19 @@
 namespace my.appraisal;
-
 entity AppraisalDocuments {
   key index: Integer;
-
-  appraisalId: String;
+  key appraisalId: String;
   appraisalName: String;
   appraisalTypeText: String;
-
   appraiserId: String;
   appraiserType: String;
   appraiserTypeText: String;
   appraiserName: String;
-
   appraiseeId: String;
   appraiseeType: String;
   appraiseeTypeText: String;
   appraiseeName: String;
-
   apStatusName: String;
   apStatusSubName: String;
-
   submit: Boolean;
   referBackToEmployee: Boolean;
   onlySaveOption: Boolean;
@@ -27,18 +21,15 @@ entity AppraisalDocuments {
   allowTargetRevision: Boolean;
   doNotAllowTargetRevision: Boolean;
   referBackToAppraiser: Boolean;
-
   coFg: Boolean;
   iG: Boolean;
   bcf: Boolean;
   idp: Boolean;
   summary: Boolean;
   accomp: Boolean;
-
   overalRemarks: Boolean;
   acknowledgement: Boolean;
   overallScore: Boolean;
-
   coFgKSP: Boolean;
   coFgKSPEdit: Boolean;
   coFgKPI: Boolean;
@@ -49,7 +40,6 @@ entity AppraisalDocuments {
   coFgWeightageEdit: Boolean;
   coFgARScore: Boolean;
   coFgARScoreEdit: Boolean;
-
   cofgffmaAE: Boolean;
   cofgffmaAEEdit: Boolean;
   cofgffmaAR: Boolean;
@@ -61,9 +51,8 @@ entity AppraisalDocuments {
   cofgaaAEE: Boolean;
   cofgaaAEEdit: Boolean;
   cofgafAER: Boolean;
-  cofgafAERdit: Boolean;
+  cofgafAEREdit: Boolean;
   cofgselfAEScore: Boolean;
-
   igKSP: Boolean;
   igKSPEdit: Boolean;
   igKPI: Boolean;
@@ -74,10 +63,10 @@ entity AppraisalDocuments {
   igWeightageEdit: Boolean;
   igARScore: Boolean;
   igARScoreEdit: Boolean;
-
   igffmaAE: Boolean;
   igffmaAEEdit: Boolean;
   igffmaAR: Boolean;
+  igffmaAREdit: Boolean;
   igsfmaAE: Boolean;
   igsfmaAEEdit: Boolean;
   igsfmaAR: Boolean;
@@ -85,9 +74,8 @@ entity AppraisalDocuments {
   igaaAEE: Boolean;
   igaaAEEdit: Boolean;
   igafAER: Boolean;
-  igafAERdit: Boolean;
+  igafAEREdit: Boolean;
   igselfAEScore: Boolean;
-
   bcfTabEdit: Boolean;
   bcfFFMR: Boolean;
   bcfFFRAEEdit: Boolean;
@@ -101,51 +89,40 @@ entity AppraisalDocuments {
   bcfANRREREdit: Boolean;
   bcfANSC: Boolean;
   bcfANSCAREdit: Boolean;
-
   idpBCD: Boolean;
   idpBCDAEEditSM: Boolean;
   idpBCDR1AREdit: Boolean;
   idpBCDR2AREdit: Boolean;
   idpBCDANAREdit: Boolean;
-
   idpFAODA: Boolean;
   idpFAODAAEEdit: Boolean;
   idpFAODAAREdit: Boolean;
-
   idpFTDA: Boolean;
   idpFTDAAEEdit: Boolean;
   idpFTDAAREdit: Boolean;
-
   idpFMRS: Boolean;
   idpFFMRSREAEEdit: Boolean;
   idpSFMRSREAEEdit: Boolean;
   idpFFMRSREAREdit: Boolean;
   idpSFMRSREAREdit: Boolean;
-
   idpANRS: Boolean;
   idpANRSAEEdit: Boolean;
   idpANRSAREdit: Boolean;
   idpANRSREEdit: Boolean;
-
   idpAASCR: Boolean;
   idpAASCRAREdit: Boolean;
   idpAASCRREdit: Boolean;
-
   accompEdit: Boolean;
-
   oRFFMR: Boolean;
   oRFFMRAEEdit: Boolean;
   oRFFMRAREdit: Boolean;
-
   oRSFMR: Boolean;
   oRSFMRAEEdit: Boolean;
   oRSFMRAREdit: Boolean;
-
   oRANR: Boolean;
   oRANRRAEEdit: Boolean;
   oRANRRAREdit: Boolean;
   oRANRRREEdit: Boolean;
-
   ackTSC: Boolean;
   ackTSCEdit: Boolean;
   ackFFMC: Boolean;
@@ -154,14 +131,11 @@ entity AppraisalDocuments {
   ackSFMCEdit: Boolean;
   ackANC: Boolean;
   ackANCEdit: Boolean;
-
   oScrSEScr: Boolean;
   oScrSEScrAEEdit: Boolean;
   oScrSEScrAREdit: Boolean;
   oScrSEScrREEdit: Boolean;
-
   oScr360: Boolean;
-
   oScores: Boolean;
   oScoresAEEdit: Boolean;
   oScoresAREdit: Boolean;
