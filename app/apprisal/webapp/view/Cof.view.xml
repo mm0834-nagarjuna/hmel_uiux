@@ -83,13 +83,13 @@
                                 <Label
                                     text="Appraiser Score :"
                                     class="sapUiSmallMarginEnd"
-                                    visible="{appisalData>coFgARScore}"
+                                    visible="{apprisalData>coFgARScore}"
                                 />
                                 <ComboBox
                                     items="{/numbers}"
                                     value="3"
-                                    visible="{appisalData>coFgARScore}"
-									editable="{appisalData>coFgARScoreEdit}"
+                                    visible="{apprisalData>coFgARScore}"
+									editable="{apprisalData>coFgARScoreEdit}"
                                 >
                                     <core:Item
                                         key="{key}"
@@ -102,19 +102,19 @@
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
                                     class="sapUiSmallMarginEnd"
-									visible="{appisalData>coFgARScore}"
+									visible="{apprisalData>coFgARScore}"
                                 />
                                 <Label
                                     text="Weightage(%)"
                                     labelFor="COF_11_WEIGTAGE"
                                     class="sapUiSmallMarginEnd"
-									visible="{appisalData>coFgWeightage}"
+									visible="{apprisalData>coFgWeightage}"
                                 />
                                 <ComboBox
                                     items="{/numbers}"
                                     value="5"
-									visible="{appisalData>coFgWeightage}"
-									editable="{appisalData>coFgWeightageEdit}"
+									visible="{apprisalData>coFgWeightage}"
+									editable="{apprisalData>coFgWeightageEdit}"
                                 >
                                     <core:Item
                                         key="{key}"
@@ -283,13 +283,13 @@
                                 <Label
                                     text="Appraiser Score :"
                                     class="sapUiSmallMarginEnd"
-                                    visible="{appisalData>coFgARScore}"
+                                    visible="{apprisalData>coFgARScore}"
                                 />
                                 <ComboBox
                                     items="{/numbers}"
                                     value="3"
-                                    visible="{appisalData>coFgARScore}"
-									editable="{appisalData>coFgARScoreEdit}"
+                                    visible="{apprisalData>coFgARScore}"
+									editable="{apprisalData>coFgARScoreEdit}"
                                 >
                                     <core:Item
                                         key="{key}"
@@ -302,19 +302,19 @@
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
                                     class="sapUiSmallMarginEnd"
-									visible="{appisalData>coFgARScore}"
+									visible="{apprisalData>coFgARScore}"
                                 />
                                 <Label
                                     text="Weightage(%)"
                                     labelFor="COF_11_WEIGTAGE"
                                     class="sapUiSmallMarginEnd"
-									visible="{appisalData>coFgWeightage}"
+									visible="{apprisalData>coFgWeightage}"
                                 />
                                 <ComboBox
                                     items="{/numbers}"
                                     value="5"
-									visible="{appisalData>coFgWeightage}"
-									editable="{appisalData>coFgWeightageEdit}"
+									visible="{apprisalData>coFgWeightage}"
+									editable="{apprisalData>coFgWeightageEdit}"
                                 >
                                     <core:Item
                                         key="{key}"
