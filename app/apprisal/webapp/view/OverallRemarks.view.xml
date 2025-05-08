@@ -18,7 +18,8 @@
                         title="First Four Monthly Remarks"
                         titleUppercase="false"
                         showTitle="false"
-                    >
+                        visible="{apprisalData>oRFFMR}"
+                      >
                         <VBox>
                             <OverflowToolbar>
                                 <Title text="First Four Monthly Remarks" />
@@ -34,16 +35,19 @@
                                 value="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Appraisee_Achievement}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>oRFFMRAEEdit}"
                             />
                             <Label
                                 text="First Four Monthly Feedback:Appraiser"
                                 class="sapUiSmallMarginTop"
+                                
                             />
                             <TextArea
                                 width="100%"
                                 value="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Appraiser_Feedback}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>oRFFMRAREdit}"
                             />
                             <HBox
                                 alignItems="Center"
@@ -56,6 +60,7 @@
                                 <ComboBox
                                     items="{PreDefineGoal>/Overal_Remarks/0/Timeliness}"
                                     selectedKey="35"
+                                    editable="{apprisalData>oRFFMRAREdit}"
                                 >
                                     <core:Item
                                         key="{PreDefineGoal>key}"
@@ -74,7 +79,7 @@
                                 <Select
                                     width="200px"
                                     selectedKey="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Performance_First_Review}"
-                                    editable="false"
+                                    editable="{apprisalData>oRFFMRAREdit}"
                                 >
                                     <items>
                                         <core:Item
@@ -97,12 +102,14 @@
                 titleUppercase="false"
                 title="Second Four Monthly Remarks"
                 showTitle="false"
-            >
+                visible="{apprisalData>oRSFMR}"
+             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="Second Four Monthly Remarks"
                         titleUppercase="false"
                         showTitle="true"
+                        
                     >
                         <VBox>
                             <OverflowToolbar>
@@ -119,6 +126,7 @@
                                 value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraisee_Achievement}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>oRSFMRAEEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Feedback:Appraiser"
@@ -129,6 +137,7 @@
                                 value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraiser_Feedback}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>oRSFMRAREdit}"
                             />
                             <HBox
                                 alignItems="Center"
@@ -141,6 +150,7 @@
                                 <ComboBox
                                     items="{PreDefineGoal>/Overal_Remarks/0/Timeliness}"
                                     selectedKey="35"
+                                    editable="{apprisalData>oRSFMRAREdit}"
                                 >
                                     <core:Item
                                         key="{PreDefineGoal>key}"
@@ -159,7 +169,7 @@
                                 <Select
                                     width="200px"
                                     selectedKey="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Performance_Second_Review}"
-                                    editable="true"
+                                    editable="{apprisalData>oRSFMRAREdit}"
                                 >
                                     <items>
                                         <core:Item
@@ -182,7 +192,8 @@
                 titleUppercase="false"
                 title="Annual Remarks"
                 showTitle="false"
-            >
+                visible="{apprisalData>oRANR}"
+             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="Annual Overall Remarks"
@@ -204,6 +215,7 @@
                                 value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraisee_Achievement}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>oRANRRAEEdit}"
                             />
                             <Label
                                 text="Annual Feedback-Appraiser"
@@ -214,6 +226,7 @@
                                 value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraiser_Feedback}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>oRANRRAREdit}"
                             />
                             <Label
                                 text="Annual Feedback- Reviewer"
@@ -224,6 +237,7 @@
                                 value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraiser_Feedback}"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>oRANRRREEdit}"
                             />
                             <HBox
                                 alignItems="Center"
@@ -236,6 +250,7 @@
                                 <ComboBox
                                     items="{PreDefineGoal>/Overal_Remarks/0/Timeliness}"
                                     selectedKey="35"
+                                    editable="{apprisalData>oRANRRAREdit}"
                                 >
                                     <core:Item
                                         key="{PreDefineGoal>key}"
@@ -253,6 +268,7 @@
                                 />
                                 <Input
                                     value="{PreDefineGoal>/Overal_Remarks/0/Annual_Remarks/0/Reviewer_Score}"
+                                    editable="{apprisalData>oRANRRREEdit}"
                                 />
                             </HBox>
                         </VBox>

@@ -137,7 +137,7 @@
 							<tnt:NavigationListItem
                                 text="Acknowledgement"
                                 key="apprisal.view.Ack"
-                                visible="{apprisalData>acknowledgementVisible}"
+                                visible="{apprisalData>acknowledgement}"
                             />
 							<tnt:NavigationListItem
                                 text="Overall Score"

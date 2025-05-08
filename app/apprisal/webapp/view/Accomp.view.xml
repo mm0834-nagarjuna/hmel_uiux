@@ -28,8 +28,9 @@
                                 text="New"
                                 type="Ghost"
                                 press="onItemSelect"
+                                enabled="{apprisalData>accompEdit}"
                             />
-                            <MenuButton text="Upload/Download" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen">
+                            <MenuButton text="Upload/Download" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen" enabled="{apprisalData>accompEdit}" >
                                 <menu>
                                     <Menu itemSelected="onMenuAction">
                                         <MenuItem text="Upload" icon="sap-icon://upload" />
@@ -63,7 +64,7 @@
                                 value="Annual Achievement - Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="true"
+                                editable="{apprisalData>accompEdit}"
                             />
 						</VBox>
 					</uxap:ObjectPageSubSection>
@@ -90,7 +91,7 @@
                                 value="Annual Achievement - Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="true"
+                                editable="{apprisalData>accompEdit}"
                             />
 						</VBox>
 					</uxap:ObjectPageSubSection>

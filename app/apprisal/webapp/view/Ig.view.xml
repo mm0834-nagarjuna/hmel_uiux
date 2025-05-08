@@ -153,80 +153,80 @@
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>ffmaAE}"
+                                visible="{apprisalData>igffmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Achievement:Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>ffmaAE}"
-                                editable="{apprisalData>ffmaAEEdit}"
+                                visible="{apprisalData>igffmaAE}"
+                                editable="{apprisalData>igffmaAEEdit}"
                             />
                             <Label
                                 text="First Four Monthly Feedback:Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>ffmaAR}"
+                                visible="{apprisalData>igffmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>ffmaAR}"
-                                editable="{apprisalData>ffmaAREdit}"
+                                visible="{apprisalData>igffmaAR}"
+                                editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>sfmaAE}"
+                                visible="{apprisalData>igsfmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly AchievementAppraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>sfmaAE}"
-                                editable="{apprisalData>sfmaAEEdit}"
+                                visible="{apprisalData>igsfmaAE}"
+                                editable="{apprisalData>igsfmaAEEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Feedback:Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>sfmaAR}"
+                                visible="{apprisalData>igsfmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>sfmaAR}"
-                                editable="{apprisalData>sfmaAREdit}"
+                                visible="{apprisalData>igsfmaAR}"
+                                editable="{apprisalData>igsfmaAREdit}"
                             />
                             <Label
                                 text="Annual Achievement-Appraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>aaAEE}"
+                                visible="{apprisalData>igaaAEE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Achievement-Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>aaAEE}"
-                                editable="{apprisalData>aaAEEdit}"
+                                visible="{apprisalData>igaaAEE}"
+                                editable="{apprisalData>igaaAEEdit}"
                             />
                             <Label
                                 text="Annual Feedback-Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>afAER}"
+                                visible="{apprisalData>igafAER}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Feedback-Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>afAER}"
-                                editable="{apprisalData>afAERdit}"
+                                visible="{apprisalData>igafAER}"
+                                editable="{apprisalData>igafAEREdit}"
                             />
                             <HBox
                                 alignItems="Center"
@@ -235,11 +235,11 @@
                                 <Label
                                     text="Score - Appraisee :"
                                     class="sapUiSmallMarginEnd"
-                                    visible="{apprisalData>aaAEE}"
+                                    visible="{apprisalData>igaaAEE}"
                                 />
                                 <Input value="4" 
-                                visible="{apprisalData>aaAEE}"
-                                editable="{apprisalData>aaAEEdit}"
+                                visible="{apprisalData>igaaAEE}"
+                                editable="{apprisalData>igaaAEEdit}"
                                 />
                             </HBox>
                         </VBox>
@@ -336,80 +336,80 @@
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>ffmaAE}"
+                                visible="{apprisalData>igffmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Achievement:Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>ffmaAE}"
-                                editable="{apprisalData>ffmaAEEdit}"
+                                visible="{apprisalData>igffmaAE}"
+                                editable="{apprisalData>igffmaAEEdit}"
                             />
                             <Label
                                 text="First Four Monthly Feedback:Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>ffmaAR}"
+                                visible="{apprisalData>igffmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>ffmaAR}"
-                                editable="{apprisalData>ffmaAREdit}"
+                                visible="{apprisalData>igffmaAR}"
+                                editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>sfmaAE}"
+                                visible="{apprisalData>igsfmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly AchievementAppraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>sfmaAE}"
-                                editable="{apprisalData>sfmaAEEdit}"
+                                visible="{apprisalData>igsfmaAE}"
+                                editable="{apprisalData>igsfmaAEEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Feedback:Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>sfmaAR}"
+                                visible="{apprisalData>igsfmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>sfmaAR}"
-                                editable="{apprisalData>sfmaAREdit}"
+                                visible="{apprisalData>igsfmaAR}"
+                                editable="{apprisalData>igsfmaAREdit}"
                             />
                             <Label
                                 text="Annual Achievement-Appraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>aaAEE}"
+                                visible="{apprisalData>igaaAEE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Achievement-Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>aaAEE}"
-                                editable="{apprisalData>aaAEEdit}"
+                                visible="{apprisalData>igaaAEE}"
+                                editable="{apprisalData>igaaAEEdit}"
                             />
                             <Label
                                 text="Annual Feedback-Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>afAER}"
+                                visible="{apprisalData>igafAER}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Feedback-Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>afAER}"
-                                editable="{apprisalData>afAERdit}"
+                                visible="{apprisalData>igafAER}"
+                                editable="{apprisalData>igafAEREdit}"
                             />
                             <HBox
                                 alignItems="Center"
@@ -418,11 +418,11 @@
                                 <Label
                                     text="Score - Appraisee :"
                                     class="sapUiSmallMarginEnd"
-                                    visible="{apprisalData>aaAEE}"
+                                    visible="{apprisalData>igaaAEE}"
                                 />
                                 <Input value="4" 
-                                visible="{apprisalData>aaAEE}"
-                                editable="{apprisalData>aaAEEdit}"
+                                visible="{apprisalData>igaaAEE}"
+                                editable="{apprisalData>igaaAEEdit}"
                                 />
                             </HBox>
                         </VBox>
@@ -519,80 +519,80 @@
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>ffmaAE}"
+                                visible="{apprisalData>igffmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Achievement:Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>ffmaAE}"
-                                editable="{apprisalData>ffmaAEEdit}"
+                                visible="{apprisalData>igffmaAE}"
+                                editable="{apprisalData>igffmaAEEdit}"
                             />
                             <Label
                                 text="First Four Monthly Feedback:Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>ffmaAR}"
+                                visible="{apprisalData>igffmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="First Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>ffmaAR}"
-                                editable="{apprisalData>ffmaAREdit}"
+                                visible="{apprisalData>igffmaAR}"
+                                editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>sfmaAE}"
+                                visible="{apprisalData>igsfmaAE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly AchievementAppraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>sfmaAE}"
-                                editable="{apprisalData>sfmaAEEdit}"
+                                visible="{apprisalData>igsfmaAE}"
+                                editable="{apprisalData>igsfmaAEEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Feedback:Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>sfmaAR}"
+                                visible="{apprisalData>igsfmaAR}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Second Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>sfmaAR}"
-                                editable="{apprisalData>sfmaAREdit}"
+                                visible="{apprisalData>igsfmaAR}"
+                                editable="{apprisalData>igsfmaAREdit}"
                             />
                             <Label
                                 text="Annual Achievement-Appraisee"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>aaAEE}"
+                                visible="{apprisalData>igaaAEE}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Achievement-Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>aaAEE}"
-                                editable="{apprisalData>aaAEEdit}"
+                                visible="{apprisalData>igaaAEE}"
+                                editable="{apprisalData>igaaAEEdit}"
                             />
                             <Label
                                 text="Annual Feedback-Appraiser"
                                 class="sapUiSmallMarginTop"
-                                visible="{apprisalData>afAER}"
+                                visible="{apprisalData>igafAER}"
                             />
                             <TextArea
                                 width="100%"
                                 value="Annual Feedback-Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                visible="{apprisalData>afAER}"
-                                editable="{apprisalData>afAERdit}"
+                                visible="{apprisalData>igafAER}"
+                                editable="{apprisalData>igafAEREdit}"
                             />
                             <HBox
                                 alignItems="Center"
@@ -601,11 +601,11 @@
                                 <Label
                                     text="Score - Appraisee :"
                                     class="sapUiSmallMarginEnd"
-                                    visible="{apprisalData>aaAEE}"
+                                    visible="{apprisalData>igaaAEE}"
                                 />
                                 <Input value="4" 
-                                visible="{apprisalData>aaAEE}"
-                                editable="{apprisalData>aaAEEdit}"
+                                visible="{apprisalData>igaaAEE}"
+                                editable="{apprisalData>igaaAEEdit}"
                                 />
                             </HBox>
                         </VBox>

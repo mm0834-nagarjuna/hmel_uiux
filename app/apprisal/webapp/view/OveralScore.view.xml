@@ -22,6 +22,7 @@
                         title="Section Scores"
                         titleUppercase="false"
                         showTitle="false"
+                        visible="{apprisalData>oScrSEScr}"
                         >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
@@ -63,15 +64,15 @@
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Appraisee}"
-                                                editable="false"
+                                                editable="{apprisalData>oScrSEScrAEEdit}"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Appraiser}"
-                                                editable="false"
+                                                editable="{apprisalData>oScrSEScrAREdit}"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Reviewer}"
-                                                editable="false"
+                                                editable="{apprisalData>oScrSEScrREEdit}"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -91,6 +92,7 @@
                         title="360 Degree Score Report"
                         titleUppercase="false"
                         showTitle="false"
+                        visible="{apprisalData>oScr360}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
@@ -138,6 +140,7 @@
                         title="Section Scores"
                         titleUppercase="false"
                         showTitle="false"
+                        visible="{apprisalData>oScores}"
                         >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
@@ -169,15 +172,15 @@
                                         <cells>
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Appraisee}"
-                                                editable="false"
+                                                editable="{apprisalData>oScoresAEEdit}"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Appraiser}"
-                                                editable="false"
+                                                editable="{apprisalData>oScoresAREdit}"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Reviewer}"
-                                                editable="false"
+                                                editable="{apprisalData>oScoresREEdit}"
                                             />
                                         </cells>
                                     </ColumnListItem>
