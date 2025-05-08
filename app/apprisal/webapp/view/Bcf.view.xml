@@ -145,7 +145,7 @@
                                     />
                                     <TextArea
                                         width="100%"
-                                        value="{apprisalData>co_ksp_value}"
+                                        value="BCF Remarks-Appraisee"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
                                         editable="true"
@@ -158,7 +158,7 @@
                                     />
                                     <TextArea
                                         width="100%"
-                                        value="{apprisalData>co_ksp_value}"
+                                        value="BCF Remarks-Appraiser"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
                                         editable="true"
@@ -195,7 +195,7 @@
                                     />
                                     <TextArea
                                         width="100%"
-                                        value="{apprisalData>co_ksp_value}"
+                                        value="BCF Remarks-Appraisee"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
                                         editable="true"
@@ -208,7 +208,7 @@
                                     />
                                     <TextArea
                                         width="100%"
-                                        value="{apprisalData>co_ksp_value}"
+                                        value="BCF Remarks-Appraiser"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
                                         editable="true"
@@ -245,7 +245,7 @@
                                     />
                                     <TextArea
                                         width="100%"
-                                        value="{apprisalData>co_ksp_value}"
+                                        value="BCF Remarks-Appraisee"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
                                         editable="true"
@@ -258,7 +258,7 @@
                                     />
                                     <TextArea
                                         width="100%"
-                                        value="{apprisalData>co_ksp_value}"
+                                        value="BCF Remarks-Appraiser"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
                                         editable="true"
@@ -271,7 +271,7 @@
                                     />
                                     <TextArea
                                         width="100%"
-                                        value="{apprisalData>co_ksp_value}"
+                                        value="BCF Remarks-Reviewer"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
                                         editable="true"

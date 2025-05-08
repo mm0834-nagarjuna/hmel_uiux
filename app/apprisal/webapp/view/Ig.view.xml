@@ -106,10 +106,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_ksp_value}"
+                                value="Key Strategic Priority - Key Results Area"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_ksp_edit}"
+                                editable="true"
                             />
                             <Label
                                 text="Key Performance Index"
@@ -117,10 +117,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_kpi_value}"
+                                value="Key Performance Index"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_kpi_edit}"
+                                editable="{apprisalData>igKPIEdit}"
                             />
                             <Label
                                 text="Target"
@@ -128,10 +128,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_target_value}"
+                                value="Target"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
@@ -142,7 +142,7 @@
                                 value="First Four Monthly Achievement:Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Feedback:Appraiser"
@@ -153,7 +153,7 @@
                                 value="First Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
@@ -164,7 +164,7 @@
                                 value="Second Four Monthly AchievementAppraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Feedback:Appraiser"
@@ -175,7 +175,7 @@
                                 value="Second Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Annual Achievement-Appraisee"
@@ -186,7 +186,7 @@
                                 value="Annual Achievement-Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Annual Feedback-Appraiser"
@@ -197,7 +197,7 @@
                                 value="Annual Feedback-Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <HBox
                                 alignItems="Center"
@@ -259,10 +259,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_ksp_value}"
+                                value="Key Strategic Priority - Key Results Area"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_ksp_edit}"
+                                editable="true"
                             />
                             <Label
                                 text="Key Performance Index"
@@ -270,10 +270,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_kpi_value}"
+                                value="Key Performance Index"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_kpi_edit}"
+                                editable="{apprisalData>igKPIEdit}"
                             />
                             <Label
                                 text="Target"
@@ -281,10 +281,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_target_value}"
+                                value="Target"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
@@ -295,7 +295,7 @@
                                 value="First Four Monthly Achievement:Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Feedback:Appraiser"
@@ -306,7 +306,7 @@
                                 value="First Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
@@ -317,7 +317,7 @@
                                 value="Second Four Monthly AchievementAppraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Feedback:Appraiser"
@@ -328,7 +328,7 @@
                                 value="Second Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Annual Achievement-Appraisee"
@@ -339,7 +339,7 @@
                                 value="Annual Achievement-Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Annual Feedback-Appraiser"
@@ -350,7 +350,7 @@
                                 value="Annual Feedback-Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <HBox
                                 alignItems="Center"
@@ -412,10 +412,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_ksp_value}"
+                                value="Key Strategic Priority - Key Results Area"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_ksp_edit}"
+                                editable="true"
                             />
                             <Label
                                 text="Key Performance Index"
@@ -423,10 +423,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_kpi_value}"
+                                value="Key Performance Index"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_kpi_edit}"
+                                editable="{apprisalData>igKPIEdit}"
                             />
                             <Label
                                 text="Target"
@@ -434,10 +434,10 @@
                             />
                             <TextArea
                                 width="100%"
-                                value="{apprisalData>ig_target_value}"
+                                value="Target"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
@@ -448,7 +448,7 @@
                                 value="First Four Monthly Achievement:Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Feedback:Appraiser"
@@ -459,7 +459,7 @@
                                 value="First Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Second Four Monthly AchievementAppraisee"
@@ -470,7 +470,7 @@
                                 value="Second Four Monthly AchievementAppraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Second Four Monthly Feedback:Appraiser"
@@ -481,7 +481,7 @@
                                 value="Second Four Monthly Feedback:Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Annual Achievement-Appraisee"
@@ -492,7 +492,7 @@
                                 value="Annual Achievement-Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <Label
                                 text="Annual Feedback-Appraiser"
@@ -503,7 +503,7 @@
                                 value="Annual Feedback-Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_target_edit}"
+                                editable="{apprisalData>igTargetEdit}"
                             />
                             <HBox
                                 alignItems="Center"

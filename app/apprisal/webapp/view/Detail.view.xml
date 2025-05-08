@@ -17,7 +17,13 @@
                 level="H3"
             />
 			<ToolbarSpacer />
-			<Button text="Save" />
+			<Button text="Submit" visible="{apprisalData>submit}"/>
+			<Button text="Refer Back to Appraisee" visible="{apprisalData>referBackToEmployee}"/>
+			<Button text="Target Revision Required" visible="{apprisalData>targetRevisionRequired}"/>
+			<Button text="Allow Target Revision" visible="{apprisalData>allowTargetRevision}"/>
+			<Button text="Don't Allow Target Revision" visible="{apprisalData>doNotAllowTargetRevision}"/>
+			<Button text="Refer Back To Appraiser" visible="{apprisalData>referBackToAppraiser}"/>
+			<Button text="Save" visible="{apprisalData>onlySaveOption}"/>
 			<Button text="Print" />
 		</Toolbar>
 		<HBox
@@ -84,22 +90,27 @@
 							<tnt:NavigationListItem
                                 text="Common Organizational"
                                 key="apprisal.view.Cof"
+                                visible="{apprisalData>coFg}"
                             />
 							<tnt:NavigationListItem
                                 text="Individual"
                                 key="apprisal.view.Ig"
-                            /></tnt:NavigationListItem>
+                                visible="{apprisalData>iG}"
+                            />
+                        </tnt:NavigationListItem>
 						<tnt:NavigationListItem
                             text="Behavioral Competency Framework"
                             icon="sap-icon://kpi-managing-my-area"
                             selectable="true"
                             key="apprisal.view.Bcf"
+                            visible="{apprisalData>bcf}"
                         />
 						<tnt:NavigationListItem
                             text="Individual Development Plan"
                             icon="sap-icon://learning-assistant"
                             selectable="true"
                             key="apprisal.view.Idp"
+                            visible="{apprisalData>idp}"
                         />
 						<tnt:NavigationListItem
                             text="Appraiser/Reviewer/HOD Scorecard"
@@ -111,22 +122,27 @@
                             text="Summary"
                             icon="sap-icon://activity-items"
                             selectable="false"
+                            visible="{apprisalData>summary}"
                         >
 							<tnt:NavigationListItem
                                 text="Accomplishments"
                                 key="apprisal.view.Accomp"
+                                visible="{apprisalData>accomp}"
                             />
 							<tnt:NavigationListItem
                                 text="Overall Remarks"
                                 key="apprisal.view.OverallRemarks"
+                                visible="{apprisalData>overalRemarks}"
                             />
 							<tnt:NavigationListItem
                                 text="Acknowledgement"
                                 key="apprisal.view.Ack"
+                                visible="{apprisalData>acknowledgementVisible}"
                             />
 							<tnt:NavigationListItem
                                 text="Overall Score"
                                 key="apprisal.view.OveralScore"
+                                visible="{apprisalData>overallScore}"
                             />
                         </tnt:NavigationListItem>
 					</tnt:NavigationList>

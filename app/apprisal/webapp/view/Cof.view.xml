@@ -88,27 +88,27 @@
                             />
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_ksp_value}"
+                                value="Key Strategic Priority - Key Results Area"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_ksp_edit}"
+								editable="{apprisalData>coFgKSPEdit}"
                             />
 							<Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_kpi_value}"
+                                value="Key Performance Index"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_kpi_edit}"
+								editable="{apprisalData>coFgKPIEdit}"
 
                             />
 							<Label text="Target" class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_target_value}"
+                                value="Target"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
 
                             />
 
@@ -120,7 +120,7 @@
                                 value="First Four Monthly Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<Label text="First Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -128,7 +128,7 @@
                                 value="First Four Monthly Achievement : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<Label text="Second Four Monthly Achievement : Appraisee" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -136,7 +136,7 @@
                                 value="Second Four Monthly Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<Label text="Second Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -144,7 +144,7 @@
                                 value="Second Four Monthly Achievement : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
 							/>
 							<Label text="Annual Achievement : Appraisee" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -152,7 +152,7 @@
                                 value="Annual Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<Label text="Annual Feedback : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -160,7 +160,7 @@
                                 value="Annual Feedback : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<HBox alignItems="Center">
 							<Label text="Score - Self Appraisal : Appraisee " />
@@ -218,27 +218,27 @@
                             />
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_ksp_value}"
+                                value="Key Strategic Priority - Key Results Area"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_ksp_edit}"
+								editable="{apprisalData>coFgKSPEdit}"
                             />
 							<Label text="Key Performance Index"  class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_kpi_value}"
+                                value="Key Performance Index"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_kpi_edit}"
+								editable="{apprisalData>coFgKPIEdit}"
 
                             />
 							<Label text="Target" class="sapUiSmallMarginTop"/>
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>co_target_value}"
+                                value="Target"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
 
                             />
 
@@ -250,7 +250,7 @@
                                 value="First Four Monthly Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<Label text="First Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -258,7 +258,7 @@
                                 value="First Four Monthly Achievement : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<Label text="Second Four Monthly Achievement : Appraisee" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -266,7 +266,7 @@
                                 value="Second Four Monthly Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<Label text="Second Four Monthly Achievement : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -274,7 +274,7 @@
                                 value="Second Four Monthly Achievement : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
 							/>
 							<Label text="Annual Achievement : Appraisee" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -282,7 +282,7 @@
                                 value="Annual Achievement : Appraisee"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<Label text="Annual Feedback : Appraiser" class="sapUiSmallMarginTop"/>
 							<TextArea
@@ -290,7 +290,7 @@
                                 value="Annual Feedback : Appraiser"
                                 growing="true"
 								class="sapUiSmallMarginBottom"
-								editable="{apprisalData>co_target_edit}"
+								editable="{apprisalData>coFgTargetEdit}"
                             />
 							<HBox alignItems="Center">
 							<Label text="Score - Self Appraisal : Appraisee " />

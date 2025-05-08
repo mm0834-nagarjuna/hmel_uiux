@@ -61,6 +61,7 @@
 						<VBox  class="sapUiLargeMarginBottom">
 							<Title text="Individual Goals"/>
 							<Table 
+							alternateRowColors="true"
 								items="{
 									path : 'PreDefineGoal>/Scorecard/Appraiser/Common_Organization_Goals'
 								}">

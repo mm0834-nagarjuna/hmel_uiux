@@ -56,10 +56,16 @@
         </Avatar>
     </tnt:ToolHeader>
 
-            
+	<ScrollContainer
+		height="100%"
+		width="100%"
+		vertical="true"
+		focusable="true">
+		
+	           
                 <Table
                     id="idApprisalTable"
-                    class="sapUiSmallMarginTop"
+                    class="sapUiSmallMarginTop sapUiSmallMarginBottom"
                     inset="false"
                     items="{
                         path: 'apprisalData>/appraisal',
@@ -67,7 +73,8 @@
                             path: 'appraisalName'
                         }
                     }"
-                >
+                    
+                 >
                     <columns>
                         <Column >
                             <Text text="Apprisal Name" />
@@ -97,6 +104,8 @@
                         </ColumnListItem>
                     </items>
                 </Table>
+
+                </ScrollContainer> 
 
 
 </mvc:View>

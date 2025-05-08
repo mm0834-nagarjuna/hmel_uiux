@@ -60,10 +60,10 @@
                             />
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>accomp1}"
+                                value="Annual Achievement - Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_ksp_edit}"
+                                editable="true"
                             />
 						</VBox>
 					</uxap:ObjectPageSubSection>
@@ -87,10 +87,10 @@
                             />
 							<TextArea
                                 width="100%"
-                                value="{apprisalData>accomp2}"
+                                value="Annual Achievement - Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>ig_ksp_edit}"
+                                editable="true"
                             />
 						</VBox>
 					</uxap:ObjectPageSubSection>
