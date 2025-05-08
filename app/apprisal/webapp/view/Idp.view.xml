@@ -28,7 +28,7 @@
                             <Button
                                 text="Guideline"
                                 type="Emphasized"
-                                press="onClickPredefined"
+                                press="onClickGuideline"
                             />
                         </OverflowToolbar>
                     </uxap:ObjectPageSubSection>
