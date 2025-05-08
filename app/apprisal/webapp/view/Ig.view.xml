@@ -126,7 +126,7 @@
                                 value="Key Strategic Priority - Key Results Area"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>igKPIEdit}"
+                                editable="{apprisalData>igKSPEdit}"
                             />
                             <Label
                                 text="Key Performance Index"
@@ -177,13 +177,13 @@
                                 editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
-                                text="Second Four Monthly AchievementAppraisee"
+                                text="Second Four Monthly Achievement Appraisee"
                                 class="sapUiSmallMarginTop"
                                 visible="{apprisalData>igsfmaAE}"
                             />
                             <TextArea
                                 width="100%"
-                                value="Second Four Monthly AchievementAppraisee"
+                                value="Second Four Monthly Achievement Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 visible="{apprisalData>igsfmaAE}"
@@ -239,13 +239,17 @@
                                 />
                                 <Input value="4" 
                                 visible="{apprisalData>igaaAEE}"
+<<<<<<< HEAD
                                 editable="{apprisalData>igaaAEEdit}"
+=======
+                                editable="{apprisalData>igselfAEScore}"
+>>>>>>> de359cc1f9cd4a7a5206317a12a7c7e890ff08ab
                                 />
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
-            </uxap:ObjectPageSection>
+            </uxap:ObjectPageSection>            
             <uxap:ObjectPageSection
                 titleUppercase="false"
                 title="2"
@@ -255,7 +259,7 @@
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="1 Key Performance Area" />
+                                <Title text="2 Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
                             <HBox class="sapUiSmallMarginTop">
@@ -309,7 +313,7 @@
                                 value="Key Strategic Priority - Key Results Area"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>igKPIEdit}"
+                                editable="{apprisalData>igKSPEdit}"
                             />
                             <Label
                                 text="Key Performance Index"
@@ -360,13 +364,13 @@
                                 editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
-                                text="Second Four Monthly AchievementAppraisee"
+                                text="Second Four Monthly Achievement Appraisee"
                                 class="sapUiSmallMarginTop"
                                 visible="{apprisalData>igsfmaAE}"
                             />
                             <TextArea
                                 width="100%"
-                                value="Second Four Monthly AchievementAppraisee"
+                                value="Second Four Monthly Achievement Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 visible="{apprisalData>igsfmaAE}"
@@ -422,13 +426,17 @@
                                 />
                                 <Input value="4" 
                                 visible="{apprisalData>igaaAEE}"
+<<<<<<< HEAD
                                 editable="{apprisalData>igaaAEEdit}"
+=======
+                                editable="{apprisalData>igselfAEScore}"
+>>>>>>> de359cc1f9cd4a7a5206317a12a7c7e890ff08ab
                                 />
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
-            </uxap:ObjectPageSection>
+            </uxap:ObjectPageSection>            
             <uxap:ObjectPageSection
                 titleUppercase="false"
                 title="3"
@@ -438,7 +446,7 @@
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="1 Key Performance Area" />
+                                <Title text="3 Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
                             <HBox class="sapUiSmallMarginTop">
@@ -492,7 +500,7 @@
                                 value="Key Strategic Priority - Key Results Area"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>igKPIEdit}"
+                                editable="{apprisalData>igKSPEdit}"
                             />
                             <Label
                                 text="Key Performance Index"
@@ -543,13 +551,13 @@
                                 editable="{apprisalData>igffmaAREdit}"
                             />
                             <Label
-                                text="Second Four Monthly AchievementAppraisee"
+                                text="Second Four Monthly Achievement Appraisee"
                                 class="sapUiSmallMarginTop"
                                 visible="{apprisalData>igsfmaAE}"
                             />
                             <TextArea
                                 width="100%"
-                                value="Second Four Monthly AchievementAppraisee"
+                                value="Second Four Monthly Achievement Appraisee"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 visible="{apprisalData>igsfmaAE}"
@@ -605,14 +613,17 @@
                                 />
                                 <Input value="4" 
                                 visible="{apprisalData>igaaAEE}"
+<<<<<<< HEAD
                                 editable="{apprisalData>igaaAEEdit}"
+=======
+                                editable="{apprisalData>igselfAEScore}"
+>>>>>>> de359cc1f9cd4a7a5206317a12a7c7e890ff08ab
                                 />
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
-            </uxap:ObjectPageSection>
-            
+            </uxap:ObjectPageSection>            
         </uxap:sections>
     </uxap:ObjectPageLayout>
 </mvc:View>
