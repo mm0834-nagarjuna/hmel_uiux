@@ -54,7 +54,7 @@ sap.ui.define([
                 oDialog.open();
             }.bind(this));
         },
-        onClickCancel: function () {
+        onClickCancelScoreInfo: function () {
             var oView = this.getView();
             var oDialog = oView.byId("idScoreInfoDialog");
             if (oDialog) {
