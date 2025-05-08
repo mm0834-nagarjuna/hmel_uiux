@@ -31,40 +31,40 @@ entity AppraisalDocuments {
     acknowledgementVisible: Boolean;
     overallScore: Boolean;
 
-    coFgKSP: String;
+    coFgKSP: Boolean;
     coFgKSPEdit: Boolean;
-    coFgKPI: String;
+    coFgKPI: Boolean;
     coFgKPIEdit: Boolean;
-    coFgTarget: String;
+    coFgTarget: Boolean;
     coFgTargetEdit: Boolean;
-    coFgWeightage: String;
+    coFgWeightage: Boolean;
     coFgWeightageEdit: Boolean;
-    coFgARScore: String;
+    coFgARScore: Boolean;
     coFgARScoreEdit: Boolean;
 
-    ffmaAE: String;
+    ffmaAE: Boolean;
     ffmaAEEdit: Boolean;
-    ffmaAR: String;
+    ffmaAR: Boolean;
     ffmaAREdit: Boolean;
 
-    sfmaAE: String;
+    sfmaAE: Boolean;
     sfmaAEEdit: Boolean;
-    sfmaAR: String;
+    sfmaAR: Boolean;
     sfmaAREdit: Boolean;
 
-    aaAEE: String;
+    aaAEE: Boolean;
     aaAEEdit: Boolean;
-    afAER: String;
+    afAER: Boolean;
     afAERdit: Boolean;
 
-    selfAEScore: String;
+    selfAEScore: Boolean;
 
-    igKPI: String;
+    igKPI: Boolean;
     igKPIEdit: Boolean;
-    igTarget: String;
+    igTarget: Boolean;
     igTargetEdit: Boolean;
-    igWeightage: String;
+    igWeightage: Boolean;
     igWeightageEdit: Boolean;
-    igARScore: String;
+    igARScore: Boolean;
     igARScoreEdit: Boolean;
 }
