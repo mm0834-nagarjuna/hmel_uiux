@@ -373,7 +373,7 @@
              >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
-                        <VBox>
+                        <VBox class="sapUiLargeMarginBottom">
                             <OverflowToolbar>
                                 <Title text="3 Key Performance Area" />
                                 <ToolbarSpacer />

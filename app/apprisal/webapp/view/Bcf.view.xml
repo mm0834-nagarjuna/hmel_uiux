@@ -23,7 +23,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox>
                             <OverflowToolbar>
                                 <Title text="Competencies" />
                                 <Text
@@ -90,12 +90,21 @@
                                             <Text
                                                 text="{PreDefineGoal>COMP_DEF}"
                                             />
-                                            <Input
-                                                value="{PreDefineGoal>Appraisee_Score}"
-                                                type="Number"
-                                                placeholder="Appraisee Score"
-                                                editable="{PreDefineGoal>Appe_scr_editable}"
-                                            />
+                                            <HBox>
+                                                <Input
+                                                    value="{PreDefineGoal>Appraisee_Score}"
+                                                    type="Number"
+                                                    placeholder="Appraisee Score"
+                                                    editable="{PreDefineGoal>Appe_scr_editable}"
+                                                    width="90%"
+                                                />
+                                                <Button
+                                                    icon="sap-icon://information"
+                                                    type="Transparent"
+                                                    press="onClickScoreInfo"
+                                                    ariaLabelledBy="actionButtonLabel"
+                                                />
+                                            </HBox>
                                             <Input
                                                 value="{PreDefineGoal>Appraisee_Score}"
                                                 type="Number"
@@ -174,7 +183,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox>
                             <OverflowToolbar>
                                 <Title text="Second Four Monthly Review" />
                             </OverflowToolbar>
@@ -224,7 +233,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox>
                             <OverflowToolbar>
                                 <Title text="Annual Review" />
                             </OverflowToolbar>
@@ -287,11 +296,15 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox>
                             <OverflowToolbar>
                                 <Title text="Average Annual Score" />
-								<Button icon="sap-icon://information" type="Transparent" press="onClickScoreInfo" ariaLabelledBy="actionButtonLabel" />
-
+                                <Button
+                                    icon="sap-icon://information"
+                                    type="Transparent"
+                                    press="onClickScoreInfo"
+                                    ariaLabelledBy="actionButtonLabel"
+                                />
                             </OverflowToolbar>
                             <HBox columnGap="2rem">
                                 <HBox
