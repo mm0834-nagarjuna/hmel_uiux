@@ -239,11 +239,7 @@
                                 />
                                 <Input value="4" 
                                 visible="{apprisalData>igaaAEE}"
-<<<<<<< HEAD
-                                editable="{apprisalData>igaaAEEdit}"
-=======
                                 editable="{apprisalData>igselfAEScore}"
->>>>>>> de359cc1f9cd4a7a5206317a12a7c7e890ff08ab
                                 />
                             </HBox>
                         </VBox>
@@ -426,11 +422,7 @@
                                 />
                                 <Input value="4" 
                                 visible="{apprisalData>igaaAEE}"
-<<<<<<< HEAD
-                                editable="{apprisalData>igaaAEEdit}"
-=======
                                 editable="{apprisalData>igselfAEScore}"
->>>>>>> de359cc1f9cd4a7a5206317a12a7c7e890ff08ab
                                 />
                             </HBox>
                         </VBox>
@@ -613,11 +605,7 @@
                                 />
                                 <Input value="4" 
                                 visible="{apprisalData>igaaAEE}"
-<<<<<<< HEAD
-                                editable="{apprisalData>igaaAEEdit}"
-=======
                                 editable="{apprisalData>igselfAEScore}"
->>>>>>> de359cc1f9cd4a7a5206317a12a7c7e890ff08ab
                                 />
                             </HBox>
                         </VBox>
