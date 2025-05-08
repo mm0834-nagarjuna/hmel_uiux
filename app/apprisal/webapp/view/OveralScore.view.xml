@@ -172,15 +172,15 @@
                                         <cells>
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Appraisee}"
-                                                editable="{apprisalData>oScoresAEEdit}"
+                                                editable="false"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Appraiser}"
-                                                editable="{apprisalData>oScoresAREdit}"
+                                                editable="false"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Reviewer}"
-                                                editable="{apprisalData>oScoresREEdit}"
+                                                editable="false"
                                             />
                                         </cells>
                                     </ColumnListItem>
