@@ -14,7 +14,7 @@
         <uxap:sections>
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Behavioral Competency Framework1 "
+                title="Behavioral Competency Framework "
                 showTitle="false"
             >
                 <uxap:subSections>
@@ -80,7 +80,7 @@
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <CheckBox />
+                                            <CheckBox editable="{apprisalData>bcfTabEdit}"/>
                                             <Text
                                                 text="{PreDefineGoal>COMP_DESC}"
                                             />
@@ -124,8 +124,9 @@
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Behavioral Competency Framework "
+                title="First Four Monthly Review"
                 showTitle="false"
+                visible="{apprisalData>bcfFFMR}"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
@@ -148,7 +149,7 @@
                                         value="BCF Remarks-Appraisee"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
-                                        editable="true"
+                                        editable="{apprisalData>bcfFFRAEEdit}"
                                     />
                                 </VBox>
                                 <VBox>
@@ -161,7 +162,7 @@
                                         value="BCF Remarks-Appraiser"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
-                                        editable="true"
+                                        editable="{apprisalData>bcfFFRAREdit}"
                                     />
                                 </VBox>
                             </HBox>
@@ -174,8 +175,9 @@
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Behavioral Competency Framework "
+                title="Second Four Monthly Review "
                 showTitle="false"
+                visible="{apprisalData>bcfSFMR}"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
@@ -198,7 +200,7 @@
                                         value="BCF Remarks-Appraisee"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
-                                        editable="true"
+                                        editable="{apprisalData>bcfSFRAEEdit}"
                                     />
                                 </VBox>
                                 <VBox>
@@ -211,7 +213,8 @@
                                         value="BCF Remarks-Appraiser"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
-                                        editable="true"
+                                        editable="{apprisalData>bcfSFRAREdit}"
+
                                     />
                                 </VBox>
                             </HBox>
@@ -224,8 +227,9 @@
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Behavioral Competency Framework "
+                title="Annual Review "
                 showTitle="false"
+                visible="{apprisalData>bcfANR}"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
@@ -248,7 +252,7 @@
                                         value="BCF Remarks-Appraisee"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
-                                        editable="true"
+                                        editable="{apprisalData>bcfANRAEEdit}"
                                     />
                                 </VBox>
                                 <VBox>
@@ -261,7 +265,7 @@
                                         value="BCF Remarks-Appraiser"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
-                                        editable="true"
+                                        editable="{apprisalData>bcfANRAREdit}"
                                     />
                                 </VBox>
                                 <VBox>
@@ -274,7 +278,7 @@
                                         value="BCF Remarks-Reviewer"
                                         growing="true"
                                         class="sapUiSmallMarginBottom"
-                                        editable="true"
+                                        editable="{apprisalData>bcfANRREREdit}"
                                     />
                                 </VBox>
                             </HBox>
@@ -283,22 +287,24 @@
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
-            <!--Average Annual Score  -->
+            <!--Annual Score  -->
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Behavioral Competency Framework "
+                title="Annual Score "
                 showTitle="false"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="Average Annual Score"
+                        title="Annual Score"
                         titleUppercase="false"
                         showTitle="false"
+                        visible="{apprisalData>bcfANSC}"
+
                     >
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="Average Annual Score" />
+                                <Title text="Annual Score" />
                                 <Button
                                     icon="sap-icon://information"
                                     type="Transparent"
@@ -315,8 +321,8 @@
                                     <Input
                                         value="5"
                                         type="Number"
-                                        placeholder="Appraisee Score"
-                                        editable="{PreDefineGoal>Appe_scr_editable}"
+                                        placeholder="Annual Score- Appraiser"
+                                        editable="false"
                                     />
                                 </HBox>
                                 <HBox
@@ -327,8 +333,8 @@
                                     <Input
                                         value="3"
                                         type="Number"
-                                        placeholder="Appraisee Score"
-                                        editable="{PreDefineGoal>Appe_scr_editable}"
+                                        placeholder="Annual Overall Score"
+                                        editable="false"
                                     />
                                 </HBox>
                                 <HBox
@@ -339,8 +345,8 @@
                                     <Input
                                         value="5"
                                         type="Number"
-                                        placeholder="Appraisee Score"
-                                        editable="{PreDefineGoal>Appe_scr_editable}"
+                                        placeholder="Annual Reviewer Score"
+                                        editable="true"
                                     />
                                 </HBox>
                             </HBox>
