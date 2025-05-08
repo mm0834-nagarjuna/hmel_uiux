@@ -76,6 +76,7 @@ entity AppraisalDocuments {
   igafAER: Boolean;
   igafAEREdit: Boolean;
   igselfAEScore: Boolean;
+  igselfAEScoreEdit: Boolean;
   bcfTabEdit: Boolean;
   bcfFFMR: Boolean;
   bcfFFRAEEdit: Boolean;
