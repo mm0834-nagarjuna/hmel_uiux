@@ -182,7 +182,7 @@
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
 								visible="{apprisalData>cofgffmaAR}"
-                                editable="{apprisalData>ffmaAREdit}"
+                                editable="{apprisalData>cofgffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly Achievement : Appraisee"
@@ -234,7 +234,7 @@
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
 								visible="{apprisalData>cofgafAER}"
-                                editable="{apprisalData>cofgafAERdit}"
+                                editable="{apprisalData>cofgafAEREdit}"
                             />
                             <HBox alignItems="Center">
                                 <Label
@@ -271,7 +271,7 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
-                        <VBox>
+                        <VBox class="sapUiLargMarginBottom">
                             <OverflowToolbar>
                                 <Title text="1 Key Performance Area" />
                                 <ToolbarSpacer />
@@ -382,7 +382,7 @@
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
 								visible="{apprisalData>cofgffmaAR}"
-                                editable="{apprisalData>ffmaAREdit}"
+                                editable="{apprisalData>cofgffmaAREdit}"
                             />
                             <Label
                                 text="Second Four Monthly Achievement : Appraisee"
@@ -434,7 +434,7 @@
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
 								visible="{apprisalData>cofgafAER}"
-                                editable="{apprisalData>cofgafAERdit}"
+                                editable="{apprisalData>cofgafAEREdit}"
                             />
                             <HBox alignItems="Center">
                                 <Label
