@@ -235,12 +235,15 @@
                                 <Label
                                     text="Score - Appraisee :"
                                     class="sapUiSmallMarginEnd"
-                                    visible="{apprisalData>igaaAEE}"
+                                    visible="{apprisalData>igselfAEScore}"
                                 />
                                 <Input value="4" 
-                                visible="{apprisalData>igaaAEE}"
 
-                                editable="{apprisalData>igselfAEScore}"
+
+
+
+                                visible="{apprisalData>igselfAEScore}"
+                                editable="{apprisalData>igselfAEScoreEdit}"
 
                                 />
                             </HBox>
@@ -420,14 +423,10 @@
                                 <Label
                                     text="Score - Appraisee :"
                                     class="sapUiSmallMarginEnd"
-                                    visible="{apprisalData>igaaAEE}"
+                                    visible="{apprisalData>igselfAEScore}"
                                 />
                                 <Input value="4" 
-                                visible="{apprisalData>igaaAEE}"
-
-                                
-
-                                editable="{apprisalData>igselfAEScore}"
+                                editable="{apprisalData>igselfAEScoreEdit}"
 
                                 />
                             </HBox>
@@ -607,15 +606,11 @@
                                 <Label
                                     text="Score - Appraisee :"
                                     class="sapUiSmallMarginEnd"
-                                    visible="{apprisalData>igaaAEE}"
+                                    visible="{apprisalData>igselfAEScore}"
                                 />
                                 <Input value="4" 
-                                visible="{apprisalData>igaaAEE}"
-<<<<<<< HEAD
-                                editable="{apprisalData>igaaAEEdit}"
-=======
-                                editable="{apprisalData>igselfAEScore}"
->>>>>>> de359cc1f9cd4a7a5206317a12a7c7e890ff08ab
+                                visible="{apprisalData>igselfAEScore}"
+                                editable="{apprisalData>igselfAEScoreEdit}"
                                 />
                             </HBox>
                         </VBox>
