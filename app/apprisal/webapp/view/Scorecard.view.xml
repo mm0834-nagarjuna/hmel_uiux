@@ -47,10 +47,10 @@
 								<items>
 									<ColumnListItem vAlign="Top">
 										<cells>
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Target}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Target}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
 										</cells>
 									</ColumnListItem>
 								</items>
@@ -89,10 +89,10 @@
 								<items>
 									<ColumnListItem vAlign="Top">
 										<cells>
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Target}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Target}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
 										</cells>
 									</ColumnListItem>
 								</items>
@@ -141,10 +141,10 @@
 								<items>
 									<ColumnListItem vAlign="Top">
 										<cells>
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Target}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Target}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
 										</cells>
 									</ColumnListItem>
 								</items>
@@ -183,10 +183,10 @@
 								<items>
 									<ColumnListItem vAlign="Top">
 										<cells>
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Target}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Target}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
 										</cells>
 									</ColumnListItem>
 								</items>
@@ -235,10 +235,10 @@
 								<items>
 									<ColumnListItem vAlign="Top">
 										<cells>
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Target}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Target}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
 										</cells>
 									</ColumnListItem>
 								</items>
@@ -277,10 +277,10 @@
 								<items>
 									<ColumnListItem vAlign="Top">
 										<cells>
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>Target}" />
-											<TextArea growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Results_Area}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Key_Performance_Index}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>Target}" />
+											<TextArea width="100%" growing="true" editable="false" value="{PreDefineGoal>No. of days}" />
 										</cells>
 									</ColumnListItem>
 								</items>
