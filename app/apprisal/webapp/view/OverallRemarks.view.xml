@@ -171,11 +171,13 @@
                                                 value="{PreDefineGoal>Appraisee_Achievement}"
                                                 placeholder="Appraisee Achievement"
                                                 editable="{apprisalData>oRSFMRAEEdit}"
+                                                width="100%"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Appraiser_Feedback}"
                                                 placeholder="Appraiser Feedback"
                                                 editable="{apprisalData>oRSFMRAREdit}"
+                                                width="100%"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -285,16 +287,19 @@
                                                 value="{PreDefineGoal>Appraisee_Achievement}"
                                                 placeholder="Appraisee Achievement"
                                                 editable="{apprisalData>oRANRRAEEdit}"
+                                                width="100%"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Appraiser_Feedback}"
                                                 placeholder="Appraiser Feedback"
                                                 editable="{apprisalData>oRANRRAREdit}"
+                                                width="100%"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Reviewer_Feedback}"
                                                 placeholder="Reviewer Feedback"
                                                 editable="{apprisalData>oRANRRREEdit}"
+                                                width="100%"
                                             />
                                         </cells>
                                     </ColumnListItem>
