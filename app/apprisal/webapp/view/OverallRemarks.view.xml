@@ -15,50 +15,69 @@
             <uxap:ObjectPageSection>
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="First Four Monthly Remarks"
+                        title="First Four Monthly"
                         titleUppercase="false"
                         showTitle="false"
                         visible="{apprisalData>oRFFMR}"
-                      >
+                    >
                         <VBox>
                             <OverflowToolbar>
                                 <Title text="First Four Monthly Remarks" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
 
-                            <Label
-                                text="First Four Monthly Achievement:Appraisee"
-                                class="sapUiSmallMarginTop"
-                            />
-                            <TextArea
-                                width="100%"
-                                value="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Appraisee_Achievement}"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>oRFFMRAEEdit}"
-                            />
-                            <Label
-                                text="First Four Monthly Feedback:Appraiser"
-                                class="sapUiSmallMarginTop"
-                                
-                            />
-                            <TextArea
-                                width="100%"
-                                value="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Appraiser_Feedback}"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>oRFFMRAREdit}"
-                            />
+                            <!-- First Four Month Table Start-->
+
+                            <Table
+                                id="OrFfmTable"
+                                items="{
+									path : 'PreDefineGoal>/Overal_Remarks/First_Four_Monthly_Remarks',	
+									templateShareable: false
+									
+								}"
+                            >
+                                <columns>
+                                    <Column>
+                                        <header>
+                                            <Text
+                                                text="Appraisee Achievement"
+                                            />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiseer Feedback" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>
+                                            <TextArea
+                                                value="{PreDefineGoal>Appraisee_Achievement}"
+                                                placeholder="Appraisee Achievement"
+                                                editable="{apprisalData>oRFFMRAEEdit}"
+                                            />
+                                            <TextArea
+                                                value="{PreDefineGoal>Appraiser_Feedback}"
+                                                placeholder="Appraiser Feedback"
+                                                editable="{apprisalData>oRFFMRAREdit}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+
                             <HBox
                                 alignItems="Center"
                                 class="sapUiSmallMarginTop"
                             >
                                 <Label
-                                    text="Time Spent in overall PMS (Targets, Behavioural Competency, Individual Development Plan, Accomplishments) Discussion"
+                                    text="Time Spent in overall PMS Discussion"
                                     class="sapUiSmallMarginEnd"
                                 />
                                 <ComboBox
-                                    items="{PreDefineGoal>/Overal_Remarks/0/Timeliness}"
+                                    items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
                                     selectedKey="35"
                                     editable="{apprisalData>oRFFMRAREdit}"
                                 >
@@ -68,6 +87,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
+
                             <HBox
                                 alignItems="Center"
                                 class="sapUiSmallMarginTop"
@@ -78,7 +98,6 @@
                                 />
                                 <Select
                                     width="200px"
-                                    selectedKey="{PreDefineGoal>/Overal_Remarks/0/First_Four_Monthly_Remarks/0/Performance_First_Review}"
                                     editable="{apprisalData>oRFFMRAREdit}"
                                 >
                                     <items>
@@ -93,23 +112,27 @@
                                     </items>
                                 </Select>
                             </HBox>
+
+                            <!-- First Four Month Table End -->
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
+            <!-- Second Four Monthly Table   -->
+
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Second Four Monthly Remarks"
+                title="Second Four Monthly"
                 showTitle="false"
                 visible="{apprisalData>oRSFMR}"
-             >
+            >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="Second Four Monthly Remarks"
+                        title="Second Four Monthly"
                         titleUppercase="false"
-                        showTitle="true"
-                        
+                        showTitle="false"
+                        visible="{apprisalData>oRSFMR}"
                     >
                         <VBox>
                             <OverflowToolbar>
@@ -117,38 +140,56 @@
                                 <ToolbarSpacer />
                             </OverflowToolbar>
 
-                            <Label
-                                text="Second Four Monthly Achievement:Appraisee"
-                                class="sapUiSmallMarginTop"
-                            />
-                            <TextArea
-                                width="100%"
-                                value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraisee_Achievement}"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>oRSFMRAEEdit}"
-                            />
-                            <Label
-                                text="Second Four Monthly Feedback:Appraiser"
-                                class="sapUiSmallMarginTop"
-                            />
-                            <TextArea
-                                width="100%"
-                                value="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Appraiser_Feedback}"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>oRSFMRAREdit}"
-                            />
+                            <Table
+                                id="OrSfmTable"
+                                items="{
+									path : 'PreDefineGoal>/Overal_Remarks/Second_Four_Monthly_Remarks',	
+									templateShareable: false
+									
+								}"
+                            >
+                                <columns>
+                                    <Column>
+                                        <header>
+                                            <Text
+                                                text="Appraisee Achievement"
+                                            />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiseer Feedback" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>
+                                            <TextArea
+                                                value="{PreDefineGoal>Appraisee_Achievement}"
+                                                placeholder="Appraisee Achievement"
+                                                editable="{apprisalData>oRSFMRAEEdit}"
+                                            />
+                                            <TextArea
+                                                value="{PreDefineGoal>Appraiser_Feedback}"
+                                                placeholder="Appraiser Feedback"
+                                                editable="{apprisalData>oRSFMRAREdit}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+
                             <HBox
                                 alignItems="Center"
                                 class="sapUiSmallMarginTop"
                             >
                                 <Label
-                                    text="Time Spent in overall PMS (Targets, Behavioural Competency, Individual Development Plan, Accomplishments) Discussion"
+                                    text="Time Spent in overall PMS Discussion"
                                     class="sapUiSmallMarginEnd"
                                 />
                                 <ComboBox
-                                    items="{PreDefineGoal>/Overal_Remarks/0/Timeliness}"
+                                    items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
                                     selectedKey="35"
                                     editable="{apprisalData>oRSFMRAREdit}"
                                 >
@@ -158,6 +199,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
+
                             <HBox
                                 alignItems="Center"
                                 class="sapUiSmallMarginTop"
@@ -168,7 +210,6 @@
                                 />
                                 <Select
                                     width="200px"
-                                    selectedKey="{PreDefineGoal>/Overal_Remarks/0/Second_Four_Monthly_Remarks/0/Performance_Second_Review}"
                                     editable="{apprisalData>oRSFMRAREdit}"
                                 >
                                     <items>
@@ -188,12 +229,132 @@
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
+            <!-- Annual Remarks Table   -->
+
             <uxap:ObjectPageSection
                 titleUppercase="false"
                 title="Annual Remarks"
                 showTitle="false"
                 visible="{apprisalData>oRANR}"
-             >
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Annual Remarks"
+                        titleUppercase="false"
+                        showTitle="false"
+                    >
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="Annual Remarks" />
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+
+                            <Table
+                                id="OrAnRTable"
+                                items="{
+									path : 'PreDefineGoal>/Overal_Remarks/Annual_Remarks',	
+									templateShareable: false
+									
+								}"
+                            >
+                                <columns>
+                                    <Column>
+                                        <header>
+                                            <Text
+                                                text="Appraisee Achievement"
+                                            />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiseer Feedback" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Reviewer Feedback" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>
+                                            <TextArea
+                                                value="{PreDefineGoal>Appraisee_Achievement}"
+                                                placeholder="Appraisee Achievement"
+                                                editable="{apprisalData>oRANRRAEEdit}"
+                                            />
+                                            <TextArea
+                                                value="{PreDefineGoal>Appraiser_Feedback}"
+                                                placeholder="Appraiser Feedback"
+                                                editable="{apprisalData>oRANRRAREdit}"
+                                            />
+                                            <TextArea
+                                                value="{PreDefineGoal>Reviewer_Feedback}"
+                                                placeholder="Reviewer Feedback"
+                                                editable="{apprisalData>oRANRRREEdit}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Time Spent in overall PMS Discussion"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
+                                    selectedKey="35"
+                                    editable="{apprisalData>oRANRRAREdit}"
+                                >
+                                    <core:Item
+                                        key="{PreDefineGoal>key}"
+                                        text="{PreDefineGoal>text}"
+                                    />
+                                </ComboBox>
+                            </HBox>
+
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    text="Overall Performance Feedback Appraiser"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <Select
+                                    width="200px"
+                                    editable="{apprisalData>oRANRRREEdit}"
+                                >
+                                    <items>
+                                        <core:Item
+                                            key="Needs Improvement"
+                                            text="Needs Improvement"
+                                        />
+                                        <core:Item
+                                            key="Acceptable Performance"
+                                            text="Acceptable Performance"
+                                        />
+                                    </items>
+                                </Select>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+
+            <!-- <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Annual Remarks"
+                showTitle="false"
+                visible="{apprisalData>oRANR}"
+            >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="Annual Overall Remarks"
@@ -244,7 +405,7 @@
                                 class="sapUiSmallMarginTop"
                             >
                                 <Label
-                                    text="Time Spent in overall PMS (Targets, Behavioural Competency, Individual Development Plan, Accomplishments) Discussion"
+                                    text="Time Spent in overall PMS Discussion"
                                     class="sapUiSmallMarginEnd"
                                 />
                                 <ComboBox
@@ -274,7 +435,7 @@
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
-            </uxap:ObjectPageSection>
+            </uxap:ObjectPageSection> -->
         </uxap:sections>
     </uxap:ObjectPageLayout>
 </mvc:View>
