@@ -24,6 +24,7 @@
 			<Button text="Don't Allow Target Revision" visible="{apprisalData>doNotAllowTargetRevision}"/>
 			<Button text="Refer Back To Appraiser" visible="{apprisalData>referBackToAppraiser}"/>
 			<Button text="Save" visible="{apprisalData>onlySaveOption}"/>
+            <Text text="|" class="mvnButtonSepeartor"/>
 			<Button text="Print" />
 		</Toolbar>
 		<HBox
@@ -32,12 +33,8 @@
             class="sapUiContentPadding"
         >
 			<ObjectStatus
-                title="Employee ID"
-                text="{apprisalData>appraiseeId}"
-            />
-			<ObjectStatus
                 title="Employee Name"
-                text="{apprisalData>appraiseeName}"
+                text="{apprisalData>appraiseeId} {apprisalData>appraiseeName}"
             />
 			<ObjectStatus
                 title="Department"
