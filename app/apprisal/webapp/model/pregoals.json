@@ -297,7 +297,46 @@
       "Score": 5,
       "Value_Description": "Demonstrates high level of excellence and innovation for this competency and is seen as a role model to others"
     }
-  ]  
+  ],
+  "First_Four_Monthly_Review":{
+    "Remarks_Appraisee": {
+      "label": "Remarks-Appraisee",
+      "value": "Remarks-Appraisee"
+    },
+    "Remarks_Appraiser": {
+      "label": "Remarks-Appraiser",
+      "value": "Remarks-Appraiser"
+    }
+  },
+  "Second_Four_Monthly_Review":{
+    "Remarks_Appraisee": {
+      "label": "Remarks-Appraisee",
+      "value": "Remarks-Appraisee"
+    },
+    "Remarks_Appraiser": {
+      "label": "Remarks-Appraiser",
+      "value": "Remarks-Appraiser"
+    }
+  },
+  "Annual_Review":{
+    "Remarks_Appraisee": {
+      "label": "Remarks-Appraisee",
+      "value": "Remarks-Appraisee"
+    },
+    "Remarks_Appraiser": {
+      "label": "Remarks-Appraiser",
+      "value": "Remarks-Appraiser"
+    },
+    "Remarks_Reviewer": {
+      "label": "Remarks-Reviewer",
+      "value": "Remarks-Reviewer"
+    }
+  },
+  "Annual_Score": {
+    "Overall_Appraiser_Score": 2.24,
+    "Overall_Score": 3.24,
+    "Overall_Reviewer_Score": 2.24
+  }
 },
   "IDP": {
     "trainings_attended": [
@@ -576,7 +615,7 @@
         "Appraisee_Achievement" : "Annual Achievement:Appraisee",
         "Appraiser_Feedback" : "Annual Feedback:Appraiser",
         "Reviewer_Feedback" : "Annual Feedback:Reviewer",
-        "Reviewer_Score" : 4.3
+        "Reviewer_Score" : 4.5
       }
     ]
     }
