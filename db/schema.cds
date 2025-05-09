@@ -90,6 +90,7 @@ entity AppraisalDocuments {
   bcfANRREREdit: Boolean;
   bcfANSC: Boolean;
   bcfANSCAREdit: Boolean;
+  bcfANSCREEdit: Boolean;
   idpBCD: Boolean;
   idpBCDAEEditSM: Boolean;
   idpBCDR1AREdit: Boolean;

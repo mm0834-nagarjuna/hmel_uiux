@@ -72,7 +72,7 @@
                                             <Text text="Description" />
                                         </header>
                                     </Column>
-                                    <Column  width="8rem">
+                                    <Column width="8rem">
                                         <header>
                                             <Text text="No of Days" />
                                         </header>
@@ -241,8 +241,12 @@
                                                 growing="true"
                                                 editable="{apprisalData>idpFAODAAEEdit}"
                                             />
-                                            <Input editable="{apprisalData>idpFAODAAREdit}" />
-                                            <Input editable="{apprisalData>idpFAODAAREdit}" />
+                                            <Input
+                                                editable="{apprisalData>idpFAODAAREdit}"
+                                            />
+                                            <Input
+                                                editable="{apprisalData>idpFAODAAREdit}"
+                                            />
                                         </cells>
                                     </ColumnListItem>
                                 </items>
@@ -305,8 +309,12 @@
                                                     />
                                                 </suggestionItems>
                                             </Input>
-                                            <Input editable="{apprisalData>idpFTDAAREdit}" />
-                                            <Input editable="{apprisalData>idpFTDAAREdit}" />
+                                            <Input
+                                                editable="{apprisalData>idpFTDAAREdit}"
+                                            />
+                                            <Input
+                                                editable="{apprisalData>idpFTDAAREdit}"
+                                            />
                                         </cells>
                                     </ColumnListItem>
                                 </items>
@@ -327,7 +335,6 @@
                         titleUppercase="false"
                         showTitle="false"
                         visible="{apprisalData>idpFMRS}"
-                        
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
@@ -340,26 +347,16 @@
 								}"
                             >
                                 <columns>
-                                    
                                     <Column>
-                                        
-                                            <Text
-                                                text="Appraisee Remarks"
-                                            />
-                                        
+                                        <Text text="Appraisee Remarks" />
                                     </Column>
                                     <Column>
-                                        
-                                            <Text
-                                                text="Appraiser Remarks"
-                                            />
-                                        
+                                        <Text text="Appraiser Remarks" />
                                     </Column>
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                           
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraisee}"
                                                 cols="2000"
@@ -379,7 +376,6 @@
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
-                
             </uxap:ObjectPageSection>
 
             <uxap:ObjectPageSection
@@ -393,7 +389,6 @@
                         titleUppercase="false"
                         showTitle="false"
                         visible="{apprisalData>idpFMRS}"
-                        
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
@@ -406,26 +401,16 @@
 								}"
                             >
                                 <columns>
-                                    
                                     <Column>
-                                        
-                                            <Text
-                                                text="Appraisee Remarks"
-                                            />
-                                        
+                                        <Text text="Appraisee Remarks" />
                                     </Column>
                                     <Column>
-                                        
-                                            <Text
-                                                text="Appraiser Remarks"
-                                            />
-                                        
+                                        <Text text="Appraiser Remarks" />
                                     </Column>
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                           
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraisee}"
                                                 cols="2000"
@@ -445,7 +430,6 @@
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
-                
             </uxap:ObjectPageSection>
 
             <uxap:ObjectPageSection
@@ -471,19 +455,14 @@
 								}"
                             >
                                 <columns>
-                                    
-                                    <Column >
+                                    <Column>
                                         <header>
-                                            <Text
-                                                text=" Appraisee Remarks"
-                                            />
+                                            <Text text=" Appraisee Remarks" />
                                         </header>
                                     </Column>
                                     <Column>
                                         <header>
-                                            <Text
-                                                text=" Appraiser Remarks"
-                                            />
+                                            <Text text=" Appraiser Remarks" />
                                         </header>
                                     </Column>
                                     <Column>
@@ -495,7 +474,6 @@
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                           
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraisee}"
                                                 cols="2000"
@@ -522,7 +500,6 @@
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
-            
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
@@ -539,26 +516,17 @@
                             <OverflowToolbar>
                                 <Title text="Average Annual Score" />
                             </OverflowToolbar>
-                    
-                            <Table
-                                id="IDPAnnualScore"
-                                
-                            >
+
+                            <Table id="IDPAnnualScore">
                                 <columns>
                                     <Column width="10rem">
-                                        
-                                            <Text text="Appraisee" />
-                                        
+                                        <Text text="Appraisee" />
                                     </Column>
                                     <Column width="10rem">
-                                        
-                                            <Text text="Appraiser" />
-                                        
+                                        <Text text="Appraiser" />
                                     </Column>
                                     <Column width="10rem">
-                                        
-                                            <Text text="Reviewer" />
-                                        
+                                        <Text text="Reviewer" />
                                     </Column>
                                 </columns>
                                 <items>
@@ -566,17 +534,17 @@
                                         <cells>
                                             <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Score_Appraiser}"
-                                        editable="false"
+                                                editable="false"
                                                 width="8rem"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Overal_Score}"
-                                        editable="false"
+                                                editable="false"
                                                 width="8rem"
                                             />
                                             <Input
-                                               value="{PreDefineGoal>/IDP/Annual_Score/Scores/Score_Reviewer}"
-                                        editable="false"
+                                                value="{PreDefineGoal>/IDP/Annual_Score/Scores/Score_Reviewer}"
+                                                editable="false"
                                                 width="8rem"
                                             />
                                         </cells>

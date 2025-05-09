@@ -28,8 +28,9 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <HBox
+                                width="30%"
                                 alignItems="Center"
-                                justifyContent="Start"
+                                justifyContent="SpaceAround"
                             >
                                 <Label
                                     text="Are you satisfied with the discussion ?"
@@ -53,8 +54,9 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <HBox
+                                width="30%"
                                 alignItems="Center"
-                                justifyContent="Start"
+                                justifyContent="SpaceAround"
                             >
                                 <Label
                                     text="Are you satisfied with the discussion ?"
@@ -78,13 +80,14 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <HBox
+                            width="30%"
                                 alignItems="Center"
-                                justifyContent="Start"
+                                justifyContent="SpaceAround"
                             >
                                 <Label
                                     text="Are you satisfied with the discussion ?"
                                 />
-                                <Select selectedKey="{PreDefineGoal>Status}" editable="{apprisalData>ackSFMCEdit}">
+                                <Select selectedKey="{PreDefineGoal>Status}" editable="{apprisalData>ackSFMCEdit}" >
                         <items>
                             <core:Item key="Yes" text="Yes" />
                             <core:Item key="No" text="No" />
@@ -103,8 +106,9 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <HBox
+                               width="30%"
                                 alignItems="Center"
-                                justifyContent="Start"
+                                justifyContent="SpaceAround"
                             >
                                 <Label
                                     text="Are you satisfied with the discussion ?"

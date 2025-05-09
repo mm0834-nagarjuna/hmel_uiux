@@ -17,14 +17,16 @@
             <FlexItemData growFactor="1" />
         </uxap:layoutData>
         <uxap:sections>
-            <uxap:ObjectPageSection visible="{apprisalData>coFgKSPEdit}">
+            <uxap:ObjectPageSection >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="Common Organizational"
+                        
                     >
                         <OverflowToolbar
                             class="mvnObjectPageLayoutTitleOverflowToolbar"
+                            visible="{apprisalData>coFgKSPEdit}"
                         >
                             <ToolbarSpacer />
                             <Button
