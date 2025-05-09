@@ -36,24 +36,24 @@
                             >
                                 <columns>
                                     <Column width="20rem">
-                                        <header>
+                                        
                                             <Text text="Sections" />
-                                        </header>
+                                        
                                     </Column>
-                                    <Column>
-                                        <header>
+                                    <Column width="8rem">
+                                        
                                             <Text text="Appraisee" />
-                                        </header>
+                                        
                                     </Column>
-                                    <Column>
-                                        <header>
+                                    <Column width="10rem">
+                                        
                                             <Text text="Appraiser" />
-                                        </header>
+                                        
                                     </Column>
-                                    <Column>
-                                        <header>
+                                    <Column width="10rem">
+                                        
                                             <Text text="Reviewer" />
-                                        </header>
+                                        
                                     </Column>
                                 </columns>
                                 <items>
@@ -64,15 +64,18 @@
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Appraisee}"
-                                                editable="{apprisalData>oScrSEScrAEEdit}"
+                                                editable="false"
+                                                width="8rem"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Appraiser}"
-                                                editable="{apprisalData>oScrSEScrAREdit}"
+                                                editable="false"
+                                                width="8rem"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Reviewer}"
-                                                editable="{apprisalData>oScrSEScrREEdit}"
+                                                editable="false"
+                                                width="8rem"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -101,14 +104,14 @@
                             <Table id="360DegreeScore">
                                 <columns>
                                     <Column width="10rem">
-                                        <header>
+                                        
                                             <Text text="Score" />
-                                        </header>
+                                        
                                     </Column>
                                     <Column>
-                                        <header>
+                                        
                                             <Text text="Report Link" />
-                                        </header>
+                                        
                                     </Column>
                                 </columns>
                                 <items>
@@ -151,20 +154,20 @@
                                 
                             >
                                 <columns>
-                                    <Column>
-                                        <header>
+                                    <Column width="10rem">
+                                        
                                             <Text text="Appraisee" />
-                                        </header>
+                                        
                                     </Column>
-                                    <Column>
-                                        <header>
+                                    <Column width="10rem">
+                                        
                                             <Text text="Appraiser" />
-                                        </header>
+                                        
                                     </Column>
-                                    <Column>
-                                        <header>
+                                    <Column width="10rem">
+                                        
                                             <Text text="Reviewer" />
-                                        </header>
+                                        
                                     </Column>
                                 </columns>
                                 <items>
@@ -173,14 +176,17 @@
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Appraisee}"
                                                 editable="false"
+                                                width="8rem"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Appraiser}"
                                                 editable="false"
+                                                width="8rem"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/OverallScore/Final_Score/Reviewer}"
                                                 editable="false"
+                                                width="8rem"
                                             />
                                         </cells>
                                     </ColumnListItem>
