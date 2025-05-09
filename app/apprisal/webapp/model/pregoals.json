@@ -299,38 +299,17 @@
     }
   ],
   "First_Four_Monthly_Review":{
-    "Remarks_Appraisee": {
-      "label": "Remarks-Appraisee",
-      "value": "Remarks-Appraisee"
-    },
-    "Remarks_Appraiser": {
-      "label": "Remarks-Appraiser",
-      "value": "Remarks-Appraiser"
-    }
+    "Remarks_Appraisee_value": "Remarks-Appraisee",
+    "Remarks_Appraiser_value": "Remarks-Appraiser"
   },
   "Second_Four_Monthly_Review":{
-    "Remarks_Appraisee": {
-      "label": "Remarks-Appraisee",
-      "value": "Remarks-Appraisee"
-    },
-    "Remarks_Appraiser": {
-      "label": "Remarks-Appraiser",
-      "value": "Remarks-Appraiser"
-    }
+    "Remarks_Appraisee_value": "Remarks-Appraisee",
+    "Remarks_Appraiser_value": "Remarks-Appraiser"
   },
   "Annual_Review":{
-    "Remarks_Appraisee": {
-      "label": "Remarks-Appraisee",
-      "value": "Remarks-Appraisee"
-    },
-    "Remarks_Appraiser": {
-      "label": "Remarks-Appraiser",
-      "value": "Remarks-Appraiser"
-    },
-    "Remarks_Reviewer": {
-      "label": "Remarks-Reviewer",
-      "value": "Remarks-Reviewer"
-    }
+   "Remarks_Appraisee_value": "Remarks-Appraisee",
+    "Remarks_Appraiser_value": "Remarks-Appraiser",
+    "Remarks_Reviewer_value": "Remarks-Reviewer"
   },
   "Annual_Score": {
     "Overall_Appraiser_Score": 2.24,

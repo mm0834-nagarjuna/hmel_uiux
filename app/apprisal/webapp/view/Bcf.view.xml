@@ -31,6 +31,14 @@
                                 />
                                 <ToolbarSpacer />
                                 <Button
+                                                    
+                                                    text="Score Description"
+                                                    icon="sap-icon://information"
+                                                    type="Emphasized"
+                                                    press="onClickScoreInfo"
+                                                    ariaLabelledBy="actionButtonLabel"
+                                                />
+                                <Button
                                     text="Guideline"
                                     type="Emphasized"
                                     press="onClickGuideline"
@@ -66,12 +74,12 @@
                                             <Text text="Definition" />
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}">
+                                    <Column visible="{apprisalData>bcfANR}" width="8rem">
                                         <header>
                                             <Text text="Appraisee Score" />
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}">
+                                    <Column visible="{apprisalData>bcfANR}" width="8rem">
                                         <header>
                                             <Text text="Appraiser Score" />
                                         </header>
@@ -98,12 +106,7 @@
                                                     editable="{apprisalData>bcfANRAEEdit}"
                                                     width="90%"
                                                 />
-                                                <Button
-                                                    icon="sap-icon://information"
-                                                    type="Transparent"
-                                                    press="onClickScoreInfo"
-                                                    ariaLabelledBy="actionButtonLabel"
-                                                />
+                                                
                                             </HBox>
                                             <Input
                                                 value="{PreDefineGoal>Appraisee_Score}"
