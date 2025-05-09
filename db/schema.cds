@@ -12,6 +12,7 @@ entity AppraisalDocuments {
   appraiseeType: String;
   appraiseeTypeText: String;
   appraiseeName: String;
+  reviewerName : String;
   apStatusName: String;
   apStatusSubName: String;
   submit: Boolean;
@@ -21,6 +22,7 @@ entity AppraisalDocuments {
   allowTargetRevision: Boolean;
   doNotAllowTargetRevision: Boolean;
   referBackToAppraiser: Boolean;
+  guidelines : Boolean;
   coFg: Boolean;
   iG: Boolean;
   bcf: Boolean;

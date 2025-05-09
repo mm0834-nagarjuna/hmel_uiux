@@ -1,111 +1,210 @@
 <mvc:View
     controllerName="apprisal.controller.List"
+    height="100%"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     xmlns="sap.m"
-    xmlns:tnt="sap.tnt"
-    height="100%"
->  
+    xmlns:f="sap.f"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns:svm="sap.ui.comp.smartvariants"
+>
+    <f:DynamicPage>
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <svm:SmartVariantManagement
+                        id="svm"
+                        showExecuteOnSelection="true"
+                    />
+                </f:heading>
+                <f:expandedContent>
+                    <Label
+                        id="expandedLabel"
+                        text="No filters active"
+                    />
+                </f:expandedContent>
+                <f:snappedContent>
+                    <Label
+                        id="snappedLabel"
+                        text="No filters active"
+                    />
+                </f:snappedContent>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader>
+                <f:content>
+                    <fb:FilterBar
+                        id="filterbar"
+                        persistencyKey="myPersKey"
+                        useToolbar="false"
+                        search=".onSearch"
+                        filterChange=".onFilterChange"
+                        afterVariantLoad=".onAfterVariantLoad"
+                    >
+                        <fb:filterGroupItems>
+                            <fb:FilterGroupItem
+                                name="BSM"
+                                label="BSM"
+                                groupName="Group1"
+                                visibleInFilterBar="true"
+                            >
+                                <fb:control>
+                                    <Input />
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem
+                                name="Appraisee ID"
+                                label="Appraisee ID"
+                                groupName="Group1"
+                                visibleInFilterBar="true"
+                            >
+                                <fb:control>
+                                    <Input />
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem
+                                name="Appraisee Name"
+                                label="Appraisee Name"
+                                groupName="Group1"
+                                visibleInFilterBar="true"
+                            >
+                                <fb:control>
+                                    <Input />
+                                </fb:control>
+                            </fb:FilterGroupItem>
 
+                            <fb:FilterGroupItem
+                                name="Appraiser Name"
+                                label="Appraiser Name"
+                                groupName="Group1"
+                                visibleInFilterBar="true"
+                            >
+                                <fb:control>
+                                    <Input />
+                                </fb:control>
+                            </fb:FilterGroupItem>
 
-<tnt:ToolHeader
-        id="shellLikeToolHeader"
-        class = "sapUiSmallPadding"
-    >
-        <Title
-            text="PMS"
-            wrapping="false"
-        >
-            <layoutData>
-                <OverflowToolbarLayoutData priority="Disappear" />
-            </layoutData>
-        </Title>
-        <ToolbarSpacer />
-        <SearchField
-            width="20rem"
-            id="searchField"
-        >
-            <layoutData>
-                <OverflowToolbarLayoutData
-                    priority="Low"
-                    group="1"
-                />
-            </layoutData>
-        </SearchField>
-        <ToolbarSpacer id="spacer">
-            <layoutData>
-                <OverflowToolbarLayoutData
-                    priority="Low"
-                    group="1"
-                />
-            </layoutData>
-        </ToolbarSpacer>
+                            <fb:FilterGroupItem
+                                name="Reviewer Name"
+                                label="Reviewer Name"
+                                groupName="Group1"
+                                visibleInFilterBar="true"
+                            >
+                                <fb:control>
+                                    <Input />
+                                </fb:control>
+                            </fb:FilterGroupItem>
 
-       
-        <tnt:ToolHeaderUtilitySeparator />
-        <ToolbarSpacer width="1.125rem" />
-        <Avatar
-            src="test-resources/sap/tnt/images/Woman_avatar_01.png"
-            displaySize="XS"
-            press=".onAvatarPressed"
-            tooltip="Profile"
-        >
-            <layoutData>
-                <OverflowToolbarLayoutData priority="NeverOverflow" />
-            </layoutData>
-        </Avatar>
-    </tnt:ToolHeader>
-
-	<ScrollContainer
-		height="100%"
-		width="100%"
-		vertical="true"
-		focusable="true">
-		
-	           
-                <Table
-                    id="idApprisalTable"
-                    class="sapUiSmallMarginTop sapUiSmallMarginBottom"
-                    inset="false"
-                    items="{
+                            <fb:FilterGroupItem
+                                name="Status"
+                                label="Status"
+                                groupName="Group1"
+                                visibleInFilterBar="true"
+                            >
+                                <fb:control>
+                                    <ComboBox selectionChange=".onStatusChange" selectedKey="TS">
+                                        <core:Item
+                                            key="TS"
+                                            text="Target Setting"
+                                        />
+                                        <core:Item
+                                            key="FMR"
+                                            text="Four Monthly Review"
+                                        />
+                                        <core:Item
+                                            key="ANR"
+                                            text="Annual Review"
+                                        />
+                                    </ComboBox>
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem
+                                name="Sub Status"
+                                label="Sub Status"
+                                groupName="Group1"
+                                visibleInFilterBar="true"
+                            >
+                                <fb:control>
+                                    <ComboBox selectedKey="PWAE">
+                                        <core:Item
+                                            key="PWAE"
+                                            text="Pending With Appraisee"
+      
+                                        />
+                                        <core:Item
+                                            key="PWAR"
+                                            text="Pending With Appraiser"
+    
+                                        />
+                                        <core:Item
+                                            key="PAC"
+                                            text="Pending for Appraisee Confirmation"
+                                        />
+                                    </ComboBox>
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                        </fb:filterGroupItems>
+                    </fb:FilterBar>
+                </f:content>
+            </f:DynamicPageHeader>
+        </f:header>
+        <f:content>
+            <Table
+                id="idApprisalTable"
+                class="sapUiSmallMarginTop sapUiSmallMarginBottom"
+                inset="false"
+                items="{
                         path: 'apprisalData>/appraisal',
                         sorter: {
                             path: 'appraisalName'
                         }
                     }"
-                    
-                 >
-                    <columns>
-                        <Column >
-                            <Text text="Apprisal Name" />
-                        </Column>
-                        <Column >
-                            <Text text="Appraiser Name" />
-                        </Column>
-                        <Column >
-                            <Text text="Appraisee Name" />
-                        </Column>
-                        <Column >
-                            <Text text="Status" />
-                        </Column>
-                        <Column >
-                            <Text text="Sub Status" />
-                        </Column>
-                    </columns>
-                    <items>
-                        <ColumnListItem vAlign="Middle" type="Navigation" press=".onListItemPress">
-                            <cells>
-                                <ObjectIdentifier title="{apprisalData>appraisalName}" />
-                                <Text text="{apprisalData>appraiserName}" />
-                                <Text text="{apprisalData>appraiseeName}" />
-                                <Text text="{apprisalData>apStatusName}" />
-                                <Text text="{apprisalData>apStatusSubName}" />
-                            </cells>
-                        </ColumnListItem>
-                    </items>
-                </Table>
+            >
+                <columns>
+                    <Column width="10rem">
+                        <Text text="BSM" />
+                    </Column>
+                    <Column width="10rem">
+                        <Text text="Appraisee ID" />
+                    </Column>
+                    <Column>
+                        <Text text="Appraisee Name" />
+                    </Column>
+                    <Column>
+                        <Text text="Appraiser Name" />
+                    </Column>
+                    <Column>
+                        <Text text="Reviewer Name" />
+                    </Column>
 
-                </ScrollContainer> 
-
-
+                    <Column>
+                        <Text text="Status" />
+                    </Column>
+                    <Column>
+                        <Text text="Sub Status" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem
+                        vAlign="Middle"
+                        type="Navigation"
+                        press=".onListItemPress"
+                    >
+                        <cells>
+                            <ObjectIdentifier
+                                title="2025-26"
+                            />
+                            <Text text="{apprisalData>appraiseeId}" />
+                            <Text text="{apprisalData>appraiseeName}" />
+                            <Text text="{apprisalData>appraiserName}" />
+                            <Text text="{apprisalData>reviewerName}" />
+                            <Text text="{apprisalData>apStatusName}" />
+                            <Text text="{apprisalData>apStatusSubName}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </f:content>
+    </f:DynamicPage>
 </mvc:View>

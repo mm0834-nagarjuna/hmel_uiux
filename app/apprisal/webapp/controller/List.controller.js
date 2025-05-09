@@ -17,6 +17,7 @@ sap.ui.define([
                 index:sAppIndex, appId:sAppId
             });
              
-        }
+        },
+        
     });
 });

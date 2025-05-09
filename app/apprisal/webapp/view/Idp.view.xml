@@ -174,13 +174,13 @@
                                                 editable="{apprisalData>idpBCDR1AREdit}"
                                             />
                                             <TextArea
-                                                value="{PreDefineGoal>R1_Achievements}"
+                                                value="{PreDefineGoal>R2_Achievements}"
                                                 width="100%"
                                                 growing="true"
                                                 editable="{apprisalData>idpBCDR2AREdit}"
                                             />
                                             <TextArea
-                                                value="{PreDefineGoal>R1_Achievements}"
+                                                value="{PreDefineGoal>Annual_Achievements}"
                                                 width="100%"
                                                 growing="true"
                                                 editable="{apprisalData>idpBCDANAREdit}"
