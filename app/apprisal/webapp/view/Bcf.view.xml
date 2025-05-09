@@ -124,114 +124,135 @@
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
-            <!-- Firs Four Monthly Review -->
+            <!-- First Four Monthly Review Table     -->
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="First Four Monthly Review"
+                title="First Four Monthly Review Remarks"
                 showTitle="false"
                 visible="{apprisalData>bcfFFMR}"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="First Four Monthly Review"
+                        title="First Four Monthly"
                         titleUppercase="false"
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="First Four Monthly Review" />
+                                <Title text="First Four Monthly Review Remarks" />
+                                <ToolbarSpacer />
                             </OverflowToolbar>
-                            <HBox columnGap="2rem">
-                                <VBox>
-                                    <Label
-                                        text="BCF Remarks-Appraisee"
-                                        class="sapUiSmallMarginTop"
-                                    />
-                                    <TextArea
-                                        width="100%"
-                                        value="BCF Remarks-Appraisee"
-                                        growing="true"
-                                        class="sapUiSmallMarginBottom"
-                                        editable="{apprisalData>bcfFFRAEEdit}"
-                                    />
-                                </VBox>
-                                <VBox>
-                                    <Label
-                                        text="BCF Remarks-Appraiser"
-                                        class="sapUiSmallMarginTop"
-                                    />
-                                    <TextArea
-                                        width="100%"
-                                        value="BCF Remarks-Appraiser"
-                                        growing="true"
-                                        class="sapUiSmallMarginBottom"
-                                        editable="{apprisalData>bcfFFRAREdit}"
-                                    />
-                                </VBox>
-                            </HBox>
+                            <Table
+                                id="BcfFFMRTable"
+                                items="{
+									path : 'PreDefineGoal>/BCE/First_Four_Monthly_Review',	
+									templateShareable: false
+									
+								}"
+                            >
+                                <columns>
+                                    
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraisee" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiseer" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>                                            
+                                            <Input
+                                                value="{PreDefineGoal>Remarks_Appraisee_value}"
+                                                placeholder="Appraisee Remarks"
+                                                editable="{apprisalData>bcfFFRAEEdit}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Remarks_Appraiser_value}"
+                                                placeholder="Appraiser Remarks"
+                                                editable="{apprisalData>bcfFFRAREdit}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
-            <!-- Second Four Monthly Review -->
+            <!-- Second Four Monthly Review Table     -->
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Second Four Monthly Review "
+                title="First Four Monthly Review Remarks"
                 showTitle="false"
                 visible="{apprisalData>bcfSFMR}"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="Second Four Monthly Review"
+                        title="Second Four Monthly"
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox>
+                        <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="Second Four Monthly Review" />
+                                <Title text="Second Four Monthly Review Remarks" />
+                                <ToolbarSpacer />
                             </OverflowToolbar>
-                            <HBox columnGap="2rem">
-                                <VBox>
-                                    <Label
-                                        text="BCF Remarks-Appraisee"
-                                        class="sapUiSmallMarginTop"
-                                    />
-                                    <TextArea
-                                        width="100%"
-                                        value="BCF Remarks-Appraisee"
-                                        growing="true"
-                                        class="sapUiSmallMarginBottom"
-                                        editable="{apprisalData>bcfSFRAEEdit}"
-                                    />
-                                </VBox>
-                                <VBox>
-                                    <Label
-                                        text="BCF Remarks-Appraiser"
-                                        class="sapUiSmallMarginTop"
-                                    />
-                                    <TextArea
-                                        width="100%"
-                                        value="BCF Remarks-Appraiser"
-                                        growing="true"
-                                        class="sapUiSmallMarginBottom"
-                                        editable="{apprisalData>bcfSFRAREdit}"
-
-                                    />
-                                </VBox>
-                            </HBox>
+                            <Table
+                                id="BcfSFMRTable"
+                                items="{
+									path : 'PreDefineGoal>/BCE/Second_Four_Monthly_Review',	
+									templateShareable: false
+									
+								}"
+                            >
+                                <columns>
+                                    
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraisee" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiseer" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>                                            
+                                            <Input
+                                                value="{PreDefineGoal>Remarks_Appraisee_value}"
+                                                placeholder="Appraisee Remarks"
+                                                editable="{apprisalData>bcfSFRAEEdit}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Remarks_Appraiser_value}"
+                                                placeholder="Appraiser Remarks"
+                                                editable="{apprisalData>bcfSFRAREdit}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
-            <!-- Annual Review    -->
+            <!-- Annual Review Table     -->
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Annual Review "
+                title="Annual Review"
                 showTitle="false"
                 visible="{apprisalData>bcfANR}"
             >
@@ -241,72 +262,79 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox>
+                        <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="Annual Review" />
+                                <Title text="Annual Review Remarks" />
+                                <ToolbarSpacer />
                             </OverflowToolbar>
-                            <HBox columnGap="2rem">
-                                <VBox>
-                                    <Label
-                                        text="BCF Remarks-Appraisee"
-                                        class="sapUiSmallMarginTop"
-                                    />
-                                    <TextArea
-                                        width="100%"
-                                        value="BCF Remarks-Appraisee"
-                                        growing="true"
-                                        class="sapUiSmallMarginBottom"
-                                        editable="{apprisalData>bcfANRAEEdit}"
-                                    />
-                                </VBox>
-                                <VBox>
-                                    <Label
-                                        text="BCF Remarks-Appraiser"
-                                        class="sapUiSmallMarginTop"
-                                    />
-                                    <TextArea
-                                        width="100%"
-                                        value="BCF Remarks-Appraiser"
-                                        growing="true"
-                                        class="sapUiSmallMarginBottom"
-                                        editable="{apprisalData>bcfANRAREdit}"
-                                    />
-                                </VBox>
-                                <VBox>
-                                    <Label
-                                        text="BCF Remarks-Reviewer"
-                                        class="sapUiSmallMarginTop"
-                                    />
-                                    <TextArea
-                                        width="100%"
-                                        value="BCF Remarks-Reviewer"
-                                        growing="true"
-                                        class="sapUiSmallMarginBottom"
-                                        editable="{apprisalData>bcfANRREREdit}"
-                                    />
-                                </VBox>
-                            </HBox>
+                            <Table
+                                id="BcfANRTable"
+                                items="{
+									path : 'PreDefineGoal>/BCE/Annual_Review',	
+									templateShareable: false
+									
+								}"
+                            >
+                                <columns>
+                                    
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraisee" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiseer" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Reviewer" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>                                            
+                                            <Input
+                                                value="{PreDefineGoal>Remarks_Appraisee_value}"
+                                                placeholder="Appraisee Remarks"
+                                                editable="{apprisalData>bcfANRAEEdit}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Remarks_Appraiser_value}"
+                                                placeholder="Appraiser Remarks"
+                                                editable="{apprisalData>bcfANRAREdit}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Remarks_Reviewer_value}"
+                                                placeholder="Appraiser Remarks"
+                                                editable="{apprisalData>bcfANRREREdit}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
-            <!--Annual Score  -->
+            <!-- Annual Score Table     -->
 
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="Annual Score "
+                title="Annual Score"
                 showTitle="false"
+                visible="{apprisalData>bcfANSC}"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="Annual Score"
                         titleUppercase="false"
                         showTitle="false"
-                        visible="{apprisalData>bcfANSC}"
-
                     >
-                        <VBox>
+                        <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Annual Score" />
                                 <Button
@@ -315,45 +343,66 @@
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
                                 />
+                                <ToolbarSpacer />
                             </OverflowToolbar>
-                            <HBox columnGap="2rem">
-                                <HBox
-                                    alignItems="Center"
-                                    columnGap="0.5rem"
-                                >
-                                    <Label text="Score- Appraiser" />
-                                    <Input
-                                        value="5"
-                                        type="Number"
-                                        placeholder="Annual Score- Appraiser"
-                                        editable="false"
-                                    />
-                                </HBox>
-                                <HBox
-                                    alignItems="Center"
-                                    columnGap="0.5rem"
-                                >
-                                    <Label text="Overall Score" />
-                                    <Input
-                                        value="3"
-                                        type="Number"
-                                        placeholder="Annual Overall Score"
-                                        editable="false"
-                                    />
-                                </HBox>
-                                <HBox
-                                    alignItems="Center"
-                                    columnGap="0.5rem"
-                                >
-                                    <Label text="Score- Reviewer" />
-                                    <Input
-                                        value="5"
-                                        type="Number"
-                                        placeholder="Annual Reviewer Score"
-                                        editable="true"
-                                    />
-                                </HBox>
-                            </HBox>
+                            <Table
+                                id="BcfANSTable"
+                                items="{
+									path : 'PreDefineGoal>/BCE/Annual_Score',	
+									templateShareable: false
+									
+								}"
+                            >
+                                <columns>
+                                    
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraisee" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Appraiseer" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Overall" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text text="Reviewer" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>                                            
+                                            <Input
+                                                value="{PreDefineGoal>Overall_Appraisee_Score}"
+                                                placeholder="Appraisee Score"
+                                                editable="{apprisalData>bcfANRAEEdit}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Overall_Appraiser_Score}"
+                                                placeholder="Appraiser Score"
+                                                editable="{apprisalData>bcfANRAREdit}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Overall_Appraiser_Score}"
+                                                placeholder="Overall Score"
+                                                editable="{apprisalData>bcfANRAREdit}"
+                                            />
+                                            <Input
+                                                value="{PreDefineGoal>Overall_Reviewer_Score}"
+                                                placeholder="Reviewer Score"
+                                                editable="{apprisalData>bcfANRREREdit}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
