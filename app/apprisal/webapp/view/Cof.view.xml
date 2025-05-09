@@ -63,7 +63,7 @@
 			</uxap:ObjectPageSection>
 			<uxap:ObjectPageSection
                 titleUppercase="false"
-                title="1"
+                title="KRA"
                 showTitle="false"
             >
 				<uxap:subSections>
@@ -73,79 +73,7 @@
 								<Title text="1 Key Performance Area" />
 								<ToolbarSpacer />
 							</OverflowToolbar>
-							<HBox
-                                alignItems="Center"
-                                class="sapUiSmallMarginTop"
-                            >
-								<Label
-                                    text="Weightage(%)"
-                                    labelFor="COF_11_WEIGTAGE"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>coFgWeightage}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="5"
-                                    width="10%"
-									visible="{apprisalData>coFgWeightage}"
-									editable="{apprisalData>coFgWeightageEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								<Label
-                                    text="Appraisee Score"
-									visible="{apprisalData>cofgaaAEE}"
-                                    
-                                />
-                                <Button
-                                    icon="sap-icon://information"
-                                    type="Transparent"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>cofgaaAEE}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="3"
-                                    width="10%"
-									visible="{apprisalData>cofgaaAEE}"
-									editable="{apprisalData>cofgaaAEEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								<Label
-                                    text="Appraiser Score"
-                                    visible="{apprisalData>coFgARScore}"
-                                />
-                                <Button
-                                    icon="sap-icon://information"
-                                    type="Transparent"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>coFgARScore}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="3"
-                                    width="10%"
-                                    visible="{apprisalData>coFgARScore}"
-									editable="{apprisalData>coFgARScoreEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								
-							</HBox>
+							
 							<Label
                                 text="Key Strategic Priority"
                                 class="sapUiSmallMarginTop"
@@ -269,13 +197,87 @@
 								visible="{apprisalData>cofgafAER}"
                                 editable="{apprisalData>cofgafAEREdit}"
                             />
+
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                             >
+								<Label
+                                    text="Weightage(%)"
+                                    labelFor="COF_11_WEIGTAGE"
+                                    class="sapUiSmallMarginEnd"
+									visible="{apprisalData>coFgWeightage}"
+                                />
+								<ComboBox
+                                    items="{/numbers}"
+                                    value="5"
+                                    width="10%"
+									visible="{apprisalData>coFgWeightage}"
+									editable="{apprisalData>coFgWeightageEdit}"
+                                >
+									<core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+								</ComboBox>
+								<Label
+                                    text="Appraisee Score"
+									visible="{apprisalData>cofgaaAEE}"
+                                    
+                                />
+                                <Button
+                                    icon="sap-icon://information"
+                                    type="Transparent"
+                                    press="onClickScoreInfo"
+                                    ariaLabelledBy="actionButtonLabel"
+                                    class="sapUiSmallMarginEnd"
+									visible="{apprisalData>cofgaaAEE}"
+                                />
+								<ComboBox
+                                    items="{/numbers}"
+                                    value="3"
+                                    width="10%"
+									visible="{apprisalData>cofgaaAEE}"
+									editable="{apprisalData>cofgaaAEEdit}"
+                                >
+									<core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+								</ComboBox>
+								<Label
+                                    text="Appraiser Score"
+                                    visible="{apprisalData>coFgARScore}"
+                                />
+                                <Button
+                                    icon="sap-icon://information"
+                                    type="Transparent"
+                                    press="onClickScoreInfo"
+                                    ariaLabelledBy="actionButtonLabel"
+                                    class="sapUiSmallMarginEnd"
+									visible="{apprisalData>coFgARScore}"
+                                />
+								<ComboBox
+                                    items="{/numbers}"
+                                    value="3"
+                                    width="10%"
+                                    visible="{apprisalData>coFgARScore}"
+									editable="{apprisalData>coFgARScoreEdit}"
+                                >
+									<core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+								</ComboBox>
+								
+							</HBox>
 						</VBox>
 					</uxap:ObjectPageSubSection>
 				</uxap:subSections>
 			</uxap:ObjectPageSection>
 			<uxap:ObjectPageSection
                 titleUppercase="false"
-                title="2"
+                title="KRA"
                 showTitle="false"
             >
 				<uxap:subSections>
@@ -285,79 +287,7 @@
 								<Title text="2 Key Performance Area" />
 								<ToolbarSpacer />
 							</OverflowToolbar>
-							<HBox
-                                alignItems="Center"
-                                class="sapUiSmallMarginTop"
-                            >
-								<Label
-                                    text="Weightage(%)"
-                                    labelFor="COF_11_WEIGTAGE"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>coFgWeightage}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="5"
-                                    width="10%"
-									visible="{apprisalData>coFgWeightage}"
-									editable="{apprisalData>coFgWeightageEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								<Label
-                                    text="Appraisee Score"
-									visible="{apprisalData>cofgaaAEE}"
-                                    
-                                />
-                                <Button
-                                    icon="sap-icon://information"
-                                    type="Transparent"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>cofgaaAEE}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="3"
-                                    width="10%"
-									visible="{apprisalData>cofgaaAEE}"
-									editable="{apprisalData>cofgaaAEEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								<Label
-                                    text="Appraiser Score"
-                                    visible="{apprisalData>coFgARScore}"
-                                />
-                                <Button
-                                    icon="sap-icon://information"
-                                    type="Transparent"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>coFgARScore}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="3"
-                                    width="10%"
-                                    visible="{apprisalData>coFgARScore}"
-									editable="{apprisalData>coFgARScoreEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								
-							</HBox>
+							
 							<Label
                                 text="Key Strategic Priority"
                                 class="sapUiSmallMarginTop"
@@ -481,6 +411,79 @@
 								visible="{apprisalData>cofgafAER}"
                                 editable="{apprisalData>cofgafAEREdit}"
                             />
+                            <HBox
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                             >
+								<Label
+                                    text="Weightage(%)"
+                                    labelFor="COF_11_WEIGTAGE"
+                                    class="sapUiSmallMarginEnd"
+									visible="{apprisalData>coFgWeightage}"
+                                />
+								<ComboBox
+                                    items="{/numbers}"
+                                    value="5"
+                                    width="10%"
+									visible="{apprisalData>coFgWeightage}"
+									editable="{apprisalData>coFgWeightageEdit}"
+                                >
+									<core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+								</ComboBox>
+								<Label
+                                    text="Appraisee Score"
+									visible="{apprisalData>cofgaaAEE}"
+                                    
+                                />
+                                <Button
+                                    icon="sap-icon://information"
+                                    type="Transparent"
+                                    press="onClickScoreInfo"
+                                    ariaLabelledBy="actionButtonLabel"
+                                    class="sapUiSmallMarginEnd"
+									visible="{apprisalData>cofgaaAEE}"
+                                />
+								<ComboBox
+                                    items="{/numbers}"
+                                    value="3"
+                                    width="10%"
+									visible="{apprisalData>cofgaaAEE}"
+									editable="{apprisalData>cofgaaAEEdit}"
+                                >
+									<core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+								</ComboBox>
+								<Label
+                                    text="Appraiser Score"
+                                    visible="{apprisalData>coFgARScore}"
+                                />
+                                <Button
+                                    icon="sap-icon://information"
+                                    type="Transparent"
+                                    press="onClickScoreInfo"
+                                    ariaLabelledBy="actionButtonLabel"
+                                    class="sapUiSmallMarginEnd"
+									visible="{apprisalData>coFgARScore}"
+                                />
+								<ComboBox
+                                    items="{/numbers}"
+                                    value="3"
+                                    width="10%"
+                                    visible="{apprisalData>coFgARScore}"
+									editable="{apprisalData>coFgARScoreEdit}"
+                                >
+									<core:Item
+                                        key="{key}"
+                                        text="{text}"
+                                    />
+								</ComboBox>
+								
+							</HBox>
 						</VBox>
 					</uxap:ObjectPageSubSection>
 				</uxap:subSections>

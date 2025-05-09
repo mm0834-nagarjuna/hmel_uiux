@@ -45,7 +45,7 @@
 			</uxap:ObjectPageSection>
 			<uxap:ObjectPageSection
                 titleUppercase="false"
-                title="1. Accomplishment"
+                title="1"
                 showTitle="false"
             >
 				<uxap:subSections>
@@ -72,7 +72,7 @@
 			</uxap:ObjectPageSection>
 			<uxap:ObjectPageSection
                 titleUppercase="false"
-                title="2. Accomplishment"
+                title="2"
                 showTitle="false"
             >
 				<uxap:subSections>

@@ -41,7 +41,7 @@
                         search=".onSearch"
                         filterChange=".onFilterChange"
                         afterVariantLoad=".onAfterVariantLoad"
-                    >
+                     >
                         <fb:filterGroupItems>
                             <fb:FilterGroupItem
                                 name="BSM"
@@ -50,7 +50,20 @@
                                 visibleInFilterBar="true"
                             >
                                 <fb:control>
-                                    <Input />
+                                    <ComboBox  selectedKey="01">
+                                        <core:Item
+                                            key="01"
+                                            text="2025-26"
+                                        />
+                                        <core:Item
+                                            key="02"
+                                            text="2024-25"
+                                        />
+                                        <core:Item
+                                            key="03"
+                                            text="2023-24"
+                                        />
+                                    </ComboBox>
                                 </fb:control>
                             </fb:FilterGroupItem>
                             <fb:FilterGroupItem

@@ -31,12 +31,14 @@
                                 />
                                 <ToolbarSpacer />
                                 <Button
+                                icon="sap-icon://legend"
                                     text="Score Description"
                                     type="Emphasized"
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
                                 />
                                 <Button
+                                    icon="sap-icon://document-text"
                                     text="Guideline"
                                     type="Emphasized"
                                     press="onClickGuideline"
@@ -392,7 +394,7 @@
                                                 value="{PreDefineGoal>Overall_Appraisee_Score}"
                                                 placeholder="Appraisee Score"
                                                 editable="false"
-                                                
+
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Overall_Appraiser_Score}"

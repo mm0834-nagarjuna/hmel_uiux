@@ -26,8 +26,9 @@
                             <Title text="Individual Development Plan" />
                             <ToolbarSpacer />
                             <Button
-                                text="Guideline"
-                                type="Emphasized"
+                                    icon="sap-icon://document-text"
+                                    text="Guideline"
+                                    type="Emphasized"
                                 press="onClickGuideline"
                             />
                         </OverflowToolbar>
@@ -241,9 +242,11 @@
                                                 growing="true"
                                                 editable="{apprisalData>idpFAODAAEEdit}"
                                             />
-                                            <Input
-                                                editable="{apprisalData>idpFAODAAREdit}"
-                                            />
+                                            
+                                            <ComboBox selectedKey="" editable="{apprisalData>idpFAODAAREdit}" width="100%">
+                                            <core:Item key="Accept" text="Accepted"></core:Item>
+                                            <core:Item key="Reject" text="Rejected"></core:Item>
+                                            </ComboBox>
                                             <Input
                                                 editable="{apprisalData>idpFAODAAREdit}"
                                             />
@@ -309,9 +312,11 @@
                                                     />
                                                 </suggestionItems>
                                             </Input>
-                                            <Input
-                                                editable="{apprisalData>idpFTDAAREdit}"
-                                            />
+                                            
+                                            <ComboBox selectedKey="" editable="{apprisalData>idpFTDAAREdit}" width="100%">
+                                            <core:Item key="Accept" text="Accepted"></core:Item>
+                                            <core:Item key="Reject" text="Rejected"></core:Item>
+                                            </ComboBox>
                                             <Input
                                                 editable="{apprisalData>idpFTDAAREdit}"
                                             />

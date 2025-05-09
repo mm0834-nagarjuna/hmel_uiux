@@ -17,13 +17,13 @@
                 level="H3"
             />
 			<ToolbarSpacer />
-			<Button text="Submit" visible="{apprisalData>submit}"/>
-			<Button text="Refer Back to Appraisee" visible="{apprisalData>referBackToEmployee}"/>
+            <Button text="Save" visible="{apprisalData>onlySaveOption}"/>
+            <Button text="Refer Back to Appraisee" visible="{apprisalData>referBackToEmployee}"/>
 			<Button text="Target Revision Required" visible="{apprisalData>targetRevisionRequired}"/>
 			<Button text="Allow Target Revision" visible="{apprisalData>allowTargetRevision}"/>
 			<Button text="Don't Allow Target Revision" visible="{apprisalData>doNotAllowTargetRevision}"/>
 			<Button text="Refer Back To Appraiser" visible="{apprisalData>referBackToAppraiser}"/>
-			<Button text="Save" visible="{apprisalData>onlySaveOption}"/>
+			<Button text="Submit" visible="{apprisalData>submit}"/>
             <Text text="|" class="mvnButtonSepeartor"/>
 			<Button text="Print" />
 		</Toolbar>
@@ -32,9 +32,17 @@
             columnGap="1rem"
             class="sapUiContentPadding"
         >
+            <ObjectStatus
+                title="Employee ID"
+                text="{apprisalData>appraiseeId}"
+            />
 			<ObjectStatus
                 title="Employee Name"
-                text="{apprisalData>appraiseeId} {apprisalData>appraiseeName}"
+                text="{apprisalData>appraiseeName}"
+            />
+            <ObjectStatus
+                title="Designation"
+                text="Sales Manager"
             />
 			<ObjectStatus
                 title="Department"
