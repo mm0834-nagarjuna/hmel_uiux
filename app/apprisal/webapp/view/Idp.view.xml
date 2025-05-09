@@ -505,6 +505,7 @@
                 titleUppercase="false"
                 title="Score"
                 showTitle="false"
+                visible="{apprisalData>idpANRS}"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
