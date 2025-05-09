@@ -57,12 +57,12 @@
 								}"
                             >
                                 <columns>
-                                    <Column width="10rem">
+                                    <Column width="5rem">
                                         <header>
                                             <Text text="S.No" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="15rem">
                                         <header>
                                             <Text text="Training Name" />
                                         </header>
@@ -72,7 +72,7 @@
                                             <Text text="Description" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column  width="8rem">
                                         <header>
                                             <Text text="No of Days" />
                                         </header>
@@ -331,52 +331,46 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="Four Monthly Reviews" />
+                                <Title text="First Four Monthly Reviews" />
                             </OverflowToolbar>
                             <Table
-                                id="idpFMR"
+                                id="idpFFMR"
                                 items="{
-									path : 'PreDefineGoal>/IDP/Four_Monthly_Review'
+									path : 'PreDefineGoal>/IDP/First_Four_Monthly_Review'
 								}"
                             >
                                 <columns>
-                                    <Column width="20rem">
-                                        <header>
-                                            <Text text="Review Type" />
-                                        </header>
+                                    
+                                    <Column>
+                                        
+                                            <Text
+                                                text="Appraisee Remarks"
+                                            />
+                                        
                                     </Column>
                                     <Column>
-                                        <header>
+                                        
                                             <Text
-                                                text="IDP Remarks Appraisee"
+                                                text="Appraiser Remarks"
                                             />
-                                        </header>
-                                    </Column>
-                                    <Column>
-                                        <header>
-                                            <Text
-                                                text="IDP Remarks Appraiser"
-                                            />
-                                        </header>
+                                        
                                     </Column>
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <ObjectIdentifier
-                                                title="{PreDefineGoal>Review_Type}"
-                                            />
+                                           
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraisee}"
                                                 cols="2000"
                                                 rows="5"
-                                                editable="{apprisalData>idpFFMRSREAEEdit}"
+                                                editable="{apprisalData>idpSFMRSREAEEdit}"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraiser}"
                                                 cols="2000"
                                                 rows="5"
-                                                editable="{apprisalData>idpFFMRSREAREdit}"
+                                                editable="{apprisalData>idpSFMRSREAREdit}"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -385,6 +379,73 @@
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
+                
+            </uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Score"
+                showTitle="false"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Four Monthly Reviews"
+                        titleUppercase="false"
+                        showTitle="false"
+                        visible="{apprisalData>idpFMRS}"
+                        
+                    >
+                        <VBox class="sapUiSmallMarginBottom">
+                            <OverflowToolbar>
+                                <Title text="Second Four Monthly Reviews" />
+                            </OverflowToolbar>
+                            <Table
+                                id="idpSFMR"
+                                items="{
+									path : 'PreDefineGoal>/IDP/Second_Four_Monthly_Review'
+								}"
+                            >
+                                <columns>
+                                    
+                                    <Column>
+                                        
+                                            <Text
+                                                text="Appraisee Remarks"
+                                            />
+                                        
+                                    </Column>
+                                    <Column>
+                                        
+                                            <Text
+                                                text="Appraiser Remarks"
+                                            />
+                                        
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>
+                                           
+                                            <TextArea
+                                                value="{PreDefineGoal>Remarks_Appraisee}"
+                                                cols="2000"
+                                                rows="5"
+                                                editable="{apprisalData>idpSFMRSREAEEdit}"
+                                            />
+                                            <TextArea
+                                                value="{PreDefineGoal>Remarks_Appraiser}"
+                                                cols="2000"
+                                                rows="5"
+                                                editable="{apprisalData>idpSFMRSREAREdit}"
+                                            />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+                
             </uxap:ObjectPageSection>
 
             <uxap:ObjectPageSection
@@ -410,37 +471,31 @@
 								}"
                             >
                                 <columns>
-                                    <Column width="20rem">
-                                        <header>
-                                            <Text text="Review Type" />
-                                        </header>
-                                    </Column>
-                                    <Column width="25rem">
+                                    
+                                    <Column >
                                         <header>
                                             <Text
-                                                text="IDP Remarks Appraisee"
+                                                text=" Appraisee Remarks"
                                             />
                                         </header>
                                     </Column>
                                     <Column>
                                         <header>
                                             <Text
-                                                text="IDP Remarks Appraiser"
+                                                text=" Appraiser Remarks"
                                             />
                                         </header>
                                     </Column>
                                     <Column>
                                         <header>
-                                            <Text text="IDP Remarks Reviewer" />
+                                            <Text text=" Reviewer Remarks" />
                                         </header>
                                     </Column>
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <ObjectIdentifier
-                                                title="{PreDefineGoal>Review_Type}"
-                                            />
+                                           
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraisee}"
                                                 cols="2000"
@@ -467,6 +522,7 @@
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
+            
 
             <uxap:ObjectPageSection
                 titleUppercase="false"

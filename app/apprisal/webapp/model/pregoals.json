@@ -1,16 +1,16 @@
 {
-  "cof_goals" : [
+  "cof_goals": [
     {
       "KRA": "Execution of Cultural Transformation initiatives",
       "KPI": "3Bs Initiative - Number of individual actions reflecting desired behaviors - Passionate innovation, Boldly Efficient and Proactive Collaboration",
       "Target": "3Bs Initiative - any 1 of the 3Bs in the four monthly review (minimum two behaviours shall be evidenced over the year, out of which minimum one behaviour of Passionate Innovation)",
-      "Weightage":"3%"
+      "Weightage": "3%"
     },
     {
       "KRA": "Safety Target (mandatory for Bathinda/Pipeline locations)",
       "KPI": "KPI to be as per KRA which is performed or controlled by employee to achieve Safety targets",
       "Target": "Safety Target (Please coordinate with Health & Safety Team for target relevant to your department)",
-      "Weightage":"5%"
+      "Weightage": "5%"
     }
   ],
   "indv_goals": [
@@ -51,120 +51,7 @@
       "Weightage": "6%"
     }
   ],
-"bce": [
-  {
-    "COMP_DESC": "Adapts to Uncertainty",
-    "INDICATORS": "Finds opportunities inherent even in uncertain situations and guides the organization to capitalize on them.",
-    "COMP_DEF": "OPERATING EFFECTIVELY, EVEN WHEN THINGS ARE NOT CERTAIN OR THE WAY FORWARD IS NOT CLEAR.",
-    "Identified": "",
-    "Appraisee_Score": 3,
-    "Appraiser_Score": 4,
-    "Appe_scr_editable": true,
-    "Appr_scr_editable": false
-  },
-  {
-    "COMP_DESC": "Collaborates",
-    "INDICATORS": "Builds a culture of collaboration and teamwork among multiple stakeholders and leads conflict resolution constructively.",
-    "COMP_DEF": "BUILDING PARTNERSHIPS AND WORKING COLLABORATIVELY WITH OTHERS TO MEET SHARED OBJECTIVES.",
-    "Identified": "",
-    "Appraisee_Score": 2,
-    "Appraiser_Score": 3,
-    "Appe_scr_editable": false,
-    "Appr_scr_editable": true
-  },
-  {
-    "COMP_DESC": "Develops Self and Effective Teams",
-    "INDICATORS": "Builds a leadership team that drives the goals and success of HMEL in a way to strengthen collaborative working",
-    "COMP_DEF": "DEVELOPING SELF AND BUILDING CAPABLE TEAMS THAT APPLY THEIR SKILLS AND PERSPECTIVES TO ACHIEVE COMMON GOALS.",
-    "Identified": "",
-    "Appraisee_Score": 4,
-    "Appraiser_Score": 1,
-    "Appe_scr_editable": true,
-    "Appr_scr_editable": false
-  },
-  {
-    "COMP_DESC": "Develops Strategy",
-    "INDICATORS": "Develops and integrates HMEL strategies and explores future possibilities to achieve and sustain competitive advantage.",
-    "COMP_DEF": "SEEING AHEAD TO FUTURE POSSIBILITIES AND TRANSLATING THEM INTO BREAKTHROUGH STRATEGIES.",
-    "Identified": "",
-    "Appraisee_Score": 5,
-    "Appraiser_Score": 2,
-    "Appe_scr_editable": false,
-    "Appr_scr_editable": true
-  },
-  {
-    "COMP_DESC": "Develops Talent",
-    "INDICATORS": "Creates a culture that emphasizes ongoing learning and development and reinforces its value to the organization.",
-    "COMP_DEF": "DEVELOPING PEOPLE TO MEET BOTH THEIR CAREER GOALS AND THE ORGANIZATION’S GOALS.",
-    "Identified": "",
-    "Appraisee_Score": 1,
-    "Appraiser_Score": 4,
-    "Appe_scr_editable": true,
-    "Appr_scr_editable": true
-  },
-  {
-    "COMP_DESC": "Digital Mindset",
-    "INDICATORS": "Anticipates and ensures the impact of emerging technologies and positions organization both structurally and culturally to best",
-    "COMP_DEF": "UNDERSTANDS THE POWER OF TECHNOLOGY TO DEMOCRATIZE, SCALE AND SPEED UP EVERY FORM OF INTERACTION AND ACTION.",
-    "Identified": "",
-    "Appraisee_Score": 3,
-    "Appraiser_Score": 2,
-    "Appe_scr_editable": false,
-    "Appr_scr_editable": false
-  },
-  {
-    "COMP_DESC": "Focus on Innovation",
-    "INDICATORS": "Builds a culture across levels that challenges the organization to generate possibilities and implement breakthrough ideas and s",
-    "COMP_DEF": "CREATING NEW AND BETTER WAYS FOR THE ORGANIZATION TO BE SUCCESSFUL.",
-    "Identified": "",
-    "Appraisee_Score": 5,
-    "Appraiser_Score": 3,
-    "Appe_scr_editable": true,
-    "Appr_scr_editable": false
-  },
-  {
-    "COMP_DESC": "Focus on Results",
-    "INDICATORS": "Sets smart goals, be accountable for performance",
-    "COMP_DEF": "CONSISTENTLY ACHIEVING RESULTS, EVEN UNDER CHALLENGING CIRCUMSTANCES AND OBSTACLES.",
-    "Identified": "",
-    "Appraisee_Score": 2,
-    "Appraiser_Score": 5,
-    "Appe_scr_editable": false,
-    "Appr_scr_editable": true
-  },
-  {
-    "COMP_DESC": "Openness to Feedback",
-    "INDICATORS": "Gathers feedback from different sources to get an accurate picture of own effectiveness and make necessary improvements.",
-    "COMP_DEF": "USING FEEDBACK AND REFLECTION TO GAIN PRODUCTIVE INSIGHT INTO PERSONAL STRENGTHS AND WEAKNESSES AND DEVELOP NEW SKILLS.",
-    "Identified": "",
-    "Appraisee_Score": 4,
-    "Appraiser_Score": 1,
-    "Appe_scr_editable": true,
-    "Appr_scr_editable": true
-  },
-  {
-    "COMP_DESC": "Optimizes Work",
-    "INDICATORS": "Builds a culture within HMEL that promotes continuous improvement and quality outcomes by identifying and securing organizationa",
-    "COMP_DEF": "KNOWING THE MOST EFFECTIVE AND EFFICIENT PROCESSES TO GET THINGS DONE, WITH A FOCUS ON CONTINUOUS IMPROVEMENT.",
-    "Identified": "",
-    "Appraisee_Score": 3,
-    "Appraiser_Score": 4,
-    "Appe_scr_editable": false,
-    "Appr_scr_editable": false
-  },
-  {
-    "COMP_DESC": "Plans and Aligns",
-    "INDICATORS": "sets and conveys clear objectives and provides resources to achieve long term organisational goals.",
-    "COMP_DEF": "PLANNING AND PRIORITIZING WORK TO MEET COMMITMENTS ALIGNED WITH ORGANIZATIONAL GOALS.",
-    "Identified": "",
-    "Appraisee_Score": 1,
-    "Appraiser_Score": 5,
-    "Appe_scr_editable": true,
-    "Appr_scr_editable": false
-  }
-],
-"BCE":{
-  "Competencies":[
+  "bce": [
     {
       "COMP_DESC": "Adapts to Uncertainty",
       "INDICATORS": "Finds opportunities inherent even in uncertain situations and guides the organization to capitalize on them.",
@@ -276,47 +163,168 @@
       "Appr_scr_editable": false
     }
   ],
-  "Score_Desc":[
-    {
-      "Score": 1,
-      "Value_Description": "Does not demonstrate the behaviours that support this competency"
-    },
-    {
-      "Score": 2,
-      "Value_Description": "Occasionally demonstrates the behaviours that support this competency"
-    },
-    {
-      "Score": 3,
-      "Value_Description": "Consistently demonstrates the effective behaviours that support this competency and provides guidance to others"
-    },
-    {
-      "Score": 4,
-      "Value_Description": "Provides inspiration to others for demonstrating this competency by influencing the environment"
-    },
-    {
-      "Score": 5,
-      "Value_Description": "Demonstrates high level of excellence and innovation for this competency and is seen as a role model to others"
-    }
-  ],
-  "First_Four_Monthly_Review":{
-    "Remarks_Appraisee_value": "Remarks-Appraisee",
-    "Remarks_Appraiser_value": "Remarks-Appraiser"
+  "BCE": {
+    "Competencies": [
+      {
+        "COMP_DESC": "Adapts to Uncertainty",
+        "INDICATORS": "Finds opportunities inherent even in uncertain situations and guides the organization to capitalize on them.",
+        "COMP_DEF": "OPERATING EFFECTIVELY, EVEN WHEN THINGS ARE NOT CERTAIN OR THE WAY FORWARD IS NOT CLEAR.",
+        "Identified": "",
+        "Appraisee_Score": 3,
+        "Appraiser_Score": 4,
+        "Appe_scr_editable": true,
+        "Appr_scr_editable": false
+      },
+      {
+        "COMP_DESC": "Collaborates",
+        "INDICATORS": "Builds a culture of collaboration and teamwork among multiple stakeholders and leads conflict resolution constructively.",
+        "COMP_DEF": "BUILDING PARTNERSHIPS AND WORKING COLLABORATIVELY WITH OTHERS TO MEET SHARED OBJECTIVES.",
+        "Identified": "",
+        "Appraisee_Score": 2,
+        "Appraiser_Score": 3,
+        "Appe_scr_editable": false,
+        "Appr_scr_editable": true
+      },
+      {
+        "COMP_DESC": "Develops Self and Effective Teams",
+        "INDICATORS": "Builds a leadership team that drives the goals and success of HMEL in a way to strengthen collaborative working",
+        "COMP_DEF": "DEVELOPING SELF AND BUILDING CAPABLE TEAMS THAT APPLY THEIR SKILLS AND PERSPECTIVES TO ACHIEVE COMMON GOALS.",
+        "Identified": "",
+        "Appraisee_Score": 4,
+        "Appraiser_Score": 1,
+        "Appe_scr_editable": true,
+        "Appr_scr_editable": false
+      },
+      {
+        "COMP_DESC": "Develops Strategy",
+        "INDICATORS": "Develops and integrates HMEL strategies and explores future possibilities to achieve and sustain competitive advantage.",
+        "COMP_DEF": "SEEING AHEAD TO FUTURE POSSIBILITIES AND TRANSLATING THEM INTO BREAKTHROUGH STRATEGIES.",
+        "Identified": "",
+        "Appraisee_Score": 5,
+        "Appraiser_Score": 2,
+        "Appe_scr_editable": false,
+        "Appr_scr_editable": true
+      },
+      {
+        "COMP_DESC": "Develops Talent",
+        "INDICATORS": "Creates a culture that emphasizes ongoing learning and development and reinforces its value to the organization.",
+        "COMP_DEF": "DEVELOPING PEOPLE TO MEET BOTH THEIR CAREER GOALS AND THE ORGANIZATION’S GOALS.",
+        "Identified": "",
+        "Appraisee_Score": 1,
+        "Appraiser_Score": 4,
+        "Appe_scr_editable": true,
+        "Appr_scr_editable": true
+      },
+      {
+        "COMP_DESC": "Digital Mindset",
+        "INDICATORS": "Anticipates and ensures the impact of emerging technologies and positions organization both structurally and culturally to best",
+        "COMP_DEF": "UNDERSTANDS THE POWER OF TECHNOLOGY TO DEMOCRATIZE, SCALE AND SPEED UP EVERY FORM OF INTERACTION AND ACTION.",
+        "Identified": "",
+        "Appraisee_Score": 3,
+        "Appraiser_Score": 2,
+        "Appe_scr_editable": false,
+        "Appr_scr_editable": false
+      },
+      {
+        "COMP_DESC": "Focus on Innovation",
+        "INDICATORS": "Builds a culture across levels that challenges the organization to generate possibilities and implement breakthrough ideas and s",
+        "COMP_DEF": "CREATING NEW AND BETTER WAYS FOR THE ORGANIZATION TO BE SUCCESSFUL.",
+        "Identified": "",
+        "Appraisee_Score": 5,
+        "Appraiser_Score": 3,
+        "Appe_scr_editable": true,
+        "Appr_scr_editable": false
+      },
+      {
+        "COMP_DESC": "Focus on Results",
+        "INDICATORS": "Sets smart goals, be accountable for performance",
+        "COMP_DEF": "CONSISTENTLY ACHIEVING RESULTS, EVEN UNDER CHALLENGING CIRCUMSTANCES AND OBSTACLES.",
+        "Identified": "",
+        "Appraisee_Score": 2,
+        "Appraiser_Score": 5,
+        "Appe_scr_editable": false,
+        "Appr_scr_editable": true
+      },
+      {
+        "COMP_DESC": "Openness to Feedback",
+        "INDICATORS": "Gathers feedback from different sources to get an accurate picture of own effectiveness and make necessary improvements.",
+        "COMP_DEF": "USING FEEDBACK AND REFLECTION TO GAIN PRODUCTIVE INSIGHT INTO PERSONAL STRENGTHS AND WEAKNESSES AND DEVELOP NEW SKILLS.",
+        "Identified": "",
+        "Appraisee_Score": 4,
+        "Appraiser_Score": 1,
+        "Appe_scr_editable": true,
+        "Appr_scr_editable": true
+      },
+      {
+        "COMP_DESC": "Optimizes Work",
+        "INDICATORS": "Builds a culture within HMEL that promotes continuous improvement and quality outcomes by identifying and securing organizationa",
+        "COMP_DEF": "KNOWING THE MOST EFFECTIVE AND EFFICIENT PROCESSES TO GET THINGS DONE, WITH A FOCUS ON CONTINUOUS IMPROVEMENT.",
+        "Identified": "",
+        "Appraisee_Score": 3,
+        "Appraiser_Score": 4,
+        "Appe_scr_editable": false,
+        "Appr_scr_editable": false
+      },
+      {
+        "COMP_DESC": "Plans and Aligns",
+        "INDICATORS": "sets and conveys clear objectives and provides resources to achieve long term organisational goals.",
+        "COMP_DEF": "PLANNING AND PRIORITIZING WORK TO MEET COMMITMENTS ALIGNED WITH ORGANIZATIONAL GOALS.",
+        "Identified": "",
+        "Appraisee_Score": 1,
+        "Appraiser_Score": 5,
+        "Appe_scr_editable": true,
+        "Appr_scr_editable": false
+      }
+    ],
+    "Score_Desc": [
+      {
+        "Score": 1,
+        "Value_Description": "Does not demonstrate the behaviours that support this competency"
+      },
+      {
+        "Score": 2,
+        "Value_Description": "Occasionally demonstrates the behaviours that support this competency"
+      },
+      {
+        "Score": 3,
+        "Value_Description": "Consistently demonstrates the effective behaviours that support this competency and provides guidance to others"
+      },
+      {
+        "Score": 4,
+        "Value_Description": "Provides inspiration to others for demonstrating this competency by influencing the environment"
+      },
+      {
+        "Score": 5,
+        "Value_Description": "Demonstrates high level of excellence and innovation for this competency and is seen as a role model to others"
+      }
+    ],
+    "First_Four_Monthly_Review": [
+      {
+        "Remarks_Appraisee_value": "Remarks-Appraisee",
+        "Remarks_Appraiser_value": "Remarks-Appraiser"
+      }
+    ],
+    "Second_Four_Monthly_Review": [
+      {
+        "Remarks_Appraisee_value": "Remarks-Appraisee",
+        "Remarks_Appraiser_value": "Remarks-Appraiser"
+      }
+    ],
+    "Annual_Review": [
+      {
+        "Remarks_Appraisee_value": "Remarks-Appraisee",
+        "Remarks_Appraiser_value": "Remarks-Appraiser",
+        "Remarks_Reviewer_value": "Remarks-Reviewer"
+      }
+    ],
+    "Annual_Score": [
+      {
+        "Overall_Appraiser_Score": 2.24,
+        "Overall_Score": 3.24,
+        "Overall_Reviewer_Score": 2.24
+      }
+    ]
   },
-  "Second_Four_Monthly_Review":{
-    "Remarks_Appraisee_value": "Remarks-Appraisee",
-    "Remarks_Appraiser_value": "Remarks-Appraiser"
-  },
-  "Annual_Review":{
-   "Remarks_Appraisee_value": "Remarks-Appraisee",
-    "Remarks_Appraiser_value": "Remarks-Appraiser",
-    "Remarks_Reviewer_value": "Remarks-Reviewer"
-  },
-  "Annual_Score": {
-    "Overall_Appraiser_Score": 2.24,
-    "Overall_Score": 3.24,
-    "Overall_Reviewer_Score": 2.24
-  }
-},
   "IDP": {
     "trainings_attended": [
       {
@@ -338,7 +346,7 @@
         "No. of days": 1
       }
     ],
-    "Comps_Identified":[
+    "Comps_Identified": [
       {
         "S.No.": 1,
         "CMP_Target": "Adapts to Uncertainity",
@@ -356,14 +364,14 @@
         "Annual_Achievements": ""
       }
     ],
-    "Other_Dev_Area":[
+    "Other_Dev_Area": [
       {
         "Appraisee": "Requested training on advanced Excel skills for data analysis",
         "Status": "",
         "Appraiser": ""
       }
     ],
-    "Tech_Dev_Area":[
+    "Tech_Dev_Area": [
       {
         "Appraisee": "IADC Hazardous Area Electerical Training",
         "Status": "",
@@ -375,37 +383,31 @@
         "Appraiser": ""
       }
     ],
-    "Four_Monthly_Review": {
-      "First_Four_Monthly_Review" : 
-        {
-          "Review_Type": "First Four Monthly Review",
-          "Remarks_Appraisee": "Remarks Appraisee",
-          "Remarks_Appraiser": "Remarks Appraiser"
-        },
-        "Second_Four_Monthly_Review" : 
-        {
-          "Review_Type": "Second Four Monthly Review",
-          "Remarks_Appraisee": "Remarks Appraisee",
-          "Remarks_Appraiser": "Remarks Appraiser"
-        }
-      
-    },
-    "Annual_Review": {
-      "Annual_Remarks": 
+    "First_Four_Monthly_Review": [
       {
-        
-          "Review_Type": "Annual Review",
-          "Remarks_Appraisee": "Remarks Appraisee",
-          "Remarks_Appraiser": "Remarks Appraiser",
-          "Remarks_Reviewer": "Remarks Reviewer"
-    
+        "Remarks_Appraisee": "Remarks Appraisee",
+        "Remarks_Appraiser": "Remarks Appraiser"
+      }
+    ],
+    "Second_Four_Monthly_Review": [
+      {
+        "Remarks_Appraisee": "Remarks Appraisee",
+        "Remarks_Appraiser": "Remarks Appraiser"
+      }
+    ],
+    "Annual_Review": {
+      "Annual_Remarks": {
+        "Review_Type": "Annual Review",
+        "Remarks_Appraisee": "Remarks Appraisee",
+        "Remarks_Appraiser": "Remarks Appraiser",
+        "Remarks_Reviewer": "Remarks Reviewer"
       }
     },
     "Annual_Score": {
-      "Scores" : {
-        "Score_Appraiser" : 4.46,
-        "Overal_Score" : 4.18,
-        "Score_Reviewer" : 4.18
+      "Scores": {
+        "Score_Appraiser": 4.46,
+        "Overal_Score": 4.18,
+        "Score_Reviewer": 4.18
       }
     }
   },
@@ -501,8 +503,8 @@
       ]
     }
   },
-  "OverallScore":{
-    "Section_Score":[
+  "OverallScore": {
+    "Section_Score": [
       {
         "Section": "Common Organizational / Functional Goal",
         "Appraisee": 5,
@@ -510,10 +512,10 @@
         "Reviewer": 4
       },
       {
-          "Section": "Individual Goal",
-          "Appraisee": 5,
-          "Appraiser": 3.5,
-          "Reviewer": 4
+        "Section": "Individual Goal",
+        "Appraisee": 5,
+        "Appraiser": 3.5,
+        "Reviewer": 4
       },
       {
         "Section": "Individual Development Plan",
@@ -533,13 +535,12 @@
       "Report_Link": "https://example.com/reports/EMP001-360-feedback"
     },
     "Final_Score": {
-    "Appraisee": 4.5,
-    "Appraiser": 3.5,
-    "Reviewer": 4
-  }
-    
+      "Appraisee": 4.5,
+      "Appraiser": 3.5,
+      "Reviewer": 4
+    }
   },
-  "Acknowledgements":[
+  "Acknowledgements": [
     {
       "Sno": 1,
       "Stage": "Target Setting Confirmation By Appraisee",
@@ -561,46 +562,71 @@
       "Status": "No"
     }
   ],
-
   "Overal_Remarks": [
     {
-    "Timeliness": [
-      { "key": "15", "text": "15" },
-      { "key": "25", "text": "25" },
-      { "key": "35", "text": "35" },
-      { "key": "45", "text": "45" },
-      { "key": "55", "text": "55" },
-      { "key": "65", "text": "65" },
-      { "key": "75", "text": "75" },
-      { "key": "85", "text": "85" },
-      { "key": "95", "text": "95" }
+      "Timeliness": [
+        {
+          "key": "15",
+          "text": "15"
+        },
+        {
+          "key": "25",
+          "text": "25"
+        },
+        {
+          "key": "35",
+          "text": "35"
+        },
+        {
+          "key": "45",
+          "text": "45"
+        },
+        {
+          "key": "55",
+          "text": "55"
+        },
+        {
+          "key": "65",
+          "text": "65"
+        },
+        {
+          "key": "75",
+          "text": "75"
+        },
+        {
+          "key": "85",
+          "text": "85"
+        },
+        {
+          "key": "95",
+          "text": "95"
+        }
       ],
-      "First_Four_Monthly_Remarks":[
-      {
-        "Appraisee_Achievement" : "First Four Monthly Achievement:Appraisee",
-        "Appraiser_Feedback" : "First Four Monthly Feedback:Appraiser",
-        "Performance_First_Review" : "Acceptable Performance"
-      }
-    ],
-    "Second_Four_Monthly_Remarks":[
-      {
-        "Appraisee_Achievement" : "Second Four Monthly Achievement:Appraisee",
-        "Appraiser_Feedback" : "Second Four Monthly Feedback:Appraiser",
-        "Performance_Second_Review" : "Acceptable Performance"
-      }
-    ],
-    "Annual_Remarks":[
-      {
-        "Appraisee_Achievement" : "Annual Achievement:Appraisee",
-        "Appraiser_Feedback" : "Annual Feedback:Appraiser",
-        "Reviewer_Feedback" : "Annual Feedback:Reviewer",
-        "Reviewer_Score" : 4.5
-      }
-    ]
+      "First_Four_Monthly_Remarks": [
+        {
+          "Appraisee_Achievement": "First Four Monthly Achievement:Appraisee",
+          "Appraiser_Feedback": "First Four Monthly Feedback:Appraiser",
+          "Performance_First_Review": "Acceptable Performance"
+        }
+      ],
+      "Second_Four_Monthly_Remarks": [
+        {
+          "Appraisee_Achievement": "Second Four Monthly Achievement:Appraisee",
+          "Appraiser_Feedback": "Second Four Monthly Feedback:Appraiser",
+          "Performance_Second_Review": "Acceptable Performance"
+        }
+      ],
+      "Annual_Remarks": [
+        {
+          "Appraisee_Achievement": "Annual Achievement:Appraisee",
+          "Appraiser_Feedback": "Annual Feedback:Appraiser",
+          "Reviewer_Feedback": "Annual Feedback:Reviewer",
+          "Reviewer_Score": 4.5
+        }
+      ]
     }
-    
   ],
-  "Ig_Cof_score":[
+  "Ig_Cof_score": [
     {
       "Evaluation": 1,
       "Value_Description": "Below 60% of the target achieved"
@@ -622,5 +648,4 @@
       "Value_Description": ">110% of the target achieved + Value addition"
     }
   ]
-  
 }
