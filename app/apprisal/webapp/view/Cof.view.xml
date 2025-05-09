@@ -17,7 +17,9 @@
 			<FlexItemData growFactor="1" />
 		</uxap:layoutData>
 		<uxap:sections>
-			<uxap:ObjectPageSection >
+			<uxap:ObjectPageSection 
+            visible="{apprisalData>coFgKSPEdit}"
+            >
             
 				<uxap:subSections>
                 
