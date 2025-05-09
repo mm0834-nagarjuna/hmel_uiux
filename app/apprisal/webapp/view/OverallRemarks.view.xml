@@ -57,11 +57,13 @@
                                                 value="{PreDefineGoal>Appraisee_Achievement}"
                                                 placeholder="Appraisee Achievement"
                                                 editable="{apprisalData>oRFFMRAEEdit}"
+                                                width="100%"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Appraiser_Feedback}"
                                                 placeholder="Appraiser Feedback"
                                                 editable="{apprisalData>oRFFMRAREdit}"
+                                                width="100%"
                                             />
                                         </cells>
                                     </ColumnListItem>

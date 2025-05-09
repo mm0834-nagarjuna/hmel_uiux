@@ -179,11 +179,13 @@
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
                                                 editable="{apprisalData>bcfFFRAEEdit}"
+                                                width="100%"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraiser_value}"
                                                 placeholder="Appraiser Remarks"
                                                 editable="{apprisalData>bcfFFRAREdit}"
+                                                width="100%"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -242,11 +244,13 @@
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
                                                 editable="{apprisalData>bcfSFRAEEdit}"
+                                                width="100%"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraiser_value}"
                                                 placeholder="Appraiser Remarks"
                                                 editable="{apprisalData>bcfSFRAREdit}"
+                                                width="100%"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -308,16 +312,19 @@
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
                                                 editable="{apprisalData>bcfANRAEEdit}"
+                                                width="100%"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraiser_value}"
                                                 placeholder="Appraiser Remarks"
                                                 editable="{apprisalData>bcfANRAREdit}"
+                                                width="100%"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Reviewer_value}"
                                                 placeholder="Appraiser Remarks"
                                                 editable="{apprisalData>bcfANRREREdit}"
+                                                width="100%"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -385,6 +392,7 @@
                                                 value="{PreDefineGoal>Overall_Appraisee_Score}"
                                                 placeholder="Appraisee Score"
                                                 editable="false"
+                                                
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Overall_Appraiser_Score}"
