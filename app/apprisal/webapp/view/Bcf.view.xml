@@ -77,7 +77,7 @@
                                         width="5rem"
                                     >
                                         <header>
-                                            <Text text="Appraisee " />
+                                            <Text text="Appraisee Score" />
                                         </header>
                                     </Column>
                                     <Column
@@ -175,12 +175,12 @@
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <Input
+                                            <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
                                                 editable="{apprisalData>bcfFFRAEEdit}"
                                             />
-                                            <Input
+                                            <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraiser_value}"
                                                 placeholder="Appraiser Remarks"
                                                 editable="{apprisalData>bcfFFRAREdit}"
@@ -238,12 +238,12 @@
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <Input
+                                            <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
                                                 editable="{apprisalData>bcfSFRAEEdit}"
                                             />
-                                            <Input
+                                            <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraiser_value}"
                                                 placeholder="Appraiser Remarks"
                                                 editable="{apprisalData>bcfSFRAREdit}"
@@ -304,17 +304,17 @@
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <Input
+                                            <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
                                                 editable="{apprisalData>bcfANRAEEdit}"
                                             />
-                                            <Input
+                                            <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraiser_value}"
                                                 placeholder="Appraiser Remarks"
                                                 editable="{apprisalData>bcfANRAREdit}"
                                             />
-                                            <Input
+                                            <TextArea
                                                 value="{PreDefineGoal>Remarks_Reviewer_value}"
                                                 placeholder="Appraiser Remarks"
                                                 editable="{apprisalData>bcfANRREREdit}"
