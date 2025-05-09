@@ -17,23 +17,28 @@
 			<FlexItemData growFactor="1" />
 		</uxap:layoutData>
 		<uxap:sections>
-			<uxap:ObjectPageSection visible="{apprisalData>coFgKSPEdit}">
+			<uxap:ObjectPageSection >
+            
 				<uxap:subSections>
+                
 					<uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="Common Organizational"
                     >
 						<OverflowToolbar
                             class="mvnObjectPageLayoutTitleOverflowToolbar"
+                            visible="{apprisalData>coFgKSPEdit}"
                         >
 							<ToolbarSpacer />
 							<Button
+                            icon="sap-icon://copy"
                                 text="Copy Goal"
                                 type="Ghost"
                                 press="onClickPredefined"
                             />
 							<Button
-                                text="New"
+                            icon="sap-icon://create-form"
+                                text="Add KRA"
                                 type="Ghost"
                                 press="onItemSelect"
                             />
@@ -46,6 +51,7 @@
 								<menu>
 									<Menu itemSelected="onMenuAction">
 										<MenuItem
+                                        
                                             text="Upload"
                                             icon="sap-icon://upload"
                                         />

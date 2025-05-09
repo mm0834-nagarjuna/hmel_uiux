@@ -16,7 +16,7 @@
             <FlexItemData growFactor="1" />
         </uxap:layoutData>
         <uxap:sections>
-            <uxap:ObjectPageSection visible="{apprisalData>igKPIEdit}">
+            <uxap:ObjectPageSection >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         titleUppercase="false"
@@ -24,6 +24,7 @@
                     >
                         <OverflowToolbar
                             class="mvnObjectPageLayoutTitleOverflowToolbar"
+                            visible="{apprisalData>igKPIEdit}"
                         >
                             <ToolbarSpacer />
                             <Button
@@ -32,7 +33,7 @@
                                 press="onClickPreviousYear"
                             />
                             <Button
-                                text="New"
+                                text="Add KRA"
                                 type="Ghost"
                                 press="onItemSelect"
                             />

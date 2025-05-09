@@ -69,7 +69,7 @@
                                     </ColumnListItem>
                                 </items>
                             </Table>
-
+                            <HBox width="70%" alignItems="Center" justifyContent="SpaceAround">
                             <HBox
                                 alignItems="Center"
                                 class="sapUiSmallMarginTop"
@@ -113,6 +113,7 @@
                                         />
                                     </items>
                                 </Select>
+                            </HBox>
                             </HBox>
 
                             <!-- First Four Month Table End -->
@@ -183,7 +184,7 @@
                                     </ColumnListItem>
                                 </items>
                             </Table>
-
+                            <HBox width="70%" alignItems="Center" justifyContent="SpaceAround">
                             <HBox
                                 alignItems="Center"
                                 class="sapUiSmallMarginTop"
@@ -227,6 +228,7 @@
                                         />
                                     </items>
                                 </Select>
+                            </HBox>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
@@ -305,7 +307,7 @@
                                     </ColumnListItem>
                                 </items>
                             </Table>
-
+                            <HBox width="70%" alignItems="Center" justifyContent="SpaceAround">
                             <HBox
                                 alignItems="Center"
                                 class="sapUiSmallMarginTop"
@@ -331,24 +333,11 @@
                                 class="sapUiSmallMarginTop"
                             >
                                 <Label
-                                    text="Overall Performance Feedback Appraiser"
+                                    text="Score - Reviewer"
                                     class="sapUiSmallMarginEnd"
                                 />
-                                <Select
-                                    width="200px"
-                                    editable="{apprisalData>oRANRRREEdit}"
-                                >
-                                    <items>
-                                        <core:Item
-                                            key="Needs Improvement"
-                                            text="Needs Improvement"
-                                        />
-                                        <core:Item
-                                            key="Acceptable Performance"
-                                            text="Acceptable Performance"
-                                        />
-                                    </items>
-                                </Select>
+                                <Input value="3.4" editable="{apprisalData>oRANRRREEdit}"></Input>
+                            </HBox>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
