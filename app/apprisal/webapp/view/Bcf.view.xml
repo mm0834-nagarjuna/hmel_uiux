@@ -31,13 +31,11 @@
                                 />
                                 <ToolbarSpacer />
                                 <Button
-                                                    
-                                                    text="Score Description"
-                                                    icon="sap-icon://information"
-                                                    type="Emphasized"
-                                                    press="onClickScoreInfo"
-                                                    ariaLabelledBy="actionButtonLabel"
-                                                />
+                                    text="Score Description"
+                                    type="Emphasized"
+                                    press="onClickScoreInfo"
+                                    ariaLabelledBy="actionButtonLabel"
+                                />
                                 <Button
                                     text="Guideline"
                                     type="Emphasized"
@@ -74,12 +72,18 @@
                                             <Text text="Definition" />
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}" width="8rem">
+                                    <Column
+                                        visible="{apprisalData>bcfANR}"
+                                        width="5rem"
+                                    >
                                         <header>
-                                            <Text text="Appraisee Score" />
+                                            <Text text="Appraisee " />
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}" width="8rem">
+                                    <Column
+                                        visible="{apprisalData>bcfANR}"
+                                        width="5rem"
+                                    >
                                         <header>
                                             <Text text="Appraiser Score" />
                                         </header>
@@ -88,7 +92,9 @@
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <CheckBox editable="{apprisalData>bcfTabEdit}"/>
+                                            <CheckBox
+                                                editable="{apprisalData>bcfTabEdit}"
+                                            />
                                             <Text
                                                 text="{PreDefineGoal>COMP_DESC}"
                                             />
@@ -98,7 +104,9 @@
                                             <Text
                                                 text="{PreDefineGoal>COMP_DEF}"
                                             />
-                                            <HBox visible="{apprisalData>bcfANR}">
+                                            <HBox
+                                                visible="{apprisalData>bcfANR}"
+                                            >
                                                 <Input
                                                     value="{PreDefineGoal>Appraisee_Score}"
                                                     type="Number"
@@ -106,7 +114,6 @@
                                                     editable="{apprisalData>bcfANRAEEdit}"
                                                     width="90%"
                                                 />
-                                                
                                             </HBox>
                                             <Input
                                                 value="{PreDefineGoal>Appraisee_Score}"
@@ -140,7 +147,9 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="First Four Monthly Review Remarks" />
+                                <Title
+                                    text="First Four Monthly Review Remarks"
+                                />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
                             <Table
@@ -152,7 +161,6 @@
 								}"
                             >
                                 <columns>
-                                    
                                     <Column>
                                         <header>
                                             <Text text="Appraisee" />
@@ -166,7 +174,7 @@
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
-                                        <cells>                                            
+                                        <cells>
                                             <Input
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
@@ -202,7 +210,9 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="Second Four Monthly Review Remarks" />
+                                <Title
+                                    text="Second Four Monthly Review Remarks"
+                                />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
                             <Table
@@ -214,7 +224,6 @@
 								}"
                             >
                                 <columns>
-                                    
                                     <Column>
                                         <header>
                                             <Text text="Appraisee" />
@@ -228,7 +237,7 @@
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
-                                        <cells>                                            
+                                        <cells>
                                             <Input
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
@@ -276,7 +285,6 @@
 								}"
                             >
                                 <columns>
-                                    
                                     <Column>
                                         <header>
                                             <Text text="Appraisee" />
@@ -295,7 +303,7 @@
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
-                                        <cells>                                            
+                                        <cells>
                                             <Input
                                                 value="{PreDefineGoal>Remarks_Appraisee_value}"
                                                 placeholder="Appraisee Remarks"
@@ -354,7 +362,6 @@
 								}"
                             >
                                 <columns>
-                                    
                                     <Column>
                                         <header>
                                             <Text text="Appraisee" />
@@ -373,16 +380,16 @@
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
-                                        <cells>                                            
+                                        <cells>
                                             <Input
                                                 value="{PreDefineGoal>Overall_Appraisee_Score}"
                                                 placeholder="Appraisee Score"
-                                                editable="{apprisalData>bcfANRAEEdit}"
+                                                editable="false"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Overall_Appraiser_Score}"
                                                 placeholder="Appraiser Score"
-                                                editable="{apprisalData>bcfANRAREdit}"
+                                                editable="false"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Overall_Reviewer_Score}"
