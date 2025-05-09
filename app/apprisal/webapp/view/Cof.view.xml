@@ -24,10 +24,10 @@
 					<uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="Common Organizational"
+                        visible="{apprisalData>coFgKSPEdit}"
                     >
 						<OverflowToolbar
-                            class="mvnObjectPageLayoutTitleOverflowToolbar"
-                            visible="{apprisalData>coFgKSPEdit}"
+                            class="mvnObjectPageLayoutTitleOverflowToolbar"   
                         >
 							<ToolbarSpacer />
 							<Button
@@ -69,7 +69,7 @@
 			</uxap:ObjectPageSection>
 			<uxap:ObjectPageSection
                 titleUppercase="false"
-                title="KRA"
+                title="1"
                 showTitle="false"
             >
 				<uxap:subSections>
@@ -283,12 +283,12 @@
 			</uxap:ObjectPageSection>
 			<uxap:ObjectPageSection
                 titleUppercase="false"
-                title="KRA"
+                title="2"
                 showTitle="false"
             >
 				<uxap:subSections>
 					<uxap:ObjectPageSubSection titleUppercase="false">
-						<VBox>
+						<VBox class="sapUiSmallMarginBottom">
 							<OverflowToolbar>
 								<Title text="2 Key Performance Area" />
 								<ToolbarSpacer />
