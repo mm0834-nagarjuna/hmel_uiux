@@ -1,5 +1,6 @@
 <mvc:View
     xmlns:mvc="sap.ui.core.mvc"
+    controllerName="apprisal.controller.Scorecard"
     xmlns:uxap="sap.uxap"
     xmlns="sap.m"
     height="100%"
@@ -23,9 +24,10 @@
                         showTitle="false"
                     >
                         <OverflowToolbar>
-                            <Title
+                            <!-- <Title
                                 text="Scorecard of Girish Chandra Ghildiyal ( 100682 )"
-                            />
+                            /> -->
+                            <FormattedText htmlText="{scoreModel>/HTML}"/>
                         </OverflowToolbar>
                     </uxap:ObjectPageSubSection>
                     <uxap:ObjectPageSubSection
