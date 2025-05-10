@@ -11,12 +11,7 @@ sap.ui.define([
            	// HTML string bound to the formatted text control
                     var oModel = new JSONModel({
                         HTML: 
-                            "<p>Use the following pointers while filling your Behavioural Competency:</p>" +
-                            "<ul>" +
-                            "<li><h5>Choose Wisely</h5>Select 2–3 key competencies relevant to your role or growth (e.g., communication, leadership, teamwork).</li>" +
-                            "<li><h5>Be Honest</h5>Pick areas where improvement will truly help you.</li>" +
-                            "<li><h5>Avoid Overload</h5>Focus on quality, not quantity.</li>" +
-                            "</ul>"
+                            "( <span style=' color : red; font-weight: bold'>Select minimum 1 or maximum 2 Competencies </span> )"
                     });
                     
 				this.getView().setModel(oModel);

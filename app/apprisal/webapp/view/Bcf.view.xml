@@ -26,10 +26,7 @@
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Competencies" />
-                                <Text
-                                    text="(Select minimum 1 or maximum 2 Competencies)"
-                                    
-                                />
+                                <FormattedText htmlText="{/HTML}"/>
                                 <ToolbarSpacer />
                                 <Button
                                 icon="sap-icon://legend"
