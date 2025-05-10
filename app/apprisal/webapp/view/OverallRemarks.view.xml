@@ -40,12 +40,12 @@
                                         type="Transparent"
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
-                                        visible="{apprisalData>cofgaaAEE}"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
                                         selectedKey="35"
                                         editable="{apprisalData>oRTSAREdit}"
+                                        width="100px"
                                     >
                                         <core:Item
                                             key="{PreDefineGoal>key}"
@@ -147,6 +147,7 @@
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
                                         selectedKey="35"
                                         editable="{apprisalData>oRFFMRAREdit}"
+                                        width="100px"
                                     >
                                         <core:Item
                                             key="{PreDefineGoal>key}"
@@ -272,6 +273,7 @@
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
                                         selectedKey="35"
                                         editable="{apprisalData>oRSFMRAREdit}"
+                                        width="100px"
                                     >
                                         <core:Item
                                             key="{PreDefineGoal>key}"
@@ -385,11 +387,12 @@
                             <HBox
                                 width="100%"
                                 alignItems="Center"
-                                justifyContent="SpaceBetween"
+                                class="sapUiSmallMarginTop"
                             >
                                 <HBox
                                     alignItems="Center"
-                                    class="sapUiSmallMarginTop"
+                                    class="sapUiSmallMarginEnd"
+                                    
                                 >
                                     <Label
                                         text="Time Spent in overall PMS Discussion"
@@ -405,6 +408,7 @@
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
                                         selectedKey="35"
                                         editable="{apprisalData>oRANRRAREdit}"
+                                        width="100px"
                                     >
                                         <core:Item
                                             key="{PreDefineGoal>key}"
@@ -415,15 +419,15 @@
 
                                 <HBox
                                     alignItems="Center"
-                                    class="sapUiSmallMarginTop"
                                 >
                                     <Label
-                                        text="Score - Reviewer"
+                                        text="Reviewer Score :"
                                         class="sapUiSmallMarginEnd"
                                     />
                                     <Input
                                         value="3.4"
                                         editable="{apprisalData>oRANRRREEdit}"
+                                        width="80px"
                                     />
                                 </HBox>
                             </HBox>
