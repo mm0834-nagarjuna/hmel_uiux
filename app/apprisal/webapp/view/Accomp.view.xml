@@ -52,7 +52,7 @@
 					<uxap:ObjectPageSubSection titleUppercase="false">
 						<VBox>
                             <OverflowToolbar>
-								<Title text="1. Accomplishment"/>
+								<Title text="1"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
 							<Label
@@ -79,7 +79,7 @@
 					<uxap:ObjectPageSubSection titleUppercase="false">
 						<VBox>
                             <OverflowToolbar>
-								<Title text="2. Accomplishment"/>
+								<Title text="2"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
 							<Label
