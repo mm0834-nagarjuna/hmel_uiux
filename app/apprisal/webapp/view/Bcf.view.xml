@@ -28,6 +28,7 @@
                                 <Title text="Competencies" />
                                 <Text
                                     text="(Select minimum 1 or maximum 2 Competencies)"
+                                    
                                 />
                                 <ToolbarSpacer />
                                 <Button

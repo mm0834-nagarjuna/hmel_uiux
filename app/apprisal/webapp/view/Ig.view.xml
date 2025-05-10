@@ -29,11 +29,13 @@
                         >
                             <ToolbarSpacer />
                             <Button
+                            icon="sap-icon://copy"
                                 text="Previous Year"
                                 type="Ghost"
                                 press="onClickPreviousYear"
                             />
                             <Button
+                            icon="sap-icon://create-form"
                                 text="Add KRA"
                                 type="Ghost"
                                 press="onItemSelect"
@@ -71,7 +73,7 @@
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="1 Key Performance Area" />
+                                <Title text="1 . Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
 
@@ -283,7 +285,7 @@
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="2 Key Performance Area" />
+                                <Title text="2 . Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
 
@@ -494,7 +496,7 @@
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="3 Key Performance Area" />
+                                <Title text="3 . Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
 
