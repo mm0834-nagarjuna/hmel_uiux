@@ -43,13 +43,13 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="Training"
+                        title="Trainings"
                         titleUppercase="false"
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="Training" />
+                                <Title text="Training attended in this performance Year" />
                             </OverflowToolbar>
                             <Table
                                 id="bceIdenified"
@@ -57,6 +57,14 @@
 									path : 'PreDefineGoal>/IDP/trainings_attended'
 								}"
                             >
+                            <infoToolbar>
+								<OverflowToolbar>
+									
+                                    <Text text="Training Mandays Target: 5 Days (1 Day = 8hrs.)" class="sapUiSmallMarginEnd"/>
+                                    <Text text="Training Mandays Actual: 6 Days 0 Hours 0 Minutes"/>
+                                    
+								</OverflowToolbar>
+							</infoToolbar>
                                 <columns>
                                     <Column width="5rem">
                                         <header>
