@@ -226,7 +226,7 @@
                                             <Text text="Appraisee" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="130px">
                                         <header>
                                             <Text text="Respond" />
                                         </header>
@@ -242,17 +242,17 @@
                                         <cells>
                                             <TextArea
                                                 value="{PreDefineGoal>Appraisee}"
-                                                width="100%"
                                                 growing="true"
                                                 editable="{apprisalData>idpFAODAAEEdit}"
                                             />
                                             
-                                            <ComboBox selectedKey="Accept" editable="{apprisalData>idpFAODAAREdit}" width="110px">
+                                            <ComboBox selectedKey="Accept" editable="{apprisalData>idpFAODAAREdit}">
                                             <core:Item key="Accept" text="Accepted"></core:Item>
                                             <core:Item key="Reject" text="Rejected"></core:Item>
                                             </ComboBox>
-                                            <Input
+                                            <TextArea
                                                 editable="{apprisalData>idpFAODAAREdit}"
+                                                growing="true"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -290,7 +290,7 @@
                                             <Text text="Appraisee" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="130px">
                                         <header>
                                             <Text text="Respond" />
                                         </header>
@@ -322,8 +322,16 @@
                                             <core:Item key="Reject" text="Rejected"></core:Item>
                                             </ComboBox>
                                             <Input
+                                                showValueHelp="true"
+                                                suggestionItems="{PreDefineGoal>/IDP/Tech_Dev_Area}"
                                                 editable="{apprisalData>idpFTDAAREdit}"
-                                            />
+                                            >
+                                                <suggestionItems>
+                                                    <core:Item
+                                                        text="{PreDefineGoal>Appraisee}"
+                                                    />
+                                                </suggestionItems>
+                                            </Input>
                                         </cells>
                                     </ColumnListItem>
                                 </items>
