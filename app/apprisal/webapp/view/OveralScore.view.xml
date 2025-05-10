@@ -16,14 +16,14 @@
                 titleUppercase="false"
                 title="Score"
                 showTitle="false"
-                >
+            >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="Section Scores"
                         titleUppercase="false"
                         showTitle="false"
                         visible="{apprisalData>oScrSEScr}"
-                        >
+                    >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Section Scores" />
@@ -35,33 +35,32 @@
 								}"
                             >
                                 <columns>
-                                    <Column width="20rem">
-                                        
-                                            <Text text="Sections" />
-                                        
+                                    <Column width="50%">
+                                        <Text text="Sections" />
                                     </Column>
-                                    <Column width="8rem">
-                                        
-                                            <Text text="Appraisee" />
-                                        
+                                    <Column >
+                                        <Text text="Appraisee" />
                                     </Column>
-                                    <Column width="10rem">
-                                        
-                                            <Text text="Appraiser" />
-                                        
+                                    <Column >
+                                        <Text text="Appraiser" />
                                     </Column>
-                                    <Column width="10rem">
-                                        
-                                            <Text text="Reviewer" />
-                                        
+                                    <Column >
+                                        <Text text="Reviewer" />
                                     </Column>
                                 </columns>
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <Text
-                                                text="{PreDefineGoal>Section}"
-                                            />
+                                            <HBox>
+                                                <Link
+                                                    text="{PreDefineGoal>Section}"
+                                                    visible="{PreDefineGoal>link}"
+                                                    press="handlePopoverPress"
+                                                    ariaHasPopup="Dialog"
+                                                    
+                                                />
+                                                <Text text="{PreDefineGoal>Section}" visible="{PreDefineGoal>text}"/>
+                                            </HBox>
                                             <Input
                                                 value="{PreDefineGoal>Appraisee}"
                                                 editable="false"
@@ -89,7 +88,7 @@
                 titleUppercase="false"
                 title="Score"
                 showTitle="false"
-                >
+            >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="360 Degree Score Report"
@@ -104,14 +103,10 @@
                             <Table id="360DegreeScore">
                                 <columns>
                                     <Column width="10rem">
-                                        
-                                            <Text text="Score" />
-                                        
+                                        <Text text="Score" />
                                     </Column>
                                     <Column>
-                                        
-                                            <Text text="Report Link" />
-                                        
+                                        <Text text="Report Link" />
                                     </Column>
                                 </columns>
                                 <items>
@@ -133,41 +128,32 @@
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
-             <uxap:ObjectPageSection
+            <uxap:ObjectPageSection
                 titleUppercase="false"
                 title="Score"
                 showTitle="false"
-                >
+            >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="Section Scores"
                         titleUppercase="false"
                         showTitle="false"
                         visible="{apprisalData>oScores}"
-                        >
+                    >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Overall Score" />
                             </OverflowToolbar>
-                            <Table
-                                id="overallSecore"
-                                
-                            >
+                            <Table id="overallSecore">
                                 <columns>
                                     <Column width="10rem">
-                                        
-                                            <Text text="Appraisee" />
-                                        
+                                        <Text text="Appraisee" />
                                     </Column>
                                     <Column width="10rem">
-                                        
-                                            <Text text="Appraiser" />
-                                        
+                                        <Text text="Appraiser" />
                                     </Column>
                                     <Column width="10rem">
-                                        
-                                            <Text text="Reviewer" />
-                                        
+                                        <Text text="Reviewer" />
                                     </Column>
                                 </columns>
                                 <items>
@@ -196,7 +182,6 @@
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
-
         </uxap:sections>
     </uxap:ObjectPageLayout>
 </mvc:View>

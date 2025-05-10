@@ -4,13 +4,17 @@
       "KRA": "Execution of Cultural Transformation initiatives",
       "KPI": "3Bs Initiative - Number of individual actions reflecting desired behaviors - Passionate innovation, Boldly Efficient and Proactive Collaboration",
       "Target": "3Bs Initiative - any 1 of the 3Bs in the four monthly review (minimum two behaviours shall be evidenced over the year, out of which minimum one behaviour of Passionate Innovation)",
-      "Weightage": "3%"
+      "Weightage": "3",
+      "SelfScore":4,
+      "Appraiser_Score":3
     },
     {
       "KRA": "Safety Target (mandatory for Bathinda/Pipeline locations)",
       "KPI": "KPI to be as per KRA which is performed or controlled by employee to achieve Safety targets",
       "Target": "Safety Target (Please coordinate with Health & Safety Team for target relevant to your department)",
-      "Weightage": "5%"
+      "Weightage": "5",
+      "SelfScore":4,
+      "Appraiser_Score":3
     }
   ],
   "indv_goals": [
@@ -18,37 +22,49 @@
       "KRA": "Complete advanced SAP training",
       "KPI": "Training completion and certification",
       "Target": "Certified by Q3",
-      "Weightage": "12%"
+      "Weightage": "12",
+      "SelfScore":4,
+      "Appraiser_Score":3
     },
     {
       "KRA": "Reduce manual data entry errors",
       "KPI": "Error rate in submitted reports",
       "Target": "Less than 2% error rate",
-      "Weightage": "8%"
+      "Weightage": "8",
+      "SelfScore":4,
+      "Appraiser_Score":3
     },
     {
       "KRA": "Lead monthly knowledge sharing sessions",
       "KPI": "Number of sessions conducted",
       "Target": "At least 6 sessions annually",
-      "Weightage": "10%"
+      "Weightage": "10",
+      "SelfScore":4,
+      "Appraiser_Score":3
     },
     {
       "KRA": "Implement automated dashboard for reporting",
       "KPI": "Timeliness and accuracy of reports",
       "Target": "Live dashboard by end of Q2",
-      "Weightage": "15%"
+      "Weightage": "15",
+      "SelfScore":4,
+      "Appraiser_Score":3
     },
     {
       "KRA": "Mentor junior team members",
       "KPI": "Number of mentorship hours logged",
       "Target": "20+ hours of mentorship",
-      "Weightage": "7%"
+      "Weightage": "7",
+      "SelfScore":4,
+      "Appraiser_Score":3
     },
     {
       "KRA": "Contribute to department whitepaper",
       "KPI": "Completion and quality of contribution",
       "Target": "Submit draft by Q3",
-      "Weightage": "6%"
+      "Weightage": "6",
+      "SelfScore":4,
+      "Appraiser_Score":3
     }
   ],
   "bce": [
@@ -506,25 +522,25 @@
   "OverallScore": {
     "Section_Score": [
       {
-        "Section": "Common Organizational / Functional Goal",
+        "Section": "Common Organizational / Functional Goal - Individual Goal (BSM Score)",
+        "link" : true,
+        "text" : false,
         "Appraisee": 5,
         "Appraiser": 3,
         "Reviewer": 4
       },
       {
-        "Section": "Individual Goal",
-        "Appraisee": 5,
-        "Appraiser": 3.5,
-        "Reviewer": 4
-      },
-      {
         "Section": "Individual Development Plan",
+        "link" : false,
+        "text" : true,
         "Appraisee": 4,
         "Appraiser": 4,
         "Reviewer": 3.5
       },
       {
         "Section": "Behavioral Competency",
+        "link" : false,
+        "text" : true,
         "Appraisee": 5,
         "Appraiser": 3.5,
         "Reviewer": 4.5

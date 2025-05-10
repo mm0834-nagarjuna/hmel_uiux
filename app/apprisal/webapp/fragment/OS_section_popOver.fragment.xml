@@ -1,0 +1,113 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	
+    <Dialog 
+    id="myPopover"
+    title="Predefined - Key Performance Area"
+            contentHeight="400px"
+            contentWidth="auto"
+            class="sapUiLargePadding"
+            draggable = "true"
+            resizable = "true"
+            
+            >
+        
+        <Table
+            noDataText="No Data"
+
+            class="sapUiMediumPadding"
+            headerText="Common Organizational"
+            items="{
+			path : 'PreDefineGoal>/cof_goals'
+		}"
+            >
+            
+            <columns>
+                <Column>
+                    <header>
+                        <Text text="Key Results Area" />
+                    </header>
+                </Column>
+                <Column width="10rem">
+                    <header>
+                        <Text text="Weightage(%)" />
+                    </header>
+                </Column>
+                <Column width="10rem">
+                    <header>
+                        <Text text="Appraisee Score" />
+                    </header>
+                </Column>
+                <Column width="10rem">
+                    <header>
+                        <Text text="Appraiser Score" />
+                    </header>
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem vAlign="Top">
+                    <cells>
+                        <Text text="{PreDefineGoal>KRA}" />
+                        <Text text="{PreDefineGoal>Weightage}" />
+                        <Text text="{PreDefineGoal>SelfScore}" />
+                        <Text text="{PreDefineGoal>Appraiser_Score}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+
+        </Table>
+
+        <Table
+            class="sapUiMediumPadding"
+            headerText="Individual"
+            items="{
+			path : 'PreDefineGoal>/indv_goals'
+		}"
+            >
+            
+            <columns>
+                <Column>
+                    <header>
+                        <Text text="Key Results Area" />
+                    </header>
+                </Column>
+                <Column width="10rem">
+                    <header>
+                        <Text text="Weightage(%)" />
+                    </header>
+                </Column>
+                <Column width="10rem">
+                    <header>
+                        <Text text="Appraisee Score" />
+                    </header>
+                </Column>
+                <Column width="10rem">
+                    <header>
+                        <Text text="Appraiser Score" />
+                    </header>
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem vAlign="Top">
+                    <cells>
+                        <Text text="{PreDefineGoal>KRA}" />
+                        <Text text="{PreDefineGoal>Weightage}" />
+                        <Text text="{PreDefineGoal>SelfScore}" />
+                        <Text text="{PreDefineGoal>Appraiser_Score}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+
+        </Table>
+        
+
+        <endButton>
+            <Button text="Cancel" press=".handleActionPress" type="Emphasized"/>
+        </endButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>

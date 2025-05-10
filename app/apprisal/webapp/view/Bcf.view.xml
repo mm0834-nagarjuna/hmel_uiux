@@ -37,6 +37,7 @@
                                     type="Emphasized"
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
+                                    visible="{apprisalData>bcfANSC}"
                                 />
                                 <Button
                                     icon="sap-icon://document-text"
@@ -78,9 +79,11 @@
                                     <Column
                                         visible="{apprisalData>bcfANR}"
                                         width="5rem"
+                                        
                                     >
                                         <header>
-                                            <Text text="Appraisee Score" />
+                                            <Text text="Appraisee Score"/>
+                                            
                                         </header>
                                     </Column>
                                     <Column

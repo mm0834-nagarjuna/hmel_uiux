@@ -65,7 +65,8 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="6rem"
+                                    >
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -147,7 +148,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="6rem">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -248,7 +249,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="6rem">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -330,7 +331,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="6rem">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -431,7 +432,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="6rem">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -513,7 +514,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column width="6rem">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
