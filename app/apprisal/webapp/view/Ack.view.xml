@@ -35,13 +35,71 @@
                                 <Label
                                     text="Are you satisfied with the discussion ?"
                                 />
-                                <Select selectedKey="{PreDefineGoal>Status}" editable="{apprisalData>ackTSCEdit}">
-                        <items>
-                            <core:Item key="Yes" text="Yes" />
-                            <core:Item key="No" text="No" />
-                        </items>
-                    </Select>
+                                <Select
+                                    selectedKey="{PreDefineGoal>Status}"
+                                    editable="{apprisalData>ackTSCEdit}"
+                                >
+                                    <items>
+                                        <core:Item
+                                            key="Yes"
+                                            text="Yes"
+                                        />
+                                        <core:Item
+                                            key="No"
+                                            text="No"
+                                        />
+                                    </items>
+                                </Select>
                             </HBox>
+
+                            <!-- Table -->
+
+                            <!-- <Table
+                                id="AckTable"
+                                items="{
+									path : 'PreDefineGoal>/Acknowledgements',	
+									templateShareable: false
+									
+								}"
+                            >
+                                <columns>
+                                    <Column>
+                                        <header>
+                                            <Text text="simple" />
+                                        </header>
+                                    </Column>
+                                    <Column>
+                                        <header>
+                                            <Text
+                                                text="Are you satisfied with the discussion ?"
+                                            />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Top">
+                                        <cells>
+                                            <Text
+                                                text="{PreDefineGoal>Stage}"
+                                                width="100%"
+                                            />
+                                            <ComboBox
+                                                selectedKey="Yes"
+                                                width="100px"
+                                            >
+                                                <core:Item
+                                                    key="Yes"
+                                                    text="Yes"
+                                                />
+                                                <core:Item
+                                                    key="No"
+                                                    text="No"
+                                                />
+                                            </ComboBox>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table> -->
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
@@ -61,12 +119,21 @@
                                 <Label
                                     text="Are you satisfied with the discussion ?"
                                 />
-                                <Select selectedKey="{PreDefineGoal>Status}" editable="{apprisalData>ackFFMCEdit}">
-                        <items>
-                            <core:Item key="Yes" text="Yes" />
-                            <core:Item key="No" text="No" />
-                        </items>
-                    </Select>
+                                <Select
+                                    selectedKey="{PreDefineGoal>Status}"
+                                    editable="{apprisalData>ackFFMCEdit}"
+                                >
+                                    <items>
+                                        <core:Item
+                                            key="Yes"
+                                            text="Yes"
+                                        />
+                                        <core:Item
+                                            key="No"
+                                            text="No"
+                                        />
+                                    </items>
+                                </Select>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
@@ -80,19 +147,28 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <HBox
-                            width="30%"
+                                width="30%"
                                 alignItems="Center"
                                 justifyContent="SpaceAround"
                             >
                                 <Label
                                     text="Are you satisfied with the discussion ?"
                                 />
-                                <Select selectedKey="{PreDefineGoal>Status}" editable="{apprisalData>ackSFMCEdit}" >
-                        <items>
-                            <core:Item key="Yes" text="Yes" />
-                            <core:Item key="No" text="No" />
-                        </items>
-                    </Select>
+                                <Select
+                                    selectedKey="{PreDefineGoal>Status}"
+                                    editable="{apprisalData>ackSFMCEdit}"
+                                >
+                                    <items>
+                                        <core:Item
+                                            key="Yes"
+                                            text="Yes"
+                                        />
+                                        <core:Item
+                                            key="No"
+                                            text="No"
+                                        />
+                                    </items>
+                                </Select>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
@@ -106,19 +182,28 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <HBox
-                               width="30%"
+                                width="30%"
                                 alignItems="Center"
                                 justifyContent="SpaceAround"
                             >
                                 <Label
                                     text="Are you satisfied with the discussion ?"
                                 />
-                                <Select selectedKey="{PreDefineGoal>Status}" editable="{apprisalData>ackANCEdit}">
-                        <items>
-                            <core:Item key="Yes" text="Yes" />
-                            <core:Item key="No" text="No" />
-                        </items>
-                    </Select>
+                                <Select
+                                    selectedKey="{PreDefineGoal>Status}"
+                                    editable="{apprisalData>ackANCEdit}"
+                                >
+                                    <items>
+                                        <core:Item
+                                            key="Yes"
+                                            text="Yes"
+                                        />
+                                        <core:Item
+                                            key="No"
+                                            text="No"
+                                        />
+                                    </items>
+                                </Select>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>

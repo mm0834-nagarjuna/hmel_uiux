@@ -560,7 +560,8 @@
     {
       "Sno": 1,
       "Stage": "Target Setting Confirmation By Appraisee",
-      "Status": "Yes"
+      "Status": "Yes",
+      "Editable": "apprisalData>ackTSCEdit"
     },
     {
       "Sno": 2,
