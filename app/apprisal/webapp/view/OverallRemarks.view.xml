@@ -161,7 +161,7 @@
                                     class="sapUiSmallMarginTop"
                                 >
                                     <Label
-                                        text="Overall Performance Feedback Appraiser"
+                                        text="Appraiser Overall Performance Feedback"
                                         class="sapUiSmallMarginEnd"
                                     />
                                     <Select
@@ -287,7 +287,7 @@
                                     class="sapUiSmallMarginTop"
                                 >
                                     <Label
-                                        text="Overall Performance Feedback Appraiser"
+                                        text="Appraiser Overall Performance Feedback"
                                         class="sapUiSmallMarginEnd"
                                     />
                                     <Select
