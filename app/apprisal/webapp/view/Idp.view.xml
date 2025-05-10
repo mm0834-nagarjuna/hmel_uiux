@@ -128,11 +128,7 @@
 								}"
                             >
                                 <columns>
-                                    <Column width="5rem">
-                                        <header>
-                                            <Text text="S.No" />
-                                        </header>
-                                    </Column>
+                                    
                                     <Column>
                                         <header>
                                             <Text text="Competencies Target" />
@@ -166,7 +162,7 @@
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <Text text="{PreDefineGoal>S.No}" />
+                                            
                                             <Text
                                                 text="{PreDefineGoal>CMP_Target}"
                                             />
