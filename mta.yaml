@@ -38,9 +38,23 @@ modules:
       - apprisal.zip
       name: apprisal
       target-path: resources/
+    - artifacts:
+      - appraisaldashboard.zip
+      name: appraisaldashboard
+      target-path: resources/
 - name: apprisal
   type: html5
   path: app/apprisal
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: appraisaldashboard
+  type: html5
+  path: app/appraisal_dashboard
   build-parameters:
     build-result: dist
     builder: custom

@@ -22,7 +22,8 @@
     "watch-apprisal": "cds watch --open apprisal/webapp/index.html?sap-ui-xx-viewCache=false",
     "undeploy": "cf undeploy hmel_uiux --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
-    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-appraisal_dashboard": "cds watch --open appraisal_dashboard/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "sql": {
