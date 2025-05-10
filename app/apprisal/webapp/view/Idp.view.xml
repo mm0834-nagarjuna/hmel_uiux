@@ -347,7 +347,7 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="First Four Monthly Reviews" />
+                                <Title text="First Four Monthly Review Remarks" />
                             </OverflowToolbar>
                             <Table
                                 id="idpFFMR"
@@ -357,10 +357,10 @@
                             >
                                 <columns>
                                     <Column>
-                                        <Text text="Appraisee Remarks" />
+                                        <Text text="Appraisee" />
                                     </Column>
                                     <Column>
-                                        <Text text="Appraiser Remarks" />
+                                        <Text text="Appraiser" />
                                     </Column>
                                 </columns>
                                 <items>
@@ -401,7 +401,7 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="Second Four Monthly Reviews" />
+                                <Title text="Second Four Monthly Review Remarks" />
                             </OverflowToolbar>
                             <Table
                                 id="idpSFMR"
@@ -411,10 +411,10 @@
                             >
                                 <columns>
                                     <Column>
-                                        <Text text="Appraisee Remarks" />
+                                        <Text text="Appraisee" />
                                     </Column>
                                     <Column>
-                                        <Text text="Appraiser Remarks" />
+                                        <Text text="Appraiser" />
                                     </Column>
                                 </columns>
                                 <items>
@@ -455,7 +455,7 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="Annual Review" />
+                                <Title text="Annual Review Remarks" />
                             </OverflowToolbar>
                             <Table
                                 id="idpAR"
@@ -466,17 +466,17 @@
                                 <columns>
                                     <Column>
                                         <header>
-                                            <Text text=" Appraisee Remarks" />
+                                            <Text text=" Appraisee" />
                                         </header>
                                     </Column>
                                     <Column>
                                         <header>
-                                            <Text text=" Appraiser Remarks" />
+                                            <Text text=" Appraiser" />
                                         </header>
                                     </Column>
                                     <Column>
                                         <header>
-                                            <Text text=" Reviewer Remarks" />
+                                            <Text text=" Reviewer" />
                                         </header>
                                     </Column>
                                 </columns>
