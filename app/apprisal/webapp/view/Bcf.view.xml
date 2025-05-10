@@ -73,7 +73,7 @@
                                             <Text text="Definition" />
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}">
+                                    <Column visible="{apprisalData>bcfANR}" width="150px">
                                         <header>
                                             <HBox alignItems="Center">
                                                 <Text text="Appraisee Score" />
@@ -86,7 +86,7 @@
                                             </HBox>
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}">
+                                    <Column visible="{apprisalData>bcfANR}" width="150px">
                                         <header>
                                             <HBox alignItems="Center">
                                                 <Text text="Appraiser Score" />
@@ -121,7 +121,6 @@
                                                 placeholder="Appraisee Score"
                                                 editable="{apprisalData>bcfANRAEEdit}"
                                                 visible="{apprisalData>bcfANR}"
-                                                width="60px"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Appraisee_Score}"
@@ -129,7 +128,6 @@
                                                 placeholder="Appraiser Score"
                                                 visible="{apprisalData>bcfANR}"
                                                 editable="{apprisalData>bcfANRAREdit}"
-                                                width="60px"
                                             />
                                         </cells>
                                     </ColumnListItem>
