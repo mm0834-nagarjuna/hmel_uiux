@@ -247,7 +247,7 @@
                                                 editable="{apprisalData>idpFAODAAEEdit}"
                                             />
                                             
-                                            <ComboBox selectedKey="Accept" editable="{apprisalData>idpFAODAAREdit}" width="30%">
+                                            <ComboBox selectedKey="Accept" editable="{apprisalData>idpFAODAAREdit}" width="110px">
                                             <core:Item key="Accept" text="Accepted"></core:Item>
                                             <core:Item key="Reject" text="Rejected"></core:Item>
                                             </ComboBox>
@@ -317,7 +317,7 @@
                                                 </suggestionItems>
                                             </Input>
                                             
-                                            <ComboBox selectedKey="Reject" editable="{apprisalData>idpFTDAAREdit}" width="30%">
+                                            <ComboBox selectedKey="Reject" editable="{apprisalData>idpFTDAAREdit}" width="110px">
                                             <core:Item key="Accept" text="Accepted"></core:Item>
                                             <core:Item key="Reject" text="Rejected"></core:Item>
                                             </ComboBox>
@@ -518,13 +518,13 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="Average Annual Score"
+                        title="Annual Score"
                         titleUppercase="false"
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
-                                <Title text="Average Annual Score" />
+                                <Title text="Annual Score" />
                                 <Button
                                     icon="sap-icon://information"
                                     type="Transparent"
@@ -551,17 +551,17 @@
                                             <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Score_Appraiser}"
                                                 editable="false"
-                                                width="8rem"
+                                                width="60px"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Overal_Score}"
                                                 editable="false"
-                                                width="8rem"
+                                                width="60px"
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Score_Reviewer}"
                                                 editable="false"
-                                                width="8rem"
+                                                width="60px"
                                             />
                                         </cells>
                                     </ColumnListItem>
