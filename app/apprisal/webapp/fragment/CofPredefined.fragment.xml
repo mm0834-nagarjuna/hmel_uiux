@@ -13,6 +13,7 @@
 		<ColumnListItem vAlign="Top">
 			<cells>
 				<Text text="{PreDefineGoal>KRA}" />
+				<Text text="{PreDefineGoal>KRA}" />
 				<Text text="{PreDefineGoal>KPI}" />
 				<Text text="{PreDefineGoal>Target}" />
 				<Text text="{PreDefineGoal>Weightage}" />
@@ -21,7 +22,12 @@
 		<columns>
 			<Column>
 				<header>
-					<Text text="Key Strategic Priority - Key Results Area" />
+					<Text text="Key Strategic Priority" />
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Text text="Key Results Area" />
 				</header>
 			</Column>
 			<Column>
