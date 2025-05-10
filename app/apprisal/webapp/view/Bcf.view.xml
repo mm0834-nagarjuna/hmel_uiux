@@ -26,16 +26,16 @@
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Competencies" />
-                                <FormattedText htmlText="{/HTML}"/>
+                                <FormattedText htmlText="{/HTML}" />
                                 <ToolbarSpacer />
-                                <Button
+                                <!-- <Button
                                 icon="sap-icon://legend"
                                     text="Score Description"
                                     type="Emphasized"
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
                                     visible="{apprisalData>bcfANSC}"
-                                />
+                                /> -->
                                 <Button
                                     icon="sap-icon://document-text"
                                     text="Guideline"
@@ -73,22 +73,30 @@
                                             <Text text="Definition" />
                                         </header>
                                     </Column>
-                                    <Column
-                                        visible="{apprisalData>bcfANR}"
-                                        width="5rem"
-                                        
-                                    >
+                                    <Column visible="{apprisalData>bcfANR}">
                                         <header>
-                                            <Text text="Appraisee Score"/>
-                                            
+                                            <HBox alignItems="Center">
+                                                <Text text="Appraisee Score" />
+                                                <Button
+                                                    icon="sap-icon://information"
+                                                    type="Transparent"
+                                                    press="onClickScoreInfo"
+                                                    ariaLabelledBy="actionButtonLabel"
+                                                />
+                                            </HBox>
                                         </header>
                                     </Column>
-                                    <Column
-                                        visible="{apprisalData>bcfANR}"
-                                        width="5rem"
-                                    >
+                                    <Column visible="{apprisalData>bcfANR}">
                                         <header>
-                                            <Text text="Appraiser Score" />
+                                            <HBox alignItems="Center">
+                                                <Text text="Appraiser Score" />
+                                                <Button
+                                                    icon="sap-icon://information"
+                                                    type="Transparent"
+                                                    press="onClickScoreInfo"
+                                                    ariaLabelledBy="actionButtonLabel"
+                                                />
+                                            </HBox>
                                         </header>
                                     </Column>
                                 </columns>
@@ -107,23 +115,21 @@
                                             <Text
                                                 text="{PreDefineGoal>COMP_DEF}"
                                             />
-                                            <HBox
+                                            <Input
+                                                value="{PreDefineGoal>Appraisee_Score}"
+                                                type="Number"
+                                                placeholder="Appraisee Score"
+                                                editable="{apprisalData>bcfANRAEEdit}"
                                                 visible="{apprisalData>bcfANR}"
-                                            >
-                                                <Input
-                                                    value="{PreDefineGoal>Appraisee_Score}"
-                                                    type="Number"
-                                                    placeholder="Appraisee Score"
-                                                    editable="{apprisalData>bcfANRAEEdit}"
-                                                    width="90%"
-                                                />
-                                            </HBox>
+                                                width="60px"
+                                            />
                                             <Input
                                                 value="{PreDefineGoal>Appraisee_Score}"
                                                 type="Number"
                                                 placeholder="Appraiser Score"
                                                 visible="{apprisalData>bcfANR}"
                                                 editable="{apprisalData>bcfANRAREdit}"
+                                                width="60px"
                                             />
                                         </cells>
                                     </ColumnListItem>
@@ -395,7 +401,6 @@
                                                 value="{PreDefineGoal>Overall_Appraisee_Score}"
                                                 placeholder="Appraisee Score"
                                                 editable="false"
-
                                             />
                                             <Input
                                                 value="{PreDefineGoal>Overall_Appraiser_Score}"
