@@ -117,6 +117,7 @@ entity AppraisalDocuments {
   idpAASCRAREdit: Boolean;
   idpAASCRREdit: Boolean;
   accompEdit: Boolean;
+  oRTSAREdit: Boolean;
   oRFFMR: Boolean;
   oRFFMRAEEdit: Boolean;
   oRFFMRAREdit: Boolean;

@@ -1,6 +1,6 @@
 <mvc:View
     xmlns:mvc="sap.ui.core.mvc"
-    controllerName="apprisal.controller.OveralScore"
+    controllerName="apprisal.controller.OverallRemarks"
     xmlns:uxap="sap.uxap"
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
@@ -12,7 +12,62 @@
             <FlexItemData growFactor="1" />
         </uxap:layoutData>
         <uxap:sections>
+            <!-- Target Setting -->
+
             <uxap:ObjectPageSection>
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        title="Target Setting"
+                        titleUppercase="false"
+                        showTitle="false"
+                        visible="{apprisalData>overalRemarks}"
+                    >
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="Target Setting" />
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+                            <HBox
+                                width="100%"
+                                alignItems="Center"
+                            >
+                               
+                                    <Label
+                                        text="Time Spent in overall PMS Discussion"
+                                    />
+                                    <Button
+                                        icon="sap-icon://information"
+                                        type="Transparent"
+                                        press="onInfoTimeSpentPress"
+                                        ariaLabelledBy="actionButtonLabel"
+                                        visible="{apprisalData>cofgaaAEE}"
+                                    />
+                                    <ComboBox
+                                        items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
+                                        selectedKey="35"
+                                        editable="{apprisalData>oRTSAREdit}"
+                                    >
+                                        <core:Item
+                                            key="{PreDefineGoal>key}"
+                                            text="{PreDefineGoal>text}"
+                                        />
+                                    </ComboBox>
+                              
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <!-- First Four Monthly Table   -->
+
+            <uxap:ObjectPageSection
+                        title="First Four Monthly"
+                        titleUppercase="false"
+                        showTitle="false"
+                        visible="{apprisalData>oRFFMR}"
+            
+            >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="First Four Monthly"
@@ -69,51 +124,61 @@
                                     </ColumnListItem>
                                 </items>
                             </Table>
-                            <HBox width="70%" alignItems="Center" justifyContent="SpaceAround">
                             <HBox
+                                width="100%"
                                 alignItems="Center"
-                                class="sapUiSmallMarginTop"
+                                justifyContent="SpaceBetween"
                             >
-                                <Label
-                                    text="Time Spent in overall PMS Discussion"
-                                    class="sapUiSmallMarginEnd"
-                                />
-                                <ComboBox
-                                    items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
-                                    selectedKey="35"
-                                    editable="{apprisalData>oRFFMRAREdit}"
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiSmallMarginTop"
                                 >
-                                    <core:Item
-                                        key="{PreDefineGoal>key}"
-                                        text="{PreDefineGoal>text}"
+                                    <Label
+                                        text="Time Spent in overall PMS Discussion"
                                     />
-                                </ComboBox>
-                            </HBox>
+                                    <Button
+                                        icon="sap-icon://information"
+                                        type="Transparent"
+                                        press="onInfoTimeSpentPress"
+                                        ariaLabelledBy="actionButtonLabel"
+                                        visible="{apprisalData>cofgaaAEE}"
+                                    />
+                                    <ComboBox
+                                        items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
+                                        selectedKey="35"
+                                        editable="{apprisalData>oRFFMRAREdit}"
+                                    >
+                                        <core:Item
+                                            key="{PreDefineGoal>key}"
+                                            text="{PreDefineGoal>text}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
 
-                            <HBox
-                                alignItems="Center"
-                                class="sapUiSmallMarginTop"
-                            >
-                                <Label
-                                    text="Overall Performance Feedback Appraiser"
-                                    class="sapUiSmallMarginEnd"
-                                />
-                                <Select
-                                    width="200px"
-                                    editable="{apprisalData>oRFFMRAREdit}"
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiSmallMarginTop"
                                 >
-                                    <items>
-                                        <core:Item
-                                            key="Needs Improvement"
-                                            text="Needs Improvement"
-                                        />
-                                        <core:Item
-                                            key="Acceptable Performance"
-                                            text="Acceptable Performance"
-                                        />
-                                    </items>
-                                </Select>
-                            </HBox>
+                                    <Label
+                                        text="Overall Performance Feedback Appraiser"
+                                        class="sapUiSmallMarginEnd"
+                                    />
+                                    <Select
+                                        width="200px"
+                                        editable="{apprisalData>oRFFMRAREdit}"
+                                    >
+                                        <items>
+                                            <core:Item
+                                                key="Needs Improvement"
+                                                text="Needs Improvement"
+                                            />
+                                            <core:Item
+                                                key="Acceptable Performance"
+                                                text="Acceptable Performance"
+                                            />
+                                        </items>
+                                    </Select>
+                                </HBox>
                             </HBox>
 
                             <!-- First Four Month Table End -->
@@ -184,51 +249,61 @@
                                     </ColumnListItem>
                                 </items>
                             </Table>
-                            <HBox width="70%" alignItems="Center" justifyContent="SpaceAround">
                             <HBox
+                                width="100%"
                                 alignItems="Center"
-                                class="sapUiSmallMarginTop"
+                                justifyContent="SpaceBetween"
                             >
-                                <Label
-                                    text="Time Spent in overall PMS Discussion"
-                                    class="sapUiSmallMarginEnd"
-                                />
-                                <ComboBox
-                                    items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
-                                    selectedKey="35"
-                                    editable="{apprisalData>oRSFMRAREdit}"
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiSmallMarginTop"
                                 >
-                                    <core:Item
-                                        key="{PreDefineGoal>key}"
-                                        text="{PreDefineGoal>text}"
+                                    <Label
+                                        text="Time Spent in overall PMS Discussion"
                                     />
-                                </ComboBox>
-                            </HBox>
+                                    <Button
+                                        icon="sap-icon://information"
+                                        type="Transparent"
+                                        press="onInfoTimeSpentPress"
+                                        ariaLabelledBy="actionButtonLabel"
+                                        visible="{apprisalData>cofgaaAEE}"
+                                    />
+                                    <ComboBox
+                                        items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
+                                        selectedKey="35"
+                                        editable="{apprisalData>oRSFMRAREdit}"
+                                    >
+                                        <core:Item
+                                            key="{PreDefineGoal>key}"
+                                            text="{PreDefineGoal>text}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
 
-                            <HBox
-                                alignItems="Center"
-                                class="sapUiSmallMarginTop"
-                            >
-                                <Label
-                                    text="Overall Performance Feedback Appraiser"
-                                    class="sapUiSmallMarginEnd"
-                                />
-                                <Select
-                                    width="200px"
-                                    editable="{apprisalData>oRSFMRAREdit}"
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiSmallMarginTop"
                                 >
-                                    <items>
-                                        <core:Item
-                                            key="Needs Improvement"
-                                            text="Needs Improvement"
-                                        />
-                                        <core:Item
-                                            key="Acceptable Performance"
-                                            text="Acceptable Performance"
-                                        />
-                                    </items>
-                                </Select>
-                            </HBox>
+                                    <Label
+                                        text="Overall Performance Feedback Appraiser"
+                                        class="sapUiSmallMarginEnd"
+                                    />
+                                    <Select
+                                        width="200px"
+                                        editable="{apprisalData>oRSFMRAREdit}"
+                                    >
+                                        <items>
+                                            <core:Item
+                                                key="Needs Improvement"
+                                                text="Needs Improvement"
+                                            />
+                                            <core:Item
+                                                key="Acceptable Performance"
+                                                text="Acceptable Performance"
+                                            />
+                                        </items>
+                                    </Select>
+                                </HBox>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
@@ -307,37 +382,50 @@
                                     </ColumnListItem>
                                 </items>
                             </Table>
-                            <HBox width="70%" alignItems="Center" justifyContent="SpaceAround">
                             <HBox
+                                width="100%"
                                 alignItems="Center"
-                                class="sapUiSmallMarginTop"
+                                justifyContent="SpaceBetween"
                             >
-                                <Label
-                                    text="Time Spent in overall PMS Discussion"
-                                    class="sapUiSmallMarginEnd"
-                                />
-                                <ComboBox
-                                    items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
-                                    selectedKey="35"
-                                    editable="{apprisalData>oRANRRAREdit}"
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiSmallMarginTop"
                                 >
-                                    <core:Item
-                                        key="{PreDefineGoal>key}"
-                                        text="{PreDefineGoal>text}"
+                                    <Label
+                                        text="Time Spent in overall PMS Discussion"
                                     />
-                                </ComboBox>
-                            </HBox>
+                                    <Button
+                                        icon="sap-icon://information"
+                                        type="Transparent"
+                                        press="onInfoTimeSpentPress"
+                                        ariaLabelledBy="actionButtonLabel"
+                                        visible="{apprisalData>cofgaaAEE}"
+                                    />
+                                    <ComboBox
+                                        items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
+                                        selectedKey="35"
+                                        editable="{apprisalData>oRANRRAREdit}"
+                                    >
+                                        <core:Item
+                                            key="{PreDefineGoal>key}"
+                                            text="{PreDefineGoal>text}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
 
-                            <HBox
-                                alignItems="Center"
-                                class="sapUiSmallMarginTop"
-                            >
-                                <Label
-                                    text="Score - Reviewer"
-                                    class="sapUiSmallMarginEnd"
-                                />
-                                <Input value="3.4" editable="{apprisalData>oRANRRREEdit}"></Input>
-                            </HBox>
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiSmallMarginTop"
+                                >
+                                    <Label
+                                        text="Score - Reviewer"
+                                        class="sapUiSmallMarginEnd"
+                                    />
+                                    <Input
+                                        value="3.4"
+                                        editable="{apprisalData>oRANRRREEdit}"
+                                    />
+                                </HBox>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
