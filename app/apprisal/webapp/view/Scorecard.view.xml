@@ -35,7 +35,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <Title text="Common Organizational Goals" />
                             <Table
                                 items="{
@@ -67,8 +67,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem"
-                                    >
+                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -101,10 +100,8 @@
                                                 editable="false"
                                                 value="{PreDefineGoal>Target}"
                                             />
-                                            <Input
-                                                value="{PreDefineGoal>Weightage}"
-                                                placeholder="Appraisee Score"
-                                                editable="false"
+                                            <Text
+                                                text="{PreDefineGoal>Weightage}"
                                                 width="3rem"
                                             />
                                         </cells>
@@ -118,7 +115,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <Title text="Individual Goals" />
                             <Table
                                 items="{
@@ -150,7 +147,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem">
+                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -183,10 +180,8 @@
                                                 editable="false"
                                                 value="{PreDefineGoal>Target}"
                                             />
-                                            <Input
-                                                value="{PreDefineGoal>Weightage}"
-                                                placeholder="Appraisee Score"
-                                                editable="false"
+                                            <Text
+                                                text="{PreDefineGoal>Weightage}"
                                                 width="3rem"
                                             />
                                         </cells>
@@ -217,7 +212,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <Title text="Common Organizational Goals" />
                             <Table
                                 items="{
@@ -249,7 +244,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem">
+                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -282,10 +277,8 @@
                                                 editable="false"
                                                 value="{PreDefineGoal>Target}"
                                             />
-                                            <Input
-                                                value="{PreDefineGoal>Weightage}"
-                                                placeholder="Appraisee Score"
-                                                editable="false"
+                                            <Text
+                                                text="{PreDefineGoal>Weightage}"
                                                 width="3rem"
                                             />
                                         </cells>
@@ -299,7 +292,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <Title text="Individual Goals" />
                             <Table
                                 items="{
@@ -331,7 +324,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem">
+                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -364,10 +357,8 @@
                                                 editable="false"
                                                 value="{PreDefineGoal>Target}"
                                             />
-                                            <Input
-                                                value="{PreDefineGoal>Weightage}"
-                                                placeholder="Appraisee Score"
-                                                editable="false"
+                                            <Text
+                                                text="{PreDefineGoal>Weightage}"
                                                 width="3rem"
                                             />
                                         </cells>
@@ -401,7 +392,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <Title text="Common Organizational Goals" />
                             <Table
                                 items="{
@@ -433,7 +424,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem">
+                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -466,12 +457,7 @@
                                                 editable="false"
                                                 value="{PreDefineGoal>Target}"
                                             />
-                                            <Input
-                                                value="{PreDefineGoal>Weightage}"
-                                                placeholder="Appraisee Score"
-                                                editable="false"
-                                                width="3rem"
-                                            />
+                                            <Text text="{PreDefineGoal>Weightage}"  width="3rem"/>
                                         </cells>
                                     </ColumnListItem>
                                 </items>
@@ -483,7 +469,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <VBox class="sapUiLargeMarginBottom">
+                        <VBox class="sapUiSmallMarginBottom">
                             <Title text="Individual Goals" />
                             <Table
                                 items="{
@@ -515,7 +501,7 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem">
+                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -548,10 +534,8 @@
                                                 editable="false"
                                                 value="{PreDefineGoal>Target}"
                                             />
-                                            <Input
-                                                value="{PreDefineGoal>Weightage}"
-                                                placeholder="Appraisee Score"
-                                                editable="false"
+                                            <Text
+                                                text="{PreDefineGoal>Weightage}"
                                                 width="3rem"
                                             />
                                         </cells>
