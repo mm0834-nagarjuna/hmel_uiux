@@ -27,7 +27,7 @@
                             <!-- <Title
                                 text="Scorecard of Girish Chandra Ghildiyal ( 100682 )"
                             /> -->
-                            <FormattedText htmlText="{scoreModel>/HTML}"/>
+                            <FormattedText htmlText="{scoreModel>/Girish}"/>
                         </OverflowToolbar>
                     </uxap:ObjectPageSubSection>
                     <uxap:ObjectPageSubSection
@@ -209,9 +209,7 @@
                         showTitle="false"
                     >
                         <OverflowToolbar>
-                            <Title
-                                text="Scorecard of Partha Chakraborty ( 100785 )"
-                            />
+                             <FormattedText htmlText="{scoreModel>/Partha}"/>
                         </OverflowToolbar>
                     </uxap:ObjectPageSubSection>
                     <uxap:ObjectPageSubSection
@@ -392,9 +390,10 @@
                         showTitle="false"
                     >
                         <OverflowToolbar>
-                            <Title
+                            <!-- <Title
                                 text="Scorecard of Kushagra Verma ( 100056 )"
-                            />
+                            /> -->
+                             <FormattedText htmlText="{scoreModel>/Kushagra}"/>
                         </OverflowToolbar>
                     </uxap:ObjectPageSubSection>
                     <uxap:ObjectPageSubSection
