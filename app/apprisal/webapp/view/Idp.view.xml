@@ -247,7 +247,7 @@
                                                 editable="{apprisalData>idpFAODAAEEdit}"
                                             />
                                             
-                                            <ComboBox selectedKey="" editable="{apprisalData>idpFAODAAREdit}" width="100%">
+                                            <ComboBox selectedKey="Accept" editable="{apprisalData>idpFAODAAREdit}" width="30%">
                                             <core:Item key="Accept" text="Accepted"></core:Item>
                                             <core:Item key="Reject" text="Rejected"></core:Item>
                                             </ComboBox>
@@ -317,7 +317,7 @@
                                                 </suggestionItems>
                                             </Input>
                                             
-                                            <ComboBox selectedKey="" editable="{apprisalData>idpFTDAAREdit}" width="100%">
+                                            <ComboBox selectedKey="Reject" editable="{apprisalData>idpFTDAAREdit}" width="30%">
                                             <core:Item key="Accept" text="Accepted"></core:Item>
                                             <core:Item key="Reject" text="Rejected"></core:Item>
                                             </ComboBox>
@@ -525,6 +525,12 @@
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar>
                                 <Title text="Average Annual Score" />
+                                <Button
+                                    icon="sap-icon://information"
+                                    type="Transparent"
+                                    press="onClickScoreInfo"
+                                    ariaLabelledBy="actionButtonLabel"
+                                />
                             </OverflowToolbar>
 
                             <Table id="IDPAnnualScore">

@@ -48,6 +48,34 @@ sap.ui.define([
             }.bind(this));
         }
     },
+    onClickScoreInfo: function (oEvent) {
+
+        var oButton = oEvent.getSource(),
+        oView = this.getView();
+
+        if (!this._pDialog) {
+            this._pDialog = Fragment.load({
+                id: oView.getId(),
+                name: "apprisal.fragment.Bce_score",
+                controller: this
+            }).then(function(oDialog){
+                oView.addDependent(oDialog);
+                return oDialog;
+            });
+        }
+
+        this._pDialog.then(function(oDialog){
+            // oDialog.setMultiSelect(true);
+            oDialog.open();
+        }.bind(this));
+    },
+    onClickCancelScoreInfo: function () {
+        var oView = this.getView();
+        var oDialog = oView.byId("idBceScoreInfoDialog");
+        if (oDialog) {
+            oDialog.close();
+        }
+    },
         
 
 
