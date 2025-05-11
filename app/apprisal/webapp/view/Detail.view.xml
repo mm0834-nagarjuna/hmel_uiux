@@ -12,26 +12,26 @@
 	<VBox>
 		<!-- <Text text="{CustomData>/key}"/> -->
 		<Toolbar class="sapUiContentPadding">
-			<Title
-                text="{apprisalData>appraisalName}"
-                level="H3"
-            />
-			<ToolbarSpacer />
-            <Button text="Save" visible="{apprisalData>onlySaveOption}"/>
-            <Button text="Refer Back to Appraisee" visible="{apprisalData>referBackToEmployee}"/>
-			<Button text="Target Revision Required" visible="{apprisalData>targetRevisionRequired}"/>
-			<Button text="Allow Target Revision" visible="{apprisalData>allowTargetRevision}"/>
-			<Button text="Don't Allow Target Revision" visible="{apprisalData>doNotAllowTargetRevision}"/>
-			<Button text="Refer Back To Appraiser" visible="{apprisalData>referBackToAppraiser}"/>
-			<Button text="Submit" visible="{apprisalData>submit}" press=".onClickSubmit"/>
-            <Text text="|" class="mvnButtonSepeartor"/>
-			<Button text="Print" />
+            <Button icon="sap-icon://nav-back" />
+            <Button text="Save" visible="{apprisalData>onlySaveOption}" type="Emphasized"/>
+            <Button text="Refer Back to Appraisee" visible="{apprisalData>referBackToEmployee}" type="Emphasized"/>
+			<Button text="Target Revision Required" visible="{apprisalData>targetRevisionRequired}" type="Emphasized"/>
+			<Button text="Allow Target Revision" visible="{apprisalData>allowTargetRevision}" type="Emphasized"/>
+			<Button text="Don't Allow Target Revision" visible="{apprisalData>doNotAllowTargetRevision}" type="Emphasized"/>
+			<Button text="Refer Back To Appraiser" visible="{apprisalData>referBackToAppraiser}" type="Emphasized"/>
+			<Button text="Submit" visible="{apprisalData>submit}" press=".onClickSubmit" type="Emphasized"/>
+            <Text text="|" class="mvnButtonSepeartor" />
+			<Button text="Print" type="Emphasized" />
 		</Toolbar>
 		<HBox
             backgroundDesign="Solid"
             columnGap="1rem"
             class="sapUiContentPadding"
         >
+            <ObjectStatus
+                title="BSM"
+                text="2025-26"
+            />
             <ObjectStatus
                 title="Employee ID"
                 text="{apprisalData>appraiseeId}"
