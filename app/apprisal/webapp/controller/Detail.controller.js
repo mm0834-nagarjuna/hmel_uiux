@@ -138,6 +138,9 @@ sap.ui.define([
 				verticalScrolling: false
 			});
         },
+		onSideNavigationExpandMobile(){
+			this.byId("SplitContDemo").backMaster();
+		},	
         onSideNavigationExpand(){
             const oSideNavigation = this.byId("sideNavigation"),
 				bExpanded = oSideNavigation.getExpanded();
@@ -156,14 +159,16 @@ sap.ui.define([
 
         },
         onSideNavigationItemSelect(oEvent){
-            // const oItem = oEvent.getParameter("item"),
-			// 	sText = oItem.getText();
-			// // MessageToast.show(`Item selected: ${sText}`);
-            // console.log(sText)
+
             
             this.byId("SplitContDemo").toDetail(this.byId( oEvent.getParameter("item").getKey()))
-            // this._initalSelectedKey = ;
-            // this.byId( this._initalSelectedKey).setVisible(true);
+
+			if(this.getView().getModel("device").getProperty("/browser/mobile"))
+			{
+				this.getView().getModel("PreDefineGoal").setProperty("/gen/menu_visible",true);
+				this.getView().getModel("PreDefineGoal").setProperty("/gen/nav_back_visible",false);
+			}	
+
         },
         _onAppIDMatched : function (oEvent) {
             let _appID = oEvent.getParameter("arguments").appId;

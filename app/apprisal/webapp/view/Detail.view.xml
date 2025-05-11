@@ -12,7 +12,13 @@
 	<VBox>
 		<!-- <Text text="{CustomData>/key}"/> -->
 		<Toolbar class="sapUiContentPadding">
-            <Button icon="sap-icon://nav-back" />
+            <Button icon="sap-icon://nav-back" visible="{PreDefineGoal>/gen/nav_back_visible}"/>
+            <Button
+                icon="sap-icon://menu2"
+                type="Transparent"
+                press="onSideNavigationExpandMobile" 
+                visible="{PreDefineGoal>/gen/menu_visible}"
+            />
             <Button text="Save" visible="{apprisalData>onlySaveOption}" type="Emphasized"/>
             <Button text="Refer Back to Appraisee" visible="{apprisalData>referBackToEmployee}" type="Emphasized"/>
 			<Button text="Target Revision Required" visible="{apprisalData>targetRevisionRequired}" type="Emphasized"/>
@@ -27,6 +33,7 @@
             backgroundDesign="Solid"
             columnGap="1rem"
             class="sapUiContentPadding"
+            visible="{= !${device>/browser/mobile} }"
         >
             <ObjectStatus
                 title="BSM"
@@ -69,10 +76,10 @@
 			<Page
                 id="detailDetail"
                 navButtonPress=".onPressDetailBack"
-                
+                showHeader="{= !${device>/browser/mobile} }"
             >
 				<customHeader>
-					<OverflowToolbar>
+					<OverflowToolbar visible="{= !${device>/browser/mobile} }">
 						<Button
                             icon="sap-icon://menu2"
                             type="Transparent"
@@ -88,6 +95,13 @@
                     itemSelect="onSideNavigationItemSelect"
                 >
 					<tnt:NavigationList>
+                        <tnt:NavigationListItem
+                            text="General"
+                            icon="sap-icon://business-card"
+                            selectable="true"
+                            key="apprisal.view.Gen"
+                            visible="{device>/browser/mobile}"
+                        />
 						<tnt:NavigationListItem
                             text="Goals"
                             icon="sap-icon://target-group"
@@ -156,6 +170,7 @@
 			</Page>
 		</masterPages>
 		<detailPages>
+            
 			<mvc:XMLView
                 viewName="apprisal.view.Cof"
                 id="apprisal.view.Cof"
@@ -191,6 +206,11 @@
             <mvc:XMLView
                 viewName="apprisal.view.OveralScore"
                 id="apprisal.view.OveralScore"
+            />
+
+            <mvc:XMLView
+                viewName="apprisal.view.Gen"
+                id="apprisal.view.Gen"
             />
 		</detailPages>
 	</SplitContainer>

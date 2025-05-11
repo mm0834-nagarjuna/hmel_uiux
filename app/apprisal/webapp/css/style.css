@@ -27,3 +27,7 @@
     margin-left: 0.5rem;
     color:#a8b3bd;
 }
+
+.mvnDummyEmptyObjectPageSubSection{
+    display: none;
+}

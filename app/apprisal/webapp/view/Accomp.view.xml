@@ -16,11 +16,27 @@
 			<FlexItemData growFactor="1" />
 		</uxap:layoutData>
 		<uxap:sections>
+            <uxap:ObjectPageSection 
+                visible="{= !${apprisalData>accompEdit} }"
+                >
+            
+				<uxap:subSections>
+                
+					<uxap:ObjectPageSubSection
+                        titleUppercase="false"
+                        title="Accomplishment"
+                        visible="{= !${apprisalData>accompEdit} }"
+                        class="mvnDummyEmptyObjectPageSubSection"
+                    >
+						<HBox/>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
 			<uxap:ObjectPageSection visible="{apprisalData>accompEdit}">
 				<uxap:subSections>
 					<uxap:ObjectPageSubSection
                         titleUppercase="false"
-                        title="Accomplishments"
+                        title="Accomplishment"
                     >
 						<OverflowToolbar class="mvnObjectPageLayoutTitleOverflowToolbar">
 							<ToolbarSpacer />
@@ -52,7 +68,7 @@
 					<uxap:ObjectPageSubSection titleUppercase="false">
 						<VBox>
                             <OverflowToolbar>
-								<Title text="1 . Accomplishments"/>
+								<Title text="1 . Accomplishment"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
 							<Label
@@ -79,7 +95,7 @@
 					<uxap:ObjectPageSubSection titleUppercase="false">
 						<VBox>
                             <OverflowToolbar>
-								<Title text="2 . Accomplishments"/>
+								<Title text="2 . Accomplishment"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
 							<Label

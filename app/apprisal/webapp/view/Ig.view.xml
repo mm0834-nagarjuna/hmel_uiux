@@ -17,6 +17,22 @@
         </uxap:layoutData>
         <uxap:sections>
             <uxap:ObjectPageSection 
+                visible="{= !${apprisalData>igKPIEdit} }"
+                >
+            
+				<uxap:subSections>
+                
+					<uxap:ObjectPageSubSection
+                        titleUppercase="false"
+                        title="Individual Goal"
+                        visible="{= !${apprisalData>igKPIEdit} }"
+                        class="mvnDummyEmptyObjectPageSubSection"
+                    >
+						<HBox/>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+            <uxap:ObjectPageSection 
             visible="{apprisalData>igKPIEdit}"
             >
                 <uxap:subSections>

@@ -22,11 +22,13 @@
                         title="Competencies"
                         titleUppercase="false"
                         showTitle="false"
+                        
                     >
                         <VBox class="sapUiSmallMarginBottom">
+                             <FormattedText htmlText="{/HTML}"  visible="{= ${device>/browser/mobile} }"/>
                             <OverflowToolbar>
                                 <Title text="Competencies" />
-                                <FormattedText htmlText="{/HTML}" />
+                                <FormattedText htmlText="{/HTML}"  visible="{= !${device>/browser/mobile} }"/>
                                 <ToolbarSpacer />
                                 <!-- <Button
                                 icon="sap-icon://legend"
@@ -45,6 +47,7 @@
                             </OverflowToolbar>
                             <!-- Competencies Table -->
                             <Table
+                                autoPopinMode="true"
                                 id="BcfTable"
                                 items="{
 									path : 'PreDefineGoal>/BCE/Competencies',	
@@ -53,27 +56,27 @@
 								}"
                             >
                                 <columns>
-                                    <Column width="4rem">
+                                    <Column width="{= ${device>/browser/mobile} ? '20%' : '4rem' }" importance="None">
                                         <header>
                                             <Text text="Select" />
                                         </header>
                                     </Column>
-                                    <Column width="10rem">
+                                    <Column width="{= ${device>/browser/mobile} ? '80%' : '10rem' }" importance="None">
                                         <header>
                                             <Text text="Competency" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column importance="None">
                                         <header>
                                             <Text text="Indicator" />
                                         </header>
                                     </Column>
-                                    <Column>
+                                    <Column importance="None">
                                         <header>
                                             <Text text="Definition" />
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}" width="150px">
+                                    <Column visible="{apprisalData>bcfANR}" width="150px" importance="None">
                                         <header>
                                             <HBox alignItems="Center">
                                                 <Text text="Appraisee Score" />
@@ -86,7 +89,7 @@
                                             </HBox>
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}" width="150px">
+                                    <Column visible="{apprisalData>bcfANR}" width="150px" importance="None">
                                         <header>
                                             <HBox alignItems="Center">
                                                 <Text text="Appraiser Score" />

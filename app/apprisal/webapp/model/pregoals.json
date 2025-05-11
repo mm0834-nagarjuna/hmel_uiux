@@ -1,4 +1,8 @@
 {
+  "gen":{
+    "nav_back_visible" : true,
+    "menu_visible" : false
+  },
   "cof_goals": [
     {
       "KRA": "Execution of Cultural Transformation initiatives",
