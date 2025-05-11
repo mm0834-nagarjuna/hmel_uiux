@@ -27,7 +27,7 @@
                         visible="{apprisalData>ackTSC}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <HBox
+                            <!-- <HBox
                                 width="30%"
                                 alignItems="Center"
                                 justifyContent="SpaceAround"
@@ -50,11 +50,11 @@
                                         />
                                     </items>
                                 </Select>
-                            </HBox>
+                            </HBox> -->
 
                             <!-- Table -->
 
-                            <!-- <Table
+                            <Table
                                 id="AckTable"
                                 items="{
 									path : 'PreDefineGoal>/Acknowledgements',	
@@ -65,7 +65,7 @@
                                 <columns>
                                     <Column>
                                         <header>
-                                            <Text text="simple" />
+                                            <Text text="" />
                                         </header>
                                     </Column>
                                     <Column>
@@ -99,12 +99,12 @@
                                         </cells>
                                     </ColumnListItem>
                                 </items>
-                            </Table> -->
+                            </Table>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
 
-                <uxap:subSections>
+                <!-- <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         title="2 . First Four Monthly Confirmation By Appraisee"
                         titleUppercase="false"
@@ -207,7 +207,7 @@
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
-                </uxap:subSections>
+                </uxap:subSections> -->
             </uxap:ObjectPageSection>
         </uxap:sections>
     </uxap:ObjectPageLayout>
