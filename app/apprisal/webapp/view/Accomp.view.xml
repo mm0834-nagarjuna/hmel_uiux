@@ -16,7 +16,7 @@
 			<FlexItemData growFactor="1" />
 		</uxap:layoutData>
 		<uxap:sections>
-			<uxap:ObjectPageSection>
+			<uxap:ObjectPageSection visible="{apprisalData>accompEdit}">
 				<uxap:subSections>
 					<uxap:ObjectPageSubSection
                         titleUppercase="false"
@@ -52,7 +52,7 @@
 					<uxap:ObjectPageSubSection titleUppercase="false">
 						<VBox>
                             <OverflowToolbar>
-								<Title text="1"/>
+								<Title text="1 . Accomplishments"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
 							<Label
@@ -79,7 +79,7 @@
 					<uxap:ObjectPageSubSection titleUppercase="false">
 						<VBox>
                             <OverflowToolbar>
-								<Title text="2"/>
+								<Title text="2 . Accomplishments"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
 							<Label
