@@ -45,17 +45,28 @@ sap.ui.define([
 
 			oContextBinding.requestObject().then(function (oData) {
                 var aAck  = [];
+                var _aData = that._aData;
 
-                // if (oData.)
-                // {   
-                //     _aData[0].Editable =  oData.;  
-                //     aAck.push(_aData[0]);
-                // }   
-                // if (oData.)
-                // {   
-                //     _aData[0].Editable =  oData.;  
-                //     aAck.push(_aData[0]);
-                // } 
+                if (oData.ackTSC)
+                {   
+                    _aData[0].Editable =  oData.ackTSCEdit;  
+                    aAck.push(_aData[0]);
+                }   
+                if (oData.ackFFMC)
+                {   
+                    _aData[1].Editable =  oData.ackFFMCEdit;  
+                    aAck.push(_aData[1]);
+                } 
+                if (oData.ackSFMC)
+                {   
+                    _aData[2].Editable =  oData.ackSFMCEdit;  
+                    aAck.push(_aData[2]);
+                } 
+                if (oData.ackANC)
+                {   
+                    _aData[3].Editable =  oData.ackANCEdit;  
+                    aAck.push(_aData[3]);
+                } 
 
                 that.getView().getModel("PreDefineGoal").setProperty("/Acknowledgements",aAck);
 

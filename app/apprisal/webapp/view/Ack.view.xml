@@ -18,40 +18,14 @@
         <uxap:sections>
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                showTitle="true"
+                showTitle="false"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="1 . Target Setting Confirmation By Appraisee"
+                        title="Acknowledgement"
                         titleUppercase="false"
                         visible="{apprisalData>ackTSC}"
                     >
-                        <VBox class="sapUiSmallMarginBottom">
-                            <!-- <HBox
-                                width="30%"
-                                alignItems="Center"
-                                justifyContent="SpaceAround"
-                            >
-                                <Label
-                                    text="Are you satisfied with the discussion ?"
-                                />
-                                <Select
-                                    selectedKey="{PreDefineGoal>Status}"
-                                    editable="{apprisalData>ackTSCEdit}"
-                                >
-                                    <items>
-                                        <core:Item
-                                            key="Yes"
-                                            text="Yes"
-                                        />
-                                        <core:Item
-                                            key="No"
-                                            text="No"
-                                        />
-                                    </items>
-                                </Select>
-                            </HBox> -->
-
                             <!-- Table -->
 
                             <Table
@@ -61,6 +35,7 @@
 									templateShareable: false
 									
 								}"
+                                class="sapUiSmallMarginBottom"
                             >
                                 <columns>
                                     <Column>
@@ -86,6 +61,7 @@
                                             <ComboBox
                                                 selectedKey="Yes"
                                                 width="100px"
+                                                editable="{PreDefineGoal>Editable}"
                                             >
                                                 <core:Item
                                                     key="Yes"
@@ -100,114 +76,8 @@
                                     </ColumnListItem>
                                 </items>
                             </Table>
-                        </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
-
-                <!-- <uxap:subSections>
-                    <uxap:ObjectPageSubSection
-                        title="2 . First Four Monthly Confirmation By Appraisee"
-                        titleUppercase="false"
-                        visible="{apprisalData>ackFFMC}"
-                    >
-                        <VBox class="sapUiSmallMarginBottom">
-                            <HBox
-                                width="30%"
-                                alignItems="Center"
-                                justifyContent="SpaceAround"
-                            >
-                                <Label
-                                    text="Are you satisfied with the discussion ?"
-                                />
-                                <Select
-                                    selectedKey="{PreDefineGoal>Status}"
-                                    editable="{apprisalData>ackFFMCEdit}"
-                                >
-                                    <items>
-                                        <core:Item
-                                            key="Yes"
-                                            text="Yes"
-                                        />
-                                        <core:Item
-                                            key="No"
-                                            text="No"
-                                        />
-                                    </items>
-                                </Select>
-                            </HBox>
-                        </VBox>
-                    </uxap:ObjectPageSubSection>
-                </uxap:subSections>
-
-                <uxap:subSections>
-                    <uxap:ObjectPageSubSection
-                        title="3 . Second Four Monthly Confirmation By Appraisee"
-                        titleUppercase="false"
-                        visible="{apprisalData>ackSFMC}"
-                    >
-                        <VBox class="sapUiSmallMarginBottom">
-                            <HBox
-                                width="30%"
-                                alignItems="Center"
-                                justifyContent="SpaceAround"
-                            >
-                                <Label
-                                    text="Are you satisfied with the discussion ?"
-                                />
-                                <Select
-                                    selectedKey="{PreDefineGoal>Status}"
-                                    editable="{apprisalData>ackSFMCEdit}"
-                                >
-                                    <items>
-                                        <core:Item
-                                            key="Yes"
-                                            text="Yes"
-                                        />
-                                        <core:Item
-                                            key="No"
-                                            text="No"
-                                        />
-                                    </items>
-                                </Select>
-                            </HBox>
-                        </VBox>
-                    </uxap:ObjectPageSubSection>
-                </uxap:subSections>
-
-                <uxap:subSections>
-                    <uxap:ObjectPageSubSection
-                        title="4. Annual Confirmation By Appraisee"
-                        titleUppercase="false"
-                        visible="{apprisalData>ackANC}"
-                    >
-                        <VBox class="sapUiSmallMarginBottom">
-                            <HBox
-                                width="30%"
-                                alignItems="Center"
-                                justifyContent="SpaceAround"
-                            >
-                                <Label
-                                    text="Are you satisfied with the discussion ?"
-                                />
-                                <Select
-                                    selectedKey="{PreDefineGoal>Status}"
-                                    editable="{apprisalData>ackANCEdit}"
-                                >
-                                    <items>
-                                        <core:Item
-                                            key="Yes"
-                                            text="Yes"
-                                        />
-                                        <core:Item
-                                            key="No"
-                                            text="No"
-                                        />
-                                    </items>
-                                </Select>
-                            </HBox>
-                        </VBox>
-                    </uxap:ObjectPageSubSection>
-                </uxap:subSections> -->
             </uxap:ObjectPageSection>
         </uxap:sections>
     </uxap:ObjectPageLayout>
