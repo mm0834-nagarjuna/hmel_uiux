@@ -159,10 +159,10 @@
                 >
                     <columns>
                         <Column width="8rem">
-                            <Text text="Pers.No." />
+                            <Text text="Employee ID" />
                         </Column>
                         <Column width="10rem">
-                            <Text text="Name Of Employee" />
+                            <Text text="Employee Name" />
                         </Column>
                         <Column width="8rem">
                             <Text text="Appraisee Score" />
