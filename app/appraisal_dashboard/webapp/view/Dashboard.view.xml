@@ -298,7 +298,7 @@
                                         tooltip="Upload your file to the local server"
                                         uploadComplete="handleUploadComplete"
                                         visible="{parts :[{path:'DashboardScore>Appraiser_Rating'},{path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.visiblitiy'}"
-                                        enabled="{parts :[{path:'DashboardScore>Appraiser_Rating'}], formatter: '.formatter.visiblitiy'}"
+                                        enabled="{vModel>/attachEdit}"
                                     /> 
                                     
                                 </HBox>

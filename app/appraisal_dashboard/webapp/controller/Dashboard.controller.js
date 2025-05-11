@@ -48,6 +48,7 @@ sap.ui.define([
                 model.setProperty("/bCurve", true);
                 model.setProperty("/arRating", false);
                 model.setProperty("/reRating", true);
+                model.setProperty("/attachEdit", false);
                 
 
                 
