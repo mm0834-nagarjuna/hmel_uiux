@@ -68,10 +68,14 @@ sap.ui.define([
                 
             },
             visiblitiy: function(oText){
+                var model = this.getView().getModel("vModel");
                 if(oText === 'EEE' || oText === 'FEE'){
+                    
+                    model.setProperty("/attachEdit", true);
                     return true
                 }
-                console.log(oText)
+                
+                    model.setProperty("/attachEdit", false);
                 return false
                 
             }
