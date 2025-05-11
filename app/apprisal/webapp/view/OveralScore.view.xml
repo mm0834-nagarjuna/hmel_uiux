@@ -135,7 +135,7 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="Section Scores"
+                        title="Overall Score"
                         titleUppercase="false"
                         showTitle="false"
                         visible="{apprisalData>oScores}"
