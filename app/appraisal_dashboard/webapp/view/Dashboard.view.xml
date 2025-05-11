@@ -1,4 +1,5 @@
 <mvc:View
+    xmlns:cards="sap.f.cards"
     controllerName="appraisaldashboard.controller.Dashboard"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
@@ -7,6 +8,7 @@
     xmlns:t="sap.ui.table"
     xmlns:trm="sap.ui.table.rowmodes"
     xmlns:f="sap.ui.layout.form"
+    xmlns:u="sap.ui.unified"
 >
     <tnt:ToolHeader id="shellLikeToolHeaderOnlyMandatoryControls">
         <Image
@@ -60,6 +62,11 @@
     >
         <items>
             <IconTabFilter
+                text="Appraisee"
+                key="AE"
+            />
+            <IconTabSeparator />
+            <IconTabFilter
                 text="Appraiser"
                 key="AR"
             />
@@ -68,11 +75,6 @@
                 text="Reviewer"
                 key="RE"
             />
-            <IconTabSeparator />
-            <IconTabFilter
-                text="HOD"
-                key="HOD"
-            />
         </items>
         <content>
             <VBox>
@@ -80,6 +82,7 @@
                     width="8%"
                     alignItems="Center"
                     justifyContent="SpaceAround"
+                    visible="{vModel>/bCurve}"
                 >
                     <Button
                         text="Save"
@@ -105,14 +108,23 @@
                         items="{path: 'DashboardScore>/Bell_Curved_Distribustion'}"
                         width="30%"
                         class="sapUiSmallMargin"
+                        visible="{vModel>/bCurve}"
                     >
                         <headerToolbar>
                             <OverflowToolbar>
-                                <Title text="Bell Curve Distribution" />
+                                <Title
+                                    text="Rating Distribution as per Bell Curve"
+                                />
                             </OverflowToolbar>
                         </headerToolbar>
                         <columns>
-                            <Column width="13rem" />
+                            <Column width="8rem">
+                                <Text text="Start Date" />
+                            </Column>
+                            <Column width="8rem">
+                                <Text text="Start Date" />
+                            </Column>
+
                             <Column width="5rem">
                                 <Text text="FEE" />
                             </Column>
@@ -128,18 +140,24 @@
                             <Column width="5rem">
                                 <Text text="DME" />
                             </Column>
+                            <Column width="13rem">
+                                <Text text="Remarks" />
+                            </Column>
                         </columns>
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <ObjectIdentifier
-                                        title="{DashboardScore>Rating}"
-                                    />
+                                    <Text text="01.04.2025" />
+                                    <Text text="31.03.2026" />
+
                                     <Text text="{DashboardScore>FEE}" />
                                     <Text text="{DashboardScore>EEE}" />
                                     <Text text="{DashboardScore>ME}" />
                                     <Text text="{DashboardScore>BE}" />
                                     <Text text="{DashboardScore>DME}" />
+                                    <ObjectIdentifier
+                                        title="{DashboardScore>Rating}"
+                                    />
                                 </cells>
                             </ColumnListItem>
                         </items>
@@ -157,8 +175,38 @@
                     width="auto"
                     class="sapUiSmallMarginBegin sapUiLargeMarginEnd"
                 >
+                    <headerToolbar>
+                        <OverflowToolbar>
+                            <HBox
+                                width="auto"
+                                alignItems="Center"
+                                justifyContent="SpaceAround"
+                            >
+                                <Label
+                                    text="Select Year: "
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox selectedItem="2025-26">
+                                    <c:Item
+                                        key="25"
+                                        text="2025-26"
+                                    />
+                                    <c:Item
+                                        key="2024-25"
+                                        text="2024-25"
+                                    />
+                                    <c:Item
+                                        key="2023-24"
+                                        text="2023-24"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <ToolbarSpacer />
+                            <Button text="Upload" icon="sap-icon://upload-to-cloud" visible="{vModel>/uploadFile}" type="Default"/>
+                        </OverflowToolbar>
+                    </headerToolbar>
                     <columns>
-                        <Column width="8rem">
+                        <Column width="4rem">
                             <Text text="Employee ID" />
                         </Column>
                         <Column width="10rem">
@@ -167,28 +215,28 @@
                         <Column width="8rem">
                             <Text text="Appraisee Score" />
                         </Column>
-                        <Column>
+                        <Column width="8rem" >
                             <Text text="Appraiser Score" />
                         </Column>
-                        <Column>
+                        <Column width="8rem">
                             <Text text="Reviewer Score" />
                         </Column>
-                        <Column>
+                        <Column width="8rem">
                             <Text text="Appraiser Rating" />
                         </Column>
-                        <Column visible="{DashboardScore>fileUpload}">
+                        <Column visible="{vModel>/attachVisible}" width="10rem">
                             <Text text="Justification Attachment" />
                         </Column>
-                        <Column>
+                        <Column width="8rem">
                             <Text text="Reviewer Rating" />
                         </Column>
-                        <Column>
+                        <Column width="8rem">
                             <Text text="HOD Rating" />
                         </Column>
-                        <Column>
+                        <Column width="8rem">
                             <Text text="Appraiser Status" />
                         </Column>
-                        <Column>
+                        <Column width="8rem">
                             <Text text="Reviewer Status" />
                         </Column>
                     </columns>
@@ -196,32 +244,38 @@
                     <items>
                         <ColumnListItem>
                             <cells>
-                                <Text text="{DashboardScore>Pers.No.}" />
+                                <Text
+                                    text="{DashboardScore>Pers.No.}"
+                                    textAlign="Center"
+                                />
                                 <Text
                                     text="{DashboardScore>Name_of_Employee}"
+                                    textAlign="Center"
                                 />
                                 <Text
                                     text="{DashboardScore>Overall_Apprse_Score}"
+                                    textAlign="Center"
                                 />
                                 <Text
                                     text="{DashboardScore>Overall_Apprsr_Score}"
+                                    textAlign="Center"
                                 />
                                 <Text
                                     text="{DashboardScore>Overall_Reviewer_Score}"
+                                    textAlign="Center"
                                 />
 
                                 <HBox>
-                                    <Text
-                                        text="{DashboardScore>Appraiser_Rating}"
-                                        visible="{= !!${DashboardScore>Appraiser_Rating} }"
-                                    />
-
                                     <ComboBox
-                                        visible="{vModel>/arRating}"
+                                        id="ArInput"
+                                        editable="{vModel>/arRating}"
                                         showButton="true"
+                                        selectedItem="{vModel>arValue}"
                                         items="{
 					                    path: 'DashboardScore>/Suggestions'
 				                           }"
+                                        textAlign="Center"
+                                        change="onSelectionChange"
                                     >
                                         <c:Item
                                             key="{DashboardScore>key}"
@@ -231,27 +285,27 @@
                                 </HBox>
 
                                 <HBox>
-                                    <Text
-                                        text="Not required"
-                                        visible="{DashboardScore>fileUpload}"
-                                    />
-                                    <Input
-                                        visible="{DashboardScore>fileUpload}"
-                                    />
+                                    
+                                    <u:FileUploader
+                                    id="fileUploader"
+                                    name="myFileUpload"
+                                    uploadUrl="upload/"
+                                    tooltip="Upload your file to the local server"
+                                    uploadComplete="handleUploadComplete"
+                                    visible="{vModel>/attachVisible}"
+                                />
                                 </HBox>
+                                
 
                                 <HBox>
-                                    <Text
-                                        text="{DashboardScore>Appraiser_Rating}"
-                                        visible="{= !!${DashboardScore>Appraiser_Rating} }"
-                                    />
-
                                     <ComboBox
-                                        visible="{vModel>/reRating}"
+                                        id="ReInput"
+                                        editable="{vModel>/reRating}"
                                         showButton="true"
                                         items="{
 					                    path: 'DashboardScore>/Suggestions'
 				                           }"
+                                        textAlign="Center"
                                     >
                                         <c:Item
                                             key="{DashboardScore>key}"
@@ -259,25 +313,7 @@
                                         />
                                     </ComboBox>
                                 </HBox>
-                                <HBox>
-                                    <Text
-                                        text="{DashboardScore>Appraiser_Rating}"
-                                        visible="{= !!${DashboardScore>Appraiser_Rating} }"
-                                    />
-
-                                    <ComboBox
-                                        visible="{vModel>/hodRating}"
-                                        showButton="true"
-                                        items="{
-					                    path: 'DashboardScore>/Suggestions'
-				                           }"
-                                    >
-                                        <c:Item
-                                            key="{DashboardScore>key}"
-                                            text="{DashboardScore>value}"
-                                        />
-                                    </ComboBox>
-                                </HBox>
+                                <Input editable="false" />
                                 <Text
                                     text="{DashboardScore>Appraiser_Status}"
                                 />

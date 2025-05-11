@@ -9,9 +9,14 @@ sap.ui.define([
         onInit: function () {
             // Create and set model with a name ("vModel")
             var vModel = new JSONModel({
-                arRating: true,
+                arRating: false,
+                arValue: null,
                 reRating: false,
-                hodRating: false
+                reValue: null,
+                bCurve: false,
+                attachVisible: false,
+                uploadFile:false
+                
             });
             this.getView().setModel(vModel, "vModel");
         },
@@ -20,24 +25,48 @@ sap.ui.define([
             var sKey = oEvent.getParameter("key");
             var model = this.getView().getModel("vModel");
 
-             if (sKey === "RE") {
-                console.log("RE selected");
-                model.setProperty("/arRating", false);
-                model.setProperty("/reRating", true);
-                model.setProperty("/hodRating", false);
-            } else if (sKey === "HOD") {
-                console.log("HOD selected");
+            if (sKey === "AE") {
+                console.log("AE selected");
                 model.setProperty("/arRating", false);
                 model.setProperty("/reRating", false);
-                model.setProperty("/hodRating", true);
-            } else {
+                model.setProperty("/bCurve", false);
+                
+                
+
+            } else if (sKey === "AR") {
                 console.log("AR selected");
+                model.setProperty("/bCurve", true);
                 model.setProperty("/arRating", true);
                 model.setProperty("/reRating", false);
-                model.setProperty("/hodRating", false);
+                
+                
+            } else if (sKey === "RE") {
+                console.log("RE selected");
+                model.setProperty("/bCurve", true);
+                model.setProperty("/arRating", false);
+                model.setProperty("/reRating", true);
+                
+
             }
 
 
+
+        },
+        onSelectionChange: function(oEvent){
+            let array = ['EEE', 'FEE']
+            let model = this.getView().getModel("vModel");
+            let oValidatedComboBox = oEvent.getSource()
+			let	sSelectedKey = oValidatedComboBox.getSelectedKey()
+			let	sValue = oValidatedComboBox.getValue();
+            if(array.includes(sValue)){
+                model.setProperty("/attachVisible", true);
+                model.setProperty("/uploadFile", true);
+
+            return
+                
+            } 
+            model.setProperty("/attachVisible", false);
+            model.setProperty("/uploadFile", false);
         }
     });
 });

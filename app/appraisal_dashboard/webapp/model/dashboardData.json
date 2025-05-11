@@ -2,7 +2,7 @@
     "Appraisees": [
         {
             "Pers.No.": 1000234,
-            "Name_of_Employee": "Vivek",
+            "Name_of_Employee": "Girish Chandra Ghildiyal",
             "Overall_Apprse_Score": 4.3,
             "Overall_Apprsr_Score": 4.0,
             "Overall_Reviewer_Score": 4.0,
@@ -58,8 +58,8 @@
             "value": "BE"
         },
         {
-            "key": "FE",
-            "value": "FE"
+            "key": "FEE",
+            "value": "FEE"
         }
     ]
 }
