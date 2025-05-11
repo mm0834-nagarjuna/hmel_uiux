@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="apprisal.controller.Ig"
+    controllerName="apprisal.controller.Ack"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:uxap="sap.uxap"

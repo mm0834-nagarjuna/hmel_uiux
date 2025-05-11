@@ -561,27 +561,7 @@
     }
   },
   "Acknowledgements": [
-    {
-      "Sno": 1,
-      "Stage": "Target Setting Confirmation By Appraisee",
-      "Status": "Yes",
-      "Editable": "apprisalData>ackTSCEdit"
-    },
-    {
-      "Sno": 2,
-      "Stage": "First Four Monthly Confirmation By Appraisee",
-      "Status": "Yes"
-    },
-    {
-      "Sno": 3,
-      "Stage": "Second Four Monthly Confirmation By Appraisee",
-      "Status": "Yes"
-    },
-    {
-      "Sno": 4,
-      "Stage": "Annual Confirmation By Appraisee",
-      "Status": "No"
-    }
+    
   ],
   "Overal_Remarks":
     {
