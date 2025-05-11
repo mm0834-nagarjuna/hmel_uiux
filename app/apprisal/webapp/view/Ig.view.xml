@@ -36,7 +36,7 @@
                             />
                             <Button
                             icon="sap-icon://create-form"
-                                text="Add KRA"
+                                text="Add KPA"
                                 type="Ghost"
                                 press="onItemSelect"
                             />
