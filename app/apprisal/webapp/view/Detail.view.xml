@@ -33,6 +33,11 @@
                 text="2025-26"
             />
             <ObjectStatus
+                title="Status"
+                text="{parts: [{path: 'apprisalData>apStatusName'}, {path: 'apprisalData>apStatusSubName'}], formatter: '.formatStatusText'}"
+                state="Warning"
+            />
+            <ObjectStatus
                 title="Employee ID"
                 text="{apprisalData>appraiseeId}"
             />
@@ -52,11 +57,7 @@
                 title="Email"
                 text="email@address.com"
             />
-			<ObjectStatus
-                title="Status"
-                text="{parts: [{path: 'apprisalData>apStatusName'}, {path: 'apprisalData>apStatusSubName'}], formatter: '.formatStatusText'}"
-                state="Warning"
-            />
+			
 		</HBox>
 	</VBox>
 	<SplitContainer
