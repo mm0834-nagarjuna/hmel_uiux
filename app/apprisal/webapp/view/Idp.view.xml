@@ -253,6 +253,9 @@
                                             <TextArea
                                                 editable="{apprisalData>idpFAODAAREdit}"
                                                 growing="true"
+                                                valueState="{PreDefineGoal>/IDP/Error/valueState}"
+			                                    valueStateText="{PreDefineGoal>/IDP/Error/valueStateText}"
+                                                width="100%"
                                             />
                                         </cells>
                                     </ColumnListItem>

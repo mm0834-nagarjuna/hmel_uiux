@@ -342,6 +342,10 @@
     ]
   },
   "IDP": {
+    "Error":{
+      "valueState" : "None",
+      "valueStateText" : ""
+    }, 
     "trainings_attended": [
       {
         "S.N.": 1,

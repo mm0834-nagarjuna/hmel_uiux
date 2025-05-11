@@ -23,7 +23,7 @@
 			<Button text="Allow Target Revision" visible="{apprisalData>allowTargetRevision}"/>
 			<Button text="Don't Allow Target Revision" visible="{apprisalData>doNotAllowTargetRevision}"/>
 			<Button text="Refer Back To Appraiser" visible="{apprisalData>referBackToAppraiser}"/>
-			<Button text="Submit" visible="{apprisalData>submit}"/>
+			<Button text="Submit" visible="{apprisalData>submit}" press=".onClickSubmit"/>
             <Text text="|" class="mvnButtonSepeartor"/>
 			<Button text="Print" />
 		</Toolbar>
