@@ -1,6 +1,292 @@
-<mvc:View controllerName="appraisaldashboard.controller.Dashboard"
+<mvc:View
+    controllerName="appraisaldashboard.controller.Dashboard"
+    xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+    xmlns:tnt="sap.tnt"
+    xmlns:c="sap.ui.core"
+    xmlns:t="sap.ui.table"
+    xmlns:trm="sap.ui.table.rowmodes"
+    xmlns:f="sap.ui.layout.form"
+>
+    <tnt:ToolHeader id="shellLikeToolHeaderOnlyMandatoryControls">
+        <Image
+            src="https://sapui5.hana.ondemand.com/test-resources/sap/tnt/images/SAP_Logo.png"
+            decorative="false"
+            tooltip="SAP Logo"
+            width="60px"
+            height="30px"
+        >
+            <layoutData>
+                <OverflowToolbarLayoutData priority="NeverOverflow" />
+            </layoutData>
+        </Image>
+        <Title
+            text="{i18n>title}"
+            wrapping="false"
+        >
+            <layoutData>
+                <OverflowToolbarLayoutData priority="Disappear" />
+            </layoutData>
+        </Title>
+        <ToolbarSpacer />
+        <SearchField
+            id="searchField"
+            width="25rem"
+        >
+            <layoutData>
+                <OverflowToolbarLayoutData
+                    priority="Low"
+                    group="1"
+                />
+            </layoutData>
+        </SearchField>
+        <ToolbarSpacer />
+        <Avatar
+            initials="SS"
+            displaySize="XS"
+            press=".onAvatarPressed"
+            tooltip="Profile"
+        >
+            <layoutData>
+                <OverflowToolbarLayoutData priority="NeverOverflow" />
+            </layoutData>
+        </Avatar>
+    </tnt:ToolHeader>
+
+    <IconTabBar
+        id="idIconTabBar"
+        select=".onFilterSelect"
+        class="sapUiResponsiveContentPadding"
+    >
+        <items>
+            <IconTabFilter
+                text="Appraiser"
+                key="AR"
+            />
+            <IconTabSeparator />
+            <IconTabFilter
+                text="Reviewer"
+                key="RE"
+            />
+            <IconTabSeparator />
+            <IconTabFilter
+                text="HOD"
+                key="HOD"
+            />
+        </items>
+        <content>
+            <VBox>
+                <HBox
+                    width="8%"
+                    alignItems="Center"
+                    justifyContent="SpaceAround"
+                >
+                    <Button
+                        text="Save"
+                        type="Emphasized"
+                    />
+                    <Button
+                        text="Submit"
+                        type="Default"
+                    />
+                </HBox>
+                <HBox
+                    alignItems="Center"
+                    justifyContent="SpaceBetween"
+                >
+                    <!-- Table 1 -->
+                    <Table
+                        id="normalTable"
+                        inset="false"
+                        headerText="Title Bar Here"
+                        noDataText="No Data Available"
+                        growing="true"
+                        growingScrollToLoad="true"
+                        items="{path: 'DashboardScore>/Bell_Curved_Distribustion'}"
+                        width="30%"
+                        class="sapUiSmallMargin"
+                    >
+                        <headerToolbar>
+                            <OverflowToolbar>
+                                <Title text="Bell Curve Distribution" />
+                            </OverflowToolbar>
+                        </headerToolbar>
+                        <columns>
+                            <Column width="13rem" />
+                            <Column width="5rem">
+                                <Text text="FEE" />
+                            </Column>
+                            <Column width="5rem">
+                                <Text text="EEE" />
+                            </Column>
+                            <Column width="5rem">
+                                <Text text="ME" />
+                            </Column>
+                            <Column width="5rem">
+                                <Text text="BE" />
+                            </Column>
+                            <Column width="5rem">
+                                <Text text="DME" />
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <ObjectIdentifier
+                                        title="{DashboardScore>Rating}"
+                                    />
+                                    <Text text="{DashboardScore>FEE}" />
+                                    <Text text="{DashboardScore>EEE}" />
+                                    <Text text="{DashboardScore>ME}" />
+                                    <Text text="{DashboardScore>BE}" />
+                                    <Text text="{DashboardScore>DME}" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </HBox>
+
+                <!-- Table 3 -->
+                <Table
+                    id="normalTable3"
+                    inset="false"
+                    noDataText="No Data Available"
+                    growing="true"
+                    growingScrollToLoad="true"
+                    items="{path: 'DashboardScore>/Appraisees'}"
+                    width="auto"
+                    class="sapUiSmallMarginBegin sapUiLargeMarginEnd"
+                >
+                    <columns>
+                        <Column width="8rem">
+                            <Text text="Pers.No." />
+                        </Column>
+                        <Column width="10rem">
+                            <Text text="Name Of Employee" />
+                        </Column>
+                        <Column width="8rem">
+                            <Text text="Appraisee Score" />
+                        </Column>
+                        <Column>
+                            <Text text="Appraiser Score" />
+                        </Column>
+                        <Column>
+                            <Text text="Reviewer Score" />
+                        </Column>
+                        <Column>
+                            <Text text="Appraiser Rating" />
+                        </Column>
+                        <Column visible="{DashboardScore>fileUpload}">
+                            <Text text="Justification Attachment" />
+                        </Column>
+                        <Column>
+                            <Text text="Reviewer Rating" />
+                        </Column>
+                        <Column>
+                            <Text text="HOD Rating" />
+                        </Column>
+                        <Column>
+                            <Text text="Appraiser Status" />
+                        </Column>
+                        <Column>
+                            <Text text="Reviewer Status" />
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{DashboardScore>Pers.No.}" />
+                                <Text
+                                    text="{DashboardScore>Name_of_Employee}"
+                                />
+                                <Text
+                                    text="{DashboardScore>Overall_Apprse_Score}"
+                                />
+                                <Text
+                                    text="{DashboardScore>Overall_Apprsr_Score}"
+                                />
+                                <Text
+                                    text="{DashboardScore>Overall_Reviewer_Score}"
+                                />
+
+                                <HBox>
+                                    <Text
+                                        text="{DashboardScore>Appraiser_Rating}"
+                                        visible="{= !!${DashboardScore>Appraiser_Rating} }"
+                                    />
+
+                                    <ComboBox
+                                        visible="{vModel>/arRating}"
+                                        showButton="true"
+                                        items="{
+					                    path: 'DashboardScore>/Suggestions'
+				                           }"
+                                    >
+                                        <c:Item
+                                            key="{DashboardScore>key}"
+                                            text="{DashboardScore>value}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
+
+                                <HBox>
+                                    <Text
+                                        text="Not required"
+                                        visible="{DashboardScore>fileUpload}"
+                                    />
+                                    <Input
+                                        visible="{DashboardScore>fileUpload}"
+                                    />
+                                </HBox>
+
+                                <HBox>
+                                    <Text
+                                        text="{DashboardScore>Appraiser_Rating}"
+                                        visible="{= !!${DashboardScore>Appraiser_Rating} }"
+                                    />
+
+                                    <ComboBox
+                                        visible="{vModel>/reRating}"
+                                        showButton="true"
+                                        items="{
+					                    path: 'DashboardScore>/Suggestions'
+				                           }"
+                                    >
+                                        <c:Item
+                                            key="{DashboardScore>key}"
+                                            text="{DashboardScore>value}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
+                                <HBox>
+                                    <Text
+                                        text="{DashboardScore>Appraiser_Rating}"
+                                        visible="{= !!${DashboardScore>Appraiser_Rating} }"
+                                    />
+
+                                    <ComboBox
+                                        visible="{vModel>/hodRating}"
+                                        showButton="true"
+                                        items="{
+					                    path: 'DashboardScore>/Suggestions'
+				                           }"
+                                    >
+                                        <c:Item
+                                            key="{DashboardScore>key}"
+                                            text="{DashboardScore>value}"
+                                        />
+                                    </ComboBox>
+                                </HBox>
+                                <Text
+                                    text="{DashboardScore>Appraiser_Status}"
+                                />
+                                <Text text="{DashboardScore>Reviewer_Status}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </VBox>
+        </content>
+    </IconTabBar>
 </mvc:View>

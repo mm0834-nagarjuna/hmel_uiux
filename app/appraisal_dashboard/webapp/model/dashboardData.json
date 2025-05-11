@@ -1,0 +1,65 @@
+{
+    "Appraisees": [
+        {
+            "Pers.No.": 1000234,
+            "Name_of_Employee": "Vivek",
+            "Overall_Apprse_Score": 4.3,
+            "Overall_Apprsr_Score": 4.0,
+            "Overall_Reviewer_Score": 4.0,
+            "Appraiser_Rating": null,
+            "fileUpload": false,
+            "Reviewer_Rating": null,
+            "Final_HOD_Rating": null,
+            "Appraiser_Status": null,
+            "Reviewer_Status": null
+        }
+    ],
+    "Bell_Curved_Distribustion": [
+        {
+            "Rating": "Rating Distrabution (%)",
+            "FEE": 5,
+            "EEE": 15,
+            "ME": null,
+            "BE": 2,
+            "DME": null
+        },
+        {
+            "Rating": "Rating Allowed (Nos)",
+            "FEE": 2,
+            "EEE": 1,
+            "ME": null,
+            "BE": 1,
+            "DME": null
+        },
+        {
+            "Rating": "Rating Actual (Nos)",
+            "FEE": 2,
+            "EEE": 1,
+            "ME": null,
+            "BE": 1,
+            "DME": null
+        }
+    ],
+    "Suggestions": [
+        {
+            "key": "EEE",
+            "value": "EEE"
+        },
+        {
+            "key": "ME",
+            "value": "ME"
+        },
+        {
+            "key": "DE",
+            "value": "DE"
+        },
+        {
+            "key": "BE",
+            "value": "BE"
+        },
+        {
+            "key": "FE",
+            "value": "FE"
+        }
+    ]
+}

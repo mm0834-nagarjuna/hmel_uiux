@@ -23,7 +23,11 @@
           "annotations": [],
           "odataVersion": "4.0"
         }
-      }
+      },
+      "DashboardScore":{
+          "uri": "model/dashboardData.json",
+          "type": "JSON"
+        }
     }
   },
   "sap.ui": {
@@ -70,6 +74,10 @@
           "autoExpandSelect": true,
           "earlyRequests": true
         }
+      },
+      "DashboardScore": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "DashboardScore"
       }
     },
     "resources": {
