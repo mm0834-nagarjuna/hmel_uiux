@@ -15,7 +15,8 @@ sap.ui.define([
                 reValue: null,
                 bCurve: false,
                 attachVisible: false,
-                uploadFile:false
+                uploadFile:false,
+                attachEdit:false
                 
             });
             this.getView().setModel(vModel, "vModel");
@@ -30,6 +31,8 @@ sap.ui.define([
                 model.setProperty("/arRating", false);
                 model.setProperty("/reRating", false);
                 model.setProperty("/bCurve", false);
+                model.setProperty("/attachEdit", false);
+                model.setProperty("/uploadFile", false);
                 
                 
 
@@ -38,6 +41,8 @@ sap.ui.define([
                 model.setProperty("/bCurve", true);
                 model.setProperty("/arRating", true);
                 model.setProperty("/reRating", false);
+                model.setProperty("/attachEdit", true);
+                model.setProperty("/uploadFile", false);
                 
                 
             } else if (sKey === "RE") {
@@ -45,6 +50,7 @@ sap.ui.define([
                 model.setProperty("/bCurve", true);
                 model.setProperty("/arRating", false);
                 model.setProperty("/reRating", true);
+
                 
 
             }
@@ -61,12 +67,14 @@ sap.ui.define([
             if(array.includes(sValue)){
                 model.setProperty("/attachVisible", true);
                 model.setProperty("/uploadFile", true);
+                model.setProperty("/attachEdit", true);
 
             return
                 
             } 
             model.setProperty("/attachVisible", false);
             model.setProperty("/uploadFile", false);
+            model.setProperty("/attachEdit", false);
         }
     });
 });

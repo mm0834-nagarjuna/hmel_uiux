@@ -293,6 +293,7 @@
                                     tooltip="Upload your file to the local server"
                                     uploadComplete="handleUploadComplete"
                                     visible="{vModel>/attachVisible}"
+                                    enabled="{vModel>/attachEdit}"
                                 />
                                 </HBox>
                                 
