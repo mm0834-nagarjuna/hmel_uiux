@@ -201,12 +201,11 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <ToolbarSpacer />
-                            <Button text="Upload" icon="sap-icon://upload-to-cloud" visible="{vModel>/uploadFile}" type="Default"/>
+                            
                         </OverflowToolbar>
                     </headerToolbar>
                     <columns>
-                        <Column width="4rem">
+                        <Column width="5rem">
                             <Text text="Employee ID" />
                         </Column>
                         <Column width="10rem">
@@ -215,7 +214,7 @@
                         <Column width="8rem">
                             <Text text="Appraisee Score" />
                         </Column>
-                        <Column width="8rem" >
+                        <Column width="8rem">
                             <Text text="Appraiser Score" />
                         </Column>
                         <Column width="8rem">
@@ -224,14 +223,14 @@
                         <Column width="8rem">
                             <Text text="Appraiser Rating" />
                         </Column>
-                        <Column visible="{vModel>/attachVisible}" width="10rem">
+                        <Column width="10rem">
                             <Text text="Justification Attachment" />
                         </Column>
                         <Column width="8rem">
                             <Text text="Reviewer Rating" />
                         </Column>
                         <Column width="8rem">
-                            <Text text="HOD Rating" />
+                            <Text text="Final HOD Rating" />
                         </Column>
                         <Column width="8rem">
                             <Text text="Appraiser Status" />
@@ -270,12 +269,12 @@
                                         id="ArInput"
                                         editable="{vModel>/arRating}"
                                         showButton="true"
-                                        selectedItem="{vModel>arValue}"
                                         items="{
 					                    path: 'DashboardScore>/Suggestions'
 				                           }"
                                         textAlign="Center"
-                                        change="onSelectionChange"
+                                        
+                                        value="{DashboardScore>Appraiser_Rating}"
                                     >
                                         <c:Item
                                             key="{DashboardScore>key}"
@@ -284,19 +283,25 @@
                                     </ComboBox>
                                 </HBox>
 
-                                <HBox>
+                                <HBox
                                     
+                                >
+                                    <Text
+                                        text=" "
+                                        visible="{path:'DashboardScore>Appraiser_Rating', formatter: '.formatter.checkText'}"
+                                    />
+
                                     <u:FileUploader
-                                    id="fileUploader"
-                                    name="myFileUpload"
-                                    uploadUrl="upload/"
-                                    tooltip="Upload your file to the local server"
-                                    uploadComplete="handleUploadComplete"
-                                    visible="{vModel>/attachVisible}"
-                                    enabled="{vModel>/attachEdit}"
-                                />
+                                        id="fileUploaderAR"
+                                        name="myFileUpload"
+                                        uploadUrl="upload/"
+                                        tooltip="Upload your file to the local server"
+                                        uploadComplete="handleUploadComplete"
+                                        visible="{parts :[{path:'DashboardScore>Appraiser_Rating'},{path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.visiblitiy'}"
+                                        enabled="{parts :[{path:'DashboardScore>Appraiser_Rating'}], formatter: '.formatter.visiblitiy'}"
+                                    /> 
+                                    
                                 </HBox>
-                                
 
                                 <HBox>
                                     <ComboBox
@@ -307,6 +312,8 @@
 					                    path: 'DashboardScore>/Suggestions'
 				                           }"
                                         textAlign="Center"
+                                        value="{DashboardScore>Reviewer_Rating}"
+                                        
                                     >
                                         <c:Item
                                             key="{DashboardScore>key}"
@@ -314,7 +321,7 @@
                                         />
                                     </ComboBox>
                                 </HBox>
-                                <Input editable="false" />
+                                <Text  />
                                 <Text
                                     text="{DashboardScore>Appraiser_Status}"
                                 />

@@ -6,12 +6,25 @@
             "Overall_Apprse_Score": 4.3,
             "Overall_Apprsr_Score": 4.0,
             "Overall_Reviewer_Score": 4.0,
-            "Appraiser_Rating": null,
+            "Appraiser_Rating": "",
             "fileUpload": false,
-            "Reviewer_Rating": null,
-            "Final_HOD_Rating": null,
-            "Appraiser_Status": null,
-            "Reviewer_Status": null
+            "Reviewer_Rating": "",
+            "Final_HOD_Rating": "",
+            "Appraiser_Status": "",
+            "Reviewer_Status": ""
+        },
+        {
+            "Pers.No.": 1000234,
+            "Name_of_Employee": "Girish Chandra Ghildiyal",
+            "Overall_Apprse_Score": 4.3,
+            "Overall_Apprsr_Score": 4.0,
+            "Overall_Reviewer_Score": 4.0,
+            "Appraiser_Rating": "",
+            "fileUpload": false,
+            "Reviewer_Rating": "",
+            "Final_HOD_Rating": "",
+            "Appraiser_Status": "",
+            "Reviewer_Status": ""
         }
     ],
     "Bell_Curved_Distribustion": [
@@ -19,25 +32,25 @@
             "Rating": "Rating Distribution (%)",
             "FEE": 5,
             "EEE": 15,
-            "ME": null,
+            "ME": "",
             "BE": 2,
-            "DME": null
+            "DME": ""
         },
         {
             "Rating": "Rating Allowed (Nos)",
             "FEE": 2,
             "EEE": 1,
-            "ME": null,
+            "ME": "",
             "BE": 1,
-            "DME": null
+            "DME": ""
         },
         {
             "Rating": "Rating Actual (Nos)",
             "FEE": 2,
             "EEE": 1,
-            "ME": null,
+            "ME": "",
             "BE": 1,
-            "DME": null
+            "DME": ""
         }
     ],
     "Suggestions": [
