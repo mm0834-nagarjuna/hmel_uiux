@@ -40,7 +40,7 @@
                                 <columns>
                                     <Column>
                                         <header>
-                                            <Text text="" />
+                                            <Text text="Acknowledgement"/>
                                         </header>
                                     </Column>
                                     <Column>
