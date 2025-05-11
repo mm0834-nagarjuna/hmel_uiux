@@ -141,13 +141,13 @@
 								visible="{apprisalData>cofgffmaAE}"
                             />
 							<Label
-                                text="First Four Monthly Achievement : Appraiser"
+                                text="First Four Monthly Feedback: Appraiser"
                                 class="sapUiSmallMarginTop"
 								visible="{apprisalData>cofgffmaAR}"
                             />
 							<TextArea
                                 width="100%"
-                                value="First Four Monthly Achievement : Appraiser"
+                                value="First Four Monthly Feedback: Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
 								visible="{apprisalData>cofgffmaAR}"
@@ -167,13 +167,13 @@
                                 editable="{apprisalData>cofgsfmaAEEdit}"
                             />
 							<Label
-                                text="Second Four Monthly Achievement : Appraiser"
+                                text="Second Four Monthly Feedback: Appraiser"
                                 class="sapUiSmallMarginTop"
 								visible="{apprisalData>cofgsfmaAR}"
                             />
 							<TextArea
                                 width="100%"
-                                value="Second Four Monthly Achievement : Appraiser"
+                                value="Second Four Monthly Feedback: Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
 								visible="{apprisalData>cofgsfmaAR}"
@@ -355,13 +355,13 @@
 								visible="{apprisalData>cofgffmaAE}"
                             />
 							<Label
-                                text="First Four Monthly Achievement : Appraiser"
+                                text="First Four Monthly Feedback: Appraiser"
                                 class="sapUiSmallMarginTop"
 								visible="{apprisalData>cofgffmaAR}"
                             />
 							<TextArea
                                 width="100%"
-                                value="First Four Monthly Achievement : Appraiser"
+                                value="First Four Monthly Feedback: Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
 								visible="{apprisalData>cofgffmaAR}"
@@ -381,13 +381,13 @@
                                 editable="{apprisalData>cofgsfmaAEEdit}"
                             />
 							<Label
-                                text="Second Four Monthly Achievement : Appraiser"
+                                text="Second Four Monthly Feedback: Appraiser"
                                 class="sapUiSmallMarginTop"
 								visible="{apprisalData>cofgsfmaAR}"
                             />
 							<TextArea
                                 width="100%"
-                                value="Second Four Monthly Achievement : Appraiser"
+                                value="Second Four Monthly Feedback: Appraiser"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
 								visible="{apprisalData>cofgsfmaAR}"
