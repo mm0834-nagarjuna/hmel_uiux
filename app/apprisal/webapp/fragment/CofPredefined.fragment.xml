@@ -4,6 +4,7 @@
 	<TableSelectDialog
 		noDataText="No Predefined - Key Performance Area"
 		title="Predefined - Key Performance Area"
+		confirmButtonText="Copy"
 		confirm=".onClickCancel"
 		cancel=".onClickCancel"
 		class="mvnTableSelectDialog"
