@@ -71,10 +71,6 @@
 								<Title text="1 . Accomplishment"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
-							<Label
-                                text="Annual Achievement - Appraisee"
-                                class="sapUiSmallMarginTop"
-                            />
 							<TextArea
                                 width="100%"
                                 value="Annual Achievement - Appraisee"
@@ -98,10 +94,6 @@
 								<Title text="2 . Accomplishment"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
-							<Label
-                                text="Annual Achievement - Appraisee"
-                                class="sapUiSmallMarginTop"
-                            />
 							<TextArea
                                 width="100%"
                                 value="Annual Achievement - Appraisee"
