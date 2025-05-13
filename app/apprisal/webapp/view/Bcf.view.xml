@@ -26,7 +26,7 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                              <FormattedText htmlText="{/HTML}"  visible="{= ${device>/browser/mobile} }"/>
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Competencies" />
                                 <FormattedText htmlText="{/HTML}"  visible="{= !${device>/browser/mobile} }"/>
                                 <ToolbarSpacer />
@@ -46,6 +46,7 @@
 									templateShareable: false
 									
 								}"
+                                
                             >
                                 <columns>
                                     <Column width="{= ${device>/browser/mobile} ? '20%' : '4rem' }" importance="None">

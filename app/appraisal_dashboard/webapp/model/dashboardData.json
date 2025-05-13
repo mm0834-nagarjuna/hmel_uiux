@@ -31,7 +31,7 @@
         {
             "Rating": "Rating Distribution (%)",
             "FEE": 5,
-            "EEE": 15,
+            "EE": 15,
             "ME": "",
             "BE": 2,
             "DME": ""
@@ -39,7 +39,7 @@
         {
             "Rating": "Rating Allowed (Nos)",
             "FEE": 2,
-            "EEE": 1,
+            "EE": 1,
             "ME": "",
             "BE": 1,
             "DME": ""
@@ -47,7 +47,7 @@
         {
             "Rating": "Rating Actual (Nos)",
             "FEE": 2,
-            "EEE": 1,
+            "EE": 1,
             "ME": "",
             "BE": 1,
             "DME": ""
@@ -55,8 +55,8 @@
     ],
     "Suggestions": [
         {
-            "key": "EEE",
-            "value": "EEE"
+            "key": "EE",
+            "value": "EE"
         },
         {
             "key": "ME",

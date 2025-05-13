@@ -22,7 +22,7 @@
                         titleUppercase="false"
                         showTitle="false"
                     >
-                        <OverflowToolbar>
+                        <OverflowToolbar style="Clear">
                             <HBox width="100%" justifyContent="End">
                             <Button
                                     icon="sap-icon://document-text"
@@ -48,7 +48,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Training attended in this performance Year" />
                             </OverflowToolbar>
                             <Table
@@ -58,7 +58,7 @@
 								}"
                             >
                             <infoToolbar>
-								<OverflowToolbar>
+								<OverflowToolbar style="Clear">
 									
                                     <Text text="Training Mandays Target: 5 Days (1 Day = 8hrs.)" class="sapUiSmallMarginEnd"/>
                                     <Text text="Training Mandays Actual: 6 Days 0 Hours 0 Minutes"/>
@@ -117,7 +117,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title
                                     text="Behavioral Competency Development Area Identified"
                                 />
@@ -210,7 +210,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title
                                     text="Functional/Any Other Development Area"
                                 />
@@ -277,7 +277,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title
                                     text="Functional/Techincal Development Area"
                                 />
@@ -357,7 +357,7 @@
                         visible="{apprisalData>idpFMRS}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="First Four Monthly Review Remarks" />
                             </OverflowToolbar>
                             <Table
@@ -411,7 +411,7 @@
                         visible="{apprisalData>idpFMRS}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Second Four Monthly Review Remarks" />
                             </OverflowToolbar>
                             <Table
@@ -465,7 +465,7 @@
                         visible="{apprisalData>idpANRS}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar >
                                 <Title text="Annual Review Remarks" />
                             </OverflowToolbar>
                             <Table
@@ -534,7 +534,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Annual Score" />
                                 <Button
                                     icon="sap-icon://information"

@@ -122,7 +122,7 @@
                                 <Text text="Start Date" />
                             </Column>
                             <Column width="8rem">
-                                <Text text="Start Date" />
+                                <Text text="End Date" />
                             </Column>
 
                             <Column width="5rem">
@@ -178,28 +178,41 @@
                     <headerToolbar>
                         <OverflowToolbar>
                             <HBox
-                                width="auto"
+                                width="100%"
                                 alignItems="Center"
-                                justifyContent="SpaceAround"
+                                justifyContent="SpaceBetween"
                             >
+                                <HBox width="50%" alignItems="Center">
                                 <Label
                                     text="Select Year: "
                                     class="sapUiSmallMarginEnd"
                                 />
-                                <ComboBox selectedItem="2025-26">
+                                <ComboBox selectedKey="TS"  selectionChange="onSelectChange" id="selectYear" >
+                                 
                                     <c:Item
-                                        key="25"
+                                        key="TS"
                                         text="2025-26"
                                     />
                                     <c:Item
-                                        key="2024-25"
+                                        key="TF"
                                         text="2024-25"
                                     />
                                     <c:Item
-                                        key="2023-24"
+                                        key="TT"
                                         text="2023-24"
                                     />
                                 </ComboBox>
+                                </HBox>
+                                <HBox width="50%" alignItems="Center" justifyContent="End" visible="{vModel>/filterVisible}">
+                               <HBox alignItems="Center" class="sapUiSmallMarginEnd">
+                               <Label text="Employee ID: " class="sapUiSmallMarginEnd"></Label>
+                                <SearchField placeholder="Enter Employee ID"></SearchField>
+                               </HBox>
+                               <HBox alignItems="Center" >
+                               <Label text="Employee Name: " class="sapUiSmallMarginEnd"></Label>
+                                <SearchField placeholder="Enter Employee ID"></SearchField>
+                               </HBox>
+                                </HBox>
                             </HBox>
                             
                         </OverflowToolbar>
@@ -223,11 +236,12 @@
                         <Column width="8rem">
                             <Text text="Appraiser Rating" />
                         </Column>
-                        <Column width="10rem">
-                            <Text text="Justification Attachment" />
-                        </Column>
+                        
                         <Column width="8rem">
                             <Text text="Reviewer Rating" />
+                        </Column>
+                        <Column width="10rem">
+                            <Text text="Justification Attachment" />
                         </Column>
                         <Column width="8rem">
                             <Text text="Final HOD Rating" />
@@ -265,6 +279,7 @@
                                 />
 
                                 <HBox>
+                                <Text text="hello {DashboardScore>Appraiser_Rating}"></Text>
                                     <ComboBox
                                         id="ArInput"
                                         editable="{vModel>/arRating}"
@@ -275,6 +290,7 @@
                                         textAlign="Center"
                                         
                                         value="{DashboardScore>Appraiser_Rating}"
+                                        visible="{vModel>/inputEnable}"
                                     >
                                         <c:Item
                                             key="{DashboardScore>key}"
@@ -283,26 +299,7 @@
                                     </ComboBox>
                                 </HBox>
 
-                                <HBox
-                                    
-                                >
-                                    <Text
-                                        text=" "
-                                        visible="{path:'DashboardScore>Appraiser_Rating', formatter: '.formatter.checkText'}"
-                                    />
-
-                                    <u:FileUploader
-                                        id="fileUploaderAR"
-                                        name="myFileUpload"
-                                        uploadUrl="upload/"
-                                        tooltip="Upload your file to the local server"
-                                        uploadComplete="handleUploadComplete"
-                                        visible="{parts :[{path:'DashboardScore>Appraiser_Rating'},{path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.visiblitiy'}"
-                                        enabled="{vModel>/attachEdit}"
-                                    /> 
-                                    
-                                </HBox>
-
+                              
                                 <HBox>
                                     <ComboBox
                                         id="ReInput"
@@ -321,6 +318,26 @@
                                         />
                                     </ComboBox>
                                 </HBox>
+                                  <HBox
+                                    
+                                 >
+                                    <Text
+                                        text="{parts :[{path:'DashboardScore>Appraiser_Rating'}, {path:'DashboardScore>Reviewer_Rating'}]} "
+                                        visible="{parts :[{path:'DashboardScore>Appraiser_Rating'}, {path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.checkText'}"
+                                    />
+
+                                    <!-- <u:FileUploader
+                                        id="fileUploaderAR"
+                                        name="myFileUpload"
+                                        uploadUrl="upload/"
+                                        tooltip="Upload your file to the local server"
+                                        uploadComplete="handleUploadComplete"
+                                        visible="{parts :[{path:'DashboardScore>Appraiser_Rating'}, {path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.checkText'}"
+                                        enabled="{parts :[{path:'DashboardScore>Appraiser_Rating'}, {path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.checkText2'}"
+                                    />  -->
+                                    
+                                </HBox>
+
                                 <Text  />
                                 <Text
                                     text="{DashboardScore>Appraiser_Status}"

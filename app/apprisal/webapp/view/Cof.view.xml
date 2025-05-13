@@ -86,7 +86,7 @@
 					</uxap:ObjectPageSubSection>
 				</uxap:subSections>
 			</uxap:ObjectPageSection>
-            <uxap:ObjectPageSection title="1.1">
+            <uxap:ObjectPageSection title="1.1 Hello">
                 <uxap:subSections >
                     <uxap:ObjectPageSubSection
                     titleUppercase="false"
@@ -107,7 +107,7 @@
                                             width="100%"
                                             visible="{= ${device>/browser/mobile} }"
                                         >
-                                            <OverflowToolbar width="100%" design="Transparent">
+                                            <OverflowToolbar width="100%" design="Transparent" style="Clear">
                                                 <HBox
                                                     alignItems="Center"
                                                     justifyContent="SpaceBetween"
@@ -124,7 +124,7 @@
                                                         justifyContent="End"
                                                     >
                                                         <Button
-                                                            icon="{myGoal>add}"
+                                                            icon="{myGoal>add} Add KRA"
                                                             press="handleButtonPress"
                                                             class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                             visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
@@ -168,7 +168,7 @@
                                             </ComboBox>
                                         </VBox>
                                         <VBox width="100%" visible="{= !${device>/browser/mobile} }">
-                                            <OverflowToolbar width="100%" design="Transparent">
+                                            <OverflowToolbar width="100%" design="Transparent" style="Clear">
                                                 <HBox
                                                     alignItems="Center"
                                                     justifyContent="SpaceBetween"
@@ -177,7 +177,7 @@
                                                     <Text
                                                         text="{myGoal>text}"
                                                         tooltip="{myGoal>text}"
-                                                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                        textAlign="Begin"
                                                         
                                                     />
 
@@ -187,6 +187,7 @@
                                                     >
                                                         <Button
                                                             icon="{myGoal>add}"
+                                                            text="Add KRA"
                                                             press="handleButtonPress"
                                                             class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                             visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
@@ -263,7 +264,7 @@
                                             width="100%"
                                             visible="{= ${device>/browser/mobile} }"
                                         >
-                                            <OverflowToolbar width="100%" design="Transparent">
+                                            <OverflowToolbar width="100%" design="Transparent" style="Clear">
                                                 <HBox
                                                     alignItems="Center"
                                                     justifyContent="SpaceBetween"
@@ -302,7 +303,7 @@
                                             />
                                         </VBox>
                                         <VBox width="100%" visible="{= !${device>/browser/mobile} }">
-                                            <OverflowToolbar width="100%" design="Transparent">
+                                            <OverflowToolbar width="100%" design="Transparent" style="Clear">
                                                 <HBox
                                                     alignItems="Center"
                                                     justifyContent="SpaceBetween"

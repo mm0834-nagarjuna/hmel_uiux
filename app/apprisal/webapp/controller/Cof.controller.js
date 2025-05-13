@@ -28,8 +28,8 @@ sap.ui.define([
                                             "Key": "KRA",
                                             "value": "Key Result Area value",
                                             "text": "Key Result Area",
-                                            "add": "sap-icon://add",
-                                            "delete": "sap-icon://delete",
+                                            "add": null,
+                                            "delete": null,
                                             "visible": true,
                                             "editable": true
                                         },
