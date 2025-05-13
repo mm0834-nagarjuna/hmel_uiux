@@ -1,34 +1,90 @@
 <mvc:View
     controllerName="apprisal.controller.Cof"
-    xmlns:core="sap.ui.core"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:uxap="sap.uxap"
-    xmlns="sap.m"
-    xmlns:tnt="sap.tnt"
-    xmlns:blockcolor="project1.SharedBlocks"
-    xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:uxap="sap.uxap"
+	xmlns="sap.m"
+	xmlns:tnt="sap.tnt"
+	xmlns:blockcolor="project1.SharedBlocks"
+	xmlns:l="sap.ui.layout"
     height="90%"
 >
-    <uxap:ObjectPageLayout
+	<uxap:ObjectPageLayout
         upperCaseAnchorBar="false"
         showFooter="true"
     >
-        <uxap:layoutData>
-            <FlexItemData growFactor="1" />
-        </uxap:layoutData>
-        <uxap:sections>
-            <uxap:ObjectPageSection visible="{= !${apprisalData>coFgKSPEdit} }">
-                <uxap:subSections>
-                    <uxap:ObjectPageSubSection
+		<uxap:layoutData>
+			<FlexItemData growFactor="1" />
+		</uxap:layoutData>
+		<uxap:sections>
+            <uxap:ObjectPageSection 
+                visible="{= !${apprisalData>coFgKSPEdit} }"
+                >
+            
+				<uxap:subSections>
+                
+					<uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="Common Organizational Goal"
                         visible="{= !${apprisalData>coFgKSPEdit} }"
                         class="mvnDummyEmptyObjectPageSubSection"
                     >
-                        <HBox />
-                    </uxap:ObjectPageSubSection>
-                </uxap:subSections>
-            </uxap:ObjectPageSection>
+						<HBox/>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
+			<uxap:ObjectPageSection 
+                visible="{apprisalData>coFgKSPEdit}"
+                >
+            
+				<uxap:subSections>
+                
+					<uxap:ObjectPageSubSection
+                        titleUppercase="false"
+                        title="Common Organizational"
+                        visible="{apprisalData>coFgKSPEdit}"
+                    >
+						<OverflowToolbar
+                            class="mvnObjectPageLayoutTitleOverflowToolbar"   
+                        >
+							<ToolbarSpacer />
+							<Button
+                            icon="sap-icon://copy"
+                                text="Copy Goal"
+                                type="Ghost"
+                                press="onClickPredefined"
+                            />
+							<Button
+                            icon="sap-icon://create-form"
+                                text="Add KPA"
+                                type="Ghost"
+                                press="onItemSelect"
+                            />
+							<MenuButton
+                                text="Upload/Download"
+                                buttonMode="Split"
+                                defaultAction="onDefaultAction"
+                                beforeMenuOpen="onBeforeMenuOpen"
+                            >
+								<menu>
+									<Menu itemSelected="onMenuAction">
+										<MenuItem
+                                        
+                                            text="Upload"
+                                            icon="sap-icon://upload"
+                                        />
+										<MenuItem
+                                            text="Download Template"
+                                            icon="sap-icon://download"
+                                        />
+									</Menu>
+								</menu>
+							</MenuButton>
+						</OverflowToolbar>
+						<!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+			</uxap:ObjectPageSection>
             <uxap:ObjectPageSection>
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
