@@ -25,7 +25,7 @@
                         visible="{apprisalData>oScrSEScr}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Section Scores" />
                             </OverflowToolbar>
                             <Table
@@ -97,7 +97,7 @@
                         visible="{apprisalData>oScr360}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="360 Degree Score Report" />
                             </OverflowToolbar>
                             <Table id="360DegreeScore">
@@ -141,7 +141,7 @@
                         visible="{apprisalData>oScores}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Overall Score" />
                                   <Button
                                     icon="sap-icon://information"

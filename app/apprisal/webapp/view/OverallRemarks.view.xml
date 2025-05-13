@@ -23,7 +23,7 @@
                         visible="{apprisalData>overalRemarks}"
                     >
                         <VBox>
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Target Setting" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
@@ -76,7 +76,7 @@
                         visible="{apprisalData>oRFFMR}"
                     >
                         <VBox>
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="First Four Monthly Remarks" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
@@ -204,7 +204,7 @@
                         visible="{apprisalData>oRSFMR}"
                     >
                         <VBox>
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Second Four Monthly Remarks" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
@@ -327,7 +327,7 @@
                         showTitle="false"
                     >
                         <VBox>
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Annual Remarks" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
