@@ -40,7 +40,7 @@
 					<Text text="Target" />
 				</header>
 			</Column>
-			<Column width="10rem">
+			<Column width="10rem" hAlign="Center" vAlign="Middle">
 				<header>
 					<Text text="Weightage(%)" />
 				</header>

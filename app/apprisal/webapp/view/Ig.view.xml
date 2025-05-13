@@ -46,7 +46,7 @@
                             <ToolbarSpacer />
                             <Button
                             icon="sap-icon://copy"
-                                text="Previous Year"
+                                text="Previous Year KPAs"
                                 type="Ghost"
                                 press="onClickPreviousYear"
                             />

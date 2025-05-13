@@ -1,0 +1,62 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:layout="sap.ui.layout"
+>
+    <Dialog
+        id="IdpGuideline"
+        title="IDP Guidelines"
+        class="sapUiResponsivePadding"
+    >
+        <VBox class="sapUiSmallMargin">
+            <Text
+                text="Use the following pointers while filling your Individual Development Plan:"
+            />
+            <VBox class="sapUiSmallMarginTop">
+            <Label text="1. Purpose:" />
+            <Text
+                text="IDP helps align your career goals with organizational growth. Focus on both short- and long-term development."
+            />
+            </VBox>
+            <VBox class="sapUiSmallMarginTop">
+            <Label text="2. Set SMART Goals:" />
+            <Text
+                text="Specific, Measurable, Achievable, Relevant, Time-bound."
+            />
+            </VBox>
+            <VBox class="sapUiSmallMarginTop">
+            <Label text="3. Areas to Cover:" />
+            <Text
+                text="Technical skills, behavioral competencies, leadership, certifications."
+            />
+            </VBox>
+            <VBox class="sapUiSmallMarginTop">
+            <Label text="4. Development Actions:" />
+            <Text
+                text="Attend training, take up new projects, seek mentorship, self-study."
+            />
+            </VBox>
+            <VBox class="sapUiSmallMarginTop">
+            <Label text="5. Discuss with Manager:" />
+            <Text
+                text="Align your plan with team goals and get feedback/support."/>
+            </VBox>
+            <VBox class="sapUiSmallMarginTop">
+            <Label text="6. Track Progress:" />
+            <Text text="Review regularly and update based on your growth." />
+            </VBox>
+            <VBox class="sapUiSmallMarginTop">
+            <Label text="7. Dos and Donts:" />
+            <Text text="Be honest and proactive" />
+            <Text text="Avoid vague or copy-pasted goals" />
+            </VBox>
+     </VBox>
+
+        <endButton>
+            <Button
+                text="Close"
+                press=".onClickGuidelineCancel"
+            />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
