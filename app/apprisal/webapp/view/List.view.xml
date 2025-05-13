@@ -116,7 +116,12 @@
                                 visibleInFilterBar="true"
                             >
                                 <fb:control>
-                                    <ComboBox selectionChange=".onStatusChange" selectedKey="TS">
+                                    <ComboBox selectionChange=".onStatusChange" selectedKey="">
+                                    <core:Item
+                                            key="All"
+                                            text=""
+      
+                                        />
                                         <core:Item
                                             key="TS"
                                             text="Target Setting"
@@ -139,7 +144,12 @@
                                 visibleInFilterBar="true"
                             >
                                 <fb:control>
-                                    <ComboBox selectedKey="PWAE">
+                                    <ComboBox selectedKey="">
+                                     <core:Item
+                                            key="All"
+                                            text=""
+      
+                                        />
                                         <core:Item
                                             key="PWAE"
                                             text="Pending With Appraisee"
