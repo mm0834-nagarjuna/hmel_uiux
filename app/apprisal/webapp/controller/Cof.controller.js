@@ -67,6 +67,28 @@ sap.ui.define([
             if (oDialog) {
                 oDialog.close();
             }
-        }
+        },
+        onClickAddAppraiser: function () {
+            var oView = this.getView();
+
+            if (!this._pDialog3) {
+                this._pDialog3 = Fragment.load({
+                    name: "apprisal.fragment.AddApprasier",
+                    controller: this
+                }).then(function(oDialog){
+                    oView.addDependent(oDialog);
+                    return oDialog;
+                });
+            }
+
+            this._pDialog3.then(function(oDialog){
+                oDialog.open();
+            }.bind(this));
+        },
+        onClickAddAppraiserCancel: function () {
+            this._pDialog3.then(function(oDialog){
+                oDialog.close();
+            }.bind(this));
+        },
     });
 });

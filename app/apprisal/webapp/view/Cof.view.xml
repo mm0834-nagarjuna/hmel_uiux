@@ -95,7 +95,9 @@
 						<VBox>
 							<OverflowToolbar>
 								<Title text="1 . Key Performance Area" />
+                                <Button icon="sap-icon://delete"/>
 								<ToolbarSpacer />
+                                <Button icon="sap-icon://add-employee" text="Appraiser" press="onClickAddAppraiser"/>
 							</OverflowToolbar>
 							
 							<Label
@@ -309,7 +311,9 @@
 						<VBox class="sapUiSmallMarginBottom">
 							<OverflowToolbar>
 								<Title text="2 . Key Performance Area" />
+								<Button icon="sap-icon://delete"/>
 								<ToolbarSpacer />
+                                <Button icon="sap-icon://add-employee" text="Appraiser"/>
 							</OverflowToolbar>
 							
 							<Label
