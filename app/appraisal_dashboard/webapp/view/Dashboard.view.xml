@@ -118,29 +118,29 @@
                             </OverflowToolbar>
                         </headerToolbar>
                         <columns>
-                            <Column width="8rem">
+                            <Column width="8rem" vAlign="Middle" hAlign="Center">
                                 <Text text="Start Date" />
                             </Column>
-                            <Column width="8rem">
+                            <Column width="8rem" vAlign="Middle" hAlign="Center">
                                 <Text text="End Date" />
                             </Column>
 
-                            <Column width="5rem">
+                            <Column width="5rem" vAlign="Middle" hAlign="Center">
                                 <Text text="FEE" />
                             </Column>
-                            <Column width="5rem">
-                                <Text text="EEE" />
+                            <Column width="5rem" vAlign="Middle" hAlign="Center">
+                                <Text text="EE" />
                             </Column>
-                            <Column width="5rem">
+                            <Column width="5rem" vAlign="Middle" hAlign="Center">
                                 <Text text="ME" />
                             </Column>
-                            <Column width="5rem">
+                            <Column width="5rem" vAlign="Middle" hAlign="Center" >
                                 <Text text="BE" />
                             </Column>
-                            <Column width="5rem">
+                            <Column width="5rem" vAlign="Middle" hAlign="Center">
                                 <Text text="DME" />
                             </Column>
-                            <Column width="13rem">
+                            <Column width="13rem" vAlign="Middle" hAlign="Center">
                                 <Text text="Remarks" />
                             </Column>
                         </columns>
@@ -218,38 +218,38 @@
                         </OverflowToolbar>
                     </headerToolbar>
                     <columns>
-                        <Column width="5rem">
+                        <Column width="5rem" >
                             <Text text="Employee ID" />
                         </Column>
                         <Column width="10rem">
                             <Text text="Employee Name" />
                         </Column>
-                        <Column width="8rem">
+                        <Column width="8rem" vAlign="Middle" hAlign="Center" >
                             <Text text="Appraisee Score" />
                         </Column>
-                        <Column width="8rem">
+                        <Column width="8rem" vAlign="Middle" hAlign="Center">
                             <Text text="Appraiser Score" />
                         </Column>
-                        <Column width="8rem">
+                        <Column width="8rem" vAlign="Middle" hAlign="Center">
                             <Text text="Reviewer Score" />
                         </Column>
-                        <Column width="8rem">
+                        <Column width="8rem" >
                             <Text text="Appraiser Rating" />
                         </Column>
                         
-                        <Column width="8rem">
+                        <Column width="8rem" >
                             <Text text="Reviewer Rating" />
                         </Column>
                         <Column width="10rem">
                             <Text text="Justification Attachment" />
                         </Column>
-                        <Column width="8rem">
+                        <Column width="8rem" >
                             <Text text="Final HOD Rating" />
                         </Column>
-                        <Column width="8rem">
+                        <Column width="8rem" vAlign="Middle" hAlign="Center">
                             <Text text="Appraiser Status" />
                         </Column>
-                        <Column width="8rem">
+                        <Column width="8rem" vAlign="Middle" hAlign="Center">
                             <Text text="Reviewer Status" />
                         </Column>
                     </columns>
@@ -278,8 +278,8 @@
                                     textAlign="Center"
                                 />
 
-                                <HBox>
-                                <Text text="hello {DashboardScore>Appraiser_Rating}"></Text>
+                                <HBox width="90%" alignItems="Center" justifyContent="Center">
+                                <Text text="{DashboardScore>Appraiser_Rating}" visible="{= !${vModel>/inputEnable}}" ></Text>
                                     <ComboBox
                                         id="ArInput"
                                         editable="{vModel>/arRating}"
@@ -291,6 +291,7 @@
                                         
                                         value="{DashboardScore>Appraiser_Rating}"
                                         visible="{vModel>/inputEnable}"
+                                        selectionChange="onARRatingSelectChange"
                                     >
                                         <c:Item
                                             key="{DashboardScore>key}"
@@ -301,6 +302,7 @@
 
                               
                                 <HBox>
+                                <Text text="{DashboardScore>Reviewer_Rating}" visible="{= !${vModel>/inputEnable}}"></Text>
                                     <ComboBox
                                         id="ReInput"
                                         editable="{vModel>/reRating}"
@@ -310,6 +312,8 @@
 				                           }"
                                         textAlign="Center"
                                         value="{DashboardScore>Reviewer_Rating}"
+                                        visible="{vModel>/inputEnable}"
+                                        selectionChange="onRERatingSelectChange"
                                         
                                     >
                                         <c:Item
@@ -322,19 +326,19 @@
                                     
                                  >
                                     <Text
-                                        text="{parts :[{path:'DashboardScore>Appraiser_Rating'}, {path:'DashboardScore>Reviewer_Rating'}]} "
+                                        text="  "
                                         visible="{parts :[{path:'DashboardScore>Appraiser_Rating'}, {path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.checkText'}"
                                     />
 
-                                    <!-- <u:FileUploader
+                                    <u:FileUploader
                                         id="fileUploaderAR"
                                         name="myFileUpload"
                                         uploadUrl="upload/"
                                         tooltip="Upload your file to the local server"
                                         uploadComplete="handleUploadComplete"
                                         visible="{parts :[{path:'DashboardScore>Appraiser_Rating'}, {path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.checkText'}"
-                                        enabled="{parts :[{path:'DashboardScore>Appraiser_Rating'}, {path:'DashboardScore>Reviewer_Rating'}], formatter: '.formatter.checkText2'}"
-                                    />  -->
+                                        enabled="{vModel>/attachEdit}"
+                                    /> 
                                     
                                 </HBox>
 

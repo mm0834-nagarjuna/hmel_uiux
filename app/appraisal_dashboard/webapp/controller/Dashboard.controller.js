@@ -17,6 +17,7 @@ sap.ui.define([
                 textVisible:false,
                 filterVisible:false,
                 inputEnable: false,
+                textfield:true
                 
             });
             this.getView().setModel(vModel, "vModel");
@@ -48,7 +49,7 @@ sap.ui.define([
                 model.setProperty("/inputEnable", true);
                 model.setProperty("/arRating", true);
                 model.setProperty("/reRating", false);
-                model.setProperty("/attachEdit", true);
+                model.setProperty("/attachEdit", false);
                 model.setProperty("/filterVisible", true);
                 
                 if (this.getView().byId('selectYear').getProperty("selectedKey") === 'TS'){
@@ -75,9 +76,7 @@ sap.ui.define([
                 } else {
                     model.setProperty("/bCurve", false);
                 }
-                
 
-                
 
             }
 
@@ -88,11 +87,14 @@ sap.ui.define([
         formatter: {
             checkText : function(oARText, oREText){
                if(oARText || oREText ){
-                console.log(oARText, oREText)
+                
                 let distArray = ["EE", "FEE"]
                 if((distArray.includes(oARText) && distArray.includes(oREText)) || (distArray.includes(oARText)) || (distArray.includes(oREText)) ){
+                    
+                    
                     return true
                 }
+                
                 return false
                 
                } 
@@ -100,29 +102,20 @@ sap.ui.define([
             },
             checkText2:function(oARText, oREText){
                 if(oARText || oREText ){
-                    console.log(oARText, oREText)
+                    // console.log(oARText, oREText)
                     let distArray = ["EE", "FEE"]
                     if((distArray.includes(oARText) && distArray.includes(oREText)) || (distArray.includes(oARText)) || (distArray.includes(oREText)) ){
-                        model.setProperty("/attachEdit", true);
+                        
                         return true
                     }
-                    model.setProperty("/attachEdit", false);
                 return false
                     
                    } 
                    return true
             },
-            visiblitiy: function(oText){
+            CheckVisible: function(oText){
                 console.log(oText)
-                var model = this.getView().getModel("vModel");
-                if(oText === 'EEE' || oText === 'FEE'){
-                    
-                    model.setProperty("/attachEdit", true);
-                    return true
-                }
                 
-                    model.setProperty("/attachEdit", false);
-                return false
                 
             }
         },
@@ -136,6 +129,24 @@ sap.ui.define([
                 model.setProperty("/bCurve", true);
             }
             
+        },
+        onRERatingSelectChange:function(oEvent){
+            if (oEvent.getSource().getProperty("selectedKey") === 'EE' || oEvent.getSource().getProperty("selectedKey") === 'FEE') {
+                var model = this.getView().getModel("vModel");
+                model.setProperty("/attachEdit", true);
+            } else {
+                var model = this.getView().getModel("vModel");
+                model.setProperty("/attachEdit", false);
+            }
+        },
+        onARRatingSelectChange:function(oEvent){
+            if (oEvent.getSource().getProperty("selectedKey") === 'EE' || oEvent.getSource().getProperty("selectedKey") === 'FEE') {
+                var model = this.getView().getModel("vModel");
+                model.setProperty("/attachEdit", true);
+            } else {
+                var model = this.getView().getModel("vModel");
+                model.setProperty("/attachEdit", false);
+            }
         }
     });
 });

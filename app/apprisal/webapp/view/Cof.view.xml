@@ -1,379 +1,326 @@
 <mvc:View
     controllerName="apprisal.controller.Cof"
-	xmlns:core="sap.ui.core"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:uxap="sap.uxap"
-	xmlns="sap.m"
-	xmlns:tnt="sap.tnt"
-	xmlns:blockcolor="project1.SharedBlocks"
-	xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:uxap="sap.uxap"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    xmlns:blockcolor="project1.SharedBlocks"
+    xmlns:l="sap.ui.layout"
     height="90%"
 >
-	<uxap:ObjectPageLayout
+    <uxap:ObjectPageLayout
         upperCaseAnchorBar="false"
         showFooter="true"
     >
-		<uxap:layoutData>
-			<FlexItemData growFactor="1" />
-		</uxap:layoutData>
-		<uxap:sections>
-            <uxap:ObjectPageSection 
-                visible="{= !${apprisalData>coFgKSPEdit} }"
-                >
-            
-				<uxap:subSections>
-                
-					<uxap:ObjectPageSubSection
+        <uxap:layoutData>
+            <FlexItemData growFactor="1" />
+        </uxap:layoutData>
+        <uxap:sections>
+            <uxap:ObjectPageSection visible="{= !${apprisalData>coFgKSPEdit} }">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="Common Organizational Goal"
                         visible="{= !${apprisalData>coFgKSPEdit} }"
                         class="mvnDummyEmptyObjectPageSubSection"
                     >
-						<HBox/>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection 
-                visible="{apprisalData>coFgKSPEdit}"
-                
-                >
-            
-				<uxap:subSections>
-                
-					<uxap:ObjectPageSubSection
+                        <HBox />
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection visible="{apprisalData>coFgKSPEdit}">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="Common Organizational Goals"
                         visible="{apprisalData>coFgKSPEdit}"
                     >
-						<OverflowToolbar
-                            class="mvnObjectPageLayoutTitleOverflowToolbar"   
+                        <OverflowToolbar
+                            class="mvnObjectPageLayoutTitleOverflowToolbar"
                         >
-							<ToolbarSpacer />
-							<Button
-                            icon="sap-icon://copy"
+                            <ToolbarSpacer />
+                            <Button
+                                icon="sap-icon://copy"
                                 text="Copy Goal"
                                 type="Ghost"
                                 press="onClickPredefined"
                             />
-							<Button
-                            icon="sap-icon://create-form"
+                            <Button
+                                icon="sap-icon://create-form"
                                 text="Add KPA"
                                 type="Ghost"
                                 press="onItemSelect"
                             />
-							<MenuButton
+                            <MenuButton
                                 text="Upload/Download"
                                 buttonMode="Split"
                                 defaultAction="onDefaultAction"
                                 beforeMenuOpen="onBeforeMenuOpen"
                             >
-								<menu>
-									<Menu itemSelected="onMenuAction">
-										<MenuItem
-                                        
+                                <menu>
+                                    <Menu itemSelected="onMenuAction">
+                                        <MenuItem
                                             text="Upload"
                                             icon="sap-icon://upload"
                                         />
-										<MenuItem
+                                        <MenuItem
                                             text="Download Template"
                                             icon="sap-icon://download"
                                         />
-									</Menu>
-								</menu>
-							</MenuButton>
-						</OverflowToolbar>
-						<!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-            <uxap:ObjectPageSection title="1.1 Hello">
-                <uxap:subSections >
-                    <uxap:ObjectPageSubSection
-                    titleUppercase="false"
-                        title="1.1 "
-                        
-                    >
-                        <Tree
-                            id="Tree"
-                            items="{myGoal>/COF/KSP001}"
-                        >
-                            <CustomTreeItem>
-                                <FlexBox
-                                    alignItems="Center"
-                                    width="100%"
-                                >
-                                    <items>
-                                        <VBox
-                                            width="100%"
-                                            visible="{= ${device>/browser/mobile} }"
-                                        >
-                                            <OverflowToolbar width="100%" design="Transparent" style="Clear">
-                                                <HBox
-                                                    alignItems="Center"
-                                                    justifyContent="SpaceBetween"
-                                                    width="100%"
-                                                >
-                                                    <Text
-                                                        text="{myGoal>text}"
-                                                        tooltip="{myGoal>text}"
-                                                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                    />
-
-                                                    <HBox
-                                                        alignItems="Center"
-                                                        justifyContent="End"
-                                                    >
-                                                        <Button
-                                                            icon="{myGoal>add} Add KRA"
-                                                            press="handleButtonPress"
-                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                            visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
-                                                        />
-                                                        <Button
-                                                            icon="{myGoal>delete}"
-                                                            press="handleButtonPress"
-                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                            visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
-                                                        />
-                                                    </HBox>
-                                                </HBox>
-                                            </OverflowToolbar>
-
-                                            <TextArea
-                                                value="{myGoal>value}"
-                                                width="100%"
-                                                visible="{path: 'myGoal>text', formatter: '.formatter.notWeightage'}"
-                                            />
-                                            <ComboBox
-                                                selectedKey="3"
-                                                visible="{path: 'myGoal>text', formatter: '.formatter.Weightage'}"
-                                            >
-                                                <core:Item
-                                                    key="3"
-                                                    text="3"
-                                                />
-                                                <core:Item
-                                                    key="4"
-                                                    text="4"
-                                                />
-                                                <core:Item
-                                                    key="5"
-                                                    text="5"
-                                                />
-
-                                                <core:Item
-                                                    key="50"
-                                                    text="50"
-                                                />
-                                            </ComboBox>
-                                        </VBox>
-                                        <VBox width="100%" visible="{= !${device>/browser/mobile} }">
-                                            <OverflowToolbar width="100%" design="Transparent" style="Clear">
-                                                <HBox
-                                                    alignItems="Center"
-                                                    justifyContent="SpaceBetween"
-                                                    width="100%"
-                                                >
-                                                    <Text
-                                                        text="{myGoal>text}"
-                                                        tooltip="{myGoal>text}"
-                                                        textAlign="Begin"
-                                                        
-                                                    />
-
-                                                    <HBox
-                                                        alignItems="Center"
-                                                        justifyContent="End"
-                                                    >
-                                                        <Button
-                                                            icon="{myGoal>add}"
-                                                            text="Add KRA"
-                                                            press="handleButtonPress"
-                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                            visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
-                                                        />
-                                                        <Button
-                                                            icon="{myGoal>delete}"
-                                                            press="handleButtonPress"
-                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                            visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
-                                                        />
-                                                    </HBox>
-                                                </HBox>
-                                            </OverflowToolbar>
-
-                                            <TextArea
-                                                value="{myGoal>value}"
-                                                width="100%"
-                                                visible="{path: 'myGoal>text', formatter: '.formatter.notWeightage'}"
-                                            >
-                                                <layoutData>
-                                                    <FlexItemData
-                                                        growFactor="1"
-                                                    />
-                                                </layoutData>
-                                            </TextArea>
-                                            <ComboBox
-                                                selectedKey="3"
-                                                visible="{path: 'myGoal>text', formatter: '.formatter.Weightage'}"
-                                            >
-                                                <core:Item
-                                                    key="3"
-                                                    text="3"
-                                                />
-                                                <core:Item
-                                                    key="4"
-                                                    text="4"
-                                                />
-                                                <core:Item
-                                                    key="5"
-                                                    text="5"
-                                                />
-
-                                                <core:Item
-                                                    key="50"
-                                                    text="50"
-                                                />
-                                            </ComboBox>
-                                        </VBox>
-                                    </items>
-                                </FlexBox>
-                            </CustomTreeItem>
-                        </Tree>
+                                    </Menu>
+                                </menu>
+                            </MenuButton>
+                        </OverflowToolbar>
+                        <!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
-             <uxap:ObjectPageSection >
+            <uxap:ObjectPageSection
+                title="1.1"
+                showTitle="false"
+            >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                    titleUppercase="false"
-                        title="1.2 "
-                       
+                        titleUppercase="false"
+                        title="1.1"
                     >
-                        <Tree
-                            id="Tree2"
-                            items="{myGoal>/COF/KSP002}"
-                        >
-                            <CustomTreeItem>
-                                <FlexBox
-                                    alignItems="Center"
-                                    width="100%"
-                                >
-                                    <items>
-                                        <VBox
-                                            width="100%"
-                                            visible="{= ${device>/browser/mobile} }"
-                                        >
-                                            <OverflowToolbar width="100%" design="Transparent" style="Clear">
-                                                <HBox
-                                                    alignItems="Center"
-                                                    justifyContent="SpaceBetween"
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="1.1 Key Performance Area" />
+                                <Button icon="sap-icon://delete" />
+                                <ToolbarSpacer />
+                                <Button
+                                    icon="sap-icon://add-employee"
+                                    text="Appraiser"
+                                    press="onClickAddAppraiser"
+                                />
+                            </OverflowToolbar>
+                            <Tree
+                                id="Tree"
+                                items="{myGoal>/COF/KSP001}"
+                            >
+                                <CustomTreeItem>
+                                    <FlexBox
+                                        alignItems="Center"
+                                        width="100%"
+                                    >
+                                        <items>
+                                            <VBox
+                                                width="100%"
+                                                visible="{= ${device>/browser/mobile} }"
+                                             >
+                                                <OverflowToolbar
                                                     width="100%"
+                                                    design="Transparent"
+                                                    style="Clear"
                                                 >
-                                                    <Text
-                                                        text="{myGoal>text}"
-                                                        tooltip="{myGoal>text}"
-                                                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                    />
-
                                                     <HBox
                                                         alignItems="Center"
-                                                        justifyContent="End"
+                                                        justifyContent="SpaceBetween"
+                                                        width="100%"
                                                     >
-                                                        <Button
-                                                            icon="{myGoal>add}"
-                                                            press="handleButtonPress"
-                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                            visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
+                                                        <Text
+                                                            text="{myGoal>text}"
+                                                            tooltip="{myGoal>text}"
+                                                            textAlign="Begin"
                                                         />
-                                                        <Button
-                                                            icon="{myGoal>delete}"
-                                                            press="handleButtonPress"
-                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                            visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
-                                                        />
-                                                    </HBox>
-                                                </HBox>
-                                            </OverflowToolbar>
 
-                                            <TextArea
-                                                value="{myGoal>value}"
-                                                width="100%"
-                                                visible="{path: 'myGoal>value', formatter: '.formatter.notWeightage'}"
-                                            />
-                                        </VBox>
-                                        <VBox width="100%" visible="{= !${device>/browser/mobile} }">
-                                            <OverflowToolbar width="100%" design="Transparent" style="Clear">
-                                                <HBox
-                                                    alignItems="Center"
-                                                    justifyContent="SpaceBetween"
+                                                        <HBox
+                                                            alignItems="Center"
+                                                            justifyContent="End"
+                                                        >
+                                                            <Button
+                                                                icon="{myGoal>add}"
+                                                                text="{myGoal>addText}"
+                                                                press="handleButtonPress"
+                                                                class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                                visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
+                                                            />
+                                                            <Button
+                                                                icon="{myGoal>delete}"
+                                                                press="handleButtonPress"
+                                                                class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                                visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
+                                                            />
+                                                        </HBox>
+                                                    </HBox>
+                                                </OverflowToolbar>
+
+                                                <TextArea
+                                                    value="{myGoal>value}"
                                                     width="100%"
+                                                    visible="{myGoal>isTA}"
                                                 >
-                                                    <Text
-                                                        text="{myGoal>text}"
-                                                        tooltip="{myGoal>text}"
-                                                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                        
+                                                    <layoutData>
+                                                        <FlexItemData
+                                                            growFactor="1"
+                                                        />
+                                                    </layoutData>
+                                                </TextArea>
+                                                <ComboBox
+                                                    selectedKey="3"
+                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isWght'}"
+                                                >
+                                                    <core:Item
+                                                        key="3"
+                                                        text="3"
+                                                    />
+                                                    <core:Item
+                                                        key="4"
+                                                        text="4"
+                                                    />
+                                                    <core:Item
+                                                        key="5"
+                                                        text="5"
                                                     />
 
+                                                    <core:Item
+                                                        key="50"
+                                                        text="50"
+                                                    />
+                                                </ComboBox>
+                                                <ComboBox
+                                                    selectedKey="3"
+                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isAS'}"
+                                                >
+                                                    <core:Item
+                                                        key="1"
+                                                        text="1"
+                                                    />
+                                                    <core:Item
+                                                        key="2"
+                                                        text="2"
+                                                    />
+                                                    <core:Item
+                                                        key="3"
+                                                        text="3"
+                                                    />
+
+                                                    <core:Item
+                                                        key="4"
+                                                        text="4"
+                                                    />
+                                                    <core:Item
+                                                        key="5"
+                                                        text="5"
+                                                    />
+                                                    <core:Item
+                                                        key="6"
+                                                        text="6"
+                                                    />
+                                                </ComboBox>
+                                            </VBox>
+                                            <VBox
+                                                width="100%"
+                                                visible="{= !${device>/browser/mobile} }"
+                                            >
+                                                <OverflowToolbar
+                                                    width="100%"
+                                                    design="Transparent"
+                                                    style="Clear"
+                                                >
                                                     <HBox
                                                         alignItems="Center"
-                                                        justifyContent="End"
+                                                        justifyContent="SpaceBetween"
+                                                        width="100%"
                                                     >
-                                                        <Button
-                                                            icon="{myGoal>add}"
-                                                            press="handleButtonPress"
-                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                            visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
+                                                        <Text
+                                                            text="{myGoal>text}"
+                                                            tooltip="{myGoal>text}"
+                                                            textAlign="Begin"
                                                         />
-                                                        <Button
-                                                            icon="{myGoal>delete}"
-                                                            press="handleButtonPress"
-                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                            visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
-                                                        />
+
+                                                        <HBox
+                                                            alignItems="Center"
+                                                            justifyContent="End"
+                                                        >
+                                                            <Button
+                                                                icon="{myGoal>add}"
+                                                                text="{myGoal>addText}"
+                                                                press="{path: 'myGoal>addPress', formatter: '.formatter.functionPress'}"
+                                                                class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                                visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
+                                                            />
+                                                            <Button
+                                                                icon="{myGoal>delete}"
+                                                                press="handleButtonPress"
+                                                                class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                                visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
+                                                            />
+                                                        </HBox>
                                                     </HBox>
-                                                </HBox>
-                                            </OverflowToolbar>
+                                                </OverflowToolbar>
 
-                                            <TextArea
-                                                value="{myGoal>value}"
-                                                width="100%"
-                                                visible="{path: 'myGoal>text', formatter: '.formatter.notWeightage'}"
-                                            >
-                                                <layoutData>
-                                                    <FlexItemData
-                                                        growFactor="1"
+                                                <TextArea
+                                                    value="{myGoal>value}"
+                                                    width="100%"
+                                                    visible="{myGoal>isTA}"
+                                                >
+                                                    <layoutData>
+                                                        <FlexItemData
+                                                            growFactor="1"
+                                                        />
+                                                    </layoutData>
+                                                </TextArea>
+                                                <ComboBox
+                                                    selectedKey="3"
+                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isWght'}"
+                                                >
+                                                    <core:Item
+                                                        key="3"
+                                                        text="3"
                                                     />
-                                                </layoutData>
-                                            </TextArea>
-                                            <ComboBox
-                                                selectedKey="3"
-                                                visible="{path: 'myGoal>text', formatter: '.formatter.Weightage'}"
-                                            >
-                                                <core:Item
-                                                    key="3"
-                                                    text="3"
-                                                />
-                                                <core:Item
-                                                    key="4"
-                                                    text="4"
-                                                />
-                                                <core:Item
-                                                    key="5"
-                                                    text="5"
-                                                />
+                                                    <core:Item
+                                                        key="4"
+                                                        text="4"
+                                                    />
+                                                    <core:Item
+                                                        key="5"
+                                                        text="5"
+                                                    />
 
-                                                <core:Item
-                                                    key="50"
-                                                    text="50"
-                                                />
-                                            </ComboBox>
-                                        </VBox>
-                                    </items>
-                                </FlexBox>
-                            </CustomTreeItem>
-                        </Tree>
+                                                    <core:Item
+                                                        key="50"
+                                                        text="50"
+                                                    />
+                                                </ComboBox>
+                                                <ComboBox
+                                                    selectedKey="3"
+                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isAS'}"
+                                                >
+                                                    <core:Item
+                                                        key="1"
+                                                        text="1"
+                                                    />
+                                                    <core:Item
+                                                        key="2"
+                                                        text="2"
+                                                    />
+                                                    <core:Item
+                                                        key="3"
+                                                        text="3"
+                                                    />
+
+                                                    <core:Item
+                                                        key="4"
+                                                        text="4"
+                                                    />
+                                                    <core:Item
+                                                        key="5"
+                                                        text="5"
+                                                    />
+                                                    <core:Item
+                                                        key="6"
+                                                        text="6"
+                                                    />
+                                                </ComboBox>
+                                            </VBox>
+                                        </items>
+                                    </FlexBox>
+                                </CustomTreeItem>
+                            </Tree>
+                        </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>

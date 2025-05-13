@@ -20,9 +20,12 @@ sap.ui.define([
                                     "value": "Key stratagic Priority value",
                                     "text": "Key stratagic Priority",
                                     "add": "sap-icon://add",
+                                    "addText": 'Add KRA',
                                     "delete": "sap-icon://delete",
                                     "visible": true,
                                     "editable": true,
+                                    "isTA":true,
+                                    "isDrpD":false,
                                     "nodes": [
                                         {
                                             "Key": "KRA",
@@ -31,7 +34,9 @@ sap.ui.define([
                                             "add": null,
                                             "delete": null,
                                             "visible": true,
-                                            "editable": true
+                                            "editable": true,
+                                            "isTA":true,
+                                            "isDrpD":false
                                         },
                                         {
                                             "Key": "KPI",
@@ -40,26 +45,40 @@ sap.ui.define([
                                             "add": null,
                                             "delete": null,
                                             "visible": true,
-                                            "editable": true
+                                            "editable": true,
+                                            "isTA":true,
+                                            "isDrpD":false
                                         },
                                         {
                                             "Key": "Target",
                                             "value": "Target value",
-                                            "text": "Target",
+                                            "text": "Annual Target",
+                                            "add": null,
+                                            "delete": null,
+                                            "visible": true,
+                                            "editable": true,
+                                            "isTA":true,
+                                            "isDrpD":false
+                                        },
+                                        {
+                                            "Key": "FFMmilestone",
+                                            "value": "First Four Monthly Milestones value",
+                                            "text": "First Four Monthly Milestones",
                                             "add": null,
                                             "delete": null,
                                             "visible": true,
                                             "editable": true
                                         },
                                         {
-                                            "Key": "Weightage (%)",
-                                            "value": "5",
-                                            "text": "Weightage",
+                                            "Key": "SFMmilestone",
+                                            "value": "Second Four Monthly Milestones value",
+                                            "text": "Second Four Monthly Milestones",
                                             "add": null,
                                             "delete": null,
                                             "visible": true,
                                             "editable": true
                                         },
+                                        
 
                                         {
                                             "Key": "FFMA:AE",
@@ -68,7 +87,9 @@ sap.ui.define([
                                             "add": null,
                                             "delete": null,
                                             "visible": true,
-                                            "editable": true
+                                            "editable": true,
+                                            "isTA":true,
+                                            "isDrpD":false
                                         }
                                         ,
 
@@ -79,8 +100,48 @@ sap.ui.define([
                                             "add": null,
                                             "delete": null,
                                             "visible": true,
-                                            "editable": true
-                                        }
+                                            "editable": true,
+                                            "isTA":true,
+                                            "isDrpD":false
+                                        },
+                                        {
+                                            "Key": "Weightage",
+                                            "value": "5",
+                                            "text": "Weightage  (%)",
+                                            "add": null,
+                                            "delete": null,
+                                            "visible": true,
+                                            "editable": true,
+                                            "isTA":false,
+                                            "isDrpD":true
+                                        },
+                                        {
+                                            "Key": "AS",
+                                            "value": "5",
+                                            "text": "Appraisee Score",
+                                            "add": 'sap-icon://information',
+                                            "addText":null,
+                                            "addPress":'onClickScoreInfo',
+                                            "delete": null,
+                                            "info":'sap-icon://information',
+                                            "visible": true,
+                                            "editable": true,
+                                            "isTA":false,
+                                            "isDrpD":true
+                                        },
+                                        {
+                                            "Key": "AS",
+                                            "value": "5",
+                                            "text": "Appraiser Score",
+                                            "add": 'sap-icon://information',
+                                            "addText":null,
+                                            "delete": null,
+                                            "info":'sap-icon://information',
+                                            "visible": true,
+                                            "editable": true,
+                                            "isTA":false,
+                                            "isDrpD":true
+                                        },
 
                                     ]
                                 }
@@ -193,15 +254,25 @@ sap.ui.define([
             }.bind(this));
         },
         formatter: {
-            Weightage: function (oText) {
+            isWght: function (oText) {
                 if (oText === 'Weightage') {
                     return true
                 }
                 return false
 
             },
-            notWeightage: function (oText) {
-                console.log(oText)
+            isAS:function(oText){
+                if (oText === 'Weightage') {
+                    return false
+                }
+                if (oText === 'AS') {
+                    return true
+                }
+                
+                return false
+            },
+            isTA: function (oText) {
+                console.log(oText, 'Yes')
                 if (oText === 'Weightage') {
                     return false
                 }
@@ -212,6 +283,9 @@ sap.ui.define([
                     return false
                 }
                 return true
+            },
+            functionPress: function(oText){
+                console.log(oText)
             }
 
         },
