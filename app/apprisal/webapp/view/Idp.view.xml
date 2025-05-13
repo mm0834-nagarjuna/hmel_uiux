@@ -81,7 +81,7 @@
                                             <Text text="Description" />
                                         </header>
                                     </Column>
-                                    <Column width="8rem">
+                                    <Column width="8rem" hAlign="Center" vAlign="Middle">
                                         <header>
                                             <Text text="No of Days" />
                                         </header>
