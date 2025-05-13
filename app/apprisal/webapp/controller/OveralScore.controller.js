@@ -15,7 +15,7 @@ sap.ui.define([
             let oView = this.getView();
         
            
-            if (oText && oText.includes("BSM Score")) {
+            if (oText && oText.includes("Goals")) {
                 if (!this._pDialog) {
                     this._pDialog = Fragment.load({
                         id: oView.getId(),
@@ -32,7 +32,7 @@ sap.ui.define([
                 }.bind(this));
             } else {
                 
-                console.log("Link does not contain 'BSM Score'. Dialog not opened.");
+                console.log("Link does not contain 'Goals'. Dialog not opened.");
             }
         }
         ,

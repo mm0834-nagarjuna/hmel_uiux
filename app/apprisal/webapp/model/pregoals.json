@@ -530,12 +530,12 @@
   "OverallScore": {
     "Section_Score": [
       {
-        "Section": "Common Organizational / Functional Goal - Individual Goal (BSM Score)",
+        "Section": "Goals",
         "link" : true,
         "text" : false,
-        "Appraisee": 5,
+        "Appraisee": 6,
         "Appraiser": 3,
-        "Reviewer": 4
+        "Reviewer": 6
       },
       {
         "Section": "Individual Development Plan",
