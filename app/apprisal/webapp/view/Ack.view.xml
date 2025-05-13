@@ -26,11 +26,11 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
-                        <VBox>
-                            <OverflowToolbar>
+                        <VBox width="80%">
+                            <OverflowToolbar style="Clear">
                                 <Title text="Target Setting" />
                             </OverflowToolbar>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Are you satisfied with the overall discussion?"
                                     class="sapUiSmallMarginEnd"
@@ -50,7 +50,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Are you clear regarding what is expected from you in this FY?"
                                     class="sapUiSmallMarginEnd"
@@ -70,7 +70,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Do you understand how your goals are aligned to the overall organizational goals?"
                                     class="sapUiSmallMarginEnd"
@@ -90,7 +90,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Did your appraiser discuss a plan to achieve the IDP?"
                                     class="sapUiSmallMarginEnd"
@@ -125,11 +125,11 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
-                        <VBox>
-                            <OverflowToolbar>
+                        <VBox width="80%">
+                            <OverflowToolbar style="Clear">
                                 <Title text="First Four Monthly" />
                             </OverflowToolbar>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween" >
                                 <Label
                                     text="Are you satisfied with the overall discussion?"
                                     class="sapUiSmallMarginEnd"
@@ -149,7 +149,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Has your Individual Development Plan (Plan vs Actual development Needs) been discussed?"
                                     class="sapUiSmallMarginEnd"
@@ -169,14 +169,15 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="How do you feel about the performance feedback received from your appraiser?"
                                     class="sapUiSmallMarginEnd"
                                 />
                                 <ComboBox
-                                    selectedKey="Developmental Feedback"
+                                    selectedKey="Non-Developmental Feedback"
                                     editable="{apprisalData>ackFFMCEdit}"
+                                    width="240px"
                                 >
                                     <core:Item
                                         key="Developmental Feedback"
@@ -203,11 +204,11 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
-                        <VBox>
-                            <OverflowToolbar>
+                        <VBox width="80%">
+                            <OverflowToolbar style="Clear">
                                 <Title text="Second Four Monthly" />
                             </OverflowToolbar>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Are you satisfied with the overall discussion?"
                                     class="sapUiSmallMarginEnd"
@@ -227,7 +228,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Has your Individual Development Plan (Plan vs Actual development Needs) been discussed?"
                                     class="sapUiSmallMarginEnd"
@@ -247,12 +248,13 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="How do you feel about the performance feedback received from your appraiser?"
                                     class="sapUiSmallMarginEnd"
                                 />
                                 <ComboBox
+                                width="240px"
                                     selectedKey="Developmental Feedback"
                                     editable="{apprisalData>ackSFMCEdit}"
                                 >
@@ -281,11 +283,11 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
-                        <VBox>
-                            <OverflowToolbar>
+                        <VBox width="80%">
+                            <OverflowToolbar style="Clear">
                                 <Title text="Year End Review" />
                             </OverflowToolbar>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Are you satisfied with the overall discussion?"
                                     class="sapUiSmallMarginEnd"
@@ -305,7 +307,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="Has your Individual Development Plan (Plan vs Actual development Needs) been discussed?"
                                     class="sapUiSmallMarginEnd"
@@ -325,7 +327,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="How do you feel about the performance feedback received from your appraiser?"
                                     class="sapUiSmallMarginEnd"
@@ -333,6 +335,7 @@
                                 <ComboBox
                                     selectedKey="Developmental Feedback"
                                     editable="{apprisalData>ackANCEdit}"
+                                    width="240px"
                                 >
                                     <core:Item
                                         key="Developmental Feedback"
@@ -344,7 +347,7 @@
                                     />
                                 </ComboBox>
                             </HBox>
-                            <HBox alignItems="Center">
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
                                 <Label
                                     text="How often your appraiser shares ongoing feedback about your performance?"
                                     class="sapUiSmallMarginEnd"
