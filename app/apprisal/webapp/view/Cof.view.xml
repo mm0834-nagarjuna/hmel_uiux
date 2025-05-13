@@ -1,565 +1,324 @@
 <mvc:View
     controllerName="apprisal.controller.Cof"
-	xmlns:core="sap.ui.core"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:uxap="sap.uxap"
-	xmlns="sap.m"
-	xmlns:tnt="sap.tnt"
-	xmlns:blockcolor="project1.SharedBlocks"
-	xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:uxap="sap.uxap"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    xmlns:blockcolor="project1.SharedBlocks"
+    xmlns:l="sap.ui.layout"
     height="90%"
 >
-	<uxap:ObjectPageLayout
+    <uxap:ObjectPageLayout
         upperCaseAnchorBar="false"
         showFooter="true"
     >
-		<uxap:layoutData>
-			<FlexItemData growFactor="1" />
-		</uxap:layoutData>
-		<uxap:sections>
-            <uxap:ObjectPageSection 
-                visible="{= !${apprisalData>coFgKSPEdit} }"
-                >
-            
-				<uxap:subSections>
-                
-					<uxap:ObjectPageSubSection
+        <uxap:layoutData>
+            <FlexItemData growFactor="1" />
+        </uxap:layoutData>
+        <uxap:sections>
+            <uxap:ObjectPageSection visible="{= !${apprisalData>coFgKSPEdit} }">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="Common Organizational Goal"
                         visible="{= !${apprisalData>coFgKSPEdit} }"
                         class="mvnDummyEmptyObjectPageSubSection"
                     >
-						<HBox/>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection 
-                visible="{apprisalData>coFgKSPEdit}"
-                >
-            
-				<uxap:subSections>
-                
-					<uxap:ObjectPageSubSection
-                        titleUppercase="false"
-                        title="Common Organizational"
-                        visible="{apprisalData>coFgKSPEdit}"
+                        <HBox />
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection>
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                    titleUppercase="false"
+                        title="1.1"
+                        
                     >
-						<OverflowToolbar
-                            class="mvnObjectPageLayoutTitleOverflowToolbar"   
+                        <Tree
+                            id="Tree"
+                            items="{myGoal>/COF/KSP001}"
                         >
-							<ToolbarSpacer />
-							<Button
-                            icon="sap-icon://copy"
-                                text="Copy Goal"
-                                type="Ghost"
-                                press="onClickPredefined"
-                            />
-							<Button
-                            icon="sap-icon://create-form"
-                                text="Add KPA"
-                                type="Ghost"
-                                press="onItemSelect"
-                            />
-							<MenuButton
-                                text="Upload/Download"
-                                buttonMode="Split"
-                                defaultAction="onDefaultAction"
-                                beforeMenuOpen="onBeforeMenuOpen"
-                            >
-								<menu>
-									<Menu itemSelected="onMenuAction">
-										<MenuItem
-                                        
-                                            text="Upload"
-                                            icon="sap-icon://upload"
-                                        />
-										<MenuItem
-                                            text="Download Template"
-                                            icon="sap-icon://download"
-                                        />
-									</Menu>
-								</menu>
-							</MenuButton>
-						</OverflowToolbar>
-						<!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection
-                titleUppercase="false"
-                title="1.1"
-                showTitle="false"
-            >
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false">
-						<VBox>
-							<OverflowToolbar>
-								<Title text="1.1 Key Performance Area" />
-                                <Button icon="sap-icon://delete"/>
-								<ToolbarSpacer />
-                                <Button icon="sap-icon://add-employee" text="Appraiser" press="onClickAddAppraiser"/>
-							</OverflowToolbar>
-							
-							<Label
-                                text="Key Strategic Priority"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Key Strategic Priority"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgKSPEdit}"
-                            />
-							<Label
-                                text="Key Results Area"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Key Results Area"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgKSPEdit}"
-                            />
-							<Label
-                                text="Key Performance Index"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Key Performance Index"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgKPIEdit}"
-                            />
-							<Label
-                                text="Annual Target"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Annual Target"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgTargetEdit}"
-                            />
-                            <Label
-                                text="First Four Monthly Milestones"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="First Four Monthly Milestones"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgTargetEdit}"
-                            />
-							<Label
-                                text="Second Four Monthly Milestones"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Second Four Monthly Milestones"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgTargetEdit}"
-                            />
-							<!--From here need to add values  -->
-							<Label
-                                text="First Four Monthly Achievement : Appraisee"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgffmaAE}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="First Four Monthly Achievement : Appraisee"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>cofgffmaAEEdit}"
-								visible="{apprisalData>cofgffmaAE}"
-                            />
-							<Label
-                                text="First Four Monthly Feedback: Appraiser"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgffmaAR}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="First Four Monthly Feedback: Appraiser"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgffmaAR}"
-                                editable="{apprisalData>cofgffmaAREdit}"
-                            />
-							<Label
-                                text="Second Four Monthly Achievement : Appraisee"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgsfmaAE}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Second Four Monthly Achievement : Appraisee"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgsfmaAE}"
-                                editable="{apprisalData>cofgsfmaAEEdit}"
-                            />
-							<Label
-                                text="Second Four Monthly Feedback: Appraiser"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgsfmaAR}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Second Four Monthly Feedback: Appraiser"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgsfmaAR}"
-                                editable="{apprisalData>cofgsfmaAREdit}"
-                            />
-							<Label
-                                text="Annual Achievement : Appraisee"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgaaAEE}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Annual Achievement : Appraisee"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgaaAEE}"
-                                editable="{apprisalData>cofgaaAEEdit}"
-                            />
-							<Label
-                                text="Annual Feedback : Appraiser"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgafAER}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Annual Feedback : Appraiser"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgafAER}"
-                                editable="{apprisalData>cofgafAEREdit}"
-                            />
+                            <CustomTreeItem>
+                                <FlexBox
+                                    alignItems="Center"
+                                    width="100%"
+                                >
+                                    <items>
+                                        <VBox
+                                            width="100%"
+                                            visible="{= ${device>/browser/mobile} }"
+                                        >
+                                            <OverflowToolbar width="100%" design="Transparent">
+                                                <HBox
+                                                    alignItems="Center"
+                                                    justifyContent="SpaceBetween"
+                                                    width="100%"
+                                                >
+                                                    <Text
+                                                        text="{myGoal>text}"
+                                                        tooltip="{myGoal>text}"
+                                                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                    />
 
-                            <HBox
-                                alignItems="Center"
-                                class="sapUiSmallMarginTop"
-                             >
-								<Label
-                                    text="Weightage(%)"
-                                    labelFor="COF_11_WEIGTAGE"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>coFgWeightage}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="5"
-                                    width="10%"
-									visible="{apprisalData>coFgWeightage}"
-									editable="{apprisalData>coFgWeightageEdit}"
+                                                    <HBox
+                                                        alignItems="Center"
+                                                        justifyContent="End"
+                                                    >
+                                                        <Button
+                                                            icon="{myGoal>add}"
+                                                            press="handleButtonPress"
+                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                            visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
+                                                        />
+                                                        <Button
+                                                            icon="{myGoal>delete}"
+                                                            press="handleButtonPress"
+                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                            visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
+                                                        />
+                                                    </HBox>
+                                                </HBox>
+                                            </OverflowToolbar>
+
+                                            <TextArea
+                                                value="{myGoal>value}"
+                                                width="100%"
+                                                visible="{path: 'myGoal>text', formatter: '.formatter.notWeightage'}"
+                                            />
+                                            <ComboBox
+                                                selectedKey="3"
+                                                visible="{path: 'myGoal>text', formatter: '.formatter.Weightage'}"
+                                            >
+                                                <core:Item
+                                                    key="3"
+                                                    text="3"
+                                                />
+                                                <core:Item
+                                                    key="4"
+                                                    text="4"
+                                                />
+                                                <core:Item
+                                                    key="5"
+                                                    text="5"
+                                                />
+
+                                                <core:Item
+                                                    key="50"
+                                                    text="50"
+                                                />
+                                            </ComboBox>
+                                        </VBox>
+                                        <VBox width="100%" visible="{= !${device>/browser/mobile} }">
+                                            <OverflowToolbar width="100%" design="Transparent">
+                                                <HBox
+                                                    alignItems="Center"
+                                                    justifyContent="SpaceBetween"
+                                                    width="100%"
+                                                >
+                                                    <Text
+                                                        text="{myGoal>text}"
+                                                        tooltip="{myGoal>text}"
+                                                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                        
+                                                    />
+
+                                                    <HBox
+                                                        alignItems="Center"
+                                                        justifyContent="End"
+                                                    >
+                                                        <Button
+                                                            icon="{myGoal>add}"
+                                                            press="handleButtonPress"
+                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                            visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
+                                                        />
+                                                        <Button
+                                                            icon="{myGoal>delete}"
+                                                            press="handleButtonPress"
+                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                            visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
+                                                        />
+                                                    </HBox>
+                                                </HBox>
+                                            </OverflowToolbar>
+
+                                            <TextArea
+                                                value="{myGoal>value}"
+                                                width="100%"
+                                                visible="{path: 'myGoal>text', formatter: '.formatter.notWeightage'}"
+                                            >
+                                                <layoutData>
+                                                    <FlexItemData
+                                                        growFactor="1"
+                                                    />
+                                                </layoutData>
+                                            </TextArea>
+                                            <ComboBox
+                                                selectedKey="3"
+                                                visible="{path: 'myGoal>text', formatter: '.formatter.Weightage'}"
+                                            >
+                                                <core:Item
+                                                    key="3"
+                                                    text="3"
+                                                />
+                                                <core:Item
+                                                    key="4"
+                                                    text="4"
+                                                />
+                                                <core:Item
+                                                    key="5"
+                                                    text="5"
+                                                />
+
+                                                <core:Item
+                                                    key="50"
+                                                    text="50"
+                                                />
+                                            </ComboBox>
+                                        </VBox>
+                                    </items>
+                                </FlexBox>
+                            </CustomTreeItem>
+                        </Tree>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+             <uxap:ObjectPageSection>
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                    titleUppercase="false"
+                        title="1.2"
+                       
+                    >
+                        <Tree
+                            id="Tree2"
+                            items="{myGoal>/COF/KSP002}"
+                        >
+                            <CustomTreeItem>
+                                <FlexBox
+                                    alignItems="Center"
+                                    width="100%"
                                 >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								<Label
-                                    text="Appraisee Score"
-									visible="{apprisalData>cofgaaAEE}"
-                                    
-                                />
-                                <Button
-                                    icon="sap-icon://information"
-                                    type="Transparent"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>cofgaaAEE}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="3"
-                                    width="10%"
-									visible="{apprisalData>cofgaaAEE}"
-									editable="{apprisalData>cofgaaAEEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								<Label
-                                    text="Appraiser Score"
-                                    visible="{apprisalData>coFgARScore}"
-                                />
-                                <Button
-                                    icon="sap-icon://information"
-                                    type="Transparent"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>coFgARScore}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="3"
-                                    width="10%"
-                                    visible="{apprisalData>coFgARScore}"
-									editable="{apprisalData>coFgARScoreEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								
-							</HBox>
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection
-                titleUppercase="false"
-                title="1.2"
-                showTitle="false"
-            >
-				<uxap:subSections>
-					<uxap:ObjectPageSubSection titleUppercase="false">
-						<VBox class="sapUiSmallMarginBottom">
-							<OverflowToolbar>
-								<Title text="1.2 Key Performance Area" />
-								<Button icon="sap-icon://delete"/>
-								<ToolbarSpacer />
-                                <Button icon="sap-icon://add-employee" text="Appraiser"/>
-							</OverflowToolbar>
-							
-							<Label
-                                text="Key Strategic Priority"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Key Strategic Priority"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgKSPEdit}"
-                            />
-							<Label
-                                text="Key Results Area"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Key Results Area"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgKSPEdit}"
-                            />
-							<Label
-                                text="Key Performance Index"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Key Performance Index"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgKPIEdit}"
-                            />
-							<Label
-                                text="Annual Target"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Annual Target"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgTargetEdit}"
-                            />
-							<Label
-                                text="First Four Monthly Milestones"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="First Four Monthly Milestones"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgTargetEdit}"
-                            />
-							<Label
-                                text="Second Four Monthly Milestones"
-                                class="sapUiSmallMarginTop"
-                            />
-							<TextArea
-                                width="100%"
-                                value="First Four Monthly Milestones"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>coFgTargetEdit}"
-                            />
-							<!--From here need to add values  -->
-							<Label
-                                text="First Four Monthly Achievement : Appraisee"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgffmaAE}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="First Four Monthly Achievement : Appraisee"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-                                editable="{apprisalData>cofgffmaAEEdit}"
-								visible="{apprisalData>cofgffmaAE}"
-                            />
-							<Label
-                                text="First Four Monthly Feedback: Appraiser"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgffmaAR}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="First Four Monthly Feedback: Appraiser"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgffmaAR}"
-                                editable="{apprisalData>cofgffmaAREdit}"
-                            />
-							<Label
-                                text="Second Four Monthly Achievement : Appraisee"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgsfmaAE}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Second Four Monthly Achievement : Appraisee"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgsfmaAE}"
-                                editable="{apprisalData>cofgsfmaAEEdit}"
-                            />
-							<Label
-                                text="Second Four Monthly Feedback: Appraiser"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgsfmaAR}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Second Four Monthly Feedback: Appraiser"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgsfmaAR}"
-                                editable="{apprisalData>cofgsfmaAREdit}"
-                            />
-							<Label
-                                text="Annual Achievement : Appraisee"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgaaAEE}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Annual Achievement : Appraisee"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgaaAEE}"
-                                editable="{apprisalData>cofgaaAEEdit}"
-                            />
-							<Label
-                                text="Annual Feedback : Appraiser"
-                                class="sapUiSmallMarginTop"
-								visible="{apprisalData>cofgafAER}"
-                            />
-							<TextArea
-                                width="100%"
-                                value="Annual Feedback : Appraiser"
-                                growing="true"
-                                class="sapUiSmallMarginBottom"
-								visible="{apprisalData>cofgafAER}"
-                                editable="{apprisalData>cofgafAEREdit}"
-                            />
-                            <HBox
-                                alignItems="Center"
-                                class="sapUiSmallMarginTop"
-                             >
-								<Label
-                                    text="Weightage(%)"
-                                    labelFor="COF_11_WEIGTAGE"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>coFgWeightage}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="5"
-                                    width="10%"
-									visible="{apprisalData>coFgWeightage}"
-									editable="{apprisalData>coFgWeightageEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								<Label
-                                    text="Appraisee Score"
-									visible="{apprisalData>cofgaaAEE}"
-                                    
-                                />
-                                <Button
-                                    icon="sap-icon://information"
-                                    type="Transparent"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>cofgaaAEE}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="3"
-                                    width="10%"
-									visible="{apprisalData>cofgaaAEE}"
-									editable="{apprisalData>cofgaaAEEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								<Label
-                                    text="Appraiser Score"
-                                    visible="{apprisalData>coFgARScore}"
-                                />
-                                <Button
-                                    icon="sap-icon://information"
-                                    type="Transparent"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    class="sapUiSmallMarginEnd"
-									visible="{apprisalData>coFgARScore}"
-                                />
-								<ComboBox
-                                    items="{/numbers}"
-                                    value="3"
-                                    width="10%"
-                                    visible="{apprisalData>coFgARScore}"
-									editable="{apprisalData>coFgARScoreEdit}"
-                                >
-									<core:Item
-                                        key="{key}"
-                                        text="{text}"
-                                    />
-								</ComboBox>
-								
-							</HBox>
-						</VBox>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-		</uxap:sections>
-	</uxap:ObjectPageLayout>
+                                    <items>
+                                        <VBox
+                                            width="100%"
+                                            visible="{= ${device>/browser/mobile} }"
+                                        >
+                                            <OverflowToolbar width="100%" design="Transparent">
+                                                <HBox
+                                                    alignItems="Center"
+                                                    justifyContent="SpaceBetween"
+                                                    width="100%"
+                                                >
+                                                    <Text
+                                                        text="{myGoal>text}"
+                                                        tooltip="{myGoal>text}"
+                                                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                    />
+
+                                                    <HBox
+                                                        alignItems="Center"
+                                                        justifyContent="End"
+                                                    >
+                                                        <Button
+                                                            icon="{myGoal>add}"
+                                                            press="handleButtonPress"
+                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                            visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
+                                                        />
+                                                        <Button
+                                                            icon="{myGoal>delete}"
+                                                            press="handleButtonPress"
+                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                            visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
+                                                        />
+                                                    </HBox>
+                                                </HBox>
+                                            </OverflowToolbar>
+
+                                            <TextArea
+                                                value="{myGoal>value}"
+                                                width="100%"
+                                                visible="{path: 'myGoal>value', formatter: '.formatter.notWeightage'}"
+                                            />
+                                        </VBox>
+                                        <VBox width="100%" visible="{= !${device>/browser/mobile} }">
+                                            <OverflowToolbar width="100%" design="Transparent">
+                                                <HBox
+                                                    alignItems="Center"
+                                                    justifyContent="SpaceBetween"
+                                                    width="100%"
+                                                >
+                                                    <Text
+                                                        text="{myGoal>text}"
+                                                        tooltip="{myGoal>text}"
+                                                        class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                        
+                                                    />
+
+                                                    <HBox
+                                                        alignItems="Center"
+                                                        justifyContent="End"
+                                                    >
+                                                        <Button
+                                                            icon="{myGoal>add}"
+                                                            press="handleButtonPress"
+                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                            visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
+                                                        />
+                                                        <Button
+                                                            icon="{myGoal>delete}"
+                                                            press="handleButtonPress"
+                                                            class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+                                                            visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
+                                                        />
+                                                    </HBox>
+                                                </HBox>
+                                            </OverflowToolbar>
+
+                                            <TextArea
+                                                value="{myGoal>value}"
+                                                width="100%"
+                                                visible="{path: 'myGoal>text', formatter: '.formatter.notWeightage'}"
+                                            >
+                                                <layoutData>
+                                                    <FlexItemData
+                                                        growFactor="1"
+                                                    />
+                                                </layoutData>
+                                            </TextArea>
+                                            <ComboBox
+                                                selectedKey="3"
+                                                visible="{path: 'myGoal>text', formatter: '.formatter.Weightage'}"
+                                            >
+                                                <core:Item
+                                                    key="3"
+                                                    text="3"
+                                                />
+                                                <core:Item
+                                                    key="4"
+                                                    text="4"
+                                                />
+                                                <core:Item
+                                                    key="5"
+                                                    text="5"
+                                                />
+
+                                                <core:Item
+                                                    key="50"
+                                                    text="50"
+                                                />
+                                            </ComboBox>
+                                        </VBox>
+                                    </items>
+                                </FlexBox>
+                            </CustomTreeItem>
+                        </Tree>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
 </mvc:View>

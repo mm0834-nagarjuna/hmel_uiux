@@ -28,6 +28,10 @@
       "PreDefineGoal":{
           "uri": "model/pregoals.json",
           "type": "JSON"
+        },
+        "GoalsTree":{
+          "uri": "model/pregoals.json",
+          "type": "JSON"
         }
     }
   },
@@ -85,6 +89,10 @@
       "CustomData":{
         "type": "sap.ui.model.json.JSONModel"
 
+      },
+      "GoalsTree": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "GoalsTree"
       }
     },
     "resources": {
