@@ -90,7 +90,7 @@
                 <uxap:subSections >
                     <uxap:ObjectPageSubSection
                     titleUppercase="false"
-                        title="1.1 Key Performance Area"
+                        title="1.1 "
                         
                     >
                         <Tree
@@ -242,11 +242,11 @@
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
-             <uxap:ObjectPageSection title="1.2">
+             <uxap:ObjectPageSection >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                     titleUppercase="false"
-                        title="1.2 Key Performance Area"
+                        title="1.2 "
                        
                     >
                         <Tree
