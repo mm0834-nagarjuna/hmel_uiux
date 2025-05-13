@@ -82,14 +82,14 @@
             </uxap:ObjectPageSection>
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="1"
+                title="2.1"
                 showTitle="false"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="1 . Key Performance Area" />
+                                <Title text="2.1  Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
 
@@ -129,15 +129,37 @@
                                 editable="{apprisalData>igKPIEdit}"
                             />
                             <Label
-                                text="Target"
+                                text="Annual Target"
                                 class="sapUiSmallMarginTop"
                             />
                             <TextArea
                                 width="100%"
-                                value="Target"
+                                value="Annual Target"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>igTargetEdit}"
+                            />
+                            <Label
+                                text="First Four Monthly Milestones"
+                                class="sapUiSmallMarginTop"
+                            />
+							<TextArea
+                                width="100%"
+                                value="First Four Monthly Milestones"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>coFgTargetEdit}"
+                            />
+							<Label
+                                text="Second Four Monthly Milestones"
+                                class="sapUiSmallMarginTop"
+                            />
+							<TextArea
+                                width="100%"
+                                value="Second Four Monthly Milestones"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>coFgTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
@@ -294,14 +316,14 @@
             </uxap:ObjectPageSection>
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="2"
+                title="2.2"
                 showTitle="false"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="2 . Key Performance Area" />
+                                <Title text="2.2  Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
 
@@ -340,15 +362,37 @@
                                 editable="{apprisalData>igKPIEdit}"
                             />
                             <Label
-                                text="Target"
+                                text="Annual Target"
                                 class="sapUiSmallMarginTop"
                             />
                             <TextArea
                                 width="100%"
-                                value="Target"
+                                value="Annual Target"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>igTargetEdit}"
+                            />
+                            <Label
+                                text="First Four Monthly Milestones"
+                                class="sapUiSmallMarginTop"
+                            />
+							<TextArea
+                                width="100%"
+                                value="First Four Monthly Milestones"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>coFgTargetEdit}"
+                            />
+							<Label
+                                text="Second Four Monthly Milestones"
+                                class="sapUiSmallMarginTop"
+                            />
+							<TextArea
+                                width="100%"
+                                value="Second Four Monthly Milestones"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>coFgTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
@@ -505,14 +549,14 @@
             </uxap:ObjectPageSection>
             <uxap:ObjectPageSection
                 titleUppercase="false"
-                title="3"
+                title="2.3"
                 showTitle="false"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection titleUppercase="false">
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="3 . Key Performance Area" />
+                                <Title text="2.3  Key Performance Area" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
 
@@ -551,15 +595,37 @@
                                 editable="{apprisalData>igKPIEdit}"
                             />
                             <Label
-                                text="Target"
+                                text="Annual Target"
                                 class="sapUiSmallMarginTop"
                             />
                             <TextArea
                                 width="100%"
-                                value="Target"
+                                value="Annual Target"
                                 growing="true"
                                 class="sapUiSmallMarginBottom"
                                 editable="{apprisalData>igTargetEdit}"
+                            />
+                            <Label
+                                text="First Four Monthly Milestones"
+                                class="sapUiSmallMarginTop"
+                            />
+							<TextArea
+                                width="100%"
+                                value="First Four Monthly Milestones"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>coFgTargetEdit}"
+                            />
+							<Label
+                                text="Second Four Monthly Milestones"
+                                class="sapUiSmallMarginTop"
+                            />
+							<TextArea
+                                width="100%"
+                                value="Second Four Monthly Milestones"
+                                growing="true"
+                                class="sapUiSmallMarginBottom"
+                                editable="{apprisalData>coFgTargetEdit}"
                             />
                             <Label
                                 text="First Four Monthly Achievement:Appraisee"
