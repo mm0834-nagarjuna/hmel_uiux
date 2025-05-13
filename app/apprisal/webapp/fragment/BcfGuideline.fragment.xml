@@ -1,0 +1,54 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:layout="sap.ui.layout"
+>
+    <Dialog
+        id="BehaviouralGuideline"
+        title="Behavioural Competency Guidelines"
+        class="sapUiResponsivePadding"
+    >
+        <VBox class="sapUiSmallMargin">
+            <Text
+                text="Use the following pointers while filling your Behavioural Competency:"
+            />
+
+            <VBox class="sapUiSmallMarginTop">
+                <Label text="1. Choose Wisely:" />
+                <Text
+                    text="Select 2 - 3 key competencies relevant to your role or growth (e.g., communication, leadership, teamwork)." />
+            </VBox>
+
+            <VBox class="sapUiSmallMarginTop">
+                <Label text="2. Be Honest:" />
+                <Text
+                    text="Pick areas where improvement will truly help you." />
+            </VBox>
+
+            <VBox class="sapUiSmallMarginTop">
+                <Label text="3. Avoid Overload:" />
+                <Text
+                    text="Focus on quality, not quantity." />
+            </VBox>
+
+            <VBox class="sapUiSmallMarginTop">
+                <Label text="4. Plan Actions:" />
+                <Text
+                    text="For each, define how you'll improve (e.g., training, feedback, new responsibilities)." />
+            </VBox>
+
+            <VBox class="sapUiSmallMarginTop">
+                <Label text="5. Discuss with Manager:" />
+                <Text
+                    text="Align choices with role expectations." />
+            </VBox>
+        </VBox>
+
+        <endButton>
+            <Button
+                text="Close"
+                press=".onClickGuidelineCancel"
+            />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

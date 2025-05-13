@@ -69,7 +69,7 @@ sap.ui.define([
             if (!this._pDialog1) {
                 this._pDialog1 = Fragment.load({
                     id: oView.getId(),
-                    name: "apprisal.fragment.Guideline",
+                    name: "apprisal.fragment.BcfGuideline",
                     controller: this
                 }).then(function(oDialog){
                     oView.addDependent(oDialog);

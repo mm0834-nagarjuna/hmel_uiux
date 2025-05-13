@@ -30,17 +30,9 @@
                                 <Title text="Competencies" />
                                 <FormattedText htmlText="{/HTML}"  visible="{= !${device>/browser/mobile} }"/>
                                 <ToolbarSpacer />
-                                <!-- <Button
-                                icon="sap-icon://legend"
-                                    text="Score Description"
-                                    type="Emphasized"
-                                    press="onClickScoreInfo"
-                                    ariaLabelledBy="actionButtonLabel"
-                                    visible="{apprisalData>bcfANSC}"
-                                /> -->
                                 <Button
                                     icon="sap-icon://document-text"
-                                    text="Guideline"
+                                    text="Guidelines"
                                     type="Emphasized"
                                     press="onClickGuideline"
                                 />

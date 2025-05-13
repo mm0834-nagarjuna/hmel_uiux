@@ -16,66 +16,362 @@
             <FlexItemData growFactor="1" />
         </uxap:layoutData>
         <uxap:sections>
+            <!-- Target Setting -->
+
             <uxap:ObjectPageSection
                 titleUppercase="false"
+                title="Target Setting"
                 showTitle="false"
+                visible="{apprisalData>ackTSC}"
             >
                 <uxap:subSections>
-                    <uxap:ObjectPageSubSection
-                        title="Acknowledgement"
-                        titleUppercase="false"
-                        visible="{apprisalData>ackTSC}"
-                    >
-                            <!-- Table -->
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="Target Setting" />
+                            </OverflowToolbar>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Are you satisfied with the overall discussion?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackTSCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Are you clear regarding what is expected from you in this FY?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackTSCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Do you understand how your goals are aligned to the overall organizational goals?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackTSCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Did your appraiser discuss a plan to achieve the IDP?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackTSCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
 
-                            <Table
-                                id="AckTable"
-                                items="{
-									path : 'PreDefineGoal>/Acknowledgements',	
-									templateShareable: false
-									
-								}"
-                                class="sapUiSmallMarginBottom"
-                            >
-                                <columns>
-                                    <Column>
-                                        <header>
-                                            <Text text="Acknowledgement"/>
-                                        </header>
-                                    </Column>
-                                    <Column>
-                                        <header>
-                                            <Text
-                                                text="Are you satisfied with the discussion ?"
-                                            />
-                                        </header>
-                                    </Column>
-                                </columns>
-                                <items>
-                                    <ColumnListItem vAlign="Top">
-                                        <cells>
-                                            <Text
-                                                text="{PreDefineGoal>Stage}"
-                                                width="100%"
-                                            />
-                                            <ComboBox
-                                                selectedKey="Yes"
-                                                width="100px"
-                                                editable="{PreDefineGoal>Editable}"
-                                            >
-                                                <core:Item
-                                                    key="Yes"
-                                                    text="Yes"
-                                                />
-                                                <core:Item
-                                                    key="No"
-                                                    text="No"
-                                                />
-                                            </ComboBox>
-                                        </cells>
-                                    </ColumnListItem>
-                                </items>
-                            </Table>
+<!-- First Four Monthly -->
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="First Four Monthly"
+                showTitle="false"
+                visible="{apprisalData>ackFFMC}"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="First Four Monthly" />
+                            </OverflowToolbar>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Are you satisfied with the overall discussion?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackFFMCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Has your Individual Development Plan (Plan vs Actual development Needs) been discussed?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackFFMCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="How do you feel about the performance feedback received from your appraiser?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Developmental Feedback"
+                                    editable="{apprisalData>ackFFMCEdit}"
+                                >
+                                    <core:Item
+                                        key="Developmental Feedback"
+                                        text="Developmental Feedback"
+                                    />
+                                    <core:Item
+                                        key="Non-Developmental Feedback"
+                                        text="Non-Developmental Feedback"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+<!-- Second Four Monthly -->
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Second Four Monthly"
+                showTitle="false"
+                visible="{apprisalData>ackSFMC}"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="Second Four Monthly" />
+                            </OverflowToolbar>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Are you satisfied with the overall discussion?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackSFMCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Has your Individual Development Plan (Plan vs Actual development Needs) been discussed?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackSFMCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="How do you feel about the performance feedback received from your appraiser?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Developmental Feedback"
+                                    editable="{apprisalData>ackSFMCEdit}"
+                                >
+                                    <core:Item
+                                        key="Developmental Feedback"
+                                        text="Developmental Feedback"
+                                    />
+                                    <core:Item
+                                        key="Non-Developmental Feedback"
+                                        text="Non-Developmental Feedback"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                        </VBox>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+<!-- Year End Review -->
+
+            <uxap:ObjectPageSection
+                titleUppercase="false"
+                title="Year End Review"
+                showTitle="false"
+                visible="{apprisalData>ackANC}"
+            >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection titleUppercase="false">
+                        <VBox>
+                            <OverflowToolbar>
+                                <Title text="Year End Review" />
+                            </OverflowToolbar>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Are you satisfied with the overall discussion?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackANCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="Has your Individual Development Plan (Plan vs Actual development Needs) been discussed?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Yes"
+                                    width="100px"
+                                    editable="{apprisalData>ackANCEdit}"
+                                >
+                                    <core:Item
+                                        key="Yes"
+                                        text="Yes"
+                                    />
+                                    <core:Item
+                                        key="No"
+                                        text="No"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="How do you feel about the performance feedback received from your appraiser?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Developmental Feedback"
+                                    editable="{apprisalData>ackANCEdit}"
+                                >
+                                    <core:Item
+                                        key="Developmental Feedback"
+                                        text="Developmental Feedback"
+                                    />
+                                    <core:Item
+                                        key="Non-Developmental Feedback"
+                                        text="Non-Developmental Feedback"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center">
+                                <Label
+                                    text="How often your appraiser shares ongoing feedback about your performance?"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <ComboBox
+                                    selectedKey="Ongoing"
+                                    editable="{apprisalData>ackANCEdit}"
+                                >
+                                    <core:Item
+                                        key="Ongoing"
+                                        text="Ongoing"
+                                    />
+                                    <core:Item
+                                        key="Monthly"
+                                        text="Monthly"
+                                    />
+                                    <core:Item
+                                        key="During Four monthly review"
+                                        text="During Four monthly review"
+                                    />
+                                    <core:Item
+                                        key="During Year End Review"
+                                        text="During Year End Review"
+                                    />
+                                </ComboBox>
+                            </HBox>
+                        </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
