@@ -96,7 +96,7 @@
                 >
 					<tnt:NavigationList>
                         <tnt:NavigationListItem
-                            text="General"
+                            text="Appraisee Details"
                             icon="sap-icon://business-card"
                             selectable="true"
                             key="apprisal.view.Gen"
