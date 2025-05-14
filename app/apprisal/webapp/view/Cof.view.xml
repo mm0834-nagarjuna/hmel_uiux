@@ -7,6 +7,7 @@
     xmlns:tnt="sap.tnt"
     xmlns:blockcolor="project1.SharedBlocks"
     xmlns:l="sap.ui.layout"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
     height="90%"
 >
     <uxap:ObjectPageLayout
@@ -238,7 +239,8 @@
                                                             <Button
                                                                 icon="{myGoal>add}"
                                                                 text="{myGoal>addText}"
-                                                                press="{myGoal>addPress}"
+                                                                custom:field="{myGoal>field}" 
+                                                                press=".onClickScoreInfo"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                                 visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
                                                             />

@@ -211,11 +211,12 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <Title text="Individual Goals" />
-                            <Table
+                            <!-- <Table
                                 items="{
 									path : 'PreDefineGoal>/Scorecard/Appraiser/Common_Organization_Goals'
 								}"
-                            >
+                                inset="true"
+                             >
                                 <columns>
                                     <Column>
                                         <header>
@@ -285,7 +286,95 @@
                                         </cells>
                                     </ColumnListItem>
                                 </items>
-                            </Table>
+                            </Table> -->
+                            <Tree
+                                    id="Tree3"
+                                    items="{PreDefineGoal>/Scorecard/Appraiser/COF/KSP001}"
+                                >
+                                    <CustomTreeItem>
+                                        <FlexBox
+                                            alignItems="Center"
+                                            width="100%"
+                                        >
+                                            <items>
+                                                <VBox
+                                                    width="100%"
+                                                    visible="{= ${device>/browser/mobile} }"
+                                                 >
+                                                    <OverflowToolbar
+                                                        width="100%"
+                                                        design="Transparent"
+                                                        style="Clear"
+                                                    >
+                                                        <HBox
+                                                            alignItems="Center"
+                                                            justifyContent="SpaceBetween"
+                                                            width="100%"
+                                                        >
+                                                            <Text
+                                                                text="{PreDefineGoal>text}"
+                                                                tooltip="{PreDefineGoal>text}"
+                                                                textAlign="Begin"
+                                                            />
+
+                                                           
+                                                        </HBox>
+                                                    </OverflowToolbar>
+
+                                                    <TextArea
+                                                        value="{PreDefineGoal>value}"
+                                                        width="100%"
+                                                        editable="false"
+                                                    >
+                                                        <layoutData>
+                                                            <FlexItemData
+                                                                growFactor="1"
+                                                            />
+                                                        </layoutData>
+                                                    </TextArea>
+                                                
+                                                </VBox>
+                                                <VBox
+                                                    width="100%"
+                                                    visible="{= !${device>/browser/mobile} }"
+                                                >
+                                                    <OverflowToolbar
+                                                        width="100%"
+                                                        design="Transparent"
+                                                        style="Clear"
+                                                    >
+                                                        <HBox
+                                                            alignItems="Center"
+                                                            justifyContent="SpaceBetween"
+                                                            width="100%"
+                                                        >
+                                                            <Text
+                                                                text="{PreDefineGoal>text}"
+                                                                tooltip="{PreDefineGoal>text}"
+                                                                textAlign="Begin"
+                                                            />
+
+                                                            
+                                                        </HBox>
+                                                    </OverflowToolbar>
+
+                                                    <TextArea
+                                                        value="{PreDefineGoal>value}"
+                                                        width="100%"
+                                                        editable="false"
+                                                    >
+                                                        <layoutData>
+                                                            <FlexItemData
+                                                                growFactor="1"
+                                                            />
+                                                        </layoutData>
+                                                    </TextArea>
+                                                    
+                                                </VBox>
+                                            </items>
+                                        </FlexBox>
+                                    </CustomTreeItem>
+                                </Tree>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
