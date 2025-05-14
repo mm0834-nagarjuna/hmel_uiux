@@ -78,17 +78,15 @@
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
-
-            <uxap:ObjectPageSection 
-             title="1.1"
+            <uxap:ObjectPageSection
+                title="1.1"
                 showTitle="false"
             >
-            <uxap:subSections>
-             <uxap:ObjectPageSubSection
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="1.1"
-                        
-                     >
+                    >
                         <VBox>
                             <OverflowToolbar>
                                 <Title text="1.1 Key Performance Area" />
@@ -215,14 +213,11 @@
                                                     />
                                                 </ComboBox>
                                             </VBox> -->
-                                            <VBox
-                                                width="100%"
-                                                visible="{= !${device>/browser/mobile} }"
-                                              >
+                                            <VBox width="100%">
                                                 <OverflowToolbar
-                                                    width="100%"
-                                                    design="Transparent"
                                                     style="Clear"
+                                                    design="Transparent"
+                                                    visible="{= ${myGoal>key} !== 'Weightage' }"
                                                 >
                                                     <HBox
                                                         alignItems="Center"
@@ -230,39 +225,24 @@
                                                         width="100%"
                                                     >
                                                         <Text
-                                                            text="{myGoal>text}"
-                                                            tooltip="{myGoal>text}"
+                                                            text="{myGoal>title}"
+                                                            tooltip="{myGoal>title}"
                                                             textAlign="Begin"
                                                         />
-                                                        <HBox visible="{myGoal>isDrpD}" >
-                                                         <Text
-                                                            text="{myGoal>text}"
-                                                            tooltip="{myGoal>text}"
-                                                            textAlign="Begin"
-                                                            visible="{myGoal>isDrpD}"
-                                                            
-                                                        />
-                                                        <Text
-                                                            text="{myGoal>text}"
-                                                            tooltip="{myGoal>text}"
-                                                            textAlign="Begin"
-                                                        />
-                                                        </HBox>
-
                                                         <HBox
                                                             alignItems="Center"
                                                             justifyContent="End"
                                                         >
                                                             <Button
-                                                                icon="{myGoal>add}"
+                                                                icon="{myGoal>addIcon}"
                                                                 text="{myGoal>addText}"
-                                                                custom:field="{myGoal>field}" 
-                                                                press=".onClickScoreInfo"
+                                                                custom:field="{myGoal>field}"
+                                                                press="onClickAddAppraiser"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                                 visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
                                                             />
                                                             <Button
-                                                                icon="{myGoal>delete}"
+                                                                icon="{myGoal>deleteIcon}"
                                                                 press="handleButtonPress"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                                 visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
@@ -270,15 +250,32 @@
                                                         </HBox>
                                                     </HBox>
                                                 </OverflowToolbar>
-
                                                 <TextArea
                                                     value="{myGoal>value}"
                                                     width="100%"
-                                                    visible="{myGoal>isTA}"
-                                                >
-                                                
-                                                </TextArea>
-                                                
+                                                    visible="{= ${myGoal>key} !== 'Weightage' }"
+                                                />
+                                                <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
+                                                  <HBox width="33%" alignItems="Center" justifyContent="Start">
+                                                  <ObjectIdentifier title="Weightage (%): " visible="{= ${myGoal>key} === 'Weightage' }"></ObjectIdentifier>
+                                                  <ComboBox id="weight" value="{myGoal>value}" visible="{= ${myGoal>key} === 'Weightage' }"></ComboBox>
+                                                  </HBox> 
+
+                                                  <HBox width="33%" alignItems="Center" justifyContent="Start" >
+                                                  <ObjectIdentifier title="Appraisee Score: " visible="{= ${myGoal>key} === 'Weightage' }"></ObjectIdentifier>
+                                                  <Button icon="sap-icon://information" type="Transparent" press="onClickScoreInfo" visible="{= ${myGoal>key} === 'Weightage' }" class="sapUiSmallMarginBegin sapUiSmallMarginEnd"></Button>
+                                                  <ComboBox id="AESCR" value="{myGoal>value}" visible="{= ${myGoal>key} === 'Weightage' }"></ComboBox>
+
+                                                  </HBox> 
+
+                                                  <HBox  width="33%" alignItems="Center" justifyContent="Start">
+                                                  <ObjectIdentifier title="Appraiser Score: " visible="{= ${myGoal>key} === 'Weightage' }"></ObjectIdentifier>
+                                                   <Button icon="sap-icon://information" type="Transparent" press="onClickScoreInfo" visible="{= ${myGoal>key} === 'Weightage' }" class="sapUiSmallMarginBegin sapUiSmallMarginEnd"></Button>
+                                                  <ComboBox id="ARSCR" value="{myGoal>value}" visible="{= ${myGoal>key} === 'Weightage' }"></ComboBox>
+
+                                                  </HBox> 
+                                                  
+                                                </HBox>
                                             </VBox>
                                         </items>
                                     </FlexBox>
@@ -286,7 +283,7 @@
                             </Tree>
                         </VBox>
                     </uxap:ObjectPageSubSection>
-            </uxap:subSections>
+                </uxap:subSections>
             </uxap:ObjectPageSection>
         </uxap:sections>
     </uxap:ObjectPageLayout>

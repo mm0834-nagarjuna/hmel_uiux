@@ -12,303 +12,100 @@ sap.ui.define([
             var oData = {
                 "COF": {
                     "KSP002": {
-                        "nodes": [
+                      "nodes": [
+                        {
+                          "key": "KSP",
+                          "title": "Key Strategic Priority",
+                          "value": "Key Strategic Priority value",
+                          "visible": true,
+                          "editable": true,
+                          "isTA": false,
+                          "isDrpD": false,
+                          "addIcon": "sap-icon://add",
+                          "addText": "Add KRA",
+                          "deleteIcon": "sap-icon://delete",
+                          "nodes": [
                             {
-                                "Key": "KSP",
-                                "value": "Key stratagic Priority value",
-                                "text": "Key stratagic Priority",
-                                "add": "sap-icon://add",
-                                "addText": 'Add KRA',
-                                "delete": "sap-icon://delete",
-                                "visible": true,
-                                "editable": true,
-                                "isDrpD": false,
-                                "nodes": [
-                                    {
-                                        "Key": "KRA",
-                                        "value": "Key Result Area value",
-                                        "text": "Key Result Area",
-                                        "add": null,
-                                        "addText": null,
-                                        "delete": null,
-                                        "delete": null,
-                                        "visible": true,
-                                        "editable": true,
-                                        "isTA": true,
-                                        "isDrpD": false,
-                                        "nodes": [
-                                            {
-                                                "Key": "KPI",
-                                                "value": "Key Performance Index value",
-                                                "text": "Key Performance Index",
-                                                "add": null,
-                                                "addText": null,
-        
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": true,
-                                                "isDrpD": false
-                                            },
-                                            {
-                                                "Key": "Target",
-                                                "value": "Target value",
-                                                "text": "Annual Target",
-                                                "add": null,
-                                                "addText": null,
-        
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": true,
-                                                "isDrpD": false
-                                            },
-                                            {
-                                                "Key": "FFMmilestone",
-                                                "value": "First Four Monthly Milestones value",
-                                                "text": "First Four Monthly Milestones",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isDrpD": false,
-                                            },
-                                            {
-                                                "Key": "SFMmilestone",
-                                                "value": "Second Four Monthly Milestones value",
-                                                "text": "Second Four Monthly Milestones",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isDrpD": false,
-                                            },
-        
-        
-                                            {
-                                                "Key": "FFMA:AE",
-                                                "value": "First Four Monthly Achievement: Appraisee Value",
-                                                "text": "First Four Monthly Achievement: Appraisee",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": true,
-                                                "isDrpD": false
-                                            }
-                                            ,
-        
-                                            {
-                                                "Key": "FFFedA:AE",
-                                                "value": "First Four Monthly Feedback: Appraiser Value",
-                                                "text": "First Four Monthly Feedback: Appraiser",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": true,
-                                                "isDrpD": false
-                                            },
-                                            {
-                                                "Key": "Weightage",
-                                                "value": "5",
-                                                "text": "Weightage  (%)",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": false,
-                                                "isDrpD": true
-                                            },
-                                            {
-                                                "field": "Appraiser_Score",
-                                                "Key": "AS",
-                                                "value": "5",
-                                                "text": "Appraisee Score",
-                                                "add": null,
-                                                "addText": null,
-                                                "addPress": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": false,
-                                                "isDrpD": true
-                                            },
-                                            {
-                                                "field": "Appraiser_Score",
-                                                "Key": "AS",
-                                                "value": "5",
-                                                "text": "Appraiser Score",
-                                                "add": null,
-                                                "addText": null,
-                                                "addPress": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": false,
-                                                "isDrpD": true
-                                            },
-        
-                                        ]
-                                    },
-                                    {
-                                        "Key": "KRA",
-                                        "value": "Key Result Area value",
-                                        "text": "Key Result Area",
-                                        "add": null,
-                                        "addText": null,
-                                        "delete": null,
-                                        "delete": null,
-                                        "visible": true,
-                                        "editable": true,
-                                        "isTA": true,
-                                        "isDrpD": false,
-                                        "nodes" : [
-                                            {
-                                                "Key": "KPI",
-                                                "value": "Key Performance Index value",
-                                                "text": "Key Performance Index",
-                                                "add": null,
-                                                "addText": null,
-        
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": true,
-                                                "isDrpD": false
-                                            },
-                                            {
-                                                "Key": "Target",
-                                                "value": "Target value",
-                                                "text": "Annual Target",
-                                                "add": null,
-                                                "addText": null,
-        
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": true,
-                                                "isDrpD": false
-                                            },
-                                            {
-                                                "Key": "FFMmilestone",
-                                                "value": "First Four Monthly Milestones value",
-                                                "text": "First Four Monthly Milestones",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isDrpD": false,
-                                            },
-                                            {
-                                                "Key": "SFMmilestone",
-                                                "value": "Second Four Monthly Milestones value",
-                                                "text": "Second Four Monthly Milestones",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isDrpD": false,
-                                            },
-        
-        
-                                            {
-                                                "Key": "FFMA:AE",
-                                                "value": "First Four Monthly Achievement: Appraisee Value",
-                                                "text": "First Four Monthly Achievement: Appraisee",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": true,
-                                                "isDrpD": false
-                                            }
-                                            ,
-        
-                                            {
-                                                "Key": "FFFedA:AE",
-                                                "value": "First Four Monthly Feedback: Appraiser Value",
-                                                "text": "First Four Monthly Feedback: Appraiser",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": true,
-                                                "isDrpD": false
-                                            },
-                                            {
-                                                "Key": "Weightage",
-                                                "value": "5",
-                                                "text": "Weightage  (%)",
-                                                "add": null,
-                                                "addText": null,
-                                                "delete": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": false,
-                                                "isDrpD": true
-                                            },
-                                            {
-                                                "field": "Appraiser_Score",
-                                                "Key": "AE",
-                                                "value": "5",
-                                                "text": "Appraisee Score",
-                                                "add": null,
-                                                "addText": null,
-                                                "addPress": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": false,
-                                                "isDrpD": true
-                                            },
-                                            {
-                                                "field": "Appraiser_Score",
-                                                "Key": "AR",
-                                                "value": "5",
-                                                "text": "Appraiser Score",
-                                                "add": null,
-                                                "addText": null,
-                                                "addPress": null,
-                                                "delete": null,
-                                                "visible": true,
-                                                "editable": true,
-                                                "isTA": false,
-                                                "isDrpD": true
-                                            },
-                                        ]
-                                    }
-                                    
-                                   
-                                ]
+                              "key": "KRA",
+                              "title": "Key Result Area",
+                              "value": "Key Result Area value",
+                              "visible": true,
+                              "editable": true,
+                              "isTA": true,
+                              "isDrpD": false,
+                              "nodes": [
+                                {
+                                  "key": "KPI",
+                                  "title": "Key Performance Index",
+                                  "value": "Key Performance Index value",
+                                  "visible": true,
+                                  "editable": true,
+                                  "isTA": true,
+                                  "isDrpD": false
+                                },
+                                {
+                                  "key": "Target",
+                                  "title": "Annual Target",
+                                  "value": "Target value",
+                                  "visible": true,
+                                  "editable": true,
+                                  "isTA": true,
+                                  "isDrpD": false
+                                },
+                                {
+                                  "key": "FFMmilestone",
+                                  "title": "First Four Monthly Milestones",
+                                  "value": "First Four Monthly Milestones value",
+                                  "visible": true,
+                                  "editable": true,
+                                  "isTA": false,
+                                  "isDrpD": false
+                                },
+                                {
+                                  "key": "SFMmilestone",
+                                  "title": "Second Four Monthly Milestones",
+                                  "value": "Second Four Monthly Milestones value",
+                                  "visible": true,
+                                  "editable": true,
+                                  "isTA": false,
+                                  "isDrpD": false
+                                },
+                                {
+                                  "key": "FFMA:AE",
+                                  "title": "First Four Monthly Achievement: Appraisee",
+                                  "value": "First Four Monthly Achievement: Appraisee Value",
+                                  "visible": true,
+                                  "editable": true,
+                                  "isTA": true,
+                                  "isDrpD": false
+                                },
+                                {
+                                  "key": "FFFedA:AE",
+                                  "title": "First Four Monthly Feedback: Appraiser",
+                                  "value": "First Four Monthly Feedback: Appraiser Value",
+                                  "visible": true,
+                                  "editable": true,
+                                  "isTA": true,
+                                  "isDrpD": false
+                                },
+                                {
+                                  "key": "Weightage",
+                                  "title": "Weightage (%)",
+                                  "value": "10",
+                                  "visible": true,
+                                  "editable": true,
+                                  "isTA": false,
+                                  "isDrpD": true,
+                                }
+                              ]
                             }
-                        ]
+                          ]
+                        }
+                      ]
                     }
-
-                }
+                  }
+                  
+                  
             };
             var oModel = new sap.ui.model.json.JSONModel(oData);
             this.getView().setModel(oModel, "myGoal");
@@ -316,6 +113,36 @@ sap.ui.define([
             const oRouter = this.getOwnerComponent().getRouter();
             oRouter.getRoute("apprisalDetail").attachPatternMatched(this.onObjectMatched, this);
 
+            this._addDropDownList()
+        },
+        _addDropDownList: function(){
+            var weightComboBox = this.byId("weight");
+            var AESCRComboBox = this.byId("AESCR");
+            var ARSCRComboBox = this.byId("ARSCR");
+
+            for (var i = 3; i <= 50; i++) {
+                var oItem = new sap.ui.core.Item({
+                    key: i.toString(),
+                    text: i 
+                });
+                weightComboBox.addItem(oItem);
+            }
+
+            for (var i = 1; i <= 6; i++) {
+                var oItem = new sap.ui.core.Item({
+                    key: i.toString(),
+                    text: i 
+                });
+                AESCRComboBox.addItem(oItem);
+            }
+
+            for (var i = 1; i <= 6; i++) {
+                var oItem = new sap.ui.core.Item({
+                    key: i.toString(),
+                    text: i 
+                });
+                ARSCRComboBox.addItem(oItem);
+            }
         },
 
         // onClickCancel: function(){
