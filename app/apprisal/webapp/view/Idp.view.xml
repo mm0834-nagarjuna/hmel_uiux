@@ -571,7 +571,7 @@
                                             />
                                             <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Score_Reviewer}"
-                                                editable="false"
+                                                editable="{apprisalData>idpAASCRREdit}"
                                                 width="60px"
                                             />
                                         </cells>

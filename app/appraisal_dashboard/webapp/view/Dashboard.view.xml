@@ -205,13 +205,15 @@
                                 </HBox>
                                 <HBox width="50%" alignItems="Center" justifyContent="End" visible="{vModel>/filterVisible}">
                                <HBox alignItems="Center" class="sapUiSmallMarginEnd">
-                               <Label text="Employee ID: " class="sapUiSmallMarginEnd"></Label>
-                                <SearchField placeholder="Enter Employee ID"></SearchField>
+                               <Label text="Appraisee ID: " class="sapUiSmallMarginEnd"></Label>
+                                <SearchField placeholder="Enter Appraisee ID"></SearchField>
                                </HBox>
                                <HBox alignItems="Center" >
-                               <Label text="Employee Name: " class="sapUiSmallMarginEnd"></Label>
-                                <SearchField placeholder="Enter Employee ID"></SearchField>
+                               <Label text="Appraisee Name: " class="sapUiSmallMarginEnd"></Label>
+                                <SearchField placeholder="Enter Appraisee Name"></SearchField>
                                </HBox>
+                               <Button text="Reset" icon="sap-icon://reset" type="Emphasized" class="sapUiSmallMarginBegin"></Button>
+                             
                                 </HBox>
                             </HBox>
                             
@@ -219,10 +221,10 @@
                     </headerToolbar>
                     <columns>
                         <Column width="5rem" >
-                            <Text text="Employee ID" />
+                            <Text text="Appraisee ID" />
                         </Column>
                         <Column width="10rem">
-                            <Text text="Employee Name" />
+                            <Text text="Appraisee Name" />
                         </Column>
                         <Column width="8rem" vAlign="Middle" hAlign="Center" >
                             <Text text="Appraisee Score" />
@@ -257,9 +259,9 @@
                     <items>
                         <ColumnListItem>
                             <cells>
-                                <Text
-                                    text="{DashboardScore>Pers.No.}"
-                                    textAlign="Center"
+                                <ObjectIdentifier
+                                    title="{DashboardScore>Pers.No.}"
+                                    
                                 />
                                 <Text
                                     text="{DashboardScore>Name_of_Employee}"

@@ -77,270 +77,21 @@
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
-            <uxap:ObjectPageSection
-                title="1.1"
-                showTitle="false"
-            >
-                <uxap:subSections>
-                    <uxap:ObjectPageSubSection
-                        titleUppercase="false"
-                        title="1.1"
-                     >
-                        <VBox>
-                            <OverflowToolbar>
-                                <Title text="1.1 Key Performance Area" />
-                                <Button icon="sap-icon://delete" />
-                                <ToolbarSpacer />
-                                <Button
-                                    icon="sap-icon://add-employee"
-                                    text="Appraiser"
-                                    press="onClickAddAppraiser"
-                                />
-                            </OverflowToolbar>
-                            <Tree
-                                id="Tree"
-                                items="{myGoal>/COF/KSP001}"
-                            >
-                                <CustomTreeItem>
-                                    <FlexBox
-                                        alignItems="Center"
-                                        width="100%"
-                                    >
-                                        <items>
-                                            <VBox
-                                                width="100%"
-                                                visible="{= ${device>/browser/mobile} }"
-                                             >
-                                                <OverflowToolbar
-                                                    width="100%"
-                                                    design="Transparent"
-                                                    style="Clear"
-                                                >
-                                                    <HBox
-                                                        alignItems="Center"
-                                                        justifyContent="SpaceBetween"
-                                                        width="100%"
-                                                    >
-                                                        <Text
-                                                            text="{myGoal>text}"
-                                                            tooltip="{myGoal>text}"
-                                                            textAlign="Begin"
-                                                        />
 
-                                                        <HBox
-                                                            alignItems="Center"
-                                                            justifyContent="End"
-                                                        >
-                                                            <Button
-                                                                icon="{myGoal>add}"
-                                                                text="{myGoal>addText}"
-                                                                press="handleButtonPress"
-                                                                class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                                visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
-                                                            />
-                                                            <Button
-                                                                icon="{myGoal>delete}"
-                                                                press="handleButtonPress"
-                                                                class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                                visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
-                                                            />
-                                                        </HBox>
-                                                    </HBox>
-                                                </OverflowToolbar>
 
-                                                <TextArea
-                                                    value="{myGoal>value}"
-                                                    width="100%"
-                                                    visible="{myGoal>isTA}"
-                                                >
-                                                    <layoutData>
-                                                        <FlexItemData
-                                                            growFactor="1"
-                                                        />
-                                                    </layoutData>
-                                                </TextArea>
-                                                <ComboBox
-                                                    selectedKey="3"
-                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isWght'}"
-                                                >
-                                                    <core:Item
-                                                        key="3"
-                                                        text="3"
-                                                    />
-                                                    <core:Item
-                                                        key="4"
-                                                        text="4"
-                                                    />
-                                                    <core:Item
-                                                        key="5"
-                                                        text="5"
-                                                    />
-
-                                                    <core:Item
-                                                        key="50"
-                                                        text="50"
-                                                    />
-                                                </ComboBox>
-                                                <ComboBox
-                                                    selectedKey="3"
-                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isAS'}"
-                                                >
-                                                    <core:Item
-                                                        key="1"
-                                                        text="1"
-                                                    />
-                                                    <core:Item
-                                                        key="2"
-                                                        text="2"
-                                                    />
-                                                    <core:Item
-                                                        key="3"
-                                                        text="3"
-                                                    />
-
-                                                    <core:Item
-                                                        key="4"
-                                                        text="4"
-                                                    />
-                                                    <core:Item
-                                                        key="5"
-                                                        text="5"
-                                                    />
-                                                    <core:Item
-                                                        key="6"
-                                                        text="6"
-                                                    />
-                                                </ComboBox>
-                                            </VBox>
-                                            <VBox
-                                                width="100%"
-                                                visible="{= !${device>/browser/mobile} }"
-                                            >
-                                                <OverflowToolbar
-                                                    width="100%"
-                                                    design="Transparent"
-                                                    style="Clear"
-                                                >
-                                                    <HBox
-                                                        alignItems="Center"
-                                                        justifyContent="SpaceBetween"
-                                                        width="100%"
-                                                    >
-                                                        <Text
-                                                            text="{myGoal>text}"
-                                                            tooltip="{myGoal>text}"
-                                                            textAlign="Begin"
-                                                        />
-
-                                                        <HBox
-                                                            alignItems="Center"
-                                                            justifyContent="End"
-                                                        >
-                                                            <Button
-                                                                icon="{myGoal>add}"
-                                                                text="{myGoal>addText}"
-                                                                custom:field="{myGoal>field}" 
-                                                                press=".onClickScoreInfo"
-                                                                class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                                visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
-                                                            />
-                                                            <Button
-                                                                icon="{myGoal>delete}"
-                                                                press="handleButtonPress"
-                                                                class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                                visible="{path: 'myGoal>delete', formatter: '.formatter.btnvisiblitiy'}"
-                                                            />
-                                                        </HBox>
-                                                    </HBox>
-                                                </OverflowToolbar>
-
-                                                <TextArea
-                                                    value="{myGoal>value}"
-                                                    width="100%"
-                                                    visible="{myGoal>isTA}"
-                                                >
-                                                    <layoutData>
-                                                        <FlexItemData
-                                                            growFactor="1"
-                                                        />
-                                                    </layoutData>
-                                                </TextArea>
-                                                <ComboBox
-                                                    selectedKey="3"
-                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isWght'}"
-                                                >
-                                                    <core:Item
-                                                        key="3"
-                                                        text="3"
-                                                    />
-                                                    <core:Item
-                                                        key="4"
-                                                        text="4"
-                                                    />
-                                                    <core:Item
-                                                        key="5"
-                                                        text="5"
-                                                    />
-
-                                                    <core:Item
-                                                        key="50"
-                                                        text="50"
-                                                    />
-                                                </ComboBox>
-                                                <ComboBox
-                                                    selectedKey="3"
-                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isAS'}"
-                                                >
-                                                    <core:Item
-                                                        key="1"
-                                                        text="1"
-                                                    />
-                                                    <core:Item
-                                                        key="2"
-                                                        text="2"
-                                                    />
-                                                    <core:Item
-                                                        key="3"
-                                                        text="3"
-                                                    />
-
-                                                    <core:Item
-                                                        key="4"
-                                                        text="4"
-                                                    />
-                                                    <core:Item
-                                                        key="5"
-                                                        text="5"
-                                                    />
-                                                    <core:Item
-                                                        key="6"
-                                                        text="6"
-                                                    />
-                                                </ComboBox>
-                                            </VBox>
-                                        </items>
-                                    </FlexBox>
-                                </CustomTreeItem>
-                            </Tree>
-                        </VBox>
-                    </uxap:ObjectPageSubSection>
-
-                   
-                </uxap:subSections>
-            </uxap:ObjectPageSection>
             <uxap:ObjectPageSection 
-             title="1.2"
+             title="1.1"
                 showTitle="false"
             >
             <uxap:subSections>
              <uxap:ObjectPageSubSection
                         titleUppercase="false"
-                        title="1.2"
+                        title="1.1"
                         
                      >
                         <VBox>
                             <OverflowToolbar>
-                                <Title text="1.2 Key Performance Area" />
+                                <Title text="1.1 Key Performance Area" />
                                 <Button icon="sap-icon://delete" />
                                 <ToolbarSpacer />
                                 <Button
@@ -359,7 +110,7 @@
                                         width="100%"
                                     >
                                         <items>
-                                            <VBox
+                                            <!-- <VBox
                                                 width="100%"
                                                 visible="{= ${device>/browser/mobile} }"
                                              >
@@ -414,7 +165,7 @@
                                                 <ComboBox
                                                     selectedKey="3"
                                                     visible="{path:'myGoal>Key', formatter:'.formatter.isWght'}"
-                                                >
+                                                 >
                                                     <core:Item
                                                         key="3"
                                                         text="3"
@@ -463,11 +214,11 @@
                                                         text="6"
                                                     />
                                                 </ComboBox>
-                                            </VBox>
+                                            </VBox> -->
                                             <VBox
                                                 width="100%"
                                                 visible="{= !${device>/browser/mobile} }"
-                                            >
+                                              >
                                                 <OverflowToolbar
                                                     width="100%"
                                                     design="Transparent"
@@ -483,6 +234,20 @@
                                                             tooltip="{myGoal>text}"
                                                             textAlign="Begin"
                                                         />
+                                                        <HBox visible="{myGoal>isDrpD}" >
+                                                         <Text
+                                                            text="{myGoal>text}"
+                                                            tooltip="{myGoal>text}"
+                                                            textAlign="Begin"
+                                                            visible="{myGoal>isDrpD}"
+                                                            
+                                                        />
+                                                        <Text
+                                                            text="{myGoal>text}"
+                                                            tooltip="{myGoal>text}"
+                                                            textAlign="Begin"
+                                                        />
+                                                        </HBox>
 
                                                         <HBox
                                                             alignItems="Center"
@@ -511,64 +276,9 @@
                                                     width="100%"
                                                     visible="{myGoal>isTA}"
                                                 >
-                                                    <layoutData>
-                                                        <FlexItemData
-                                                            growFactor="1"
-                                                        />
-                                                    </layoutData>
+                                                
                                                 </TextArea>
-                                                <ComboBox
-                                                    selectedKey="3"
-                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isWght'}"
-                                                >
-                                                    <core:Item
-                                                        key="3"
-                                                        text="3"
-                                                    />
-                                                    <core:Item
-                                                        key="4"
-                                                        text="4"
-                                                    />
-                                                    <core:Item
-                                                        key="5"
-                                                        text="5"
-                                                    />
-
-                                                    <core:Item
-                                                        key="50"
-                                                        text="50"
-                                                    />
-                                                </ComboBox>
-                                                <ComboBox
-                                                    selectedKey="3"
-                                                    visible="{path:'myGoal>Key', formatter:'.formatter.isAS'}"
-                                                >
-                                                    <core:Item
-                                                        key="1"
-                                                        text="1"
-                                                    />
-                                                    <core:Item
-                                                        key="2"
-                                                        text="2"
-                                                    />
-                                                    <core:Item
-                                                        key="3"
-                                                        text="3"
-                                                    />
-
-                                                    <core:Item
-                                                        key="4"
-                                                        text="4"
-                                                    />
-                                                    <core:Item
-                                                        key="5"
-                                                        text="5"
-                                                    />
-                                                    <core:Item
-                                                        key="6"
-                                                        text="6"
-                                                    />
-                                                </ComboBox>
+                                                
                                             </VBox>
                                         </items>
                                     </FlexBox>
