@@ -35,6 +35,7 @@
                                     text="Guidelines"
                                     type="Emphasized"
                                     press="onClickGuideline"
+                                    visible="{apprisalData>guidelines}"
                                 />
                             </OverflowToolbar>
                             <!-- Competencies Table -->

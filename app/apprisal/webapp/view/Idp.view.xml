@@ -12,6 +12,18 @@
             <FlexItemData growFactor="1" />
         </uxap:layoutData>
         <uxap:sections>
+        <uxap:ObjectPageSection visible="{= !${apprisalData>guidelines} }">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        titleUppercase="false"
+                        title="Individual Development Plan"
+                        visible="{= !${apprisalData>guidelines} }"
+                        class="mvnDummyEmptyObjectPageSubSection"
+                    >
+                        <HBox />
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
             <uxap:ObjectPageSection
                 title="Individual Development Plan"
                 titleUppercase="false"
@@ -21,6 +33,7 @@
                         title="Individual Development Plan"
                         titleUppercase="false"
                         showTitle="false"
+                        visible="{apprisalData>guidelines}"
                     >
                         <OverflowToolbar style="Clear">
                             <HBox width="100%" justifyContent="End">
