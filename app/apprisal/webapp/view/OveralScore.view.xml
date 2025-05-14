@@ -149,6 +149,7 @@
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
                                     class="sapUiSmallMarginEnd"
+                                    visible="{apprisalData>oScoresIcon}"
                                 />
                             </OverflowToolbar>
                             <Table id="overallSecore">
