@@ -38,7 +38,7 @@
                         titleUppercase="false"
                         title="Accomplishment"
                     >
-						<OverflowToolbar class="mvnObjectPageLayoutTitleOverflowToolbar">
+						<OverflowToolbar class="mvnObjectPageLayoutTitleOverflowToolbar" style="Clear">
 							<ToolbarSpacer />
                             <Button
                                 text="New"
@@ -67,7 +67,7 @@
 				<uxap:subSections>
 					<uxap:ObjectPageSubSection titleUppercase="false">
 						<VBox>
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
 								<Title text="1 . Accomplishment"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>
@@ -90,7 +90,7 @@
 				<uxap:subSections>
 					<uxap:ObjectPageSubSection titleUppercase="false">
 						<VBox>
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
 								<Title text="2 . Accomplishment"/>
 								<ToolbarSpacer />
 							</OverflowToolbar>

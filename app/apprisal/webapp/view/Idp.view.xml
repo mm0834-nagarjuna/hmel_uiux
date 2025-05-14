@@ -465,7 +465,7 @@
                         visible="{apprisalData>idpANRS}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar >
+                            <OverflowToolbar style="Clear">
                                 <Title text="Annual Review Remarks" />
                             </OverflowToolbar>
                             <Table
