@@ -42,6 +42,10 @@
     ],
     "Suggestions": [
         {
+            "key": "FEE",
+            "value": "FEE"
+        },
+        {
             "key": "EE",
             "value": "EE"
         },
@@ -50,16 +54,12 @@
             "value": "ME"
         },
         {
-            "key": "DE",
-            "value": "DE"
-        },
-        {
             "key": "BE",
             "value": "BE"
         },
         {
-            "key": "FEE",
-            "value": "FEE"
+            "key": "DME",
+            "value": "DME"
         }
     ]
 }

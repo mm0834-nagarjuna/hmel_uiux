@@ -28,18 +28,21 @@
                                 <ToolbarSpacer />
                             </OverflowToolbar>
                             <HBox
-                                width="100%"
+                                width="50%"
                                 alignItems="Center"
+                                justifyContent="Start"
                             >
                                
                                     <Label
                                         text="Time Spent in overall PMS Discussion"
+                                        class="sapUiTinyMarginBegin"
                                     />
                                     <Button
                                         icon="sap-icon://information"
                                         type="Transparent"
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
+                                        class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
@@ -130,18 +133,22 @@
                                 justifyContent="SpaceBetween"
                             >
                                 <HBox
-                                    alignItems="Center"
-                                    class="sapUiSmallMarginTop"
-                                >
+                                width="50%"
+                                alignItems="Center"
+                                justifyContent="Start"
+                                class="sapUiSmallMargin"
+                            >
+                               
                                     <Label
                                         text="Time Spent in overall PMS Discussion"
+                                        class="sapUiTinyMarginBegin"
                                     />
                                     <Button
                                         icon="sap-icon://information"
                                         type="Transparent"
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
-                                        visible="{apprisalData>cofgaaAEE}"
+                                        class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
@@ -157,8 +164,9 @@
                                 </HBox>
 
                                 <HBox
-                                    alignItems="Center"
-                                    class="sapUiSmallMarginTop"
+                                    width="50%"
+                                alignItems="Center"
+                                justifyContent="Start"
                                 >
                                     <Label
                                         text="Appraiser Overall Performance Feedback"
@@ -254,20 +262,24 @@
                                 width="100%"
                                 alignItems="Center"
                                 justifyContent="SpaceBetween"
+                                class="sapUiSmallMargin"
                             >
                                 <HBox
-                                    alignItems="Center"
-                                    class="sapUiSmallMarginTop"
-                                >
+                                width="50%"
+                                alignItems="Center"
+                                justifyContent="Start"
+                            >
+                               
                                     <Label
                                         text="Time Spent in overall PMS Discussion"
+                                        class="sapUiTinyMarginBegin"
                                     />
                                     <Button
                                         icon="sap-icon://information"
                                         type="Transparent"
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
-                                        visible="{apprisalData>cofgaaAEE}"
+                                        class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
@@ -283,8 +295,9 @@
                                 </HBox>
 
                                 <HBox
-                                    alignItems="Center"
-                                    class="sapUiSmallMarginTop"
+                                   width="50%"
+                                alignItems="Center"
+                                justifyContent="Start"
                                 >
                                     <Label
                                         text="Appraiser Overall Performance Feedback"
@@ -387,23 +400,24 @@
                             <HBox
                                 width="100%"
                                 alignItems="Center"
-                                class="sapUiSmallMarginTop"
+                                class="sapUiSmallMargin"
                             >
-                                <HBox
-                                    alignItems="Center"
-                                    class="sapUiSmallMarginEnd"
-                                    width="66%"
-                                    
-                                >
+                               <HBox
+                                width="50%"
+                                alignItems="Center"
+                                justifyContent="Start"
+                            >
+                               
                                     <Label
                                         text="Time Spent in overall PMS Discussion"
+                                        class="sapUiTinyMarginBegin"
                                     />
                                     <Button
                                         icon="sap-icon://information"
                                         type="Transparent"
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
-                                        visible="{apprisalData>cofgaaAEE}"
+                                        class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
@@ -419,8 +433,9 @@
                                 </HBox>
 
                                 <HBox
-                                    alignItems="Center"
-                                    width="30%"
+                                    width="50%"
+                                alignItems="Center"
+                                justifyContent="Start"
                                 >
                                     <Label
                                         text="Reviewer Score :"
