@@ -30,6 +30,7 @@ entity AppraisalDocuments {
   summary: Boolean;
   accomp: Boolean;
   overalRemarks: Boolean;
+  overalRemarksIcon: Boolean;
   acknowledgement: Boolean;
   overallScore: Boolean;
   coFgKSP: Boolean;
@@ -87,10 +88,12 @@ entity AppraisalDocuments {
   bcfSFRAEEdit: Boolean;
   bcfSFRAREdit: Boolean;
   bcfANR: Boolean;
+  bcfANRIcon: Boolean;
   bcfANRAEEdit: Boolean;
   bcfANRAREdit: Boolean;
   bcfANRREREdit: Boolean;
   bcfANSC: Boolean;
+  bcfANSCIcon: Boolean;
   bcfANSCAREdit: Boolean;
   bcfANSCREEdit: Boolean;
   idpBCD: Boolean;
@@ -110,6 +113,7 @@ entity AppraisalDocuments {
   idpFFMRSREAREdit: Boolean;
   idpSFMRSREAREdit: Boolean;
   idpANRS: Boolean;
+  idpANRSIcon: Boolean;
   idpANRSAEEdit: Boolean;
   idpANRSAREdit: Boolean;
   idpANRSREEdit: Boolean;
@@ -119,12 +123,15 @@ entity AppraisalDocuments {
   accompEdit: Boolean;
   oRTSAREdit: Boolean;
   oRFFMR: Boolean;
+  oRFFMRIcon: Boolean;
   oRFFMRAEEdit: Boolean;
   oRFFMRAREdit: Boolean;
   oRSFMR: Boolean;
+  oRSFMRIcon: Boolean;
   oRSFMRAEEdit: Boolean;
   oRSFMRAREdit: Boolean;
   oRANR: Boolean;
+  oRANRIcon: Boolean;
   oRANRRAEEdit: Boolean;
   oRANRRAREdit: Boolean;
   oRANRRREEdit: Boolean;
@@ -142,6 +149,7 @@ entity AppraisalDocuments {
   oScrSEScrREEdit: Boolean;
   oScr360: Boolean;
   oScores: Boolean;
+  oScoresIcon: Boolean;
   oScoresAEEdit: Boolean;
   oScoresAREdit: Boolean;
   oScoresREEdit: Boolean;

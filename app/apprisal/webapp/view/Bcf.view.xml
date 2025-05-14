@@ -79,6 +79,7 @@
                                                     type="Transparent"
                                                     press="onClickScoreInfo"
                                                     ariaLabelledBy="actionButtonLabel"
+                                                    visible="{apprisalData>bcfANSCIcon}"
                                                 />
                                             </HBox>
                                         </header>
@@ -92,6 +93,7 @@
                                                     type="Transparent"
                                                     press="onClickScoreInfo"
                                                     ariaLabelledBy="actionButtonLabel"
+                                                    visible="{apprisalData>bcfANRIcon}"
                                                 />
                                             </HBox>
                                         </header>
@@ -363,6 +365,7 @@
                                     type="Transparent"
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
+                                    visible="{apprisalData>bcfANSCIcon}"
                                 />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
