@@ -108,6 +108,7 @@ entity AppraisalDocuments {
   idpFTDAAEEdit: Boolean;
   idpFTDAAREdit: Boolean;
   idpFMRS: Boolean;
+  idpSMRS: Boolean;
   idpFFMRSREAEEdit: Boolean;
   idpSFMRSREAEEdit: Boolean;
   idpFFMRSREAREdit: Boolean;

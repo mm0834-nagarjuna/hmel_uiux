@@ -393,7 +393,7 @@
                                                 value="{PreDefineGoal>Remarks_Appraisee}"
                                                 cols="2000"
                                                 rows="5"
-                                                editable="{apprisalData>idpSFMRSREAEEdit}"
+                                                editable="{apprisalData>idpFFMRSREAEEdit}"
                                             />
                                             <TextArea
                                                 value="{PreDefineGoal>Remarks_Appraiser}"
@@ -420,7 +420,7 @@
                         title="Four Monthly Reviews"
                         titleUppercase="false"
                         showTitle="false"
-                        visible="{apprisalData>idpFMRS}"
+                        visible="{apprisalData>idpSMRS}"
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <OverflowToolbar style="Clear">
