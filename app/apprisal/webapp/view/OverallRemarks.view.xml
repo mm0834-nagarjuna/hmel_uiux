@@ -43,6 +43,7 @@
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
                                         class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                        visible="{apprisalData>overalRemarksIcon}"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
@@ -149,6 +150,7 @@
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
                                         class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                        visible="{apprisalData>oRFFMRIcon}"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
@@ -280,6 +282,7 @@
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
                                         class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                        visible="{apprisalData>oRSFMRIcon}"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
@@ -418,6 +421,7 @@
                                         press="onInfoTimeSpentPress"
                                         ariaLabelledBy="actionButtonLabel"
                                         class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                        visible="{apprisalData>oRANRIcon}"
                                     />
                                     <ComboBox
                                         items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
