@@ -392,6 +392,7 @@
                                 <HBox
                                     alignItems="Center"
                                     class="sapUiSmallMarginEnd"
+                                    width="66%"
                                     
                                 >
                                     <Label
@@ -419,6 +420,7 @@
 
                                 <HBox
                                     alignItems="Center"
+                                    width="30%"
                                 >
                                     <Label
                                         text="Reviewer Score :"
