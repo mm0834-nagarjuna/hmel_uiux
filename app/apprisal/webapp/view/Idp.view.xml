@@ -553,6 +553,7 @@
                                     type="Transparent"
                                     press="onClickScoreInfo"
                                     ariaLabelledBy="actionButtonLabel"
+                                    visible="{apprisalData>idpANRSIcon}"
                                 />
                             </OverflowToolbar>
 
