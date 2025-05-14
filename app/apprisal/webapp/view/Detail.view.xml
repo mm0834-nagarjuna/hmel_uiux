@@ -83,11 +83,11 @@
                 state="Warning"
             />
             <ObjectStatus
-                title="Employee ID"
+                title="Appraisee ID"
                 text="{apprisalData>appraiseeId}"
             />
             <ObjectStatus
-                title="Employee Name"
+                title="Appraisee Name"
                 text="{apprisalData>appraiseeName}"
             />
             <ObjectStatus
