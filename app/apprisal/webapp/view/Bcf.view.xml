@@ -151,7 +151,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title
                                     text="First Four Monthly Review Remarks"
                                 />
@@ -216,7 +216,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title
                                     text="Second Four Monthly Review Remarks"
                                 />
@@ -281,7 +281,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Annual Review Remarks" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
@@ -355,7 +355,7 @@
                         showTitle="false"
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                            <OverflowToolbar>
+                            <OverflowToolbar style="Clear">
                                 <Title text="Annual Score" />
                                 <Button
                                     icon="sap-icon://information"
