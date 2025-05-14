@@ -32,31 +32,29 @@
                                 alignItems="Center"
                                 justifyContent="Start"
                             >
-                               
-                                    <Label
-                                        text="Time Spent in overall PMS Discussion"
-                                        class="sapUiTinyMarginBegin"
+                                <Label
+                                    text="Time Spent in overall PMS Discussion"
+                                    class="sapUiTinyMarginBegin"
+                                />
+                                <Button
+                                    icon="sap-icon://information"
+                                    type="Transparent"
+                                    press="onInfoTimeSpentPress"
+                                    ariaLabelledBy="actionButtonLabel"
+                                    class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                    visible="{apprisalData>overalRemarksIcon}"
+                                />
+                                <ComboBox
+                                    items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
+                                    selectedKey="35"
+                                    editable="{apprisalData>oRTSAREdit}"
+                                    width="100px"
+                                >
+                                    <core:Item
+                                        key="{PreDefineGoal>key}"
+                                        text="{PreDefineGoal>text}"
                                     />
-                                    <Button
-                                        icon="sap-icon://information"
-                                        type="Transparent"
-                                        press="onInfoTimeSpentPress"
-                                        ariaLabelledBy="actionButtonLabel"
-                                        class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
-                                        visible="{apprisalData>overalRemarksIcon}"
-                                    />
-                                    <ComboBox
-                                        items="{PreDefineGoal>/Overal_Remarks/Timeliness}"
-                                        selectedKey="35"
-                                        editable="{apprisalData>oRTSAREdit}"
-                                        width="100px"
-                                    >
-                                        <core:Item
-                                            key="{PreDefineGoal>key}"
-                                            text="{PreDefineGoal>text}"
-                                        />
-                                    </ComboBox>
-                              
+                                </ComboBox>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
@@ -473,14 +471,16 @@
                                                 width="100%"
                                             >
                                                 <items>
-                                                    <HBox
+                                                    <VBox
                                                         width="100%"
-                                                        alignItems="Center"
+                                                        
                                                     >
-                                                        <Text
-                                                            text="{oRemarks>text}"
-                                                            class="sapUiSmallMarginEnd"
-                                                        />
+                                                        <OverflowToolbar design="Transparent" style="Clear">
+                                                            <Text
+                                                                text="{oRemarks>text}"
+                                                            />
+                                                        </OverflowToolbar>
+
                                                         <TextArea
                                                             value="{oRemarks>value}"
                                                             width="100%"
@@ -492,7 +492,7 @@
                                                                 />
                                                             </layoutData>
                                                         </TextArea>
-                                                    </HBox>
+                                                    </VBox>
                                                 </items>
                                             </FlexBox>
                                         </CustomTreeItem>
@@ -501,9 +501,7 @@
 
                                 <VBox width="100%">
                                     <OverflowToolbar>
-                                        <ObjectIdentifier
-                                            title="Individual"
-                                        />
+                                        <ObjectIdentifier title="Individual" />
                                     </OverflowToolbar>
 
                                     <Tree
@@ -517,14 +515,16 @@
                                                 width="100%"
                                             >
                                                 <items>
-                                                    <HBox
+                                                    <VBox
                                                         width="100%"
-                                                        alignItems="Center"
+                                                        
                                                     >
-                                                        <Text
-                                                            text="{oRemarks>text}"
-                                                            class="sapUiSmallMarginEnd"
-                                                        />
+                                                        <OverflowToolbar design="Transparent" style="Clear">
+                                                            <Text
+                                                                text="{oRemarks>text}"
+                                                            />
+                                                        </OverflowToolbar>
+
                                                         <TextArea
                                                             value="{oRemarks>value}"
                                                             width="100%"
@@ -536,7 +536,7 @@
                                                                 />
                                                             </layoutData>
                                                         </TextArea>
-                                                    </HBox>
+                                                    </VBox>
                                                 </items>
                                             </FlexBox>
                                         </CustomTreeItem>
