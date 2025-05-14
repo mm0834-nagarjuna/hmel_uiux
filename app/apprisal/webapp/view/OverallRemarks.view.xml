@@ -66,11 +66,10 @@
             <!-- First Four Monthly Table   -->
 
             <uxap:ObjectPageSection
-                        title="First Four Monthly"
-                        titleUppercase="false"
-                        showTitle="false"
-                        visible="{apprisalData>oRFFMR}"
-            
+                title="First Four Monthly"
+                titleUppercase="false"
+                showTitle="false"
+                visible="{apprisalData>oRFFMR}"
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
@@ -134,12 +133,11 @@
                                 justifyContent="SpaceBetween"
                             >
                                 <HBox
-                                width="50%"
-                                alignItems="Center"
-                                justifyContent="Start"
-                                class="sapUiSmallMargin"
-                            >
-                               
+                                    width="50%"
+                                    alignItems="Center"
+                                    justifyContent="Start"
+                                    class="sapUiSmallMargin"
+                                >
                                     <Label
                                         text="Time Spent in overall PMS Discussion"
                                         class="sapUiTinyMarginBegin"
@@ -167,8 +165,8 @@
 
                                 <HBox
                                     width="50%"
-                                alignItems="Center"
-                                justifyContent="Start"
+                                    alignItems="Center"
+                                    justifyContent="Start"
                                 >
                                     <Label
                                         text="Appraiser Overall Performance Feedback"
@@ -267,11 +265,10 @@
                                 class="sapUiSmallMargin"
                             >
                                 <HBox
-                                width="50%"
-                                alignItems="Center"
-                                justifyContent="Start"
-                            >
-                               
+                                    width="50%"
+                                    alignItems="Center"
+                                    justifyContent="Start"
+                                >
                                     <Label
                                         text="Time Spent in overall PMS Discussion"
                                         class="sapUiTinyMarginBegin"
@@ -298,9 +295,9 @@
                                 </HBox>
 
                                 <HBox
-                                   width="50%"
-                                alignItems="Center"
-                                justifyContent="Start"
+                                    width="50%"
+                                    alignItems="Center"
+                                    justifyContent="Start"
                                 >
                                     <Label
                                         text="Appraiser Overall Performance Feedback"
@@ -405,12 +402,11 @@
                                 alignItems="Center"
                                 class="sapUiSmallMargin"
                             >
-                               <HBox
-                                width="50%"
-                                alignItems="Center"
-                                justifyContent="Start"
-                            >
-                               
+                                <HBox
+                                    width="50%"
+                                    alignItems="Center"
+                                    justifyContent="Start"
+                                >
                                     <Label
                                         text="Time Spent in overall PMS Discussion"
                                         class="sapUiTinyMarginBegin"
@@ -438,8 +434,8 @@
 
                                 <HBox
                                     width="50%"
-                                alignItems="Center"
-                                justifyContent="Start"
+                                    alignItems="Center"
+                                    justifyContent="Start"
                                 >
                                     <Label
                                         text="Reviewer Score :"
@@ -452,6 +448,101 @@
                                     />
                                 </HBox>
                             </HBox>
+                            <VBox width="100%">
+                                <OverflowToolbar>
+                                    <ObjectIdentifier
+                                        title="Other Appraisers Remarks"
+                                    />
+                                </OverflowToolbar>
+
+                                <VBox width="100%">
+                                    <OverflowToolbar>
+                                        <ObjectIdentifier
+                                            title="Common Organizational"
+                                        />
+                                    </OverflowToolbar>
+
+                                    <Tree
+                                        id="Tree"
+                                        items="{path: 'oRemarks>/Other_Remarks/CO'}"
+                                    >
+                                        <CustomTreeItem>
+                                            <FlexBox
+                                                alignItems="Start"
+                                                justifyContent="Center"
+                                                width="100%"
+                                            >
+                                                <items>
+                                                    <HBox
+                                                        width="100%"
+                                                        alignItems="Center"
+                                                    >
+                                                        <Text
+                                                            text="{oRemarks>text}"
+                                                            class="sapUiSmallMarginEnd"
+                                                        />
+                                                        <TextArea
+                                                            value="{oRemarks>value}"
+                                                            width="100%"
+                                                            editable="false"
+                                                        >
+                                                            <layoutData>
+                                                                <FlexItemData
+                                                                    growFactor="1"
+                                                                />
+                                                            </layoutData>
+                                                        </TextArea>
+                                                    </HBox>
+                                                </items>
+                                            </FlexBox>
+                                        </CustomTreeItem>
+                                    </Tree>
+                                </VBox>
+
+                                <VBox width="100%">
+                                    <OverflowToolbar>
+                                        <ObjectIdentifier
+                                            title="Individual"
+                                        />
+                                    </OverflowToolbar>
+
+                                    <Tree
+                                        id="Tree1"
+                                        items="{path: 'oRemarks>/Other_Remarks/CO'}"
+                                    >
+                                        <CustomTreeItem>
+                                            <FlexBox
+                                                alignItems="Start"
+                                                justifyContent="Center"
+                                                width="100%"
+                                            >
+                                                <items>
+                                                    <HBox
+                                                        width="100%"
+                                                        alignItems="Center"
+                                                    >
+                                                        <Text
+                                                            text="{oRemarks>text}"
+                                                            class="sapUiSmallMarginEnd"
+                                                        />
+                                                        <TextArea
+                                                            value="{oRemarks>value}"
+                                                            width="100%"
+                                                            editable="false"
+                                                        >
+                                                            <layoutData>
+                                                                <FlexItemData
+                                                                    growFactor="1"
+                                                                />
+                                                            </layoutData>
+                                                        </TextArea>
+                                                    </HBox>
+                                                </items>
+                                            </FlexBox>
+                                        </CustomTreeItem>
+                                    </Tree>
+                                </VBox>
+                            </VBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>

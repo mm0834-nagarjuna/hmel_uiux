@@ -270,6 +270,7 @@
                                                     value="{myGoal>value}"
                                                     width="100%"
                                                     visible="{= ${myGoal>key} !== 'Weightage' }"
+                                                    
                                                 />
                                                 <HBox
                                                     width="100%"
@@ -509,7 +510,7 @@
                                                         alignItems="Center"
                                                         justifyContent="SpaceBetween"
                                                         width="100%"
-                                                    >
+                                                     >
                                                         <ObjectIdentifier
                                                              title="{myGoal>num} {myGoal>title}"
                                                             tooltip="{myGoal>title}"

@@ -222,6 +222,24 @@ sap.ui.define([
 
             this._addDropDownList()
         },
+        onObjectMatched(oEvent) {
+
+            var that = this;
+            const oModel = this.getView().getModel("apprisalData"); 
+            const oContextBinding = oModel.bindContext("/appraisal(index=" + oEvent.getParameter("arguments").index + ",appraisalId=" + oEvent.getParameter("arguments").appId + ")");
+
+            console.log(oContextBinding)
+            oContextBinding.requestObject().then(function (oData) {
+                
+                
+                console.log(oData)
+                var oModel = new sap.ui.model.json.JSONModel(oData);
+                this.getView().setModel(oModel, "Config");
+
+            }).catch(function (oError) {
+                console.error("Failed to load product:", oError);
+            });
+        },
         _addDropDownList: function(){
             var weightComboBox = this.byId("weight");
             var AESCRComboBox = this.byId("AESCR");
@@ -391,45 +409,12 @@ sap.ui.define([
                 }
                 return true
             },
-            functionPress: function (oText) {
-                console.log(oText)
+            TAEdit: function (oKey) {
+                
             }
 
         },
-        onObjectMatched(oEvent) {
-
-            var that = this;
-            const oModel = this.getView().getModel("apprisalData"); // default OData V4 model
-            const oContextBinding = oModel.bindContext("/appraisal(index=" + oEvent.getParameter("arguments").index + ",appraisalId=" + oEvent.getParameter("arguments").appId + ")");
-
-            console.log(oContextBinding)
-            oContextBinding.requestObject().then(function (oData) {
-                var aAck = [];
-                var _aData = that._aData;
-                console.log(_aData)
-                if (oData.ackTSC) {
-                    _aData[0].Editable = oData.ackTSCEdit;
-                    aAck.push(_aData[0]);
-                }
-                if (oData.ackFFMC) {
-                    _aData[1].Editable = oData.ackFFMCEdit;
-                    aAck.push(_aData[1]);
-                }
-                if (oData.ackSFMC) {
-                    _aData[2].Editable = oData.ackSFMCEdit;
-                    aAck.push(_aData[2]);
-                }
-                if (oData.ackANC) {
-                    _aData[3].Editable = oData.ackANCEdit;
-                    aAck.push(_aData[3]);
-                }
-
-                that.getView().getModel("PreDefineGoal").setProperty("/Acknowledgements", aAck);
-
-            }).catch(function (oError) {
-                console.error("Failed to load product:", oError);
-            });
-        },
+        
         onBtnPress: function (oEvent){
             var oButton = oEvent.getSource(),
                 oView = this.getView();
