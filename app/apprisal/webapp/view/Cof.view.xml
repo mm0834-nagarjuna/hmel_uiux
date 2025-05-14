@@ -238,7 +238,7 @@
                                                             <Button
                                                                 icon="{myGoal>add}"
                                                                 text="{myGoal>addText}"
-                                                                press="{path: 'myGoal>addPress', formatter: '.formatter.functionPress'}"
+                                                                press="{myGoal>addPress}"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                                 visible="{path: 'myGoal>add', formatter: '.formatter.btnvisiblitiy'}"
                                                             />

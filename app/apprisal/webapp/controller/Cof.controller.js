@@ -15,7 +15,6 @@ sap.ui.define([
                         "nodes":
                             [
                                 {
-
                                     "Key": "KSP",
                                     "value": "Key stratagic Priority value",
                                     "text": "Key stratagic Priority",

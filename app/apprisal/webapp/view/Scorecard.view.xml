@@ -3,6 +3,7 @@
     controllerName="apprisal.controller.Scorecard"
     xmlns:uxap="sap.uxap"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
     height="100%"
 >
     <uxap:ObjectPageLayout
@@ -27,7 +28,7 @@
                             <!-- <Title
                                 text="Scorecard of Girish Chandra Ghildiyal ( 100682 )"
                             /> -->
-                            <FormattedText htmlText="{scoreModel>/Girish}"/>
+                            <FormattedText htmlText="{scoreModel>/Girish}" />
                         </OverflowToolbar>
                     </uxap:ObjectPageSubSection>
                     <uxap:ObjectPageSubSection
@@ -37,11 +38,11 @@
                     >
                         <VBox class="sapUiSmallMarginBottom">
                             <Title text="Common Organizational Goals" />
-                            <Table
+                            <!-- <Table
                                 items="{
 									path : 'PreDefineGoal>/Scorecard/Appraiser/Common_Organization_Goals'
 								}"
-                            >
+                             >
                                 <columns>
                                     <Column>
                                         <header>
@@ -107,7 +108,100 @@
                                         </cells>
                                     </ColumnListItem>
                                 </items>
-                            </Table>
+                            </Table> -->
+                            
+                              
+                                <Tree
+                                    id="Tree2"
+                                    items="{PreDefineGoal>/Scorecard/Appraiser/COF/KSP001}"
+                                >
+                                    <CustomTreeItem>
+                                        <FlexBox
+                                            alignItems="Center"
+                                            width="100%"
+                                        >
+                                            <items>
+                                                <VBox
+                                                    width="100%"
+                                                    visible="{= ${device>/browser/mobile} }"
+                                                 >
+                                                    <OverflowToolbar
+                                                        width="100%"
+                                                        design="Transparent"
+                                                        style="Clear"
+                                                    >
+                                                        <HBox
+                                                            alignItems="Center"
+                                                            justifyContent="SpaceBetween"
+                                                            width="100%"
+                                                        >
+                                                            <Text
+                                                                text="{PreDefineGoal>text}"
+                                                                tooltip="{PreDefineGoal>text}"
+                                                                textAlign="Begin"
+                                                            />
+
+                                                           
+                                                        </HBox>
+                                                    </OverflowToolbar>
+
+                                                    <TextArea
+                                                        value="{PreDefineGoal>value}"
+                                                        width="100%"
+                                                        editable="false"
+                                                    >
+                                                        <layoutData>
+                                                            <FlexItemData
+                                                                growFactor="1"
+                                                            />
+                                                        </layoutData>
+                                                    </TextArea>
+                                                
+                                                </VBox>
+                                                <VBox
+                                                    width="100%"
+                                                    visible="{= !${device>/browser/mobile} }"
+                                                >
+                                                    <OverflowToolbar
+                                                        width="100%"
+                                                        design="Transparent"
+                                                        style="Clear"
+                                                    >
+                                                        <HBox
+                                                            alignItems="Center"
+                                                            justifyContent="SpaceBetween"
+                                                            width="100%"
+                                                        >
+                                                            <Text
+                                                                text="{PreDefineGoal>text}"
+                                                                tooltip="{PreDefineGoal>text}"
+                                                                textAlign="Begin"
+                                                            />
+
+                                                            
+                                                        </HBox>
+                                                    </OverflowToolbar>
+
+                                                    <TextArea
+                                                        value="{PreDefineGoal>value}"
+                                                        width="100%"
+                                                        editable="false"
+                                                    >
+                                                        <layoutData>
+                                                            <FlexItemData
+                                                                growFactor="1"
+                                                            />
+                                                        </layoutData>
+                                                    </TextArea>
+                                                    
+                                                </VBox>
+                                            </items>
+                                        </FlexBox>
+                                    </CustomTreeItem>
+                                </Tree>
+
+                                
+                            
                         </VBox>
                     </uxap:ObjectPageSubSection>
                     <uxap:ObjectPageSubSection
@@ -147,7 +241,11 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
+                                    <Column
+                                        width="6rem"
+                                        vAlign="Middle"
+                                        hAlign="Center"
+                                    >
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -204,7 +302,7 @@
                         showTitle="false"
                     >
                         <OverflowToolbar>
-                             <FormattedText htmlText="{scoreModel>/Partha}"/>
+                            <FormattedText htmlText="{scoreModel>/Partha}" />
                         </OverflowToolbar>
                     </uxap:ObjectPageSubSection>
                     <uxap:ObjectPageSubSection
@@ -244,7 +342,11 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
+                                    <Column
+                                        width="6rem"
+                                        vAlign="Middle"
+                                        hAlign="Center"
+                                    >
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -324,7 +426,11 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
+                                    <Column
+                                        width="6rem"
+                                        vAlign="Middle"
+                                        hAlign="Center"
+                                    >
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -384,7 +490,7 @@
                             <!-- <Title
                                 text="Scorecard of Kushagra Verma ( 100056 )"
                             /> -->
-                             <FormattedText htmlText="{scoreModel>/Kushagra}"/>
+                            <FormattedText htmlText="{scoreModel>/Kushagra}" />
                         </OverflowToolbar>
                     </uxap:ObjectPageSubSection>
                     <uxap:ObjectPageSubSection
@@ -424,7 +530,11 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
+                                    <Column
+                                        width="6rem"
+                                        vAlign="Middle"
+                                        hAlign="Center"
+                                    >
                                         <header>
                                             <Text text="Weightage" />
                                         </header>
@@ -457,7 +567,10 @@
                                                 editable="false"
                                                 value="{PreDefineGoal>Target}"
                                             />
-                                            <Text text="{PreDefineGoal>Weightage}"  width="3rem"/>
+                                            <Text
+                                                text="{PreDefineGoal>Weightage}"
+                                                width="3rem"
+                                            />
                                         </cells>
                                     </ColumnListItem>
                                 </items>
@@ -501,7 +614,11 @@
                                             <Text text="Target" />
                                         </header>
                                     </Column>
-                                    <Column width="6rem" vAlign="Middle" hAlign="Center">
+                                    <Column
+                                        width="6rem"
+                                        vAlign="Middle"
+                                        hAlign="Center"
+                                    >
                                         <header>
                                             <Text text="Weightage" />
                                         </header>

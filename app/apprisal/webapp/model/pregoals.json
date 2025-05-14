@@ -451,6 +451,72 @@
           "Weightage": "8%"
         }
       ],
+        "COF": {
+          "KSP001": {
+            "nodes": [
+              {
+                "Key": "KSP",
+                "value": "Key strategic Priority value",
+                "text": "Key strategic Priority",
+                "nodes": [
+                  {
+                    "Key": "KRA",
+                    "value": "Ensure compliance with new safety standards",
+                    "text": "Key Result Area"
+                  },
+                  {
+                    "Key": "KPI",
+                    "value": "Number of safety audits passed",
+                    "text": "Key Performance Index"
+                  },
+                  {
+                    "Key": "Target",
+                    "value": "100% audit pass rate",
+                    "text": "Annual Target"
+                  },
+                  {
+                    "Key": "Weightage",
+                    "value": "10%",
+                    "text": "Weightage  (%)"
+                  }
+                ]
+              }
+            ]
+          },
+          "KSP001": {
+            "nodes": [
+              {
+                "Key": "KSP",
+                "value": "Key strategic Priority value",
+                "text": "Key strategic Priority",
+                "nodes": [
+                  {
+                    "Key": "KRA",
+                    "value": "Improve interdepartmental collaboration",
+                    "text": "Key Result Area"
+                  },
+                  {
+                    "Key": "KPI",
+                    "value": "Number of joint department initiatives",
+                    "text": "Key Performance Index"
+                  },
+                  {
+                    "Key": "Target",
+                    "value": "Initiate 3 cross-functional projects",
+                    "text": "Annual Target"
+                  },
+                  {
+                    "Key": "Weightage",
+                    "value": "8%",
+                    "text": "Weightage  (%)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ,
+      
       "Individual_Goals": [
         {
           "Key_Results_Area": "Complete advanced SAP training",
