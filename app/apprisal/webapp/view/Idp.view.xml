@@ -71,11 +71,10 @@
 								}"
                             >
                             <infoToolbar>
-								<OverflowToolbar style="Clear">
-									
+								<OverflowToolbar style="Clear">					
                                     <Text text="Training Mandays Target: 5 Days (1 Day = 8hrs.)" class="sapUiSmallMarginEnd"/>
                                     <Text text="Training Mandays Actual: 6 Days 0 Hours 0 Minutes"/>
-                                    
+                                    <Text text="Weightage : 10% "/>
 								</OverflowToolbar>
 							</infoToolbar>
                                 <columns>
