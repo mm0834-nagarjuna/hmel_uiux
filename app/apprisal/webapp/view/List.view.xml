@@ -181,7 +181,7 @@
         </HBox>
             <Table
                 id="idApprisalTable"
-                mode="SingleSelect"
+                mode="SingleSelectLeft"
                 inset="false"
                 items="{
                         path: 'apprisalData>/appraisal',
