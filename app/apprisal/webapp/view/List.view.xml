@@ -169,10 +169,16 @@
                             </fb:FilterGroupItem>
                         </fb:filterGroupItems>
                     </fb:FilterBar>
+                    
                 </f:content>
             </f:DynamicPageHeader>
         </f:header>
         <f:content>
+        <VBox>
+        <HBox width="100%" justifyContent="End">
+        <Button text="Historic Data " class="sapUiSmallMarginEnd"/>
+         <Button text="360 degree "/>
+        </HBox>
             <Table
                 id="idApprisalTable"
                 class="sapUiSmallMarginTop sapUiSmallMarginBottom"
@@ -185,6 +191,9 @@
                     }"
             >
                 <columns>
+                    <Column width="3rem">
+                        <Text text="" />
+                    </Column>
                     <Column width="10rem">
                         <Text text="BSM" />
                     </Column>
@@ -215,6 +224,7 @@
                         press=".onListItemPress"
                     >
                         <cells>
+                        <CheckBox select="false"/>
                             <ObjectIdentifier
                                 title="2025-26"
                             />
@@ -228,6 +238,7 @@
                     </ColumnListItem>
                 </items>
             </Table>
+        </VBox>
         </f:content>
     </f:DynamicPage>
 </mvc:View>
