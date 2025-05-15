@@ -22,13 +22,18 @@
                         title="Competencies"
                         titleUppercase="false"
                         showTitle="false"
-                        
                     >
                         <VBox class="sapUiSmallMarginBottom">
-                             <FormattedText htmlText="{/HTML}"  visible="{= ${device>/browser/mobile} }"/>
+                            <FormattedText
+                                htmlText="{/HTML}"
+                                visible="{= ${device>/browser/mobile} }"
+                            />
                             <OverflowToolbar style="Clear">
                                 <Title text="Competencies" />
-                                <FormattedText htmlText="{/HTML}"  visible="{= !${device>/browser/mobile} }"/>
+                                <FormattedText
+                                    htmlText="{/HTML}"
+                                    visible="{= !${device>/browser/mobile} }"
+                                />
                                 <ToolbarSpacer />
                                 <Button
                                     icon="sap-icon://document-text"
@@ -47,15 +52,20 @@
 									templateShareable: false
 									
 								}"
-                                
                             >
                                 <columns>
-                                    <Column width="{= ${device>/browser/mobile} ? '20%' : '4rem' }" importance="None">
+                                    <Column
+                                        width="{= ${device>/browser/mobile} ? '20%' : '4rem' }"
+                                        importance="None"
+                                    >
                                         <header>
                                             <Text text="Select" />
                                         </header>
                                     </Column>
-                                    <Column width="{= ${device>/browser/mobile} ? '80%' : '10rem' }" importance="None">
+                                    <Column
+                                        width="{= ${device>/browser/mobile} ? '80%' : '10rem' }"
+                                        importance="None"
+                                    >
                                         <header>
                                             <Text text="Competency" />
                                         </header>
@@ -70,7 +80,11 @@
                                             <Text text="Definition" />
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}" width="150px" importance="None">
+                                    <Column
+                                        visible="{apprisalData>bcfANR}"
+                                        width="150px"
+                                        importance="None"
+                                    >
                                         <header>
                                             <HBox alignItems="Center">
                                                 <Text text="Appraisee Score" />
@@ -84,7 +98,11 @@
                                             </HBox>
                                         </header>
                                     </Column>
-                                    <Column visible="{apprisalData>bcfANR}" width="150px" importance="None">
+                                    <Column
+                                        visible="{apprisalData>bcfANR}"
+                                        width="150px"
+                                        importance="None"
+                                    >
                                         <header>
                                             <HBox alignItems="Center">
                                                 <Text text="Appraiser Score" />
@@ -160,7 +178,27 @@
                                 />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
-                            <Table
+
+                            <Label text="Appraisee" />
+                            <TextArea
+                                value="{PreDefineGoal>Remarks_Appraisee_value}"
+                                placeholder="Appraisee Remarks"
+                                editable="{apprisalData>bcfFFRAEEdit}"
+                                width="100%"
+                                class="sapUiSmallMarginBottom"
+                            />
+
+                            <Label
+                                text="Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                value="{PreDefineGoal>Remarks_Appraiser_value}"
+                                placeholder="Appraiser Remarks"
+                                editable="{apprisalData>bcfFFRAREdit}"
+                                width="100%"
+                            />
+                            <!-- <Table
                                 id="BcfFFMRTable"
                                 items="{
 									path : 'PreDefineGoal>/BCE/First_Four_Monthly_Review',	
@@ -198,7 +236,7 @@
                                         </cells>
                                     </ColumnListItem>
                                 </items>
-                            </Table>
+                            </Table> -->
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
@@ -225,7 +263,26 @@
                                 />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
-                            <Table
+                            <Label text="Appraisee" />
+                            <TextArea
+                                value="{PreDefineGoal>Remarks_Appraisee_value}"
+                                placeholder="Appraisee Remarks"
+                                editable="{apprisalData>bcfSFRAEEdit}"
+                                width="100%"
+                                class="sapUiSmallMarginBottom"
+                            />
+
+                            <Label
+                                text="Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                value="{PreDefineGoal>Remarks_Appraiser_value}"
+                                placeholder="Appraiser Remarks"
+                                editable="{apprisalData>bcfSFRAREdit}"
+                                width="100%"
+                            />
+                            <!-- <Table
                                 id="BcfSFMRTable"
                                 items="{
 									path : 'PreDefineGoal>/BCE/Second_Four_Monthly_Review',	
@@ -263,7 +320,7 @@
                                         </cells>
                                     </ColumnListItem>
                                 </items>
-                            </Table>
+                            </Table> -->
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
@@ -288,7 +345,38 @@
                                 <Title text="Annual Review Remarks" />
                                 <ToolbarSpacer />
                             </OverflowToolbar>
-                            <Table
+
+                            <Label text="Appraisee" />
+                            <TextArea
+                                value="{PreDefineGoal>Remarks_Appraisee_value}"
+                                placeholder="Appraisee Remarks"
+                                editable="{apprisalData>bcfANRAEEdit}"
+                                width="100%"
+                                class="sapUiSmallMarginBottom"
+                            />
+
+                            <Label
+                                text="Appraiser"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                value="{PreDefineGoal>Remarks_Appraiser_value}"
+                                placeholder="Appraiser Remarks"
+                                editable="{apprisalData>bcfANRAREdit}"
+                                width="100%"
+                            />
+                            <Label
+                                text="Reviewer"
+                                class="sapUiSmallMarginTop"
+                            />
+                            <TextArea
+                                value="{PreDefineGoal>Remarks_Appraiser_value}"
+                                placeholder="Appraiser Remarks"
+                                editable="{apprisalData>bcfANRREREdit}"
+                                width="100%"
+                            />
+
+                            <!-- <Table
                                 id="BcfANRTable"
                                 items="{
 									path : 'PreDefineGoal>/BCE/Annual_Review',	
@@ -337,7 +425,7 @@
                                         </cells>
                                     </ColumnListItem>
                                 </items>
-                            </Table>
+                            </Table> -->
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
