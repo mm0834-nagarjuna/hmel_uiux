@@ -183,12 +183,14 @@
                 id="idApprisalTable"
                 mode="SingleSelectLeft"
                 inset="false"
+                autoPopinMode="true"
                 items="{
                         path: 'apprisalData>/appraisal',
                         sorter: {
                             path: 'appraisalName'
                         }
                     }"
+                
             >
                 <columns>
                     
@@ -218,7 +220,7 @@
                 <items>
                     <ColumnListItem
                         vAlign="Middle"
-                        type="Inactive"
+                        type="Navigation"
                         press=".onListItemPress"
                     >
                         <cells>
