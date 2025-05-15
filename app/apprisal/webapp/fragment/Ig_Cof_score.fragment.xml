@@ -7,7 +7,7 @@
         id="idScoreInfoDialog"
         draggable="true"
         resizable="true"
-        contentWidth="600px"
+        contentWidth="450px"
         contentHeight="auto"
         class="sapUiResponsivePadding">
         
@@ -18,7 +18,7 @@
                 path: 'PreDefineGoal>/Ig_Cof_score'
             }">
             <columns>
-                <Column width="30%">
+                <Column width="25%">
                     <Text text="Evaluation" />
                 </Column>
                 <Column>

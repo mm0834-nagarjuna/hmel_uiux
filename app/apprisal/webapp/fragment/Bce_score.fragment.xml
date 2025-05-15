@@ -18,7 +18,7 @@
             }"
         >
             <columns>
-                <Column>
+                <Column width="5rem">
                     <Text text="Score" />
                 </Column>
                 <Column>
