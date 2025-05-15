@@ -24,7 +24,7 @@
                             additionalText="{ProductId}" />
                     </suggestionItems>
                 </Input>
-                <Button icon="sap-icon://add" class="sapUiSmallMarginBegin"/>
+                <Button icon="sap-icon://add" class="sapUiSmallMarginBegin" text="Add"/>
             </HBox>    
         
 
@@ -62,10 +62,11 @@
             </items>
 
         </Table>
-        
-
+        <beginButton>
+            <Button text="Send" icon="sap-icon://paper-plane" press=".onClickAddAppraiserCancel" type="Emphasized"/>
+        </beginButton>
         <endButton>
-            <Button text="Cancel" press=".onClickAddAppraiserCancel" type="Emphasized"/>
+            <Button text="Cancel" press=".onClickAddAppraiserCancel" type="Negative"/>
         </endButton>
 
     </Dialog>
