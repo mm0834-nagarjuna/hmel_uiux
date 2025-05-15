@@ -90,7 +90,7 @@
                         <VBox alignItems="Stretch">
                             <OverflowToolbar>
                                 <Title text="1.1 Key Performance Area" />
-                                <Button icon="sap-icon://delete" />
+                                <Button icon="sap-icon://delete" visible="{apprisalData>deleteKPA}"/>
                                 <ToolbarSpacer />
                                 
                             </OverflowToolbar>
@@ -135,7 +135,7 @@
                                                                 text="{myGoal>addText}"
                                                                 custom:field="{myGoal>field}"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                                visible="{= ${myGoal>addIcon} === 'sap-icon://add' }"
+                                                                visible="{parts: [{path:'myGoal>addVisible'}], formatter: '.formatter.TAVisible'}"
                                                             />
                                                            
                                                             <Button
@@ -148,7 +148,7 @@
                                                                 icon="{myGoal>deleteIcon}"
                                                                 press="handleButtonPress"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                                visible="{= ${myGoal>deleteIcon} === 'sap-icon://delete' }"
+                                                                visible="{parts: [{path:'myGoal>deleteVisible'}], formatter: '.formatter.TAVisible'}"
                                                             />
                                                         </HBox>
                                                     </HBox>
@@ -260,12 +260,12 @@
                         <VBox alignItems="Stretch">
                             <OverflowToolbar>
                                 <Title text="1.2 Key Performance Area" />
-                                <Button icon="sap-icon://delete" />
+                                <Button icon="sap-icon://delete" visible="{apprisalData>deleteKPA}" />
                                 <ToolbarSpacer />
                                 
                             </OverflowToolbar>
                             <Tree
-                                id="Tree5"
+                                id="Tree3"
                                 items="{myGoal>/COF/KSP001}"
                              >
                                 <CustomTreeItem>
@@ -305,7 +305,7 @@
                                                                 text="{myGoal>addText}"
                                                                 custom:field="{myGoal>field}"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                                visible="{= ${myGoal>addIcon} === 'sap-icon://add' }"
+                                                                visible="{parts: [{path:'myGoal>addVisible'}], formatter: '.formatter.TAVisible'}"
                                                             />
                                                            
                                                             <Button
@@ -318,7 +318,7 @@
                                                                 icon="{myGoal>deleteIcon}"
                                                                 press="handleButtonPress"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-                                                                visible="{= ${myGoal>deleteIcon} === 'sap-icon://delete' }"
+                                                                visible="{parts: [{path:'myGoal>deleteVisible'}], formatter: '.formatter.TAVisible'}"
                                                             />
                                                         </HBox>
                                                     </HBox>

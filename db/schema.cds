@@ -24,6 +24,9 @@ entity AppraisalDocuments {
   referBackToAppraiser: Boolean;
   guidelines : Boolean;
   addAppraiser:Boolean;
+  addKRA:Boolean;
+  deleteKRA:Boolean;
+  deleteKPA:Boolean;
   coFg: Boolean;
   iG: Boolean;
   bcf: Boolean;

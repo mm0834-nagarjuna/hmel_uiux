@@ -58,6 +58,8 @@ sap.ui.define([
                 "isDrpD": false,
                 "addIcon": "sap-icon://add",
                 "addText": "Add KRA",
+                "addVisible": "addKRA",
+                "deleteVisible": "deleteKRA",
 
                 "nodes": [
                   {
@@ -70,6 +72,8 @@ sap.ui.define([
                     "fieldIconVisible":' ',
                     "deleteIcon": "sap-icon://delete",
                     "addOtherAR": "addAppraiser",
+                    "addVisible": "addKRA",
+                   "deleteVisible": "deleteKRA",
                     "visible": true,
                     "editable": true,
                     "isTA": true,
@@ -243,6 +247,8 @@ sap.ui.define([
                     "value": "Key Result Area value",
                     "deleteIcon": "sap-icon://delete",
                     "addOtherAR": "addAppraiser",
+                    "addVisible": "addKRA",
+                "deleteVisible": "deleteKRA",
                     "visible": true,
                     "editable": true,
                     "isTA": true,
@@ -267,6 +273,8 @@ sap.ui.define([
                 "isDrpD": false,
                 "addIcon": "sap-icon://add",
                 "addText": "Add KRA",
+                "addVisible": "addKRA",
+                "deleteVisible": "deleteKRA",
 
                 "nodes": [
                   {
@@ -279,6 +287,8 @@ sap.ui.define([
                     "fieldIconVisible":' ',
                     "deleteIcon": "sap-icon://delete",
                     "addOtherAR": "addAppraiser",
+                    "addVisible": "addKRA",
+                    "deleteVisible": "deleteKRA",
                     "visible": true,
                     "editable": true,
                     "isTA": true,
@@ -452,6 +462,8 @@ sap.ui.define([
                     "value": "Key Result Area value",
                     "deleteIcon": "sap-icon://delete",
                     "addOtherAR": "addAppraiser",
+                    "addVisible": "addKRA",
+                    "deleteVisible": "deleteKRA",
                     "visible": true,
                     "editable": true,
                     "isTA": true,

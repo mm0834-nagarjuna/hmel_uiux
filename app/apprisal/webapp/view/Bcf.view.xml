@@ -1,4 +1,4 @@
-<mvc:View
+<mvc:View xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     controllerName="apprisal.controller.Bcf"
     xmlns:uxap="sap.uxap"
@@ -132,22 +132,36 @@
                                             <Text
                                                 text="{PreDefineGoal>COMP_DEF}"
                                             />
-                                            <Input
+                                            <ComboBox
                                                 value="{PreDefineGoal>Appraisee_Score}"
-                                                type="Number"
                                                 placeholder="Appraisee Score"
                                                 editable="{apprisalData>bcfANRAEEdit}"
                                                 visible="{apprisalData>bcfANR}"
                                                 width="60px"
-                                            />
-                                            <Input
+                                            >
+                                            <core:Item key="01" text="1"/>
+                                            <core:Item key="02" text="2"/>
+                                            <core:Item key="03" text="3"/>
+                                            <core:Item key="04" text="4"/>
+                                            <core:Item key="05" text="5"/>
+                                            <core:Item key="06" text="6"/>
+                                            
+                                            </ComboBox>
+                                            <ComboBox
                                                 value="{PreDefineGoal>Appraisee_Score}"
-                                                type="Number"
                                                 placeholder="Appraiser Score"
                                                 visible="{apprisalData>bcfANR}"
                                                 editable="{apprisalData>bcfANRAREdit}"
                                                 width="60px"
-                                            />
+                                            >
+                                            <core:Item key="01" text="1"/>
+                                            <core:Item key="02" text="2"/>
+                                            <core:Item key="03" text="3"/>
+                                            <core:Item key="04" text="4"/>
+                                            <core:Item key="05" text="5"/>
+                                            <core:Item key="06" text="6"/>
+                                            
+                                            </ComboBox>
                                         </cells>
                                     </ColumnListItem>
                                 </items>

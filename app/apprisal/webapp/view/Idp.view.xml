@@ -417,7 +417,7 @@
             >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
-                        title="Four Monthly Reviews"
+                        title="Second Monthly Reviews"
                         titleUppercase="false"
                         showTitle="false"
                         visible="{apprisalData>idpSMRS}"
