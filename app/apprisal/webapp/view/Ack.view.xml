@@ -110,6 +110,13 @@
                                     />
                                 </ComboBox>
                             </HBox>
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
+                                <Label
+                                    text="Any Other Feedback"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <TextArea editable="{apprisalData>ackTSCEdit}"/>
+                            </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
@@ -189,6 +196,13 @@
                                     />
                                 </ComboBox>
                             </HBox>
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
+                                <Label
+                                    text="Any Other Feedback"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <TextArea editable="{apprisalData>ackFFMCEdit}"/>
+                            </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
@@ -267,6 +281,13 @@
                                         text="Non-Developmental Feedback"
                                     />
                                 </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
+                                <Label
+                                    text="Any Other Feedback"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <TextArea editable="{apprisalData>ackSFMCEdit}"/>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
@@ -373,6 +394,13 @@
                                         text="During Year End Review"
                                     />
                                 </ComboBox>
+                            </HBox>
+                            <HBox alignItems="Center" justifyContent="SpaceBetween">
+                                <Label
+                                    text="Any Other Feedback"
+                                    class="sapUiSmallMarginEnd"
+                                />
+                                <TextArea editable="{apprisalData>ackANCEdit}"/>
                             </HBox>
                         </VBox>
                     </uxap:ObjectPageSubSection>
