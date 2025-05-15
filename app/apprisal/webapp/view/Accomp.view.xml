@@ -30,12 +30,12 @@
                                 text="New"
                                 type="Ghost"
                                 press="onItemSelect"
-                                visible="{apprisalData>accompEdit}"
+                                visible="{apprisalData>new}"
                             />
 
 							<HBox width="auto">
-							<Button text="Upload Attachment" icon="sap-icon://upload" visible="{apprisalData>accompEdit}" type="Ghost"/>
-							<Button text="Download Attachment" icon="sap-icon://download" visible="{= !${apprisalData>accompEdit}}" type="Ghost" />
+							<Button text="Upload Attachment" icon="sap-icon://upload" visible="{apprisalData>uploadAtch}" type="Ghost"/>
+							<Button text="Download Attachment" icon="sap-icon://download" visible="{apprisalData>downloadAtch}" type="Ghost" />
 							</HBox>
 						</OverflowToolbar>
 						<!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
