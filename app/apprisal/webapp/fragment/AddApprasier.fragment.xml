@@ -5,13 +5,13 @@
     <Dialog 
             title="Add Appraiser"
             contentHeight="auto"
-            contentWidth="50%"
+            contentWidth="30%"
             class="sapUiLargePadding"
             >
-            <HBox>
+            <HBox class="sapUiSmallMarginBegin">
                 <Input
                     textFormatMode="KeyValue"
-                    placeholder="Enter product"
+                    placeholder="Enter Employee ID"
                     showSuggestion="true"
                     showValueHelp="true"
                     valueHelpRequest=".onValueHelpRequest"
@@ -24,21 +24,24 @@
                             additionalText="{ProductId}" />
                     </suggestionItems>
                 </Input>
-                <Button icon="sap-icon://add" />
+                <Button icon="sap-icon://add" class="sapUiSmallMarginBegin"/>
             </HBox>    
         
 
         <Table
             class="sapUiMediumPadding"
-            items="{
-			path : 'PreDefineGoal>/indv_goals'
-		}"
+            
             >
             
             <columns>
-                <Column>
+                <Column width="40%">
                     <header>
-                        <Text text="Appraiser" />
+                        <Text text="Employee ID" />
+                    </header>
+                </Column>
+                <Column width="60%">
+                    <header>
+                        <Text text="Employee Name" />
                     </header>
                 </Column>
             </columns>
@@ -46,7 +49,14 @@
             <items>
                 <ColumnListItem vAlign="Top">
                     <cells>
-                        <Text text="{PreDefineGoal>KRA}" />
+                        <Text text="111111111" />
+                        <Text text="John Doe" />
+                    </cells>
+                </ColumnListItem>
+                <ColumnListItem vAlign="Top">
+                    <cells>
+                        <Text text="222222222" />
+                        <Text text="Jane Dove" />
                     </cells>
                 </ColumnListItem>
             </items>
