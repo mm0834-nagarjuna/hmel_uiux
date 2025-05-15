@@ -9,214 +9,6 @@ sap.ui.define([
 
     return Controller.extend("apprisal.controller.Cof", {
         onInit() {
-            var oData = {
-                "COF": {
-                    "KSP002": {
-                      "nodes": [
-                        {
-                          "key": "KSP",
-                          "title": "Key Strategic Priority",
-                          "value": "Key Strategic Priority value",
-                          "visible": true,
-                          "editable": true,
-                          "isTA": false,
-                          "isDrpD": false,
-                          "addIcon": "sap-icon://add",
-                          "addText": "Add KRA",
-                          
-                          "nodes": [
-                            {
-                              "key": "KRA",
-                              "num": "1.1.1",
-                              "title": "Key Result Area",
-                              "value": "Key Result Area value",
-                              "deleteIcon": "sap-icon://delete",
-                              "visible": true,
-                              "editable": true,
-                              "isTA": true,
-                              "isDrpD": false,
-                              "nodes": [
-                                {
-                                  "key": "KPI",
-                                  "title": "Key Performance Index",
-                                  "value": "Key Performance Index value",
-                                  "visible": true,
-                                  "editable": true,
-                                  "isTA": true,
-                                  "isDrpD": false
-                                },
-                                {
-                                  "key": "Target",
-                                  "title": "Annual Target",
-                                  "value": "Target value",
-                                  "visible": true,
-                                  "editable": true,
-                                  "isTA": true,
-                                  "isDrpD": false
-                                },
-                                {
-                                  "key": "FFMmilestone",
-                                  "title": "First Four Monthly Milestones",
-                                  "value": "First Four Monthly Milestones value",
-                                  "visible": true,
-                                  "editable": true,
-                                  "isTA": false,
-                                  "isDrpD": false
-                                },
-                                {
-                                  "key": "SFMmilestone",
-                                  "title": "Second Four Monthly Milestones",
-                                  "value": "Second Four Monthly Milestones value",
-                                  "visible": true,
-                                  "editable": true,
-                                  "isTA": false,
-                                  "isDrpD": false
-                                },
-                                {
-                                  "key": "FFMA:AE",
-                                  "title": "First Four Monthly Achievement: Appraisee",
-                                  "value": "First Four Monthly Achievement: Appraisee Value",
-                                  "visible": true,
-                                  "editable": true,
-                                  "isTA": true,
-                                  "isDrpD": false
-                                },
-                                {
-                                  "key": "FFFedA:AE",
-                                  "title": "First Four Monthly Feedback: Appraiser",
-                                  "value": "First Four Monthly Feedback: Appraiser Value",
-                                  "visible": true,
-                                  "editable": true,
-                                  "isTA": true,
-                                  "isDrpD": false
-                                },
-                                {
-                                  "key": "Weightage",
-                                  "title": "Weightage (%)",
-                                  "value": "10",
-                                  "visible": true,
-                                  "editable": true,
-                                  "isTA": false,
-                                  "isDrpD": true,
-                                }
-                              ]
-                            },
-                            {
-                                "key": "KRA",
-                                "num": "1.1.2",
-                              "title": "Key Result Area",
-                              "value": "Key Result Area value",
-                              "deleteIcon": "sap-icon://delete",
-                              "visible": true,
-                              "editable": true,
-                              "isTA": true,
-                              "isDrpD": false,
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    "KSP001": {
-                        "nodes": [
-                          {
-                            "key": "KSP",
-                            "title": "Key Strategic Priority",
-                            "value": "Key Strategic Priority value",
-                            "visible": true,
-                            "editable": true,
-                            "isTA": false,
-                            "isDrpD": false,
-                            "addIcon": "sap-icon://add",
-                            "addText": "Add KRA",
-                            
-                            "nodes": [
-                              {
-                                "key": "KRA",
-                                "num": "1.2.1",
-                                "title": "Key Result Area",
-                                "value": "Key Result Area value",
-                                "deleteIcon": "sap-icon://delete",
-                                "visible": true,
-                                "editable": true,
-                                "isTA": true,
-                                "isDrpD": false,
-                                "nodes": [
-                                  {
-                                    "key": "KPI",
-                                    "title": "Key Performance Index",
-                                    "value": "Key Performance Index value",
-                                    "visible": true,
-                                    "editable": true,
-                                    "isTA": true,
-                                    "isDrpD": false
-                                  },
-                                  {
-                                    "key": "Target",
-                                    "title": "Annual Target",
-                                    "value": "Target value",
-                                    "visible": true,
-                                    "editable": true,
-                                    "isTA": true,
-                                    "isDrpD": false
-                                  },
-                                  {
-                                    "key": "FFMmilestone",
-                                    "title": "First Four Monthly Milestones",
-                                    "value": "First Four Monthly Milestones value",
-                                    "visible": true,
-                                    "editable": true,
-                                    "isTA": false,
-                                    "isDrpD": false
-                                  },
-                                  {
-                                    "key": "SFMmilestone",
-                                    "title": "Second Four Monthly Milestones",
-                                    "value": "Second Four Monthly Milestones value",
-                                    "visible": true,
-                                    "editable": true,
-                                    "isTA": false,
-                                    "isDrpD": false
-                                  },
-                                  {
-                                    "key": "FFMA:AE",
-                                    "title": "First Four Monthly Achievement: Appraisee",
-                                    "value": "First Four Monthly Achievement: Appraisee Value",
-                                    "visible": true,
-                                    "editable": true,
-                                    "isTA": true,
-                                    "isDrpD": false
-                                  },
-                                  {
-                                    "key": "FFFedA:AE",
-                                    "title": "First Four Monthly Feedback: Appraiser",
-                                    "value": "First Four Monthly Feedback: Appraiser Value",
-                                    "visible": true,
-                                    "editable": true,
-                                    "isTA": true,
-                                    "isDrpD": false
-                                  },
-                                  {
-                                    "key": "Weightage",
-                                    "title": "Weightage (%)",
-                                    "value": "10",
-                                    "visible": true,
-                                    "editable": true,
-                                    "isTA": false,
-                                    "isDrpD": true,
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                  }
-                  
-                  
-            };
-            var oModel = new sap.ui.model.json.JSONModel(oData);
-            this.getView().setModel(oModel, "myGoal");
-
             const oRouter = this.getOwnerComponent().getRouter();
             oRouter.getRoute("apprisalDetail").attachPatternMatched(this.onObjectMatched, this);
 
@@ -232,21 +24,406 @@ sap.ui.define([
             oContextBinding.requestObject().then(function (oData) {
                 
                 
-                console.log(oData)
+                // console.log(oData)
                 var oModel = new sap.ui.model.json.JSONModel(oData);
-                this.getView().setModel(oModel, "Config");
+                that.getView().setModel(oModel, "Config");
+
+                let _aData = that.UXData()
+
+                console.log(_aData)
+                var _aModel = new sap.ui.model.json.JSONModel(_aData);
+                that.getView().setModel(_aModel, "myGoal");
+
+                
 
             }).catch(function (oError) {
                 console.error("Failed to load product:", oError);
             });
         },
+        UXData: function(){
+            var oData = {
+                "COF": {
+                    "KSP002": {
+                        "nodes": [
+                          {
+                            "key": "KSP",
+                            "fieldVisible": "coFgKSP",
+                            "fieldEdit": "coFgKSPEdit",
+                            "title": "Key Strategic Priority",
+                            "value": "Key Strategic Priority value",
+                            "visible": true,
+                            "editable": true,
+                            "isTA": false,
+                            "isDrpD": false,
+                            "addIcon": "sap-icon://add",
+                            "addText": "Add KRA",
+                            
+                            "nodes": [
+                              {
+                                "key": "KRA",
+                                "fieldVisible": "coFgKSP",
+                                "fieldEdit": "coFgKSPEdit",
+                                "num": "1.1.1",
+                                "title": "Key Result Area",
+                                "value": "Key Result Area value",
+                                "deleteIcon": "sap-icon://delete",
+                                "visible": true,
+                                "editable": true,
+                                "isTA": true,
+                                "isDrpD": false,
+                                "nodes": [
+                                  {
+                                    "key": "KPI",
+                                    "fieldVisible": "coFgKPI",
+                                    "fieldEdit": "coFgKPIEdit",
+                                    "title": "Key Performance Index",
+                                    "value": "Key Performance Index value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "Target",
+                                    "fieldVisible": "coFgTarget",
+                                    "fieldEdit": "coFgTargetEdit",
+                                    "title": "Annual Target",
+                                    "value": "Target value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "FFMmilestone",
+                                    "fieldVisible": "coFgTarget",
+                                    "fieldEdit": "coFgTargetEdit",
+                                    "title": "First Four Monthly Milestones",
+                                    "value": "First Four Monthly Milestones value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": false,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "SFMmilestone",
+                                    "fieldVisible": "coFgTarget",
+                                    "fieldEdit": "coFgTargetEdit",
+                                    "title": "Second Four Monthly Milestones",
+                                    "value": "Second Four Monthly Milestones value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": false,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "FFMA:AE",
+                                    "fieldVisible": "cofgffmaAE",
+                                    "fieldEdit": "cofgffmaAEEdit",
+                                    "title": "First Four Monthly Achievement: Appraisee",
+                                    "value": "First Four Monthly Achievement: Appraisee Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "FFFedA:AE",
+                                    "fieldVisible": "cofgffmaAR",
+                                    "fieldEdit": "cofgffmaAREdit",
+                                    "title": "First Four Monthly Feedback: Appraiser",
+                                    "value": "First Four Monthly Feedback: Appraiser Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "SFMA:AE",
+                                    "fieldVisible": "cofgsfmaAE",
+                                    "fieldEdit": "cofgsfmaAEEdit",
+                                    "title": "Second Four Monthly Achievement: Appraisee",
+                                    "value": "Second Four Monthly Achievement: Appraisee Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "SFFedA:AE",
+                                    "fieldVisible": "cofgsfmaAR",
+                                    "fieldEdit": "cofgsfmaAREdit",
+                                    "title": "Second Four Monthly Feedback: Appraiser",
+                                    "value": "Second Four Monthly Feedback: Appraiser Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "AA:AE",
+                                    "fieldVisible": "cofgaaAEE",
+                                    "fieldEdit": "cofgaaAEEdit",
+                                    "title": "Annual Achievement: Appraisee",
+                                    "value": "Annual Achievement: Appraisee Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "AFedA:AE",
+                                    "fieldVisible": "cofgafAER",
+                                    "fieldEdit": "cofgafAEREdit",
+                                    "title": "Annual Feedback: Appraiser",
+                                    "value": "Annual Feedback: Appraiser Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "Weightage",
+                                    "title": "Weightage (%)",
+                                    "fieldVisible": "coFgWeightage",
+                                    "fieldEdit": "coFgWeightageEdit",
+                                    "value": "10",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": false,
+                                    "isDrpD": true,
+
+                                    "key1": "Appraisee",
+                                    "title1": "Appraisee Score",
+                                    "fieldVisible1": "cofgaaAEE",
+                                    "fieldEdit1": "cofgselfAEScore",
+                                    "value1": "10",
+                                    "visible1": true,
+                                    "editable1": true,
+                                    "isTA1": false,
+                                    "isDrpD1": true,
+
+                                    "key2": "Appraiser",
+                                    "title2": "Appraiser Score",
+                                    "fieldVisible2": "coFgARScore",
+                                    "fieldEdit2": "coFgARScoreEdit",
+                                    "value2": "10",
+                                    "visible2": true,
+                                    "editable2": true,
+                                    "isTA2": false,
+                                    "isDrpD2": true,
+
+                                  }
+                                ]
+                              },
+                              {
+                                "key": "KRA",
+                                "fieldVisible": "coFgKSP",
+                                "fieldEdit": "coFgKSPEdit",
+                                "num": "1.1.2",
+                                "title": "Key Result Area",
+                                "value": "Key Result Area value",
+                                "deleteIcon": "sap-icon://delete",
+                                "visible": true,
+                                "editable": true,
+                                "isTA": true,
+                                "isDrpD": false,
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                    "KSP001": {
+                        "nodes": [
+                          {
+                            "key": "KSP",
+                            "fieldVisible": "coFgKSP",
+                            "fieldEdit": "coFgKSPEdit",
+                            "title": "Key Strategic Priority",
+                            "value": "Key Strategic Priority value",
+                            "visible": true,
+                            "editable": true,
+                            "isTA": false,
+                            "isDrpD": false,
+                            "addIcon": "sap-icon://add",
+                            "addText": "Add KRA",
+                            
+                            "nodes": [
+                              {
+                                "key": "KRA",
+                                "fieldVisible": "coFgKSP",
+                                "fieldEdit": "coFgKSPEdit",
+                                "num": "1.2.1",
+                                "title": "Key Result Area",
+                                "value": "Key Result Area value",
+                                "deleteIcon": "sap-icon://delete",
+                                "visible": true,
+                                "editable": true,
+                                "isTA": true,
+                                "isDrpD": false,
+                                "nodes": [
+                                  {
+                                    "key": "KPI",
+                                    "fieldVisible": "coFgKPI",
+                                    "fieldEdit": "coFgKPIEdit",
+                                    "title": "Key Performance Index",
+                                    "value": "Key Performance Index value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "Target",
+                                    "fieldVisible": "coFgTarget",
+                                    "fieldEdit": "coFgTargetEdit",
+                                    "title": "Annual Target",
+                                    "value": "Target value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "FFMmilestone",
+                                    "fieldVisible": "coFgTarget",
+                                    "fieldEdit": "coFgTargetEdit",
+                                    "title": "First Four Monthly Milestones",
+                                    "value": "First Four Monthly Milestones value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": false,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "SFMmilestone",
+                                    "fieldVisible": "coFgTarget",
+                                    "fieldEdit": "coFgTargetEdit",
+                                    "title": "Second Four Monthly Milestones",
+                                    "value": "Second Four Monthly Milestones value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": false,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "FFMA:AE",
+                                    "fieldVisible": "cofgffmaAE",
+                                    "fieldEdit": "cofgffmaAEEdit",
+                                    "title": "First Four Monthly Achievement: Appraisee",
+                                    "value": "First Four Monthly Achievement: Appraisee Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "FFFedA:AE",
+                                    "fieldVisible": "cofgffmaAR",
+                                    "fieldEdit": "cofgffmaAREdit",
+                                    "title": "First Four Monthly Feedback: Appraiser",
+                                    "value": "First Four Monthly Feedback: Appraiser Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "SFMA:AE",
+                                    "fieldVisible": "cofgsfmaAE",
+                                    "fieldEdit": "cofgsfmaAEEdit",
+                                    "title": "Second Four Monthly Achievement: Appraisee",
+                                    "value": "Second Four Monthly Achievement: Appraisee Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "SFFedA:AE",
+                                    "fieldVisible": "cofgsfmaAR",
+                                    "fieldEdit": "cofgsfmaAREdit",
+                                    "title": "Second Four Monthly Feedback: Appraiser",
+                                    "value": "Second Four Monthly Feedback: Appraiser Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "AA:AE",
+                                    "fieldVisible": "cofgaaAEE",
+                                    "fieldEdit": "cofgaaAEEdit",
+                                    "title": "Annual Achievement: Appraisee",
+                                    "value": "Annual Achievement: Appraisee Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "AFedA:AE",
+                                    "fieldVisible": "cofgafAER",
+                                    "fieldEdit": "cofgafAEREdit",
+                                    "title": "Annual Feedback: Appraiser",
+                                    "value": "Annual Feedback: Appraiser Value",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": true,
+                                    "isDrpD": false
+                                  },
+                                  {
+                                    "key": "Weightage",
+                                    "title": "Weightage (%)",
+                                    "fieldVisible": "coFgWeightage",
+                                    "fieldEdit": "coFgWeightageEdit",
+                                    "value": "10",
+                                    "visible": true,
+                                    "editable": true,
+                                    "isTA": false,
+                                    "isDrpD": true,
+
+                                    "key1": "Appraisee",
+                                    "title1": "Appraisee Score",
+                                    "fieldVisible1": "cofgaaAEE",
+                                    "fieldEdit1": "cofgaaAEEdit",
+                                    "value1": "10",
+                                    "visible1": true,
+                                    "editable1": true,
+                                    "isTA1": false,
+                                    "isDrpD1": true,
+
+                                    "key2": "Appraiser",
+                                    "title2": "Appraiser Score",
+                                    "fieldVisible2": "coFgARScore",
+                                    "fieldEdit2": "coFgARScoreEdit",
+                                    "value2": "10",
+                                    "visible2": true,
+                                    "editable2": true,
+                                    "isTA2": false,
+                                    "isDrpD2": true,
+
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                  }
+                  
+                 
+            };
+            return oData
+           
+        },
         _addDropDownList: function(){
             var weightComboBox = this.byId("weight");
             var AESCRComboBox = this.byId("AESCR");
             var ARSCRComboBox = this.byId("ARSCR");
-            var mweightComboBox = this.byId("mweight");
-            var mAESCRComboBox = this.byId("mAESCR");
-            var mARSCRComboBox = this.byId("mARSCR");
+            // var mweightComboBox = this.byId("mweight");
+            // var mAESCRComboBox = this.byId("mAESCR");
+            // var mARSCRComboBox = this.byId("mARSCR");
 
             for (var i = 3; i <= 50; i++) {
                 var oItem = new sap.ui.core.Item({
@@ -272,29 +449,29 @@ sap.ui.define([
                 ARSCRComboBox.addItem(oItem);
             }
 
-            for (var i = 3; i <= 50; i++) {
-                var oItem = new sap.ui.core.Item({
-                    key: i.toString(),
-                    text: i 
-                });
-                mweightComboBox.addItem(oItem);
-            }
+            // for (var i = 3; i <= 50; i++) {
+            //     var oItem = new sap.ui.core.Item({
+            //         key: i.toString(),
+            //         text: i 
+            //     });
+            //     mweightComboBox.addItem(oItem);
+            // }
 
-            for (var i = 1; i <= 6; i++) {
-                var oItem = new sap.ui.core.Item({
-                    key: i.toString(),
-                    text: i 
-                });
-                mAESCRComboBox.addItem(oItem);
-            }
+            // for (var i = 1; i <= 6; i++) {
+            //     var oItem = new sap.ui.core.Item({
+            //         key: i.toString(),
+            //         text: i 
+            //     });
+            //     mAESCRComboBox.addItem(oItem);
+            // }
 
-            for (var i = 1; i <= 6; i++) {
-                var oItem = new sap.ui.core.Item({
-                    key: i.toString(),
-                    text: i 
-                });
-                mARSCRComboBox.addItem(oItem);
-            }
+            // for (var i = 1; i <= 6; i++) {
+            //     var oItem = new sap.ui.core.Item({
+            //         key: i.toString(),
+            //         text: i 
+            //     });
+            //     mARSCRComboBox.addItem(oItem);
+            // }
         },
 
         // onClickCancel: function(){
@@ -378,39 +555,19 @@ sap.ui.define([
             }.bind(this));
         },
         formatter: {
-            isWght: function (oText) {
-                if (oText === 'Weightage') {
-                    return true
-                }
-                return false
-
-            },
-            isAS: function (oText) {
-                if (oText === 'Weightage') {
-                    return false
-                }
-                if (oText === 'AS') {
+            
+            TAVisible: function(sField, oKey){
+                if(this.getView().getModel("Config").getData()[sField]){
+                    if(oKey === 'Weightage'){
+                        return false
+                    }
+                    if(oKey !== 'Weightage'){
+                        return true
+                    }
                     return true
                 }
 
                 return false
-            },
-            isTA: function (oText) {
-                console.log(oText, 'Yes')
-                if (oText === 'Weightage') {
-                    return false
-                }
-                return true
-            },
-            btnvisiblitiy: function (oText) {
-                
-                if (oText) {
-                    return false
-                }
-                return true
-            },
-            TAEdit: function (oKey) {
-                
             }
 
         },

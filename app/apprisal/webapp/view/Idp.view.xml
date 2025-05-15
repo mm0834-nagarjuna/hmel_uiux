@@ -399,7 +399,7 @@
                                                 value="{PreDefineGoal>Remarks_Appraiser}"
                                                 cols="2000"
                                                 rows="5"
-                                                editable="{apprisalData>idpSFMRSREAREdit}"
+                                                editable="{apprisalData>idpFFMRSREREEdit}"
                                             />
                                         </cells>
                                     </ColumnListItem>

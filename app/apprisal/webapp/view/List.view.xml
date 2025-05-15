@@ -181,7 +181,7 @@
         </HBox>
             <Table
                 id="idApprisalTable"
-                class="sapUiSmallMarginTop sapUiSmallMarginBottom"
+                mode="SingleSelect"
                 inset="false"
                 items="{
                         path: 'apprisalData>/appraisal',
@@ -191,9 +191,7 @@
                     }"
             >
                 <columns>
-                    <Column width="3rem">
-                        <Text text="" />
-                    </Column>
+                    
                     <Column width="10rem">
                         <Text text="BSM" />
                     </Column>
@@ -220,11 +218,11 @@
                 <items>
                     <ColumnListItem
                         vAlign="Middle"
-                        type="Navigation"
+                        type="Inactive"
                         press=".onListItemPress"
                     >
                         <cells>
-                        <CheckBox select="false"/>
+                        
                             <ObjectIdentifier
                                 title="2025-26"
                             />
