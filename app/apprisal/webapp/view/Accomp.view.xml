@@ -16,23 +16,9 @@
 			<FlexItemData growFactor="1" />
 		</uxap:layoutData>
 		<uxap:sections>
-            <uxap:ObjectPageSection 
-                visible="{= !${apprisalData>accompEdit} }"
-                >
-            
-				<uxap:subSections>
-                
-					<uxap:ObjectPageSubSection
-                        titleUppercase="false"
-                        title="Accomplishment"
-                        visible="{= !${apprisalData>accompEdit} }"
-                        class="mvnDummyEmptyObjectPageSubSection"
-                    >
-						<HBox/>
-					</uxap:ObjectPageSubSection>
-				</uxap:subSections>
-			</uxap:ObjectPageSection>
-			<uxap:ObjectPageSection visible="{apprisalData>accompEdit}">
+
+
+			<uxap:ObjectPageSection >
 				<uxap:subSections>
 					<uxap:ObjectPageSubSection
                         titleUppercase="false"
@@ -44,16 +30,13 @@
                                 text="New"
                                 type="Ghost"
                                 press="onItemSelect"
-                                enabled="{apprisalData>accompEdit}"
+                                visible="{apprisalData>accompEdit}"
                             />
-                            <MenuButton text="Upload/Download" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen" enabled="{apprisalData>accompEdit}" >
-                                <menu>
-                                    <Menu itemSelected="onMenuAction">
-                                        <MenuItem text="Upload" icon="sap-icon://upload" />
-                                        <MenuItem text="Download Template" icon="sap-icon://download" />
-                                    </Menu>
-                                </menu>
-                            </MenuButton>
+
+							<HBox width="auto">
+							<Button text="Upload Attachment" icon="sap-icon://upload" visible="{apprisalData>accompEdit}" type="Ghost"/>
+							<Button text="Download Attachment" icon="sap-icon://download" visible="{= !${apprisalData>accompEdit}}" type="Ghost" />
+							</HBox>
 						</OverflowToolbar>
 						<!-- <uxap:actions><Button icon="sap-icon://synchronize"/><Button icon="sap-icon://expand"/></uxap:actions> -->
 					</uxap:ObjectPageSubSection>
