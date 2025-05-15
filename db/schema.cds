@@ -23,6 +23,7 @@ entity AppraisalDocuments {
   doNotAllowTargetRevision: Boolean;
   referBackToAppraiser: Boolean;
   guidelines : Boolean;
+  addAppraiser:Boolean;
   coFg: Boolean;
   iG: Boolean;
   bcf: Boolean;
@@ -56,6 +57,8 @@ entity AppraisalDocuments {
   cofgafAER: Boolean;
   cofgafAEREdit: Boolean;
   cofgselfAEScore: Boolean;
+  cofgaaAEEIcon: Boolean;
+  cofgafAERIcon: Boolean;
   igKSP: Boolean;
   igKSPEdit: Boolean;
   igKPI: Boolean;

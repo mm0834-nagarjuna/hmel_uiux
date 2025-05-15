@@ -18,6 +18,21 @@ sap.ui.define([
             });
              
         },
+        onSelectYear: function(oEvent){
+            var sKey = oEvent.getSource().getProperty("selectedKey");
+            let oTable = this.getView().byId('idApprisalTable')
+            let btns = this.getView().byId('bts')
+            console.log(sKey)
+            if(sKey === '03' || sKey === '02'){
+               
+                
+                btns.setProperty("visible", true)
+                oTable.setProperty("mode", "SingleSelectLeft")
+            } else {
+                btns.setProperty("visible", false)
+                oTable.setProperty("mode", "None")
+            }
+        }
         
     });
 });

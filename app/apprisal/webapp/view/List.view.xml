@@ -50,7 +50,7 @@
                                 visibleInFilterBar="true"
                             >
                                 <fb:control>
-                                    <ComboBox  selectedKey="01">
+                                    <ComboBox  selectedKey="01" selectionChange="onSelectYear">
                                         <core:Item
                                             key="01"
                                             text="2025-26"
@@ -175,13 +175,13 @@
         </f:header>
         <f:content>
         <VBox>
-        <HBox width="100%" justifyContent="End">
+        <HBox width="100%" justifyContent="End" id="bts" visible="false">
         <Button text="Historic Data " class="sapUiSmallMarginEnd"/>
          <Button text="360 degree "/>
         </HBox>
             <Table
                 id="idApprisalTable"
-                mode="SingleSelectLeft"
+                mode="None"
                 inset="false"
                 autoPopinMode="true"
                 items="{
@@ -194,10 +194,10 @@
             >
                 <columns>
                     
-                    <Column width="10rem">
+                    <Column width="7rem">
                         <Text text="BSM" />
                     </Column>
-                    <Column width="10rem">
+                    <Column width="8rem">
                         <Text text="Appraisee ID" />
                     </Column>
                     <Column>
@@ -210,10 +210,10 @@
                         <Text text="Reviewer Name" />
                     </Column>
 
-                    <Column>
+                    <Column width="15rem">
                         <Text text="Status" />
                     </Column>
-                    <Column>
+                    <Column width="20rem">
                         <Text text="Sub Status" />
                     </Column>
                 </columns>

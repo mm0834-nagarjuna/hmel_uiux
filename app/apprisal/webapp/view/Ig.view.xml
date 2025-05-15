@@ -81,30 +81,26 @@
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>
             </uxap:ObjectPageSection>
-             <uxap:ObjectPageSection
+            <uxap:ObjectPageSection
                 title="2.1"
                 showTitle="false"
-             >
+              >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="2.1"
-                     >
+                    >
                         <VBox alignItems="Stretch">
                             <OverflowToolbar>
                                 <Title text="2.1 Key Performance Area" />
                                 <Button icon="sap-icon://delete" />
                                 <ToolbarSpacer />
-                                <Button
-                                    icon="sap-icon://add-employee"
-                                    text="Appraiser"
-                                    press="onClickAddAppraiser"
-                                />
+                                
                             </OverflowToolbar>
                             <Tree
-                                id="Tree3"
+                                id="Tree5"
                                 items="{myGoal>/COF/KSP002}"
-                            >
+                             >
                                 <CustomTreeItem>
                                     <FlexBox
                                         alignItems="Center"
@@ -114,8 +110,10 @@
                                         class="noGapBox"
                                     >
                                         <items>
-                                         
-                                             <VBox width="100%" visible="{= !${device>/browser/mobile} }">
+                                            <VBox
+                                                width="100%"
+                                                visible="{= !${device>/browser/mobile} }"
+                                            >
                                                 <OverflowToolbar
                                                     style="Clear"
                                                     design="Transparent"
@@ -125,12 +123,11 @@
                                                         alignItems="Center"
                                                         justifyContent="SpaceBetween"
                                                         width="100%"
-                                                     >
+                                                    >
                                                         <Title
-                                                             text="{myGoal>num} {myGoal>title}"
-                                                             tooltip="{myGoal>title}"
-                                                             visible="{parts: [{path:'myGoal>fieldVisible'}], formatter: '.formatter.TAVisible'}"
-                                                            
+                                                            text="{myGoal>num} {myGoal>title}"
+                                                            tooltip="{myGoal>title}"
+                                                            visible="{parts: [{path:'myGoal>fieldVisible'}], formatter: '.formatter.TAVisible'}"
                                                         />
                                                         <HBox
                                                             alignItems="Center"
@@ -140,17 +137,21 @@
                                                                 icon="{myGoal>addIcon}"
                                                                 text="{myGoal>addText}"
                                                                 custom:field="{myGoal>field}"
-                                                                press="onClickAddAppraiser"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                                 visible="{= ${myGoal>addIcon} === 'sap-icon://add' }"
-                                                                
+                                                            />
+                                                           
+                                                            <Button
+                                                                icon="sap-icon://add-employee"
+                                                                text="Appraiser"
+                                                                press="onClickAddAppraiser"
+                                                                visible="{parts: [{path:'myGoal>addOtherAR'}], formatter: '.formatter.TAVisible'}"
                                                             />
                                                             <Button
                                                                 icon="{myGoal>deleteIcon}"
                                                                 press="handleButtonPress"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                                 visible="{= ${myGoal>deleteIcon} === 'sap-icon://delete' }"
-                                                               
                                                             />
                                                         </HBox>
                                                     </HBox>
@@ -165,30 +166,32 @@
                                                     width="100%"
                                                     alignItems="Center"
                                                     justifyContent="SpaceBetween"
-                                                >
-                                                    <HBox
+                                                 >
+                                                    <VBox
                                                         width="33%"
-                                                        alignItems="Center"
+                                                        alignItems="Start"
                                                         justifyContent="Start"
                                                     >
                                                         <Label
                                                             text="Weightage (%): "
                                                             visible="{= ${myGoal>key} === 'Weightage' }"
                                                         />
+                                                        
                                                         <ComboBox
                                                             id="3weight"
                                                             value="{myGoal>value}"
                                                             visible="{= ${myGoal>key} === 'Weightage' }"
                                                             editable="{parts: [{path:'myGoal>fieldEdit'}], formatter: '.formatter.TAVisible'}"
                                                         />
-                                                    </HBox>
+                                                    </VBox>
 
-                                                    <HBox
+                                                    <VBox
                                                         width="33%"
-                                                        alignItems="Center"
+                                                        alignItems="Start"
                                                         justifyContent="Start"
                                                         visible="{parts: [{path:'myGoal>fieldVisible1'}], formatter: '.formatter.TAVisible'}"
                                                     >
+                                                        <HBox width="auto" alignItems="Center">
                                                         <Label
                                                             text="Appraisee Score: "
                                                             visible="{parts: [{path:'myGoal>fieldVisible1'}], formatter: '.formatter.TAVisible'}"
@@ -197,23 +200,27 @@
                                                             icon="sap-icon://information"
                                                             type="Transparent"
                                                             press="onClickScoreInfo"
-                                                            visible="{parts: [{path:'myGoal>fieldVisible1'}], formatter: '.formatter.TAVisible'}"
-                                                            class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                                            visible="{parts: [{path:'myGoal>fieldIconVisible1'}], formatter: '.formatter.TAVisible'}"
+                                                            
                                                         />
+                                                        
+                                                        </HBox>
+                                                        
                                                         <ComboBox
                                                             id="3AESCR"
-                                                            value="{myGoal>value}"
+                                                            value="{myGoal>value1}"
                                                             visible="{parts: [{path:'myGoal>fieldVisible1'}], formatter: '.formatter.TAVisible'}"
-                                                            editable="{= !${parts: [{path:'myGoal>fieldEdit1'}], formatter: '.formatter.TAVisible'} }"
+                                                            editable="{parts: [{path:'myGoal>fieldEdit1'}], formatter: '.formatter.TAVisible'}"
                                                         />
-                                                    </HBox>
+                                                    </VBox>
 
-                                                    <HBox
+                                                    <VBox
                                                         width="33%"
-                                                        alignItems="Center"
+                                                        alignItems="Start"
                                                         justifyContent="Start"
-                                                         visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
+                                                        visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
                                                     >
+                                                        <HBox width="auto" alignItems="Center">
                                                         <Label
                                                             text="Appraiser Score: "
                                                             visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
@@ -222,17 +229,17 @@
                                                             icon="sap-icon://information"
                                                             type="Transparent"
                                                             press="onClickScoreInfo"
-                                                            visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
-
-                                                            class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                                            visible="{parts: [{path:'myGoal>fieldIconVisible2'}], formatter: '.formatter.TAVisible'}"
+                                                            
                                                         />
+                                                        </HBox>
                                                         <ComboBox
                                                             id="3ARSCR"
-                                                            value="{myGoal>value}"
+                                                            value="{myGoal>value2}"
                                                             visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
                                                             editable="{parts: [{path:'myGoal>fieldEdit2'}], formatter: '.formatter.TAVisible'}"
                                                         />
-                                                    </HBox>
+                                                    </VBox>
                                                 </HBox>
                                             </VBox>
                                         </items>
@@ -244,30 +251,26 @@
                 </uxap:subSections>
             </uxap:ObjectPageSection>
 
-             <uxap:ObjectPageSection
+            <uxap:ObjectPageSection
                 title="2.2"
                 showTitle="false"
-             >
+              >
                 <uxap:subSections>
                     <uxap:ObjectPageSubSection
                         titleUppercase="false"
                         title="2.2"
-                     >
+                    >
                         <VBox alignItems="Stretch">
                             <OverflowToolbar>
                                 <Title text="2.2 Key Performance Area" />
                                 <Button icon="sap-icon://delete" />
                                 <ToolbarSpacer />
-                                <Button
-                                    icon="sap-icon://add-employee"
-                                    text="Appraiser"
-                                    press="onClickAddAppraiser"
-                                />
+                                
                             </OverflowToolbar>
                             <Tree
-                                id="Tree2"
+                                id="Tree6"
                                 items="{myGoal>/COF/KSP001}"
-                            >
+                             >
                                 <CustomTreeItem>
                                     <FlexBox
                                         alignItems="Center"
@@ -277,7 +280,10 @@
                                         class="noGapBox"
                                     >
                                         <items>
-                                             <VBox width="100%" visible="{= !${device>/browser/mobile} }">
+                                            <VBox
+                                                width="100%"
+                                                visible="{= !${device>/browser/mobile} }"
+                                            >
                                                 <OverflowToolbar
                                                     style="Clear"
                                                     design="Transparent"
@@ -287,12 +293,11 @@
                                                         alignItems="Center"
                                                         justifyContent="SpaceBetween"
                                                         width="100%"
-                                                     >
+                                                    >
                                                         <Title
-                                                             text="{myGoal>num} {myGoal>title}"
-                                                             tooltip="{myGoal>title}"
-                                                             visible="{parts: [{path:'myGoal>fieldVisible'}], formatter: '.formatter.TAVisible'}"
-                                                            
+                                                            text="{myGoal>num} {myGoal>title}"
+                                                            tooltip="{myGoal>title}"
+                                                            visible="{parts: [{path:'myGoal>fieldVisible'}], formatter: '.formatter.TAVisible'}"
                                                         />
                                                         <HBox
                                                             alignItems="Center"
@@ -302,17 +307,21 @@
                                                                 icon="{myGoal>addIcon}"
                                                                 text="{myGoal>addText}"
                                                                 custom:field="{myGoal>field}"
-                                                                press="onClickAddAppraiser"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                                 visible="{= ${myGoal>addIcon} === 'sap-icon://add' }"
-                                                                
+                                                            />
+                                                           
+                                                            <Button
+                                                                icon="sap-icon://add-employee"
+                                                                text="Appraiser"
+                                                                press="onClickAddAppraiser"
+                                                                visible="{parts: [{path:'myGoal>addOtherAR'}], formatter: '.formatter.TAVisible'}"
                                                             />
                                                             <Button
                                                                 icon="{myGoal>deleteIcon}"
                                                                 press="handleButtonPress"
                                                                 class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
                                                                 visible="{= ${myGoal>deleteIcon} === 'sap-icon://delete' }"
-                                                               
                                                             />
                                                         </HBox>
                                                     </HBox>
@@ -327,30 +336,32 @@
                                                     width="100%"
                                                     alignItems="Center"
                                                     justifyContent="SpaceBetween"
-                                                >
-                                                    <HBox
+                                                 >
+                                                    <VBox
                                                         width="33%"
-                                                        alignItems="Center"
+                                                        alignItems="Start"
                                                         justifyContent="Start"
                                                     >
                                                         <Label
                                                             text="Weightage (%): "
                                                             visible="{= ${myGoal>key} === 'Weightage' }"
                                                         />
+                                                        
                                                         <ComboBox
                                                             id="4weight"
                                                             value="{myGoal>value}"
                                                             visible="{= ${myGoal>key} === 'Weightage' }"
                                                             editable="{parts: [{path:'myGoal>fieldEdit'}], formatter: '.formatter.TAVisible'}"
                                                         />
-                                                    </HBox>
+                                                    </VBox>
 
-                                                    <HBox
+                                                    <VBox
                                                         width="33%"
-                                                        alignItems="Center"
+                                                        alignItems="Start"
                                                         justifyContent="Start"
                                                         visible="{parts: [{path:'myGoal>fieldVisible1'}], formatter: '.formatter.TAVisible'}"
                                                     >
+                                                        <HBox width="auto" alignItems="Center">
                                                         <Label
                                                             text="Appraisee Score: "
                                                             visible="{parts: [{path:'myGoal>fieldVisible1'}], formatter: '.formatter.TAVisible'}"
@@ -359,23 +370,27 @@
                                                             icon="sap-icon://information"
                                                             type="Transparent"
                                                             press="onClickScoreInfo"
-                                                            visible="{parts: [{path:'myGoal>fieldVisible1'}], formatter: '.formatter.TAVisible'}"
-                                                            class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                                            visible="{parts: [{path:'myGoal>fieldIconVisible1'}], formatter: '.formatter.TAVisible'}"
+                                                            
                                                         />
+                                                        
+                                                        </HBox>
+                                                        
                                                         <ComboBox
                                                             id="4AESCR"
-                                                            value="{myGoal>value}"
+                                                            value="{myGoal>value1}"
                                                             visible="{parts: [{path:'myGoal>fieldVisible1'}], formatter: '.formatter.TAVisible'}"
-                                                            editable="{= !${parts: [{path:'myGoal>fieldEdit1'}], formatter: '.formatter.TAVisible'} }"
+                                                            editable="{parts: [{path:'myGoal>fieldEdit1'}], formatter: '.formatter.TAVisible'}"
                                                         />
-                                                    </HBox>
+                                                    </VBox>
 
-                                                    <HBox
+                                                    <VBox
                                                         width="33%"
-                                                        alignItems="Center"
+                                                        alignItems="Start"
                                                         justifyContent="Start"
-                                                         visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
+                                                        visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
                                                     >
+                                                        <HBox width="auto" alignItems="Center">
                                                         <Label
                                                             text="Appraiser Score: "
                                                             visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
@@ -384,17 +399,17 @@
                                                             icon="sap-icon://information"
                                                             type="Transparent"
                                                             press="onClickScoreInfo"
-                                                            visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
-
-                                                            class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+                                                            visible="{parts: [{path:'myGoal>fieldIconVisible2'}], formatter: '.formatter.TAVisible'}"
+                                                            
                                                         />
+                                                        </HBox>
                                                         <ComboBox
                                                             id="4ARSCR"
-                                                            value="{myGoal>value}"
+                                                            value="{myGoal>value2}"
                                                             visible="{parts: [{path:'myGoal>fieldVisible2'}], formatter: '.formatter.TAVisible'}"
                                                             editable="{parts: [{path:'myGoal>fieldEdit2'}], formatter: '.formatter.TAVisible'}"
                                                         />
-                                                    </HBox>
+                                                    </VBox>
                                                 </HBox>
                                             </VBox>
                                         </items>
