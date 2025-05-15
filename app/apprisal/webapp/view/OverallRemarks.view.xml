@@ -446,11 +446,25 @@
                                     />
                                 </HBox>
                             </HBox>
-                            <VBox width="100%">
+                            <Link
+                                                    text="Other Appraisers Remarks"
+
+                                                    press="onClickOtherAppriasersRemarks"
+                                                    ariaHasPopup="Dialog"
+                                                    
+                                                />
+                            <!-- <VBox width="100%">
                                 <OverflowToolbar>
                                     <ObjectIdentifier
                                         title="Other Appraisers Remarks"
                                     />
+                                     <Link
+                                                    text="Other Appraisers Remarks"
+
+                                                    press="onClickOtherAppriasersRemarks"
+                                                    ariaHasPopup="Dialog"
+                                                    
+                                                />
                                 </OverflowToolbar>
 
                                 <VBox width="100%">
@@ -542,7 +556,7 @@
                                         </CustomTreeItem>
                                     </Tree>
                                 </VBox>
-                            </VBox>
+                            </VBox> -->
                         </VBox>
                     </uxap:ObjectPageSubSection>
                 </uxap:subSections>

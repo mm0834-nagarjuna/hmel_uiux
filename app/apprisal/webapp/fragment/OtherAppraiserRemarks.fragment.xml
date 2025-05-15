@@ -1,0 +1,69 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog
+        id="OthersremarksDialog"
+        title="Other Appraisers Remarks"
+        contentWidth="50%"
+        contentHeight="80%"
+        draggable="true"
+        resizable="true"
+    >
+        <VBox width="100%">
+            <OverflowToolbar>
+                <ObjectIdentifier title="Common Organizational" />
+            </OverflowToolbar>
+
+            <Tree id="Tree99" items="{path: 'oRemarks>/Other_Remarks/CO'}">
+                <CustomTreeItem>
+                    <FlexBox alignItems="Start" justifyContent="Center" width="100%">
+                        <items>
+                            <VBox width="100%">
+                                <OverflowToolbar design="Transparent" style="Clear">
+                                    <Text text="{oRemarks>text}" />
+                                </OverflowToolbar>
+
+                                <TextArea value="{oRemarks>value}" width="100%" editable="false">
+                                    <layoutData>
+                                        <FlexItemData growFactor="1" />
+                                    </layoutData>
+                                </TextArea>
+                            </VBox>
+                        </items>
+                    </FlexBox>
+                </CustomTreeItem>
+            </Tree>
+        </VBox>
+
+        <VBox width="100%" class="sapUiSmallMarginTop">
+            <OverflowToolbar>
+                <ObjectIdentifier title="Individual" />
+            </OverflowToolbar>
+
+            <Tree id="Tree001" items="{path: 'oRemarks>/Other_Remarks/CO'}">
+                <CustomTreeItem>
+                    <FlexBox alignItems="Start" justifyContent="Center" width="100%">
+                        <items>
+                            <VBox width="100%">
+                                <OverflowToolbar design="Transparent" style="Clear">
+                                    <Text text="{oRemarks>text}" />
+                                </OverflowToolbar>
+
+                                <TextArea value="{oRemarks>value}" width="100%" editable="false">
+                                    <layoutData>
+                                        <FlexItemData growFactor="1" />
+                                    </layoutData>
+                                </TextArea>
+                            </VBox>
+                        </items>
+                    </FlexBox>
+                </CustomTreeItem>
+            </Tree>
+        </VBox>
+
+        <beginButton>
+            <Button text="Close" press=".onCloseOtherRemarksDialog" />
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>

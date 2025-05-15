@@ -69,5 +69,35 @@ sap.ui.define([
 			MessageBox.information("Targets, Behavioural Competency, Individual Development Plan, Accomplishments");
 		},   
 
+    onClickOtherAppriasersRemarks: function (oEvent) {
+      // let oControl = oEvent.getSource(); 
+      // let oText = oControl.getText();   
+      let oView = this.getView();
+  
+     
+      // if (oText && oText.includes("Goals")) {
+          if (!this._pDialog) {
+              this._pDialog = Fragment.load({
+                  id: oView.getId(),
+                  name: "apprisal.fragment.OtherAppraiserRemarks",
+                  controller: this
+              }).then(function(oDialog) {
+                  oView.addDependent(oDialog);
+                  return oDialog;
+              });
+          }
+  
+          this._pDialog.then(function(oDialog) {
+              oDialog.open();
+          }.bind(this));
+      // } else {
+          
+      //     console.log("Link does not contain 'Goals'. Dialog not opened.");
+      // }
+  },
+  onCloseOtherRemarksDialog : function () {
+    this.byId('OthersremarksDialog').close()
+},
+
     });
 });
