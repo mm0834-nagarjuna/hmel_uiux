@@ -246,7 +246,7 @@
                             <Text text="Justification Attachment" />
                         </Column>
                         <Column width="8rem" >
-                            <Text text="Final Dept. Rating" />
+                            <Text text="Relative Dept. Performance Rating" />
                         </Column>
                         <Column width="8rem" vAlign="Middle" hAlign="Center">
                             <Text text="Appraiser Status" />
