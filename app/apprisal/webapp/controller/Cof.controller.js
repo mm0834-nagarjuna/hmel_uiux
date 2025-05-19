@@ -104,7 +104,7 @@ sap.ui.define([
                         "isDrpD": false
                       },
                       {
-                        "key": "FFMmilestone",
+                        "key": "milestones",
                         "fieldVisible": "coFgTarget",
                         "fieldEdit": "coFgTargetEdit",
                         "title": "First Four Monthly Milestones",
@@ -114,18 +114,8 @@ sap.ui.define([
                         "editable": true,
                         "isTA": false,
                         "isDrpD": false
-                      },
-                      {
-                        "key": "SFMmilestone",
-                        "fieldVisible": "coFgTarget",
-                        "fieldEdit": "coFgTargetEdit",
-                        "title": "Second Four Monthly Milestones",
-                        "value": "Second Four Monthly Milestones value",
-                        "fieldIconVisible":' ',
-                        "visible": true,
-                        "editable": true,
-                        "isTA": false,
-                        "isDrpD": false
+
+                       
                       },
                       {
                         "key": "FFMA:AE",
@@ -620,21 +610,26 @@ sap.ui.define([
     formatter: {
 
       TAVisible: function (sField, oKey) {
-        console.log(sField)
+        // console.log(oKey)
+        // debugger
+
         if (this.getView().getModel("Config").getData()[sField]) {
           if (oKey) {
-            if (oKey === 'Weightage') {
+            if (oKey === 'Weightage' || oKey === 'milestones') {
               return false
             }
-            if (oKey !== 'Weightage') {
+            if (oKey !== 'Weightage'  || oKey !== 'milestones') {
               return true
             }
+           
+            
+            
+            
+            
           }
           return true
-        }
-
+        } 
         
-
         return false
         // return this.getView().getModel("Config").getData()[sField]
       }

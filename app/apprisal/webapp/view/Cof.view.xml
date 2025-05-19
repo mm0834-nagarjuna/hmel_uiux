@@ -124,7 +124,7 @@
                                                         <Title
                                                             text="{myGoal>num} {myGoal>title}"
                                                             tooltip="{myGoal>title}"
-                                                            visible="{parts: [{path:'myGoal>fieldVisible'}], formatter: '.formatter.TAVisible'}"
+                                                            visible="{parts: [{path:'myGoal>fieldVisible'}, {path:'myGoal>key'}], formatter: '.formatter.TAVisible'}"
                                                         />
                                                         <HBox
                                                             alignItems="Center"
@@ -156,9 +156,42 @@
                                                 <TextArea
                                                     value="{myGoal>value}"
                                                     width="100%"
+                                                    tooltip= "{path:'myGoal>key'}"
                                                     visible="{parts: [{path:'myGoal>fieldVisible'}, {path:'myGoal>key'}], formatter: '.formatter.TAVisible'}"
                                                     editable="{parts: [{path:'myGoal>fieldEdit'}], formatter: '.formatter.TAVisible'}"
                                                 />
+                                                <HBox
+                                                    
+                                                    alignItems="Center"
+                                                    justifyContent="SpaceBetween"
+                                                  visible="{= ${myGoal>key} === 'milestones' }"
+                                                  >
+                                                  <VBox >
+                                                  <ObjectIdentifier title="First Four Monthly Milestones"></ObjectIdentifier>
+                                                    <TextArea
+                                                    value="{myGoal>value}"
+                                                    width="auto"
+                                                    tooltip= "{path:'myGoal>key'}"
+                                                   rows="2"
+                                                   cols="95"
+                                                    editable="{parts: [{path:'myGoal>fieldEdit'}], formatter: '.formatter.TAVisible'}"
+
+                                                />
+                                                  </VBox>
+                                                  <VBox width="50%" >
+                                                  <ObjectIdentifier title="Second Four Monthly Milestones"></ObjectIdentifier>
+                                                                 <TextArea
+                                                    value="Second Four Monthly Milestones value"
+                                                    width="auto"
+                                                    tooltip= "{path:'myGoal>key'}"
+                                                   rows="2"
+                                                   cols="95"
+                                                    editable="{parts: [{path:'myGoal>fieldEdit'}], formatter: '.formatter.TAVisible'}"
+                                                />
+                                                  </VBox>
+                                                    
+                                                </HBox>
+                                               
                                                 <HBox
                                                     width="100%"
                                                     alignItems="Center"

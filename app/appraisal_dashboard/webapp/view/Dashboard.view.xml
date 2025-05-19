@@ -184,7 +184,7 @@
                             >
                                 <HBox width="50%" alignItems="Center">
                                 <Label
-                                    text="Select Year: "
+                                    text="Period View: "
                                     class="sapUiSmallMarginEnd"
                                 />
                                 <ComboBox selectedKey="TS"  selectionChange="onSelectChange" id="selectYear" >
