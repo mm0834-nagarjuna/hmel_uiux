@@ -180,7 +180,7 @@
         <f:content>
         <VBox>
         <HBox width="100%" justifyContent="End" id="bts">
-        <Button text="Historic Data" press="onPressHistoricData" class="sapUiSmallMarginEnd"/>
+        <Button type="Emphasized" icon="sap-icon://customer-history" text="Historic Data" press="onPressHistoricData" class="sapUiSmallMarginEnd"/>
          <!-- <Button text="360 degree "/> -->
         </HBox>
             <Table
