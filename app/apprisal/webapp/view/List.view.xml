@@ -50,7 +50,11 @@
                                 visibleInFilterBar="true"
                             >
                                 <fb:control>
-                                    <ComboBox  selectedKey="01" selectionChange="onSelectYear">
+                                    <ComboBox  selectedKey="00" selectionChange="onSelectYear">
+                                    <core:Item
+                                            key="00"
+                                            text=""
+                                        />
                                         <core:Item
                                             key="01"
                                             text="2025-26"
@@ -175,13 +179,13 @@
         </f:header>
         <f:content>
         <VBox>
-        <HBox width="100%" justifyContent="End" id="bts" visible="false">
-        <Button text="Historic Data " class="sapUiSmallMarginEnd"/>
-         <Button text="360 degree "/>
+        <HBox width="100%" justifyContent="End" id="bts">
+        <Button text="Historic Data" press="onPressHistoricData" class="sapUiSmallMarginEnd"/>
+         <!-- <Button text="360 degree "/> -->
         </HBox>
             <Table
                 id="idApprisalTable"
-                mode="None"
+                mode="SingleSelectLeft"
                 inset="false"
                 autoPopinMode="true"
                 items="{
