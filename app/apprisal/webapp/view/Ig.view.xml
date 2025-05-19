@@ -44,7 +44,12 @@
                         <OverflowToolbar
                             class="mvnObjectPageLayoutTitleOverflowToolbar"
                         >
-                            <ToolbarSpacer />
+                            <ToolbarSpacer /><Button
+                            icon="sap-icon://copy"
+                                text="Appraiser/Reviewer Goals"
+                                type="Ghost"
+                                press="onClickPreviousYear"
+                            />
                             <Button
                             icon="sap-icon://copy"
                                 text="Previous Year KPAs"
