@@ -162,11 +162,12 @@
                                                 />
                                                 <HBox
                                                     
+                                                  width="100%"
                                                     alignItems="Center"
                                                     justifyContent="SpaceBetween"
                                                   visible="{= ${myGoal>key} === 'milestones' }"
                                                   >
-                                                  <VBox >
+                                                  <VBox width="45%">
                                                   <ObjectIdentifier title="First Four Monthly Milestones"></ObjectIdentifier>
                                                     <TextArea
                                                     value="{myGoal>value}"
@@ -178,7 +179,7 @@
 
                                                 />
                                                   </VBox>
-                                                  <VBox width="50%" >
+                                                  <VBox width="45%" >
                                                   <ObjectIdentifier title="Second Four Monthly Milestones"></ObjectIdentifier>
                                                                  <TextArea
                                                     value="Second Four Monthly Milestones value"
