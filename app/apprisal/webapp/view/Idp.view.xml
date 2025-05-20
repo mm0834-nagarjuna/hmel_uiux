@@ -572,21 +572,66 @@
                                 <items>
                                     <ColumnListItem vAlign="Top">
                                         <cells>
-                                            <Input
+                                            <!-- <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Score_Appraiser}"
                                                 editable="false"
                                                 width="60px"
-                                            />
-                                            <Input
+                                            /> -->
+                                            <ComboBox
+                                                value="6"
+                                                placeholder="Appraisee Score"
+                                                visible="true"
+                                                width="60px"
+                                                editable="{apprisalData>idpANRSAEEdit}"
+                                            >
+                                            <core:Item key="01" text="1"/>
+                                            <core:Item key="02" text="2"/>
+                                            <core:Item key="03" text="3"/>
+                                            <core:Item key="04" text="4"/>
+                                            <core:Item key="05" text="5"/>
+                                            <core:Item key="06" text="6"/>
+                                            
+                                            </ComboBox>
+                                            <!-- <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Overal_Score}"
                                                 editable="false"
                                                 width="60px"
-                                            />
-                                            <Input
+                                            /> -->
+                                            <ComboBox
+                                                value="5"
+                                                placeholder="Appraiser Score"
+                                                editable="{apprisalData>idpANRSAREdit}"
+                                                visible="true"
+                                                width="60px"
+                                            >
+                                            <core:Item key="01" text="1"/>
+                                            <core:Item key="02" text="2"/>
+                                            <core:Item key="03" text="3"/>
+                                            <core:Item key="04" text="4"/>
+                                            <core:Item key="05" text="5"/>
+                                            <core:Item key="06" text="6"/>
+                                            
+                                            </ComboBox>
+                                            <!-- <Input
                                                 value="{PreDefineGoal>/IDP/Annual_Score/Scores/Score_Reviewer}"
                                                 editable="{apprisalData>idpAASCRREdit}"
                                                 width="60px"
-                                            />
+                                            /> -->
+                                            <ComboBox
+                                                value="6"
+                                                placeholder="Reviewer Score"
+                                                editable="{apprisalData>idpANRSREEdit}"
+                                                visible="true"
+                                                width="60px"
+                                            >
+                                            <core:Item key="01" text="1"/>
+                                            <core:Item key="02" text="2"/>
+                                            <core:Item key="03" text="3"/>
+                                            <core:Item key="04" text="4"/>
+                                            <core:Item key="05" text="5"/>
+                                            <core:Item key="06" text="6"/>
+                                            
+                                            </ComboBox>
                                         </cells>
                                     </ColumnListItem>
                                 </items>
